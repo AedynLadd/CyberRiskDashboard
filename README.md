@@ -18,3 +18,7 @@ You can access the beanstalk environment from here(https://135465525709.signin.a
 - USERNAME: FourthYearProject
 - PASSWORD: FA6@5@dEE^74q9@d
 
+## CodePipeline
+Code is continously deployed through the use of CodePipeline, every update to the main branch results in the pipeline running and files being pushed/uploaded to elasticBeanstalk
+
+Pipeline: https://console.aws.amazon.com/codesuite/codepipeline/pipelines/CyberRiskDashboardPipeline/view?region=us-east-1
