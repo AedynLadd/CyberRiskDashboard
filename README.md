@@ -11,14 +11,19 @@
   4. Implement a cyber risk dashboard to manage and visualize the data
   5. Provide recommendations and guidance based on the data to on how to improve the organizational security and resilience.
 
-### Dashboard
-Dashboard is deployed in AWS: http://cyberriskdashboard-env.eba-wgdmpesj.us-east-1.elasticbeanstalk.com/
-
-You can access the beanstalk environment from here(https://135465525709.signin.aws.amazon.com/console) through the identity below:
+## Dashboard
+### USER ACCESS
+You can access the aws environment from here (https://135465525709.signin.aws.amazon.com/console) and using the identity below:
 - USERNAME: FourthYearProject
 - PASSWORD: FA6@5@dEE^74q9@d
 
-## CodePipeline
+### ElasticBeanstalk
+The web app itself is deployed with ElasticBeanstalk
+
+Dashboard is deployed in AWS: http://cyberriskdashboard-env.eba-wgdmpesj.us-east-1.elasticbeanstalk.com/
+The elasticBeanstalk enviorment can be accessed here: https://console.aws.amazon.com/elasticbeanstalk/home?region=us-east-1#/environment/dashboard?applicationName=Cyber%20Risk%20Dashboard&environmentId=e-8yeu3xqpi8
+
+### CodePipeline
 Code is continously deployed through the use of CodePipeline, every update to the main branch results in the pipeline running and files being pushed/uploaded to elasticBeanstalk
 
 Pipeline: https://console.aws.amazon.com/codesuite/codepipeline/pipelines/CyberRiskDashboardPipeline/view?region=us-east-1
