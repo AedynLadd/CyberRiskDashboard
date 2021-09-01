@@ -13,3 +13,8 @@
 
 ### Dashboard
 Dashboard is deployed in AWS: http://cyberriskdashboard-env.eba-wgdmpesj.us-east-1.elasticbeanstalk.com/
+
+You can access the beanstalk environment from here(https://135465525709.signin.aws.amazon.com/console) through the identity below:
+  USERNAME: FourthYearProject
+  PASSWORD: FA6@5@dEE^74q9@d
+
