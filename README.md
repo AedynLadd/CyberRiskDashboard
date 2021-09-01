@@ -10,3 +10,6 @@
   3. Generate actionable data that can be support decision-making and be used as input for more detailed data-analysis methods.
   4. Implement a cyber risk dashboard to manage and visualize the data
   5. Provide recommendations and guidance based on the data to on how to improve the organizational security and resilience.
+
+### Dashboard
+Dashboard is deployed in AWS: http://cyberriskdashboard-env.eba-wgdmpesj.us-east-1.elasticbeanstalk.com/
