@@ -21,6 +21,7 @@ You can access the aws environment from here (https://135465525709.signin.aws.am
 The web app itself is deployed with ElasticBeanstalk
 
 Dashboard is deployed in AWS: http://cyberriskdashboard-env.eba-wgdmpesj.us-east-1.elasticbeanstalk.com/
+
 The elasticBeanstalk enviorment can be accessed here: https://console.aws.amazon.com/elasticbeanstalk/home?region=us-east-1#/environment/dashboard?applicationName=Cyber%20Risk%20Dashboard&environmentId=e-8yeu3xqpi8
 
 ### CodePipeline
