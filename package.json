@@ -1,0 +1,24 @@
+{
+  "name": "CyberRiskDashboard",
+  "version": "1.0.0",
+  "description": "As systems and organizations become larger and more complex, those involved in making design decisions will face challenges regarding ways to identify, analyze, and prepare for threats and hazards, mitigate vulnerabilities, and minimize impact and consequences. This project aims to develop a cyber risk dashboard that supports asset management, threat source identification, and advanced threat assessment techniques to identify and score security vulnerabilities related to the people, processes, and systems of an organization. The dashboard is expected to provide a visual representation of the cyber risks to the organization and provides actionable information that can be used to make decisions and mitigate risks.",
+  "main": "app/modules/main-menu/main.js",
+  "scripts": {
+    "start": "electron .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AedynLadd/CyberRiskDashboard.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AedynLadd/CyberRiskDashboard/issues"
+  },
+  "homepage": "https://github.com/AedynLadd/CyberRiskDashboard#readme",
+  "devDependencies": {
+    "electron": "^14.0.1"
+  }
+}
