@@ -1,7 +1,12 @@
 /**
  *  Copyright (c) 2021
- *
- *  The main process is responsible for responding to application lifecycle event:
+ * 
+ *   .d88b  Yb  dP  888b.  8888  888b.    888b.  888  .d88b.  8  dP    888b.     db     .d88b.  8   8  888b.  .d88b.     db     888b.  888b. 
+ *   8P      YbdP   8wwwP  8www  8  .8    8  .8   8   YPwww.  8wdP     8   8    dPYb    YPwww.  8www8  8wwwP  8P  Y8    dPYb    8  .8  8   8 
+ *   8b       YP    8   b  8     8wwK'    8wwK'   8       d8  88Yb     8   8   dPwwYb       d8  8   8  8   b  8b  d8   dPwwYb   8wwK'  8   8 
+ *   `Y88P    88    888P'  8888  8  Yb    8  Yb  888  `Y88P'  8  Yb    888P'  dP    Yb  `Y88P'  8   8  888P'  `Y88P'  dP    Yb  8  Yb  888P'
+ *  
+ * The main process is responsible for responding to application lifecycle event:
  *         - Starting Up
  *         - Quitting
  *         - Preparing to Quit
@@ -23,10 +28,10 @@
 const { app, BrowserWindow, ipcMain, webContents } = require('electron')
 const fs = require('fs')
 
+// 1. ELECTRON PROCESSES
 //
-// USER INTERFACE PROCESSES
+// 1.A USER INTERFACE
 //
-
 let LoadingScreen;
 let RiskAnalysisQuestionnaire;
 let DashboardWindow;
@@ -99,7 +104,7 @@ const createDashboardWindow = () => {
 
 
 //
-// HIDDEN PROCESSES
+// 1.B HIDDEN PROCESSES
 //
 
 let AnalysisRenderer;
@@ -107,8 +112,12 @@ let DataRender;
 
 const createAnalysisRenderer = () => {
     AnalysisRenderer = new BrowserWindow({
-        show: false,
-        webPreferences: { nodeIntegration: true }
+        show: true,
+        webPreferences: {
+            nodeIntegration: true,
+            contextIsolation: false,
+            enableRemoteModule: true,
+        }
     });
 
     AnalysisRenderer.loadFile('app/Hidden/Analysis/analysis_renderer.html');
@@ -117,8 +126,12 @@ const createAnalysisRenderer = () => {
 
 const createDataRenderer = () => {
     DataRender = new BrowserWindow({
-        show: false,
-        webPreferences: { nodeIntegration: true }
+        show: true,
+        webPreferences: {
+            nodeIntegration: true,
+            contextIsolation: false,
+            enableRemoteModule: true,
+        }
     });
     DataRender.loadFile('app/Hidden/Data/data_renderer.html');
     DataRender.on('closed', () => (DataRender = null));
@@ -126,29 +139,23 @@ const createDataRenderer = () => {
 
 
 //
-// Inter Process Messages Communication
-//
+// 2. INTER PROCESS COMMUNICATIONS
+// 2.A ANALYSIS ENDPOINT
+ipcMain.on("dashboard-analysis", (event, arg) => AnalysisRenderer.webContents.send("dashboard", arg));
+ipcMain.on("data-analysis", (event, arg) => AnalysisRenderer.webContents.send("data", arg));
 
-/*
- *  @window - The Window of the renderer process we are sending too
- *  @channel - The name of the channel
- *  @message - Message being sent
- */
-function sendToRenderer(window, channel, message) {
-    window.webContents.send(channel, message);
-}
+// 2.B DATA ENDPOINT
+ipcMain.on("dashboard-data", (event, arg) => DataRender.webContents.send("dashboard", arg));
+ipcMain.on("analysis-data", (event, arg) => DataRender.webContents.send("analysis", arg));
 
-function getFromRenderer() {
-    ipcMain.on('asynchronous-message', (event, arg) => {
-        console.log(arg) // prints "ping"
-        event.reply('asynchronous-reply', 'pong')
-    })
-}
+// 2.C DASHBOARD ENDPOINT
+ipcMain.on("data-dashboard", (event, arg) => DashboardWindow.webContents.send("data", arg));
+ipcMain.on("analysis-dashboard", (event, arg) => DashboardWindow.webContents.send("analysis", arg));
 
 
 
 //
-// Application Life Cycle
+// 3. APPLICATION LIFE CYCLE EVENTS
 //
 app.on('ready', () => {
     // Create a 'main'-Window
@@ -168,8 +175,8 @@ app.on('ready', () => {
         createRAQ();
     }
 
-
-
-
-
+    // Configure Listeners here if events are directly requesting something of the main process
+    ipcMain.on('core-action', (event, arg) => {
+        console.log(arg) // prints "ping"
+    })
 })

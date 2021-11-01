@@ -1,7 +1,7 @@
 /**
  *  Copyright (c) 2021
  *
- *  long description for the file
+ *  This is more just for reference, its not really imported into anything since the functions are so small and specific already
  *
  *  @summary Respond to application lifecycle events 
  *  @author Aedyn Ladd <aedynladd@cmail.carleton.ca>

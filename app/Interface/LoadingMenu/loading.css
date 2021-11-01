@@ -18,7 +18,8 @@ h2 {
 }
 
 text {
-    text-align: justify;
+    padding-right: 15px;
+    text-align: center;
 }
 
 .center {

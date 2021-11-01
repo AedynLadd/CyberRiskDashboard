@@ -11,10 +11,21 @@
  */
 
 const { ipcRenderer } = require('electron')
+const { spawn } = require("child_process").spawn;
 
-console.log(ipcRenderer.sendSync('synchronous-message', 'ping')) // prints "pong"
-
-ipcRenderer.on('asynchronous-reply', (event, arg) => {
+// INCOMING IPC
+ipcRenderer.on('dashboard', (event, arg) => {
     console.log(arg) // prints "pong"
 })
-ipcRenderer.send('asynchronous-message', 'ping')
+
+ipcRenderer.on('data', (event, arg) => {
+    console.log(arg) // prints "pong"
+})
+
+//
+function summonPython(req, res) {
+    var process = spawn('python', ["./hello.py",
+        req.query.firstname,
+        req.query.lastname
+    ]);
+}
