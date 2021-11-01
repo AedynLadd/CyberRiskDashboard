@@ -20,7 +20,7 @@
  */
 
 
-const { app, BrowserWindow, ipcMain } = require('electron')
+const { app, BrowserWindow, ipcMain, webContents } = require('electron')
 const fs = require('fs')
 
 //
@@ -61,7 +61,10 @@ const createRAQ = () => {
     });
 
     RiskAnalysisQuestionnaire.loadFile('app/Interface/RiskAnalysisQuestionnaire/RAQ.html');
-    RiskAnalysisQuestionnaire.on('closed', () => (RiskAnalysisQuestionnaire = null));
+    RiskAnalysisQuestionnaire.on('closed', () => {
+        RiskAnalysisQuestionnaire = null
+        createDashboardWindow()
+    });
 }
 
 const createDashboardWindow = () => {
@@ -70,7 +73,7 @@ const createDashboardWindow = () => {
         height: 400,
         frame: false,
         show: false,
-        fullscreen: false,
+        fullscreen: true,
         webPreferences: {
             nodeIntegration: true,
             contextIsolation: false,
@@ -80,12 +83,16 @@ const createDashboardWindow = () => {
 
     DashboardWindow.loadFile('app/Interface/MainMenu/main.html');
 
-    DashboardWindow.webContents.on('did-finish-load', () => {
-        if (LoadingScreen) {
-            LoadingScreen.close();
-        }
-        DashboardWindow.show();
-    });
+    // create a 'loading'-Window to wait for the application to load
+    createLoadingScreen();
+
+    // Once the dashboard window sends the ready-to-launch we can show it, otherwise we'll hold off... 
+    ipcMain.once("ready-to-launch", (event, arg) => {
+        // If the application is ready to launch we can swap the loading screen with the dashboard screen.
+        LoadingScreen.close()
+        DashboardWindow.show()
+
+    })
 
     DashboardWindow.on('closed', () => (DashboardWindow = null));
 }
@@ -119,24 +126,50 @@ const createDataRenderer = () => {
 
 
 //
-// Application Life Cycle
+// Inter Process Messages Communication
 //
 
+/*
+ *  @window - The Window of the renderer process we are sending too
+ *  @channel - The name of the channel
+ *  @message - Message being sent
+ */
+function sendToRenderer(window, channel, message) {
+    window.webContents.send(channel, message);
+}
+
+function getFromRenderer() {
+    ipcMain.on('asynchronous-message', (event, arg) => {
+        console.log(arg) // prints "ping"
+        event.reply('asynchronous-reply', 'pong')
+    })
+}
+
+
+
+//
+// Application Life Cycle
+//
 app.on('ready', () => {
     // Create a 'main'-Window
-    createDashboardWindow();
     createAnalysisRenderer();
     createDataRenderer();
 
     // Check to see if the Risk Analysis Config file exists or not
-    if (fs.existsSync('~/Hidden/Data/data_config.json')) {
+    if (fs.existsSync('./app/Hidden/Data/data_config.json')) {
         // If the file exists we carry on with our launch as usual
         console.log("file exists");
-        // create a 'loading'-Window
-        createLoadingScreen();
+        // Create a 'main'-Window
+        createDashboardWindow();
     } else {
         // If the file does NOT exist - we launch our RAQ window
-        console.log("file does not exist")
+        console.log("file does not exist");
+        // Do not create the 'main'-window
         createRAQ();
     }
+
+
+
+
+
 })

@@ -1,0 +1,51 @@
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+
+/* Headers and Paragraph text */
+
+h1 {
+    font-size: 25px;
+    font-weight: bolder;
+    margin-bottom: 2px;
+}
+
+h2 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+text {
+    text-align: justify;
+}
+
+.center {
+    position: absolute;
+    top: 35%;
+    transform: translate(0, -50%);
+}
+
+
+/* NIST BASED COLORED BACKGROUNDS AND CSS*/
+
+.NIST_detect {
+    background-color: #FDFD97
+}
+
+.NIST_protect {
+    background-color: #B19CD9
+}
+
+.NIST_identity {
+    background-color: #88AEd0
+}
+
+.NIST_respond {
+    background-color: #fec9c9
+}
+
+.NIST_recovery {
+    background-color: #87e4b6
+}

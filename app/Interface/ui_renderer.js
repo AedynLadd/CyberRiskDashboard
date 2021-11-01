@@ -11,3 +11,10 @@
  */
 
 const { ipcRenderer } = require('electron')
+
+
+ipcRenderer.on('from-main', (event, arg) => {
+    console.log(arg)
+})
+
+ipcRenderer.send('to-main', 'ping')
