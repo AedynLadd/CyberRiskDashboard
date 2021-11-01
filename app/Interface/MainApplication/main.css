@@ -1,0 +1,87 @@
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+.Icon {
+    background-color: red;
+    width: 25px;
+    height: 25px;
+}
+
+
+/* NAVIGATION */
+
+nav {
+    width: 100%;
+    margin: 0 auto;
+    background: rgb(199, 199, 199);
+    padding: 1px 0;
+    box-shadow: 0px 2px 0px #666666;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+
+/* Default of Text Items in the navbar */
+
+nav ul li a {
+    display: block;
+    padding: 5px;
+    text-decoration: none;
+    color: rgb(65, 65, 65);
+    font-size: 15px;
+    font-weight: 800;
+    text-transform: uppercase;
+    margin: 0 10px;
+}
+
+nav ul li a,
+nav ul li a:after,
+nav ul li a:before {
+    transition: all .5s;
+}
+
+
+/* When an Item is highlighted  in the navbar */
+
+nav ul li a:hover {
+    color: rgb(126, 41, 41);
+}
+
+nav.stroke ul li a,
+nav.fill ul li a {
+    position: relative;
+}
+
+
+/* Line appears under an element when it is hovered */
+
+nav.stroke ul li a:after,
+nav.fill ul li a:after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 0%;
+    content: '.';
+    color: transparent;
+    background: rgb(153, 45, 45);
+    height: 1px;
+}
+
+nav.stroke ul li a:hover:after {
+    width: 100%;
+}
+
+nav.fill ul li a {
+    transition: all 2s;
+}

@@ -34,7 +34,7 @@ let DashboardWindow;
 const createLoadingScreen = () => {
     LoadingScreen = new BrowserWindow({
         width: 400,
-        height: 400,
+        height: 300,
         frame: false,
         show: true,
         alwaysOnTop: true,
@@ -81,7 +81,7 @@ const createDashboardWindow = () => {
         }
     });
 
-    DashboardWindow.loadFile('app/Interface/MainMenu/main.html');
+    DashboardWindow.loadFile('app/Interface/MainApplication/main.html');
 
     // create a 'loading'-Window to wait for the application to load
     createLoadingScreen();
