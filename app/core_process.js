@@ -99,7 +99,13 @@ const createDashboardWindow = () => {
 
     })
 
-    DashboardWindow.on('closed', () => (DashboardWindow = null));
+    DashboardWindow.on('closed', () => {
+        AnalysisRenderer = null
+        AnalysisRenderer.close()
+        DataRender = null
+        DataRender.close()
+        DashboardWindow = null
+    });
 }
 
 
@@ -121,7 +127,6 @@ const createAnalysisRenderer = () => {
     });
 
     AnalysisRenderer.loadFile('app/Hidden/Analysis/analysis_renderer.html');
-    AnalysisRenderer.on('closed', () => (AnalysisRenderer = null));
 }
 
 const createDataRenderer = () => {
@@ -134,7 +139,6 @@ const createDataRenderer = () => {
         }
     });
     DataRender.loadFile('app/Hidden/Data/data_renderer.html');
-    DataRender.on('closed', () => (DataRender = null));
 }
 
 
@@ -151,7 +155,6 @@ ipcMain.on("analysis-data", (event, arg) => DataRender.webContents.send("analysi
 // 2.C DASHBOARD ENDPOINT
 ipcMain.on("data-dashboard", (event, arg) => DashboardWindow.webContents.send("data", arg));
 ipcMain.on("analysis-dashboard", (event, arg) => DashboardWindow.webContents.send("analysis", arg));
-
 
 
 //

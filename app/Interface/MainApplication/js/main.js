@@ -16,7 +16,6 @@ setTimeout(function() {
 }, 5000);
 
 
-
 /*
  * DATA ANALYSIS BUTTON
  */
@@ -35,12 +34,12 @@ function PerformAction() {
 
     //Perform an action
     console.log("Button Was Clicked")
-    ipcRenderer.send('dashboard-analysis', 'ping')
+    ipcRenderer.send('dashboard-analysis', { command: "analysis_test", data: ["data", "data", "data"] });
 }
 
 
 //
-// INCOMING COMMUNICATIONS
+// INCOMING ELECTRON COMMUNICATIONS
 //
 ipcRenderer.on('data', (event, arg) => {
     console.log(arg) // prints "pong"
