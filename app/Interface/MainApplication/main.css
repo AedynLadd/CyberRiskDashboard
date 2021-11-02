@@ -20,10 +20,9 @@ body {
     font-size: 30px;
     line-height: 50px;
     float: left;
-    width: 180px;
+    width: 250px;
     display: inline;
-    color: rgba(215, 250, 255, 0.288);
-    background-color: rgba(165, 165, 165, 0.123);
+    color: rgba(215, 250, 255, 0.288)
 }
 
 
