@@ -48,7 +48,7 @@ let subprocess_analysis = createEventList();
 
 /**
  * 
- * @param {*} arg 
+ * @param {*} arg //example { command: "analysis_test", data: ["data", "data", "data"] }
  * @returns None
  */
 const summonSubProcess = (subprocess_call) => {
