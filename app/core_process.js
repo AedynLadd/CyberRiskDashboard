@@ -118,7 +118,7 @@ let DataRender;
 
 const createAnalysisRenderer = () => {
     AnalysisRenderer = new BrowserWindow({
-        show: true,
+        show: false,
         webPreferences: {
             nodeIntegration: true,
             contextIsolation: false,
@@ -131,7 +131,7 @@ const createAnalysisRenderer = () => {
 
 const createDataRenderer = () => {
     DataRender = new BrowserWindow({
-        show: true,
+        show: false,
         webPreferences: {
             nodeIntegration: true,
             contextIsolation: false,

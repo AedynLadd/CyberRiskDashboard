@@ -43,6 +43,7 @@ nav ul {
 }
 
 nav ul li {
+    width: 8vw;
     display: inline-block;
 }
 
@@ -53,6 +54,7 @@ nav ul li a {
     display: block;
     padding: 3px;
     text-decoration: none;
+    text-align: center;
     color: rgba(215, 250, 255, 0.288);
     font-size: 15px;
     font-weight: 800;
@@ -60,10 +62,13 @@ nav ul li a {
     margin: 0 10px;
 }
 
-nav ul li a,
+nav ul li a {
+    height: 10px;
+}
+
 nav ul li a:after,
 nav ul li a:before {
-    transition: all .5s;
+    transition: all 1s;
 }
 
 
@@ -84,19 +89,42 @@ nav.fill ul li a {
 nav.stroke ul li a:after,
 nav.fill ul li a:after {
     position: absolute;
-    bottom: -11px;
+    bottom: -18px;
     left: 0;
     right: 0;
     margin: auto;
     width: 0%;
     content: '.';
     color: transparent;
-    background: rgba(0, 255, 13, 0.288);
     height: 2px;
 }
 
+nav.stroke ul li a:after {
+    background-color: #ffffff6e;
+}
+
+nav.stroke ul li a.Identify:after {
+    background-color: #ffd54b6e;
+}
+
+nav.stroke ul li a.Detect:after {
+    background-color: #84ff4b6e;
+}
+
+nav.stroke ul li a.Protect:after {
+    background-color: #1ee5ff6e;
+}
+
+nav.stroke ul li a.Recover:after {
+    background-color: #574bff6e;
+}
+
+nav.stroke ul li a.Respond:after {
+    background-color: #ff4bf66e;
+}
+
 nav.stroke ul li a:hover:after {
-    width: 100%;
+    width: 95%;
 }
 
 nav.fill ul li a {
