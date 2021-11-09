@@ -1,6 +1,8 @@
 .TopLevelNavigation {
     background-image: linear-gradient(to bottom right, rgba(94, 94, 94, 0.562), rgba(88, 88, 88, 0.658));
+    z-index: 1;
     padding: 3px 0;
+    height: 6vh;
     box-shadow: 0px 1px 15px -4px #000000d7;
 }
 
@@ -10,10 +12,10 @@
     height: 50px;
     padding: 0 20px 0 20px;
     text-align: center;
-    font-size: 40px;
+    font-size: 35px;
     line-height: 50px;
     float: left;
-    width: 250px;
+    width: 175px;
     display: inline;
     color: rgba(215, 250, 255, 0.288)
 }
@@ -97,23 +99,23 @@ nav.stroke ul li a:after {
 }
 
 nav.stroke ul li a.Identify:after {
-    background-color: #ffd54b6e;
+    background-color: #4be4ff6e;
 }
 
 nav.stroke ul li a.Detect:after {
-    background-color: #84ff4b6e;
+    background-color: #fffc4b6e;
 }
 
 nav.stroke ul li a.Protect:after {
-    background-color: #1ee5ff6e;
+    background-color: #da1eff6e;
 }
 
 nav.stroke ul li a.Recover:after {
-    background-color: #574bff6e;
+    background-color: #4bff696e;
 }
 
 nav.stroke ul li a.Respond:after {
-    background-color: #ff4bf66e;
+    background-color: #ff4b4b6e;
 }
 
 nav.stroke ul li a:hover:after {

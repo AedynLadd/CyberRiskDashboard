@@ -1,0 +1,81 @@
+/* The sidebar menu */
+
+.sidenav {
+    height: 100%;
+    width: 220px;
+    position: fixed;
+    z-index: 2;
+    left: 0;
+    background-color: rgb(46, 46, 46);
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+
+
+/* The navigation menu links */
+
+.sidenav a {
+    padding: 20px 16px 20px 16px;
+    text-decoration: none;
+    font-size: 15px;
+    color: #797979;
+    display: block;
+}
+
+.sidenav h1.identify {
+    text-align: center;
+    font-size: 18px;
+    color: #4be4ff6e;
+}
+
+.sidenav h1.protect {
+    text-align: center;
+    font-size: 18px;
+    color: #da1eff6e;
+}
+
+.sidenav h1.detect {
+    text-align: center;
+    font-size: 18px;
+    color: #fffc4b6e;
+}
+
+.sidenav h1.respond {
+    text-align: center;
+    font-size: 18px;
+    color: #ff4b4b6e;
+}
+
+.sidenav h1.recover {
+    text-align: center;
+    font-size: 18px;
+    color: #4bff696e;
+}
+
+
+/* When you mouse over the navigation links, change their color */
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+
+/* Style page content */
+
+.main {
+    margin-left: 160px;
+    /* Same as the width of the sidebar */
+    padding: 0px 10px;
+}
+
+
+/* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
+
+@media screen and (max-height: 450px) {
+    .sidenav {
+        padding-top: 15px;
+    }
+    .sidenav a {
+        font-size: 18px;
+    }
+}

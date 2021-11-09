@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="../../main.css">
     <link rel="stylesheet" href="identify.css">
     <link rel="stylesheet" href="../../top_nav_bar.css">
+    <link rel="stylesheet" href="../side_nav_bar.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 
@@ -16,19 +17,31 @@
             <text style="color:rgba(244, 253, 255, 0.637)">CYBER</text><text style="color: rgba(215, 250, 255, 0.247)">RISK</text></div>
         <nav class="stroke">
             <ul>
-                <li><a href="#" id="Home_nav"> Home </a></li>
-                <li onmouseover="changeText('IDENTIFY','Identify_nav')" onmouseout="changeText('ID', 'Identify_nav')"><a href="#" id="Identify_nav" class="Identify"> ID </a></li>
-                <li onmouseover="changeText('PROTECT','Protect_nav')" onmouseout="changeText('PR','Protect_nav')"><a href="#" id="Protect_nav" class="Protect"> PR </a></li>
-                <li onmouseover="changeText('DETECT','Detect_nav')" onmouseout="changeText('DE','Detect_nav')"><a href="#" id="Detect_nav" class="Detect"> DE </a></li>
-                <li onmouseover="changeText('RESPOND','Respond_nav')" onmouseout="changeText('RS','Respond_nav')"><a href="#" id="Respond_nav" class="Respond"> RS </a></li>
-                <li onmouseover="changeText('RECOVER','Recover_nav')" onmouseout="changeText('RC','Recover_nav')"><a href="#" id="Recover_nav" class="Recover"> RC </a></li>
+                <li><a href="../../main.html" id="Home_nav"> Home </a></li>
+                <li onmouseover="changeText('IDENTIFY','Identify_nav')" onmouseout="changeText('ID', 'Identify_nav')"><a href="../1-Identify/identify.html" id="Identify_nav" class="Identify"> ID </a></li>
+                <li onmouseover="changeText('PROTECT','Protect_nav')" onmouseout="changeText('PR','Protect_nav')"><a href="../2-Protect/protect.html" id="Protect_nav" class="Protect"> PR </a></li>
+                <li onmouseover="changeText('DETECT','Detect_nav')" onmouseout="changeText('DE','Detect_nav')"><a href="../3-Detect/detect.html" id="Detect_nav" class="Detect"> DE </a></li>
+                <li onmouseover="changeText('RESPOND','Respond_nav')" onmouseout="changeText('RS','Respond_nav')"><a href="../4-Respond/respond.html" id="Respond_nav" class="Respond"> RS </a></li>
+                <li onmouseover="changeText('RECOVER','Recover_nav')" onmouseout="changeText('RC','Recover_nav')"><a href="../5-Recover/recover.html" id="Recover_nav" class="Recover"> RC </a></li>
             </ul>
         </nav>
     </div>
     <!-- END OF TOP NAVIGATION MENU -->
+    <!-- SIDE BAR -->
+    <div id="mySidenav" class="sidenav">
+        <h1 href="#" class="identify">IDENTIFY</h1>
+        <a href="#">Asset Management</a>
+        <a href="#">Business Environment</a>
+        <a href="#">Governance</a>
+        <a href="#">Risk Assessment</a>
+        <a href="#">Risk Management Strategy</a>
+        <a href="#">Supply Chain Risk Management</a>
+    </div>
+    <!-- SIDE BAR -->
     <div>
 
     </div>
+
 </body>
 <script type="text/javascript" src="../../js/navbar_animation.js"></script>
 
