@@ -14,13 +14,21 @@
 
 /* The navigation menu links */
 
-.sidenav a {
+.sidenav button {
+    background-color: inherit;
+    float: center;
+    width: 100%;
+    border: none;
+    outline: none;
+    cursor: pointer;
     padding: 20px 16px 20px 16px;
-    text-decoration: none;
+    transition: 0.3s;
     font-size: 15px;
-    color: #797979;
-    display: block;
+    color: #a1a1a1;
 }
+
+
+/* Depending on what the category is change the text color */
 
 .sidenav h1.identify {
     text-align: center;
@@ -55,27 +63,10 @@
 
 /* When you mouse over the navigation links, change their color */
 
-.sidenav a:hover {
+.sidenav button:hover {
     color: #f1f1f1;
 }
 
-
-/* Style page content */
-
-.main {
-    margin-left: 160px;
-    /* Same as the width of the sidebar */
-    padding: 0px 10px;
-}
-
-
-/* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
-
-@media screen and (max-height: 450px) {
-    .sidenav {
-        padding-top: 15px;
-    }
-    .sidenav a {
-        font-size: 18px;
-    }
+.sidenav button.active {
+    color: #f1f1f1;
 }

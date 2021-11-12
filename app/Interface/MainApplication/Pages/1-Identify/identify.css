@@ -1,0 +1,8 @@
+.item1 {
+    grid-area: 1 / 1 / 5 / 1;
+}
+
+.item8 {
+    grid-area: 1 / 2 / 5 / 6;
+    /* Start on row 1 column 2, and end on row 5 column 6*/
+}

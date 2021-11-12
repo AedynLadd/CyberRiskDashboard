@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="identify.css">
     <link rel="stylesheet" href="../../top_nav_bar.css">
     <link rel="stylesheet" href="../side_nav_bar.css">
+    <link rel="stylesheet" href="../subCategoryContainer.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 
@@ -14,7 +15,8 @@
     <!-- TOP NAVIGATION MENU -->
     <div class="TopLevelNavigation">
         <div class="Icon">
-            <text style="color:rgba(244, 253, 255, 0.637)">CYBER</text><text style="color: rgba(215, 250, 255, 0.247)">RISK</text></div>
+            <text style="color:rgba(244, 253, 255, 0.637)">CYBER</text><text style="color: rgba(215, 250, 255, 0.247)">RISK</text>
+        </div>
         <nav class="stroke">
             <ul>
                 <li><a href="../../main.html" id="Home_nav"> Home </a></li>
@@ -28,20 +30,39 @@
     </div>
     <!-- END OF TOP NAVIGATION MENU -->
     <!-- SIDE BAR -->
-    <div id="mySidenav" class="sidenav">
+    <div class="sidenav">
         <h1 href="#" class="identify">IDENTIFY</h1>
-        <a href="#">Asset Management</a>
-        <a href="#">Business Environment</a>
-        <a href="#">Governance</a>
-        <a href="#">Risk Assessment</a>
-        <a href="#">Risk Management Strategy</a>
-        <a href="#">Supply Chain Risk Management</a>
+        <button class="subcategoryLink" onclick="openSubCategory(event, 'AM')">Asset Management</button>
+        <button class="subcategoryLink" onclick="openSubCategory(event, 'BE')">Business Environment</button>
+        <button class="subcategoryLink" onclick="openSubCategory(event, 'GO')">Governance</button>
+        <button class="subcategoryLink" onclick="openSubCategory(event, 'RA')">Risk Assessment</button>
+        <button class="subcategoryLink" onclick="openSubCategory(event, 'RM')">Risk Management</button>
+        <button class="subcategoryLink" onclick="openSubCategory(event, 'SCR')">Supply Chain Risk</button>
     </div>
     <!-- SIDE BAR -->
-    <div>
-
+    <!-- PAGE CONTENTS -->
+    <div class="subCategoryTab" id="AM">
+        <div class="item1"> Item1 </div>
+        <div class="item2"> Item2 </div>
+        <div class="item3"> Item3 </div>
+        <div class="item4"> Item4 </div>
+        <div class="item5"> Item5 </div>
+        <div class="item6"> Item6 </div>
+        <div class="item7"> Item7 </div>
+        <div class="item8"> Item8 </div>
+        <div class="item9"> Item9 </div>
+        <div class="item10"> Item10 </div>
+        <div class="item11"> Item11 </div>
+        <div class="item12"> Item12 </div>
+        <div class="item13"> Item13 </div>
+        <div class="item14"> Item14 </div>
+        <div class="item15"> Item15 </div>
     </div>
 
+    <div class="subCategoryTab" id="BE">
+        Did This do something else?
+    </div>
+    <!-- END OF PAGE CONTENTS -->
 </body>
 <script type="text/javascript" src="../../js/navbar_animation.js"></script>
 
