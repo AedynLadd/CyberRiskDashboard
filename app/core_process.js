@@ -118,7 +118,7 @@ let DataRender;
 
 const createAnalysisRenderer = () => {
     AnalysisRenderer = new BrowserWindow({
-        show: false,
+        show: true,
         webPreferences: {
             nodeIntegration: true,
             contextIsolation: false,
@@ -131,7 +131,7 @@ const createAnalysisRenderer = () => {
 
 const createDataRenderer = () => {
     DataRender = new BrowserWindow({
-        show: false,
+        show: true,
         webPreferences: {
             nodeIntegration: true,
             contextIsolation: false,
@@ -145,7 +145,10 @@ const createDataRenderer = () => {
 //
 // 2. INTER PROCESS COMMUNICATIONS
 // 2.A ANALYSIS ENDPOINT
-ipcMain.on("dashboard-analysis", (event, arg) => AnalysisRenderer.webContents.send("dashboard", arg));
+ipcMain.on("dashboard-analysis", (event, arg) => {
+    console.log("Forwarding request from dashboard to analysis")
+    AnalysisRenderer.webContents.send("dashboard", arg)
+});
 ipcMain.on("data-analysis", (event, arg) => AnalysisRenderer.webContents.send("data", arg));
 
 // 2.B DATA ENDPOINT

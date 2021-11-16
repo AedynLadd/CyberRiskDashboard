@@ -59,7 +59,9 @@ const summonSubProcess = (subprocess_call) => {
     // Call that command file
     try {
         //Call python and handle it
+        console.log("Calling Python Function: " + CommandEvent.path)
         var pythonProcess = python.spawn('python', [CommandEvent.path, subprocess_call.data]);
+        console.log(CommandEvent.path + " was called")
     } catch (error) {
         // Some error occured - return an error message
         console.error(error);

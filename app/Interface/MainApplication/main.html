@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="main.css">
     <link rel="stylesheet" href="top_nav_bar.css">
     <link rel="stylesheet" href="main_container.css">
+    <script src="https://d3js.org/d3.v6.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 
@@ -28,16 +29,17 @@
     <!-- END OF TOP NAVIGATION MENU -->
     <!-- MAIN CONTENTS -->
     <div class="dashboardHomeGrid">
-        <div class="item1"> Item1 </div>
-        <div class="item2"> Item2 </div>
-        <div class="item3"> Item3 </div>
-        <div class="item4"> Item4 </div>
+        <!-- <div class="item1" id="my_dataviz"></div> -->
+        <div class="item3" id="networkGraph"></div>
+        <div class="item4" id="hierarchicalEdgeBundle"></div>
     </div>
     <!-- END OF MAIN CONTENTS-->
 </body>
-<script type="text/javascript" src="js/navbar_animation.js"></script>
 <script type="text/javascript" src="js/main.js"></script>
-<script type="text/javascript" src="js/http_server.js"></script>
-<script type="text/javascript" src="../ui_renderer.js"></script>
+<script type="text/javascript" src="js/navbar_animation.js"></script>
+<!-- Data Visualization Scripts and Accessories -->
+<script type="text/javascript" src="./DataVisualizationRepository/network_graph.js"></script>
+<script type="text/javascript" src="./DataVisualizationRepository/edge_bundling.js"></script>
+<!-- End of Data Visualization Scripts and Accessories -->
 
 </html>

@@ -16,30 +16,8 @@ setTimeout(function() {
 }, 5000);
 
 
-/*
- * DATA ANALYSIS BUTTON
- */
-const button = document.querySelector('input');
-
-button.addEventListener('click', PerformAction);
-
-function PerformAction() {
-    // Disable the button
-    button.disabled = true;
-    button.value = 'Disabled';
-    window.setTimeout(function() {
-        button.disabled = false;
-        button.value = 'Enabled';
-    }, 2000);
-
-    //Perform an action
-    console.log("Button Was Clicked")
-    ipcRenderer.send('dashboard-analysis', { command: "analysis_test", data: ["data", "data", "data"] });
-}
-
-
 //
-// INCOMING ELECTRON COMMUNICATIONS
+// INCOMING COMMUNICATIONS FROM MAIN (for whatever reason we might need in the future)
 //
 ipcRenderer.on('data', (event, arg) => {
     console.log(arg) // prints "pong"

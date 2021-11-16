@@ -39,19 +39,19 @@ for i in range (len(userID)):
     ste = np.random.choice(steVal, p=[0.33, 0.33, 0.33, 0.01])
     users.append(User(userID[i], userIP[i], ste))
 
-senders = np.random.choice(users, 10000)
-receivers = np.random.choice(users, 10000)
+senders = np.random.choice(users, 100)
+receivers = np.random.choice(users, 100)
 byteTransfer = rng.integers(low=0, high=1000, size=10000)
-dest = np.random.choice(countries, 10000, p=[0.49, 0.49, 0.02])
+dest = np.random.choice(countries, 100, p=[0.49, 0.49, 0.02])
 dest = np.random.choice(countries, 10000, p=[0.49, 0.49, 0.02])
 portNum = np.random.choice(ports, 10000)
-attach = np.random.choice(YorN, 10000, p=[0.08, 0.92])
+attach = np.random.choice(YorN, 1000, p=[0.08, 0.92])
 
 times = []
 times.append(now)
 nxt = now + datetime.timedelta(0,13)
 times.append(nxt)
-for i in range (10000):
+for i in range (100):
     nxt = nxt + datetime.timedelta(0,13)
     times.append(nxt)
 
@@ -61,7 +61,7 @@ with open("tester.csv", "w") as f:
     writer = csv.writer(f)
     writer.writerow(headers)
 
-for i in range (10000):
+for i in range (99):
     st = []
     st.append(senders[i].ID)
     st.append(senders[i].IP)
