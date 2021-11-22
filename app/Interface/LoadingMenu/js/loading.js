@@ -13,4 +13,4 @@ NIST_function_title.innerHTML = framework[framework_index].Function;
 NIST_category_title.innerHTML = framework[framework_index].Category[category_index].Title;
 NIST_category_description.innerHTML = framework[framework_index].Category[category_index].Description;
 
-NIST_display.className = framework[framework_index].class
+NIST_display.className += framework[framework_index].class

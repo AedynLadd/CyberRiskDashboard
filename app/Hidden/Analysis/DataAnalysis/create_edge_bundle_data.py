@@ -12,13 +12,13 @@ import requests
 # We begin by importing the data...
 network_data = pd.read_csv("./tester.csv")
 
-unique_row_count = network_data.groupby(["Sender IP", "Receiver IP"]).size().reset_index(name='Count')
+unique_row_count = network_data.groupby(["srcip", "dstip"]).size().reset_index(name='Count')
 
-grouped_df = unique_row_count.groupby("Sender IP")
+grouped_df = unique_row_count.groupby("srcip")
 
 # Get a total count and list of receiver IPs 
 sender_receiver_amount = grouped_df["Count"].apply(sum)
-sender_receiver_coordination = grouped_df["Receiver IP"].apply(list)
+sender_receiver_coordination = grouped_df["dstip"].apply(list)
 
 merge_data = pd.concat([sender_receiver_coordination, sender_receiver_amount], axis=1).reset_index()
 

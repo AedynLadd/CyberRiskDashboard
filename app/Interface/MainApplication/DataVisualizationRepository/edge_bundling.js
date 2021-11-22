@@ -18,7 +18,7 @@ ipcRenderer.send('dashboard-analysis', { command: "create_edge_bundle_data", dat
 // EDGE BUNDLE VISUALIZATION //
 ///////////////////////////////
 
-var diameter = 900,
+var diameter = 800,
     radius = diameter / 2,
     innerRadius = radius - 120;
 
@@ -34,7 +34,7 @@ var heirachical_svg = d3.select("#hierarchicalEdgeBundle").append("svg")
     .attr("width", "100%")
     .attr("height", "100%")
     .append("g")
-    .attr("transform", "translate(" + radius + "," + radius + ")");
+    .attr("transform", "translate(" + radius + "," + (radius - 50) + ")");
 
 var link = heirachical_svg.append("g").selectAll(".link"),
     node = heirachical_svg.append("g").selectAll(".node");

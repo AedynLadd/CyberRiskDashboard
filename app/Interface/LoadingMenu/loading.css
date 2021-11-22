@@ -1,14 +1,27 @@
 body {
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+    background-color: #1c1c1d;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: white;
+    overflow: hidden;
 }
 
 
 /* Headers and Paragraph text */
 
 h1 {
-    font-size: 25px;
+    font-size: 12px;
     font-weight: bolder;
     margin-bottom: 2px;
+}
+
+
+/* line */
+
+hr {
+    height: 1px;
+    left: 0px;
+    border-width: 0;
+    background-color: rgba(201, 201, 201, 0.301);
 }
 
 h2 {
@@ -23,30 +36,61 @@ text {
 }
 
 .center {
+    margin-left: 15px;
+    margin-right: 15px;
     position: absolute;
-    top: 35%;
-    transform: translate(0, -50%);
+    top: 50px;
 }
 
 
 /* NIST BASED COLORED BACKGROUNDS AND CSS*/
 
 .NIST_detect {
+    position: absolute;
+    bottom: -9px;
+    width: 50%;
+    margin-top: 0px;
+    margin-left: 25vw;
+    height: 7px;
     background-color: #FDFD97
 }
 
 .NIST_protect {
+    position: absolute;
+    bottom: -9px;
+    width: 50%;
+    margin-top: 0px;
+    margin-left: 25vw;
+    height: 7px;
     background-color: #B19CD9
 }
 
 .NIST_identity {
+    position: absolute;
+    bottom: -9px;
+    width: 50%;
+    margin-top: 0px;
+    margin-left: 25vw;
+    height: 7px;
     background-color: #88AEd0
 }
 
 .NIST_respond {
+    position: absolute;
+    bottom: -9px;
+    width: 50%;
+    margin-top: 0px;
+    margin-left: 25vw;
+    height: 7px;
     background-color: #fec9c9
 }
 
 .NIST_recovery {
+    position: absolute;
+    bottom: -9px;
+    width: 50%;
+    margin-top: 0px;
+    margin-left: 25vw;
+    height: 7px;
     background-color: #87e4b6
 }

@@ -56,11 +56,11 @@
 /* Start on row X column Y, and end on row W column Z*/
 
 .item3 {
-    grid-area: 1 / 1 / 5 / 3;
+    grid-area: 1 / 1 / 5 / 4;
 }
 
 .item4 {
-    grid-area: 1 / 3 / 5 / 8;
+    grid-area: 1 / 4 / 5 / 8;
 }
 
 
@@ -95,5 +95,5 @@ div.tooltip-donut {
 }
 
 .edge_bundle_node {
-    font: 7px sans-serif;
+    font: 8px sans-serif;
 }
