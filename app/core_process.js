@@ -52,8 +52,8 @@ const createLoadingScreen = () => {
 
 const createRAQ = () => {
     RiskAnalysisQuestionnaire = new BrowserWindow({
-        width: 400,
-        height: 600,
+        width: 600,
+        height: 800,
         frame: false,
         show: true,
         alwaysOnTop: true,

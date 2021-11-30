@@ -40,9 +40,9 @@ function changeText(text, id) {
 /**
  * 
  * @param {*} evt 
- * @param {*} cityName 
+ * @param {*} itemName 
  */
-function openSubCategory(evt, cityName) {
+function openSubCategory(evt, itemName) {
     // Declare all variables
     var i, tabcontent, tablinks;
 
@@ -59,6 +59,6 @@ function openSubCategory(evt, cityName) {
     }
 
     // Show the current tab, and add an "active" class to the button that opened the tab
-    document.getElementById(cityName).style.display = "grid";
+    document.getElementById(itemName).style.display = "grid";
     evt.currentTarget.className += " active";
 }

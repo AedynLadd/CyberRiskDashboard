@@ -1,0 +1,85 @@
+body {
+    background-color: #1c1c1d;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: white;
+    overflow: hidden;
+}
+
+
+/*
+RAQ CONTAINERS
+*/
+
+.RAQ_layout {
+    display: grid;
+    position: fixed;
+    height: calc(99%);
+    width: calc(98%);
+    top: 0vh;
+    left: 0px;
+    grid-template-columns: auto;
+    grid-gap: 5px;
+    padding: 5px;
+}
+
+
+/* Default grid container
+
+.RAQ_layout>div {
+    background-color: rgba(244, 253, 255, 0.349);
+    border-radius: 3px;
+    box-shadow: 0px 0px 3px 1px rgba(75, 73, 73, 0.404);
+    text-align: center;
+    padding: 20px 0;
+    font-size: 15px;
+}
+*/
+
+
+/* Fade in effect on tab open */
+
+.RAQ_layout {
+    animation: fadeEffect 0.3s;
+}
+
+
+/* Go from zero to full opacity */
+
+@keyframes fadeEffect {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+
+/* Specific Grid Containers */
+
+
+/* Start on row X column Y, and end on row W column Z*/
+
+.item1 {
+    background-color: rgba(0, 208, 255, 0.349);
+    border-radius: 3px;
+    box-shadow: 0px 0px 3px 1px rgba(75, 73, 73, 0.404);
+    text-align: center;
+    padding: 20px 0;
+    font-size: 15px;
+    grid-area: 1 / 1 / 1 / 1;
+}
+
+.item2 {
+    background-color: rgba(244, 253, 255, 0.349);
+    border-radius: 3px;
+    box-shadow: 0px 0px 3px 1px rgba(75, 73, 73, 0.404);
+    text-align: center;
+    padding: 20px 0;
+    font-size: 15px;
+    grid-area: 2 / 1 / 15 / 1;
+}
+
+.item3 {
+    grid-area: 15 / 1 / 17 / 1;
+}
