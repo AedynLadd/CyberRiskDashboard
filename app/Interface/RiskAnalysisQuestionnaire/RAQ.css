@@ -5,6 +5,11 @@ body {
     overflow: hidden;
 }
 
+.RAQtitle {
+    height: 6vh;
+    font-size: 25px;
+}
+
 
 /*
 RAQ CONTAINERS
@@ -13,9 +18,9 @@ RAQ CONTAINERS
 .RAQ_layout {
     display: grid;
     position: fixed;
-    height: calc(99%);
+    height: calc(99% - (6vh + 5vh));
     width: calc(98%);
-    top: 0vh;
+    top: 5vh;
     left: 0px;
     grid-template-columns: auto;
     grid-gap: 5px;

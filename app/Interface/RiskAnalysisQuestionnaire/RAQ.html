@@ -8,21 +8,35 @@
 </head>
 
 <body>
-    <h1>RISK ANALYSIS QUESTIONAIRE</h1>
     <!-- PAGES -->
-    <div class="RAQ_layout" id="page1">
-        <div class="item2"></div>
-        <div class="item3"></div>
+    <!-- First Page -->
+    <div class="subCategoryTab active" id="Page0">
+        <div class="RAQtitle"> Risk Analysis Questionnaire </div>
+        <div class="RAQ_layout">
+            <div class="item1"> Page 1</div>
+            <div class="item2"></div>
+        </div>
     </div>
-    <div class="RAQ_layout" id="page1">
-        <div class="item2"></div>
-        <div class="item3"></div>
+    <!-- Middle Pages -->
+    <div class="subCategoryTab" id="Page1">
+        <div class="RAQ_layout">
+            <div class="item3"> Middle Page </div>
+            <div class="item4"></div>
+        </div>
+    </div>
+    <!-- Last Page -->
+    <div class="subCategoryTab" id="Page2">
+        <div class="RAQ_layout">
+            <div class="item3"> Last Page </div>
+            <div class="item4"></div>
+        </div>
+    </div>
+    <div class="subNav">
+        <button class="subcategoryLink" onclick="openSubCategory(event, 'previous')" id="previous_page" style="display:none"> Previous </button>
+        <button class="subcategoryLink" onclick="openSubCategory(event, 'next')" id="next_page"> Next </button>
     </div>
     <!-- END OF PAGES-->
-    <div class="bottom_nav">
-        <button class="subcategoryLink" onclick="openSubCategory(event, 'previous')"> Previous </button>
-        <button class="subcategoryLink" onclick="openSubCategory(event, 'next')"> Next </button>
-    </div>
+    <script type="text/javascript" src="./subNav/subNav.js"></script>
     <script type="text/javascript" src="../ui_renderer.js"></script>
 </body>
 
