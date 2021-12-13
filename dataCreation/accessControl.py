@@ -4,7 +4,7 @@ import numpy as np
 import names
 import datetime
 
-accessers = ["Developer", "IT", "Human Resource", "Management", "Business", "Internal Client", "Project Lead", "Student"]
+accessers = ["Developer", "IT", "HR Rep", "Management", "Business", "Internal Client", "Project Lead", "Student", "Employee"]
 lU = 200
 pcU = 200
 sU = 10

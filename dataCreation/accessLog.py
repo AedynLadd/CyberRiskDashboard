@@ -6,7 +6,7 @@ import datetime
 
 now = datetime.datetime.now()
 steVal = ["INT", "FIN", "REQ", "CON"]
-accessers = ["Developer", "IT", "Human Resource", "Management", "Business", "Internal Client", "Project Lead", "Student"]
+accessers = ["Developer", "IT", "HR Rep", "Management", "Business", "Internal Client", "Project Lead", "Student", "Employee"]
 lU = 200
 pcU = 200
 sU = 10
@@ -55,8 +55,8 @@ class User:
     def getUsername(self):
         return self.username
     
-    def getUserType(self):
-        return self.userType
+    def getUserRole(self):
+        return self.userRole
     
     def getUState(self):
         return self.uState
@@ -83,8 +83,8 @@ users = []
 for i in range (len(userID)):
     #these are arbitrary values for STATE changes these to something more meaningful
     ste = np.random.choice(steVal, p=[0.33, 0.33, 0.33, 0.01])
-    aType = np.random.choice(accessers)
-    users.append(User(userID[i], userIP[i], fnms[i], lnms[i], unms[i], aType, ste))
+    aRole = np.random.choice(accessers)
+    users.append(User(userID[i], userIP[i], fnms[i], lnms[i], unms[i], aRole, ste))
 
 Units = []
 for i in range (lU):
@@ -113,7 +113,7 @@ for i in range (len(Units)):
     accessTimes.append(nx)
 
 headers1 = ["Type", "ID", "Location", "Can Access", "Last Accessed User ID", "Last Accessed User IP", "Last Accessed User First Name", 
-            "Last Accessed User Last Name", "Last Accessed User Username", "Last Accessed User Type", "Last Accessed User State", "Last Access Time"]
+            "Last Accessed User Last Name", "Last Accessed User Username", "Last Accessed User Role", "Last Accessed User State", "Last Access Time"]
 
 with open("assetLog.csv", "w") as f:
     writer = csv.writer(f)
@@ -132,7 +132,7 @@ for i in range (len(Units)):
     st.append(use.getfirstName())
     st.append(use.getlastName())
     st.append(use.getUsername())
-    st.append(use.getUserType())
+    st.append(use.getUserRole())
     st.append(use.uState)
     st.append(accessTimes[i])
 
