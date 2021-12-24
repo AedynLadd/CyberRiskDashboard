@@ -1,0 +1,18 @@
+.Respond{
+    color: rgba(215, 250, 255, 0.815);
+    pointer-events: none;
+}
+
+nav.stroke ul li a.Respond:after,
+nav.fill ul li a.Respond:after {
+    position: absolute;
+    bottom: -18px;
+    background-color: #ff4b4b6e;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 95%;
+    content: '.';
+    color: transparent;
+    height: 2px;
+}

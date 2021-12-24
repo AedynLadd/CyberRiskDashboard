@@ -1,0 +1,18 @@
+.Recover{
+    color: rgba(215, 250, 255, 0.815);
+    pointer-events: none;
+}
+
+nav.stroke ul li a.Recover:after,
+nav.fill ul li a.Recover:after {
+    position: absolute;
+    bottom: -18px;
+    background-color: #4bff696e;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 95%;
+    content: '.';
+    color: transparent;
+    height: 2px;
+}

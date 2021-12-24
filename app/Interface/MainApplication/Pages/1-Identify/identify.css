@@ -6,3 +6,22 @@
     grid-area: 1 / 2 / 5 / 6;
     /* Start on row 1 column 2, and end on row 5 column 6*/
 }
+
+.Identify{
+    color: rgba(215, 250, 255, 0.815);
+    pointer-events: none;
+}
+
+nav.stroke ul li a.Identify:after,
+nav.fill ul li a.Identify:after {
+    position: absolute;
+    bottom: -18px;
+    background-color: #4be4ff6e;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 95%;
+    content: '.';
+    color: transparent;
+    height: 2px;
+}
