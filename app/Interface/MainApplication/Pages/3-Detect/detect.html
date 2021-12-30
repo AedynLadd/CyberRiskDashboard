@@ -30,16 +30,15 @@
     <!-- END OF TOP NAVIGATION MENU -->
     <!-- SIDE BAR -->
     <div class="sidenav">
-        <h1 href="#" class="detect">DETECT</h1>
-        <button href="#">Anomalies and Events</button>
-        <button href="#">Continuous Monitoring</button>
-        <button href="#">Detection Processes</button>
+        <h1 class="identify" onclick="openSubCategory(event, 'DE')">DETECT</h1>
+        <button  class="identify" onclick="openSubCategory(event, 'AE')">Anomalies and Events</button>
+        <button  class="identify" onclick="openSubCategory(event, 'CM')">Continuous Monitoring</button>
+        <button  class="identify" onclick="openSubCategory(event, 'DP')">Detection Processes</button>
     </div>
     <!-- END OF SIDE BAR -->
-
     <!-- PAGE CONTENTS -->
-    <div>
-
+    <div class="subCategoryTab" id="DE" style="display:grid"> 
+        TEST DETECT
     </div>
     <!-- END OF PAGE CONTENTS-->
 </body>

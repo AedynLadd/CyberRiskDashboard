@@ -30,17 +30,17 @@
     <!-- END OF TOP NAVIGATION MENU -->
     <!-- SIDE BAR -->
     <div class="sidenav">
-        <h1 href="#" class="protect">PROTECT</h1>
-        <button href="#">Identity Management</button>
-        <button href="#">Awareness and Training</button>
-        <button href="#">Data Security</button>
-        <button href="#">Information Protection</button>
-        <button href="#">Maintenance</button>
-        <button href="#">Protective Technology</button>
+        <h1 class="protect" onclick="openSubCategory(event, 'PR')">PROTECT</h1>
+        <button class="subcategoryLink" onclick="openSubCategory(event, 'IM')">Identity Management</button>
+        <button class="subcategoryLink" onclick="openSubCategory(event, 'AT')">Awareness and Training</button>
+        <button class="subcategoryLink" onclick="openSubCategory(event, 'DS')">Data Security</button>
+        <button class="subcategoryLink" onclick="openSubCategory(event, 'IP')">Information Protection</button>
+        <button class="subcategoryLink" onclick="openSubCategory(event, 'MA')">Maintenance</button>
+        <button class="subcategoryLink" onclick="openSubCategory(event, 'PT')">Protective Technology</button>
     </div>
     <!-- SIDE BAR -->
-    <div>
-
+    <div class="subCategoryTab" id="PR" style="display:grid"> 
+        TEST PROTECT
     </div>
 </body>
 <script type="text/javascript" src="../../js/navbar_animation.js"></script>

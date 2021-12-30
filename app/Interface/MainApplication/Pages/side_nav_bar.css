@@ -9,6 +9,9 @@
     background-color: rgb(46, 46, 46);
     overflow-x: hidden;
     padding-top: 20px;
+    border-right-color: rgba(0, 0, 0, 0.404);
+    border-right-width: 1px;
+    border-right-style: solid;
 }
 
 
