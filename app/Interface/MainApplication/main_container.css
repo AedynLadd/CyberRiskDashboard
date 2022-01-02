@@ -2,7 +2,7 @@
 
 .dashboardHomeGrid {
     display: grid;
-    position: fixed;
+    position:fixed;
     height: calc(99% - (7vh + 10px));
     width: calc(99% - 5px);
     top: 7vh;
@@ -16,7 +16,7 @@
 /* Default grid container*/
 
 .dashboardHomeGrid>div {
-    background-color: rgba(244, 253, 255, 0.349);
+    background-color: rgba(244, 253, 255, 0.123);
     border-radius: 3px;
     box-shadow: 0px 0px 3px 1px rgba(75, 73, 73, 0.404);
     text-align: center;
@@ -55,45 +55,18 @@
 
 /* Start on row X column Y, and end on row W column Z*/
 
-.item3 {
-    grid-area: 1 / 1 / 5 / 4;
+.radarPlot {
+    grid-area: 1 / 3 / 6 / 6;
 }
 
-.item4 {
-    grid-area: 1 / 4 / 5 / 8;
+.left_radar {
+    grid-area: 1 / 1 / 6 / 3;
 }
 
-
-/* Tool Tip */
-
-div.tooltip-donut {
-    position: absolute;
-    text-align: center;
-    padding: .5rem;
-    background: #FFFFFF;
-    color: #313639;
-    border: 1px solid #313639;
-    border-radius: 8px;
-    pointer-events: none;
-    font-size: 1.3rem;
+.right_radar {
+    grid-area: 1 / 6 / 6 / 8;
 }
 
-.network_node {
-    fill: rgb(211, 211, 211);
-}
-
-.network_link {
-    stroke: rgb(20, 46, 68);
-}
-
-.edge_bundle_link {
-    stroke: rgb(20, 46, 68);
-    stroke-width: 2px;
-    stroke-opacity: 0.5;
-    fill: none;
-    pointer-events: none;
-}
-
-.edge_bundle_node {
-    font: 8px sans-serif;
+.suggestions {
+    grid-area: 6 / 1 / 8 / 8;
 }

@@ -1,11 +1,6 @@
 /**
  *  Copyright (c) 2021
  * 
- *   .d88b  Yb  dP  888b.  8888  888b.    888b.  888  .d88b.  8  dP    888b.     db     .d88b.  8   8  888b.  .d88b.     db     888b.  888b. 
- *   8P      YbdP   8wwwP  8www  8  .8    8  .8   8   YPwww.  8wdP     8   8    dPYb    YPwww.  8www8  8wwwP  8P  Y8    dPYb    8  .8  8   8 
- *   8b       YP    8   b  8     8wwK'    8wwK'   8       d8  88Yb     8   8   dPwwYb       d8  8   8  8   b  8b  d8   dPwwYb   8wwK'  8   8 
- *   `Y88P    88    888P'  8888  8  Yb    8  Yb  888  `Y88P'  8  Yb    888P'  dP    Yb  `Y88P'  8   8  888P'  `Y88P'  dP    Yb  8  Yb  888P'
- *  
  * The main process is responsible for responding to application lifecycle event:
  *         - Starting Up
  *         - Quitting
