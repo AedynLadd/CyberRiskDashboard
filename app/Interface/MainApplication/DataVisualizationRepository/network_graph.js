@@ -75,9 +75,9 @@ d3.json(url).then(function (data) {
                 return "translate(" + validate_point(d.x, svg_w) + "," + validate_point(d.y, svg_h) + ")";
             })
     }
+
     function validate_point(point, bounds) {
         bounds = parseInt(bounds.substring(0, bounds.length - 2)) / 2
         return (Math.abs(point) < bounds ? point : Math.sign(point)*bounds); 
-        return point;
     }
 })

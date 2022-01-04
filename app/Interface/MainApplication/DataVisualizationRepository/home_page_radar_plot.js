@@ -35,7 +35,6 @@ d3.json(__dirname + "/Data/NIST_criteria.json").then(function(data) {
             hexStr = (parseInt(color,16) + 25).toString(16);
             while (hexStr.length < 6) { hexStr = '0' + hexStr; }
 
-            console.log(key)
 
             svg.append("path")
                 .attr("d", subtitle_arc)
@@ -45,9 +44,10 @@ d3.json(__dirname + "/Data/NIST_criteria.json").then(function(data) {
                 .style("stroke-width", "2px")
                 .attr("transform", "translate(" + center[0] + ',' + center[1] +")");
 
+            console.log(sub_angle)
             svg.append("text")
                 .attr("dy", 20)
-                .attr("x", 10)
+                .attr("x", sub_angle)
                 .append("textPath")
                 .attr("xlink:href", "#Path-" + key)
                 .text(key.split(".")[1]);
@@ -90,7 +90,7 @@ d3.json(__dirname + "/Data/NIST_criteria.json").then(function(data) {
 
         svg.append("text")
             .attr("dy", 20)
-            .attr("x", 125)
+            .attr("x", Math.abs(start_angle-end_angle)*2)
             .append("textPath")
             .attr("xlink:href", "#s" + i)
             .text(title);
