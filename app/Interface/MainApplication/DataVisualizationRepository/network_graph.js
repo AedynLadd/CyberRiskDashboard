@@ -21,7 +21,7 @@ d3.json(url).then(function (data) {
         .force("charge", d3.forceManyBody().strength(-150))
         .force("x", d3.forceX(0))
         .force("y", d3.forceY(0))
-        .force("collide", d3.forceCollide(d => 5))
+        .force("collide", d3.forceCollide(d => 15))
 
 
     // Initialize the links
@@ -46,13 +46,13 @@ d3.json(url).then(function (data) {
     // What happens when a circle is dragged?
     function drag_started(event, d) {
         if (!event.active) simulation.alphaTarget(.03).restart();
-        d.fx = d.x;
-        d.fy = d.y;
+        d.fx = validate_point(d.x, svg_w);
+        d.fy = validate_point(d.y, svg_h);
     }
 
     function dragged(event, d) {
-        d.fx = event.x;
-        d.fy = event.y;
+        d.fx = validate_point(event.x, svg_w);
+        d.fy = validate_point(event.y, svg_h);
     }
     function drag_ended(event, d) {
         if (!event.active) simulation.alphaTarget(.03);
@@ -65,14 +65,19 @@ d3.json(url).then(function (data) {
 
     function ticked() {
         link
-            .attr("x1", function (d) { return d.source.x; })
-            .attr("y1", function (d) { return d.source.y; })
-            .attr("x2", function (d) { return d.target.x; })
-            .attr("y2", function (d) { return d.target.y; })
+            .attr("x1", function (d) { return validate_point(d.source.x, svg_w); })
+            .attr("y1", function (d) { return validate_point(d.source.y, svg_h); })
+            .attr("x2", function (d) { return validate_point(d.target.x, svg_w); })
+            .attr("y2", function (d) { return validate_point(d.target.y, svg_h); })
 
         node
             .attr("transform", function (d) {
-                return "translate(" + d.x + "," + d.y + ")";
+                return "translate(" + validate_point(d.x, svg_w) + "," + validate_point(d.y, svg_h) + ")";
             })
+    }
+    function validate_point(point, bounds) {
+        bounds = parseInt(bounds.substring(0, bounds.length - 2)) / 2
+        return (Math.abs(point) < bounds ? point : Math.sign(point)*bounds); 
+        return point;
     }
 })

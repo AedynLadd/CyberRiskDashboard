@@ -8,12 +8,14 @@
 /* network diagram specification*/
 .networkGraph-node{
     fill: rgb(150, 150, 150);
+    stroke: rgb(37, 40, 58);
+    stroke-width: 3px;
 }
 
 .networkGraph-link{
     stroke: rgb(37, 40, 58);
     stroke-opacity: 1;
-    stroke-width: 1px;
+    stroke-width: 2px;
     stroke-linecap:round;
 }
 
