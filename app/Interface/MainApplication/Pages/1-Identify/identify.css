@@ -1,17 +1,33 @@
-.item1 {
-    grid-area: 1 / 1 / 5 / 1;
+/* MAIN IDENTIFY PAGE */
+/* Start on row X column Y, and end on row W column Z*/
+.networkGraph {
+    grid-area: 1 / 1 / 5 / 8;
+    background-color: rgba(0, 0, 0, 0);
 }
 
-.item8 {
-    grid-area: 1 / 2 / 5 / 6;
-    /* Start on row 1 column 2, and end on row 5 column 6*/
+/* network diagram specification*/
+.networkGraph-node{
+    fill: rgb(150, 150, 150);
 }
 
+.networkGraph-link{
+    stroke: rgb(37, 40, 58);
+    stroke-opacity: 1;
+    stroke-width: 1px;
+    stroke-linecap:round;
+}
+
+
+.information {
+    grid-area: 1 / 8 / 5 / 12;
+    background-color: rgb(126, 126, 126);
+}
+
+/* Visual Identity */
 .Identify{
     color: rgba(215, 250, 255, 0.815);
     pointer-events: none;
 }
-
 nav.stroke ul li a.Identify:after,
 nav.fill ul li a.Identify:after {
     position: absolute;

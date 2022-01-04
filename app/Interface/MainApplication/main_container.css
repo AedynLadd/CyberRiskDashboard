@@ -57,16 +57,46 @@
 
 .radarPlot {
     grid-area: 1 / 3 / 6 / 6;
+    background-color: rgba(244, 253, 255, 0.349);
 }
 
 .left_radar {
     grid-area: 1 / 1 / 6 / 3;
+    
+    background-color: rgba(244, 253, 255, 0.349);
 }
 
 .right_radar {
     grid-area: 1 / 6 / 6 / 8;
+    background-color: rgba(244, 253, 255, 0.349);
 }
 
 .suggestions {
-    grid-area: 6 / 1 / 8 / 8;
+    grid-area: 6 / 1 / 9 / 8;  
+    background-color: rgba(244, 253, 255, 0.349);
+}
+
+.suggestion_card{ 
+    display: inline-block;
+    width: 19%;
+    height: 100%;
+    margin-left: 2px;
+    margin-right: 2px;
+    background-color: rgb(65, 65, 65);
+    border-radius: 10px 10px 5px 5px;
+}
+
+.suggestion_card:hover {
+    background-color: rgb(62, 62, 62);
+    box-shadow: 0px 0px 6px 3px #3636363f;
+}
+
+.chart-fill{
+    fill: #2b2b2b77;
+    stroke: #000000dc ;
+    stroke-width: 1px
+}
+
+.node_point{
+    fill:red;
 }

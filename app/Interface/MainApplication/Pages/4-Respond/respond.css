@@ -6,8 +6,8 @@
 nav.stroke ul li a.Respond:after,
 nav.fill ul li a.Respond:after {
     position: absolute;
-    bottom: -18px;
-    background-color: #ff4b4b6e;
+    bottom: -18px; 
+    background-color: #ff4b4b6e; 
     left: 0;
     right: 0;
     margin: auto;

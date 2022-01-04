@@ -1,0 +1,50 @@
+{
+    "ID": {
+        "color": "4be4ff2f",
+        "items": {
+            "ID.AM": [0.65],
+            "ID.BE": [0.35],
+            "ID.GV": [0.25],
+            "ID.RA": [0.15],
+            "ID.RM": [0.35],
+            "ID.SC": [0.55]
+        }
+    },
+    "PR": {
+        "color": "da1eff2f",
+        "items": {
+            "PR.AC": [0.75],
+            "PR.AT": [0.75],
+            "PR.DS": [0.75],
+            "PR.IP": [0.75],
+            "PR.MA": [0.75],
+            "PR.PT": [0.75]
+        }
+    },
+    "DE": {
+        "color": "fffc4b2f",
+        "items": {
+            "DE.AE": [0.75],
+            "DE.CM": [0.75],
+            "DE.DP": [0.75]
+        }
+    },
+    "RS": {
+        "color": "ff4b4b2f",
+        "items": {
+            "RS.RP": [0.75],
+            "RS.CO": [0.75],
+            "RS.AN": [0.75],
+            "RS.MI": [0.75],
+            "RS.IM": [0.75]
+        }
+    },
+    "RC": {
+        "color": "4bff692f",
+        "items": {
+            "RC.RP": [0.75],
+            "RC.IM": [0.75],
+            "RC.CO": [0.75]
+        }
+    }
+}
