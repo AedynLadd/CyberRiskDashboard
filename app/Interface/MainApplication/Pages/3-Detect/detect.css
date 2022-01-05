@@ -2,17 +2,17 @@
 /* Start on row X column Y, and end on row W column Z*/
 
 .HeatmapDetect{
-    grid-area: 1 / 1 / 3 / 5;
+    grid-area: 1 / 1 / 3 / 12;
     background-color: rgb(126, 126, 126);
 }
 
 .controls{
-    grid-area: 1 / 1 / 3 / 5;
+    grid-area: 3 / 1 / 8 / 5;
     background-color: rgb(126, 126, 126);
 }
 
 .information_control{
-    grid-area: 1 / 1 / 3 / 5;
+    grid-area: 3 / 5 / 8 / 12;
     background-color: rgb(126, 126, 126);
 }
 
@@ -27,7 +27,7 @@ nav.stroke ul li a.Detect:after,
 nav.fill ul li a.Detect:after {
     position: absolute;
     bottom: -18px;
-    background-color: #fffc4b6e;
+    background-color: #fffc4b6e; 
     left: 0;
     right: 0;
     margin: auto;
