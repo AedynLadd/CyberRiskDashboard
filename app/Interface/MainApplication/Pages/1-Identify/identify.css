@@ -12,6 +12,12 @@
     stroke-width: 3px;
 }
 
+.networkGraph-node:hover{
+    fill: rgb(150, 150, 150);
+    stroke: #4be4ff6e;
+    stroke-width: 3px;
+}
+
 .networkGraph-link{
     stroke: rgb(37, 40, 58);
     stroke-opacity: 1;

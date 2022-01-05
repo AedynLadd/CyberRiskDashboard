@@ -1,4 +1,3 @@
-const { easeCircleIn } = require("d3");
 var d3 = require("d3");
 
 url = "../../Data/network_graph.json"
