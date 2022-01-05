@@ -10,6 +10,7 @@
     background-color: rgb(126, 126, 126);
 }
 
+/* Sankey */
 .sankeyIdentityChart {
     grid-area: 3 / 1 / 8 / 12;
     background-color: rgb(126, 126, 126);
@@ -17,23 +18,29 @@
 
 .node rect {
     fill-opacity: .9;
-    shape-rendering: crispEdges;
+    min-height: 3;
+    min-width: 3;
+    fill: rgb(54, 54, 54);
+    stroke: rgb(37, 37, 37);
   }
   
 .node text {
-pointer-events: none;
-text-shadow: 0 1px 0 #fff;
+    pointer-events: none;
+    text-shadow: 0 1px 0 #fff;
 }
 
 .link {
-fill: none;
-stroke: #000;
-stroke-opacity: .2;
+    fill: none;
+    stroke: #3e08496e;
+    stroke-opacity: .2;
+    stroke-width: 1;
 }
 
 .link:hover {
-stroke-opacity: .5;
+    stroke-opacity: .5;
 }
+
+
 
 /* Visual Identity */
 .Protect{

@@ -1,3 +1,23 @@
+/* MAIN DETECT PAGE */
+/* Start on row X column Y, and end on row W column Z*/
+
+.HeatmapDetect{
+    grid-area: 1 / 1 / 3 / 5;
+    background-color: rgb(126, 126, 126);
+}
+
+.controls{
+    grid-area: 1 / 1 / 3 / 5;
+    background-color: rgb(126, 126, 126);
+}
+
+.information_control{
+    grid-area: 1 / 1 / 3 / 5;
+    background-color: rgb(126, 126, 126);
+}
+
+
+/* Visual Identity */
 .Detect{
     color: rgba(215, 250, 255, 0.815);
     pointer-events: none;
