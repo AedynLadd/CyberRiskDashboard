@@ -1,0 +1,41 @@
+.subNav {
+    height: 6vh;
+    width: 100%;
+    position: fixed;
+    z-index: 2;
+    left: 0;
+    bottom: 0;
+    background-color: rgb(46, 46, 46);
+    overflow-y: hidden;
+    padding-top: 0px;
+}
+
+.subNav button {
+    background-color: inherit;
+    float: center;
+    height: 95%;
+    width: 48%;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 0px 16px 0px 16px;
+    transition: 0.3s;
+    font-size: 15px;
+    color: #a1a1a1;
+}
+
+.sidenav button:hover {
+    color: #f1f1f1;
+}
+
+.sidenav button.active {
+    color: #f1f1f1;
+}
+
+.subCategoryTab.active {
+    display: grid;
+}
+
+.subCategoryTab {
+    display: none;
+}
