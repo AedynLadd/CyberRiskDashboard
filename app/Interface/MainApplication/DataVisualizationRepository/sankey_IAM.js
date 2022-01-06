@@ -41,6 +41,7 @@ d3.json(url).then(function (data) {
         .data(graph.nodes)
         .enter().append("g")
             .attr("class", "node")
+            .on("click", node_click)
 
     // add the rectangles for the nodes
     node.append("rect")
@@ -48,5 +49,10 @@ d3.json(url).then(function (data) {
         .attr("y", function(d) { return d.y0; })
         .attr("height", function(d) { return Math.max(d.y1 - d.y0, 1); })
         .attr("width", sankey.nodeWidth())
+
+    function node_click(value_here){
+        console.log("adjusting to this node");
+        console.log(value_here);
+    }
 })
 

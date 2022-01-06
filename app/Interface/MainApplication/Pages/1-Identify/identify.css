@@ -12,17 +12,27 @@
     stroke-width: 3px;
 }
 
-.networkGraph-node:hover{
+.networkGraph-node-Highlighted{
     fill: rgb(150, 150, 150);
     stroke: #4be4ff6e;
     stroke-width: 3px;
 }
 
 .networkGraph-link{
+    fill: none;
     stroke: rgb(37, 40, 58);
     stroke-opacity: 1;
     stroke-width: 2px;
     stroke-linecap:round;
+}
+
+.networkGraph-link-Highlighted{
+    fill: none;
+    stroke: #4be4ff6e;
+    stroke-opacity: 1;
+    stroke-width: 3px;
+    stroke-linecap:round;
+    z-index: -1;
 }
 
 
