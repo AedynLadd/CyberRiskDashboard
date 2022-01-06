@@ -3,13 +3,13 @@ var d3_sankey = require("d3-sankey")
 
 url = "../../Data/sankey_data.json"
 d3.json(url).then(function (data) {
-
     // Identify intial SVG
     var svg = d3.select("#sankeyIdentityChart")
         .attr("id", "sankeyChart")
         .append("svg")
         .attr("width", "100%")
         .attr("height", "100%")
+        .on("dblclick", update)
         .append("g")
 
     // Identify our element so we can use its height and width
@@ -17,9 +17,9 @@ d3.json(url).then(function (data) {
 
     // Create sankey
     var sankey = d3_sankey.sankey()
-            .nodeWidth(20)
-            .nodePadding(2)
-            .size([element.width, element.height]);
+        .nodeWidth(20)
+        .nodePadding(2)
+        .size([element.width, element.height]);
 
     var graph = sankey(data)
 
@@ -27,32 +27,37 @@ d3.json(url).then(function (data) {
         .links(graph.links)
 
     // Add in the links
-    svg.append("g")
-        .selectAll(".link")
+    const link = svg.append("g")
+        .attr("id", "sankey_links_g")
+        .selectAll("path")
         .data(graph.links)
-        .enter().append("path")
-            .attr("class", "link")
-            .attr("d", d3_sankey.sankeyLinkHorizontal())
-            .attr("stroke-width", function(d) { return d.width; })
+        .join("path")
+        .attr("class", "link")
 
     // add in the nodes
-    var node = svg.append("g")
-        .selectAll(".node")
+    const node = svg.append("g")
+        .selectAll("rect")
         .data(graph.nodes)
-        .enter().append("g")
-            .attr("class", "node")
-            .on("click", node_click)
+        .join("rect")
+        .attr("class", "node")
 
-    // add the rectangles for the nodes
-    node.append("rect")
-        .attr("x", function(d) { return d.x0; })
-        .attr("y", function(d) { return d.y0; })
-        .attr("height", function(d) { return Math.max(d.y1 - d.y0, 1); })
-        .attr("width", sankey.nodeWidth())
+    update();
+    function update() {
 
-    function node_click(value_here){
-        console.log("adjusting to this node");
-        console.log(value_here);
+        node.attr("x", function (d) { return d.x0; })
+            .attr("y", function (d) { return d.y0; })
+            .attr("height", function (d) { return Math.max(d.y1 - d.y0, 1); })
+            .attr("width", sankey.nodeWidth())
+            .on("click", function (event, d) {
+                // filter our data here
+                update();
+            })
+
+
+        link.attr("d", d3_sankey.sankeyLinkHorizontal())
+            .attr("stroke-width", function (d) { return d.width; });
+
+        console.log("updating - or trying too....")
+
     }
 })
-

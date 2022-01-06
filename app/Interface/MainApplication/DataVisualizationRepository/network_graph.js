@@ -36,7 +36,7 @@ d3.json(url).then(function (data) {
 
     function circlify(point) {
         var theta = (Math.PI / (svg_w / 2)) * x(point);
-        var radius = (svg_h / 2)
+        var radius = (svg_h / 2)*0.95
         var y_value = radius * Math.sin(theta)
         var x_value = radius * Math.cos(theta)
         return [x_value, y_value]
@@ -64,23 +64,11 @@ d3.json(url).then(function (data) {
         .on("start", drag_started)
         .on("drag", dragged)
         .on("end", drag_ended))
-        .on("mouseover", function (event, d) {
-            // Turn into a chord plot
-            // Highlight the nodes
-            if (!isChord) {
-                d3.select(this).attr('class', 'networkGraph-node-Highlighted')
-                // Highlight the links
-                link.attr("class", a => a.source.id === d.id || a.target.id === d.id ? 'networkGraph-link-Highlighted' : 'networkGraph-link');
-            }
-        })
-        .on('mouseout', function (event, d) {
-            if (!isChord) {
-                node.attr('class', "networkGraph-node")
-                link.attr("class", "networkGraph-link")
-            }
-        })
         .on('click', function (event,d) {
-
+            simulation.stop()
+            node.attr('class', a => a.id === d.id ? 'networkGraph-node-Highlighted': "networkGraph-node")
+            // Highlight the links
+            link.attr("class", a => a.source.id === d.id || a.target.id === d.id ? 'networkGraph-link-Highlighted' : 'networkGraph-link');
         })
         .on('dblclick', function (event, d) {
             simulation.stop()
@@ -102,9 +90,6 @@ d3.json(url).then(function (data) {
                 .attr("d", d => ["M",circlify(d.source.name)[0], circlify(d.source.name)[1],  // M P1X P1Y
                                  "Q", 0, 0, // Q C1X C1Y
                                  circlify(d.target.name)[0], circlify(d.target.name)[1]].join(" ")); // P2X P2Y
-                //.attr("d", d => "M" + circlify(d.source.name)[0] + " " + circlify(d.source.name)[1] + "L" + circlify(d.target.name)[0] + " " + circlify(d.target.name)[1] + " Z");
-
-            //link.style("display","none");
         });
 
 

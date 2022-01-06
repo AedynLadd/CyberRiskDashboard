@@ -16,7 +16,11 @@
     background-color: rgb(126, 126, 126);
 }
 
-.node rect {
+.background{
+    fill:none;
+}
+
+.node {
     fill-opacity: .9;
     min-height: 3;
     min-width: 3;
@@ -24,14 +28,9 @@
     stroke: rgb(37, 37, 37);
   }
 
-.node rect:hover {
+.node:hover {
     stroke: #3e08496e;
     stroke-width: 3px;
-}
-
-.node text {
-    pointer-events: none;
-    text-shadow: 0 1px 0 #fff;
 }
 
 .link {
