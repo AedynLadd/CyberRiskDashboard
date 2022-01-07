@@ -4,3 +4,8 @@ body {
     margin: 0;
     background-color: #494a4e;
 }
+
+.total_score_title{
+    min-width: calc(100px);
+    font-size: 20px;
+}

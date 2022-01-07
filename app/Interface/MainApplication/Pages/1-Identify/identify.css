@@ -18,10 +18,19 @@
     stroke-width: 3px;
 }
 
+
 .networkGraph-link{
     fill: none;
     stroke: rgb(37, 40, 58);
     stroke-opacity: 1;
+    stroke-width: 2px;
+    stroke-linecap:round;
+}
+
+.chord-link{
+    fill: none;
+    stroke: rgb(37, 40, 58);
+    stroke-opacity: 0.3;
     stroke-width: 2px;
     stroke-linecap:round;
 }
@@ -35,6 +44,14 @@
     z-index: -1;
 }
 
+.chord-link-Highlighted{
+    fill: none;
+    stroke: #4be4ff6e;
+    stroke-opacity: 1;
+    stroke-width: 4px;
+    stroke-linecap:round;
+    z-index: -1;
+}
 
 .information {
     grid-area: 1 / 8 / 5 / 12;

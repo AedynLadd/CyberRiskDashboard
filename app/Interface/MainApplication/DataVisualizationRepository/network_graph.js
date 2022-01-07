@@ -36,7 +36,7 @@ d3.json(url).then(function (data) {
 
     function circlify(point) {
         var theta = (Math.PI / (svg_w / 2)) * x(point);
-        var radius = (svg_h / 2)*0.95
+        var radius = (svg_h / 2) * 0.95
         var y_value = radius * Math.sin(theta)
         var x_value = radius * Math.cos(theta)
         return [x_value, y_value]
@@ -64,37 +64,56 @@ d3.json(url).then(function (data) {
         .on("start", drag_started)
         .on("drag", dragged)
         .on("end", drag_ended))
-        .on('click', function (event,d) {
-            simulation.stop()
-            node.attr('class', a => a.id === d.id ? 'networkGraph-node-Highlighted': "networkGraph-node")
-            // Highlight the links
-            link.attr("class", a => a.source.id === d.id || a.target.id === d.id ? 'networkGraph-link-Highlighted' : 'networkGraph-link');
+        .on('click', function (event, d) {
+            // Display information on panel
+            display_node_info(d.id)
+            // Highlight the node
+            if (isChord) {
+                node.attr('class', a => a.id === d.id ? 'networkGraph-node-Highlighted' : "networkGraph-node")
+                // Highlight the links
+                link.attr("class", a => a.source.id === d.id || a.target.id === d.id ? 'chord-link-Highlighted' : 'chord-link');
+            } else {
+                node.attr('class', a => a.id === d.id ? 'networkGraph-node-Highlighted' : "networkGraph-node")
+                // Highlight the links
+                link.attr("class", a => a.source.id === d.id || a.target.id === d.id ? 'networkGraph-link-Highlighted' : 'networkGraph-link');
+            }
         })
         .on('dblclick', function (event, d) {
-            simulation.stop()
             isChord = (isChord) ? false : true;
-            //Highlight the selected!
-            d3.select(this).attr('class', 'networkGraph-node-Highlighted')
-            link.attr("class", a => a.source.id === d.id || a.target.id === d.id ? 'networkGraph-link-Highlighted' : 'networkGraph-link');
 
-            node.transition()
-                .duration(500)
-                .attr("transform", function (d) {
-                    coords = circlify(d.name);
-                    return "translate(" + coords[0] + "," + coords[1] + ")"
-                });
+            if (isChord) {
+                simulation.stop()
+                //Highlight the selected!
+                d3.select(this).attr('class', 'networkGraph-node-Highlighted')
+                link.attr("class", a => a.source.id === d.id || a.target.id === d.id ? 'chord-link-Highlighted' : 'chord-link');
 
-            link
-                .transition()
-                .duration(600)
-                .attr("d", d => ["M",circlify(d.source.name)[0], circlify(d.source.name)[1],  // M P1X P1Y
-                                 "Q", 0, 0, // Q C1X C1Y
-                                 circlify(d.target.name)[0], circlify(d.target.name)[1]].join(" ")); // P2X P2Y
+                node.transition()
+                    .duration(500)
+                    .attr("transform", function (d) {
+                        coords = circlify(d.name);
+                        return "translate(" + coords[0] + "," + coords[1] + ")"
+                    });
+
+                link
+                    .transition()
+                    .duration(600)
+                    .attr("d", d => ["M", circlify(d.source.name)[0], circlify(d.source.name)[1],  // M P1X P1Y
+                        "Q", 0, 0, // Q C1X C1Y
+                        circlify(d.target.name)[0], circlify(d.target.name)[1]].join(" ")); // P2X P2Y
+            } else {
+                simulation.restart();
+                // Network highlighting
+                node.attr('class', a => a.id === d.id ? 'networkGraph-node-Highlighted' : "networkGraph-node")
+                // Highlight the links
+                link.attr("class", a => a.source.id === d.id || a.target.id === d.id ? 'networkGraph-link-Highlighted' : 'networkGraph-link');
+            }
+
         });
 
 
     // Circle Dragging
     function drag_started(event, d) {
+        if (isChord) return;
         if (!event.active) simulation.alphaTarget(.03).restart();
         d.fx = validate_point(d.x, svg_w);
         d.fy = validate_point(d.y, svg_h);
@@ -102,12 +121,14 @@ d3.json(url).then(function (data) {
     }
 
     function dragged(event, d) {
+        if (isChord) return;
         d.fx = validate_point(event.x, svg_w);
         d.fy = validate_point(event.y, svg_h);
 
     }
 
     function drag_ended(event, d) {
+        if (isChord) return;
         if (!event.active) simulation.alphaTarget(.03);
         d.fx = null;
         d.fy = null;
@@ -117,10 +138,12 @@ d3.json(url).then(function (data) {
     // Simulation
     simulation.on("tick", ticked)
 
-    function ticked() {
-        link
+    function ticked(transition_duration = 50) {
+        link.transition()
+            .duration(transition_duration)
             .attr("d", d => "M" + validate_point(d.source.x, svg_w) + " " + validate_point(d.source.y, svg_h) + "L" + validate_point(d.target.x, svg_w) + " " + validate_point(d.target.y, svg_h) + "Z");
-        node
+        node.transition()
+            .duration(transition_duration)
             .attr("transform", function (d) {
                 return "translate(" + validate_point(d.x, svg_w) + "," + validate_point(d.y, svg_h) + ")";
             })
@@ -132,3 +155,7 @@ d3.json(url).then(function (data) {
         return (Math.abs(point) < bounds ? point : Math.sign(point) * bounds);
     }
 })
+
+function display_node_info(node_id){
+    document.getElementById("networkGraph_info").innerHTML = node_id
+}
