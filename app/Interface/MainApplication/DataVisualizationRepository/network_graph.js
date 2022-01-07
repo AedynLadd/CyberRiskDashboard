@@ -66,7 +66,7 @@ d3.json(url).then(function (data) {
         .on("end", drag_ended))
         .on('click', function (event, d) {
             // Display information on panel
-            display_node_info(d.id)
+            display_node_info(d)
             // Highlight the node
             if (isChord) {
                 node.attr('class', a => a.id === d.id ? 'networkGraph-node-Highlighted' : "networkGraph-node")
@@ -96,7 +96,7 @@ d3.json(url).then(function (data) {
 
                 link
                     .transition()
-                    .duration(600)
+                    .duration(500)
                     .attr("d", d => ["M", circlify(d.source.name)[0], circlify(d.source.name)[1],  // M P1X P1Y
                         "Q", 0, 0, // Q C1X C1Y
                         circlify(d.target.name)[0], circlify(d.target.name)[1]].join(" ")); // P2X P2Y
@@ -156,6 +156,13 @@ d3.json(url).then(function (data) {
     }
 })
 
-function display_node_info(node_id){
-    document.getElementById("networkGraph_info").innerHTML = node_id
+
+//
+// INFORMATION TAB
+//
+// Displaying node information
+function display_node_info(node_element){
+    console.log(node_element)
+    document.getElementById("networkGraph_info_id").innerHTML = node_element.id
+    document.getElementById("networkGraph_info_ip").innerHTML = node_element.name
 }

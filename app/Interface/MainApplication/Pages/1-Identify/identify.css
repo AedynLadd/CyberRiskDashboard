@@ -1,7 +1,7 @@
 /* MAIN IDENTIFY PAGE */
 /* Start on row X column Y, and end on row W column Z*/
 .networkGraph {
-    grid-area: 1 / 1 / 5 / 8;
+    grid-area: 1 / 1 / 5 / 15;
     background-color: rgba(0, 0, 0, 0);
 }
 
@@ -30,8 +30,8 @@
 .chord-link{
     fill: none;
     stroke: rgb(37, 40, 58);
-    stroke-opacity: 0.3;
-    stroke-width: 2px;
+    stroke-opacity: 0.1;
+    stroke-width: 1px;
     stroke-linecap:round;
 }
 
@@ -54,9 +54,41 @@
 }
 
 .information {
-    grid-area: 1 / 8 / 5 / 12;
+    grid-area: 1 / 15 / 5 / 20;
     background-color: rgb(126, 126, 126);
 }
+
+.network_graph_info_title{
+    font-size:17px;
+    font-weight: bolder;
+    text-align: left;
+    width: 100%;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    color: #104953e7;
+}
+
+.network_graph_info_subtitle{
+    font-size: 12px;
+    font-weight: bold;
+    text-align: left;
+    width: 150px;
+    padding-bottom: 2px;
+    padding-left: 25px;
+    color: #1049539f;
+    border-bottom: rgba(43, 43, 43, 0.233) 1px solid;
+}
+
+.network_graph_info{
+    padding-bottom: 10px;
+    font-size: 12px;
+    text-align: left;
+    width: 100%;
+    padding-left: 40px;
+}
+
+
+
 
 /* Visual Identity */
 .Identify{

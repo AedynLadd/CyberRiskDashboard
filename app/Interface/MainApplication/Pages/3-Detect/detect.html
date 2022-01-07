@@ -15,15 +15,21 @@
     <!-- TOP NAVIGATION MENU -->
     <div class="TopLevelNavigation">
         <div class="Icon">
-            <text style="color:rgba(244, 253, 255, 0.637)">CYBER</text><text style="color: rgba(215, 250, 255, 0.247)">RISK</text></div>
+            <text style="color:rgba(244, 253, 255, 0.637)">CYBER</text><text
+                style="color: rgba(215, 250, 255, 0.247)">RISK</text>
+        </div>
         <nav class="stroke">
             <ul>
                 <li><a href="../../main.html" id="Home_nav"> Home </a></li>
-                <li onmouseover="changeText('IDENTIFY','Identify_nav')" onmouseout="changeText('ID', 'Identify_nav')"><a href="../1-Identify/identify.html" id="Identify_nav" class="Identify"> ID </a></li>
-                <li onmouseover="changeText('PROTECT','Protect_nav')" onmouseout="changeText('PR','Protect_nav')"><a href="../2-Protect/protect.html" id="Protect_nav" class="Protect"> PR </a></li>
+                <li onmouseover="changeText('IDENTIFY','Identify_nav')" onmouseout="changeText('ID', 'Identify_nav')"><a
+                        href="../1-Identify/identify.html" id="Identify_nav" class="Identify"> ID </a></li>
+                <li onmouseover="changeText('PROTECT','Protect_nav')" onmouseout="changeText('PR','Protect_nav')"><a
+                        href="../2-Protect/protect.html" id="Protect_nav" class="Protect"> PR </a></li>
                 <li><a class="Detect"> DETECT </a></li>
-                <li onmouseover="changeText('RESPOND','Respond_nav')" onmouseout="changeText('RS','Respond_nav')"><a href="../4-Respond/respond.html" id="Respond_nav" class="Respond"> RS </a></li>
-                <li onmouseover="changeText('RECOVER','Recover_nav')" onmouseout="changeText('RC','Recover_nav')"><a href="../5-Recover/recover.html" id="Recover_nav" class="Recover"> RC </a></li>
+                <li onmouseover="changeText('RESPOND','Respond_nav')" onmouseout="changeText('RS','Respond_nav')"><a
+                        href="../4-Respond/respond.html" id="Respond_nav" class="Respond"> RS </a></li>
+                <li onmouseover="changeText('RECOVER','Recover_nav')" onmouseout="changeText('RC','Recover_nav')"><a
+                        href="../5-Recover/recover.html" id="Recover_nav" class="Recover"> RC </a></li>
             </ul>
         </nav>
     </div>
@@ -31,19 +37,28 @@
     <!-- SIDE BAR -->
     <div class="sidenav">
         <h1 class="detect" onclick="openSubCategory(event, 'DE')">DETECT</h1>
-        <button  class="subcategoryLink" onclick="openSubCategory(event, 'AE')">Anomalies and Events</button>
-        <button  class="subcategoryLink" onclick="openSubCategory(event, 'CM')">Continuous Monitoring</button>
-        <button  class="subcategoryLink" onclick="openSubCategory(event, 'DP')">Detection Processes</button>
+        <button class="subcategoryLink" onclick="openSubCategory(event, 'AE')">Anomalies and Events</button>
+        <button class="subcategoryLink" onclick="openSubCategory(event, 'CM')">Continuous Monitoring</button>
+        <button class="subcategoryLink" onclick="openSubCategory(event, 'DP')">Detection Processes</button>
     </div>
     <!-- END OF SIDE BAR -->
     <!-- PAGE CONTENTS -->
-    <div class="subCategoryTab" id="DE" style="display:grid"> 
-        <div class="HeatmapDetect" id="HeatmapDetect"></div>
-        <div class="controls"></div>
+    <div class="subCategoryTab" id="DE" style="display:grid">
+        <div class="HeatmapDetect" id="HeatmapDetect">
+        </div>
+        <div class="controls">
+            <div id = "detectControl" class="detectControl"> CONTROL </div>
+            <select name="variable_selector" id="variable_selector">
+                <option value="valueA">VariableA</option>
+                <option value="valueB">VariableB</option>
+                <option value="valueC">VariableC</option>
+            </select>
+        </div>
         <div class="information_control"></div>
     </div>
     <!-- END OF PAGE CONTENTS-->
 </body>
 <script type="text/javascript" src="../../js/navbar_animation.js"></script>
 <script type="text/javascript" src="../../DataVisualizationRepository/heatmap_generator.js"></script>
+
 </html>

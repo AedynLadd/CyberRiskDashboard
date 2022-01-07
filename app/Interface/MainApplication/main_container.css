@@ -3,13 +3,16 @@
 .dashboardHomeGrid {
     display: grid;
     position:fixed;
+    justify-content: stretch;
     height: calc(99% - (7vh + 10px));
     width: calc(99% - 5px);
     top: 7vh;
     left: 0px;
-    grid-template-columns: auto;
+    grid-template-columns: repeat(19, minmax(0, 1fr));
+    grid-auto-flow: column;
     grid-gap: 10px;
     padding: 10px;
+    overflow: hidden;
 }
 
 
@@ -56,23 +59,22 @@
 /* Start on row X column Y, and end on row W column Z*/
 
 .radarPlot {
-    grid-area: 1 / 3 / 6 / 6;
+    grid-area: 1 / 6 / 6 / 15;
     background-color: rgba(244, 253, 255, 0.349);
 }
 
 .left_radar {
-    grid-area: 1 / 1 / 6 / 3;
-    
+    grid-area: 1 / 1 / 6 / 6;
     background-color: rgba(244, 253, 255, 0.349);
 }
 
 .right_radar {
-    grid-area: 1 / 6 / 6 / 8;
+    grid-area: 1 / 15 / 6 / 20;
     background-color: rgba(244, 253, 255, 0.349);
 }
 
 .suggestions {
-    grid-area: 6 / 1 / 9 / 8;  
+    grid-area: 6 / 1 / 9 / 20;  
     background-color: rgba(244, 253, 255, 0.349);
 }
 

@@ -108,22 +108,20 @@ d3.json(__dirname + "/Data/NIST_criteria.json").then(function (data) {
             .endAngle(end_angle * (Math.PI / 180)) //just radians
 
         svg.append("path")
+            .attr("class", "radar_wheel")
             .attr("id", title)
             .attr("d", wheel)
-            .style("fill", "#ffffff00")
-            .style("stroke", "rgba(0, 0, 0, 0.3)")
+            .style("fill", "rgba(0, 0, 0, 0)")
+            .style("stroke", "rgba(0, 0, 0, 0.65)")
             .style("stroke-width", "0px")
             .attr("transform", "translate(" + center[0] + ',' + center[1] + ")")
-            .on("mouseover", function (event, d) {
-                d3.select(this).style("stroke-width", "3px")
-                               .attr("href", "radar_chart_vis")
-                update_right_radar(d3.select(this).attr("id"));
-                
-            })
-            .on("mouseout", function (event, d) {
-                d3.select(this).style("stroke-width", "0px")
-                update_right_radar();
-            })
+            .on("click", function (event, d) {
+                var current_state = d3.select(this).style("stroke-width")
+                d3.selectAll(".radar_wheel").style("stroke-width", "0px");
+                console.log(d3.select(this).style("stroke-width"))
+                d3.select(this).style("stroke-width", (current_state == "0px") ? "3px" : "0px");
+                update_right_radar((d3.select(this).style("stroke-width") == "0px") ? null : d3.select(this).attr("id"), data);
+            });
 
 
     }
@@ -131,7 +129,7 @@ d3.json(__dirname + "/Data/NIST_criteria.json").then(function (data) {
     let i = 0;
     var slice_angle = 360 / Object.entries(data).length;
     var radius = 210;
-    var center = [400, 240]
+    var center = [350, 240]
 
     // Slices
     for (const [key, value] of Object.entries(data)) {
@@ -191,13 +189,17 @@ d3.json(__dirname + "/Data/NIST_criteria.json").then(function (data) {
         .attr("r", 3);
 
     update_right_radar()
-    // Update the right radar element category overview data...
-    function update_right_radar(element_id = null) {
-        relevant_data = (element_id != null) ? data[element_id]: data;
-        console.log(relevant_data)
-        document.getElementById("total_score_title").innerHTML = (element_id != null) ? element_id : "Overall";
-    }
 
 });
 
+
+//
+// UPDATES TO THE RADAR INFO
+//
+// Update the right radar element category overview data...
+function update_right_radar(element_id = null, data) {
+    relevant_data = (element_id != null) ? data[element_id] : data;
+    console.log(relevant_data)
+    document.getElementById("total_score_title").innerHTML = (element_id != null) ? element_id : "Overall";
+}
 
