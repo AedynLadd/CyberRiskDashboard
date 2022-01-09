@@ -72,7 +72,7 @@ d3.csv(url).then(function (data) {
 
                 var Difference_In_Time = date2.getTime() - date1.getTime();
                 var Difference_In_Days = Difference_In_Time / (1000 * 3600 * 24);
-                return Difference_In_Days*100
+                return Difference_In_Days*60
             })
             .duration(500)
             .style('fill', function (d, i, a) {

@@ -26,30 +26,38 @@ user_directory_grouped = user_directory_grouped.apply(lambda x: x['Username'].un
 print(user_directory_grouped)
 
 sankey_df = {
-    "nodes": [],
-    "links": []
+    "family": {},
+    "graph": {
+        "nodes": [],
+        "links": []
+    }
 }
 
 id = 0
+
 for department, users in user_directory_grouped.iteritems():
     department_id = id
-    sankey_df["nodes"].append(
+
+    sankey_df["graph"]["nodes"].append(
         {
             "node": department_id,
             "name": department
         }
     )
+    sankey_df["family"][department] = []
 
     for worker in users:
         id += 1
-        sankey_df["nodes"].append(
+        sankey_df["graph"]["nodes"].append(
             {
                 "node": id,
                 "name": worker
             }
         )
+        sankey_df["family"][department].append(worker)
+        sankey_df["family"][worker] = [department]
 
-        sankey_df["links"].append(
+        sankey_df["graph"]["links"].append(
             {
                 "source": department_id,
                 "target": id, 

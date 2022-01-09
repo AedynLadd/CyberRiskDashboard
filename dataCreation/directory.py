@@ -50,7 +50,7 @@ class User:
 rng = np.random.default_rng(99999)
 orgIPrange = "191.214.233."
 
-userID = list(range(1,1001))
+userID = list(range(1,101))
 userIP = []
 for i in range (len(userID)):
     userIP.append(orgIPrange+str(userID[i]))

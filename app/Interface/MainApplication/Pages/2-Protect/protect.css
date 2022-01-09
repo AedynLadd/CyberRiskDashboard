@@ -36,8 +36,7 @@
 .link {
     fill: none;
     stroke: #3e08496e;
-    stroke-opacity: .2;
-    stroke-width: 1;
+    stroke-opacity: .9;
 }
 
 .link:hover {

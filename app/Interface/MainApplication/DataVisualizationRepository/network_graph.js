@@ -69,9 +69,9 @@ d3.json(url).then(function (data) {
             display_node_info(d)
             // Highlight the node
             if (isChord) {
-                node.attr('class', a => a.id === d.id ? 'networkGraph-node-Highlighted' : "networkGraph-node")
                 // Highlight the links
                 link.attr("class", a => a.source.id === d.id || a.target.id === d.id ? 'chord-link-Highlighted' : 'chord-link');
+                node.attr('class', a => a.id === d.id ? 'networkGraph-node-Highlighted' : "networkGraph-node")
             } else {
                 node.attr('class', a => a.id === d.id ? 'networkGraph-node-Highlighted' : "networkGraph-node")
                 // Highlight the links
