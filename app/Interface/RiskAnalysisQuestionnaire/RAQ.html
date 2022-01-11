@@ -9,7 +9,7 @@
 
 <body>
     <!-- PAGES -->
-    <!-- First Page -->
+    <!-- FIRST PAGE - APPLICATION INFO -->
     <div class="subCategoryTab active" id="Page0">
         <div class="RAQtitle"> Risk Analysis Questionnaire </div>
         <div class="RAQ_layout">
@@ -17,22 +17,82 @@
             <div class="item2"></div>
         </div>
     </div>
-    <!-- Middle Pages -->
+    <!-- MIDDLE PAGES - QUESTIONNAIRE -->
+    <!-- Asset Management -->
     <div class="subCategoryTab" id="Page1">
-        <div class="RAQ_layout">
-            <div class="item3"> Middle Page </div>
-            <div class="item4"></div>
-        </div>
+        <form class="RAQ_layout" id = "IM_q">
+            <label class="q 1">Provide a list of physical devices present within your organization. (Insert file) [ID.AM-1]</label>
+            <label class="q 2">Provide a list of Software platforms and applications allowed within the organization. (Insert file) [ID.AM-2]</label>
+            <label class="q 3">Identify the Cybersecurity roles and responsibilities for the entire workforce and third-party stakeholders. (Here we could associate the roles with the list of employees) [ID.AM-6]</label>
+        </form>
     </div>
-    <!-- Last Page -->
+    <!-- Business Environment -->
     <div class="subCategoryTab" id="Page2">
-        <div class="RAQ_layout">
-            <div class="item3"> Last Page </div>
-            <div class="item4"></div>
-        </div>
+        <form class="RAQ_layout" id = "BE_q">
+            <label class="q 4"></label>
+            <label class="q 5"></label>
+            <label class="q 6"></label>
+            <label class="q 7"></label>
+            <label class="q 8"></label>
+            <label class="q 9"></label>
+            <label class="q 10"></label>
+        </form>
     </div>
+    <div class="subCategoryTab" id="Page3">
+        <form class="RAQ_layout" id = "GV_q">
+            <label class="q 11"></label>
+            <label class="q 12"></label>
+            <label class="q 13"></label>
+            <label class="q 14"></label>
+        </form>
+    </div>
+    <div class="subCategoryTab" id="Page4">
+        <form class="RAQ_layout" id = "RA_q">
+            <label class="q 15"></label>
+            <label class="q 16"></label>
+            <label class="q 17"></label>
+            <label class="q 18"></label>
+            <label class="q 19"></label>
+            <label class="q 20"></label>
+            <label class="q 21"></label>
+        </form>
+    </div>
+    <div class="subCategoryTab" id="Page5">
+        <form class="RAQ_layout" id = "IM_q">
+            <label class="q 22"></label>
+            <label class="q 23"></label>
+            <label class="q 24"></label>
+            <label class="q 25"></label>
+            <label class="q 26"></label>
+            <label class="q 27"></label>
+        </form>
+    </div>
+    <div class="subCategoryTab" id="Page6">
+        <form class="RAQ_layout" id = "IM_q">
+            <label class="q 28"></label>
+            <label class="q 29"></label>
+            <label class="q 30"></label>
+            <label class="q 31"></label>
+            <label class="q 32"></label>
+            <label class="q 33"></label>
+            <label class="q 34"></label>
+            <label class="q 35"></label>
+            <label class="q 36"></label>
+            <label class="q 37"></label>
+            <label class="q 38"></label>
+            <label class="q 39"></label>
+        </form>
+    </div>
+    <div class="subCategoryTab" id="Page7">
+        <form class="RAQ_layout" id = "IM_q">
+            <label class="q 40"></label>
+            <label class="q 41"></label>
+        </form>
+    </div>
+    <!-- LAST PAGE - CONFIRMATION AND SUMMARY -->
     <div class="subNav">
-        <button class="subcategoryLink" onclick="openSubCategory(event, 'previous')" id="previous_page" style="display:none"> Previous </button>
+        <button class="subcategoryLink" onclick="openSubCategory(event, 'previous')" id="previous_page"
+            style="display:none"> Previous </button>
         <button class="subcategoryLink" onclick="openSubCategory(event, 'next')" id="next_page"> Next </button>
     </div>
     <!-- END OF PAGES-->

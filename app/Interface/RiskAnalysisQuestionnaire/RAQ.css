@@ -28,19 +28,6 @@ RAQ CONTAINERS
 }
 
 
-/* Default grid container
-
-.RAQ_layout>div {
-    background-color: rgba(244, 253, 255, 0.349);
-    border-radius: 3px;
-    box-shadow: 0px 0px 3px 1px rgba(75, 73, 73, 0.404);
-    text-align: center;
-    padding: 20px 0;
-    font-size: 15px;
-}
-*/
-
-
 /* Fade in effect on tab open */
 
 .RAQ_layout {
