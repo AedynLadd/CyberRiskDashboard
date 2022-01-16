@@ -20,18 +20,17 @@
  */
 
 
-const { app, BrowserWindow, ipcMain, webContents } = require('electron')
-const fs = require('fs')
+const { app, BrowserWindow, ipcMain } = require('electron');
+const fs = require('fs');
 
 // 1. ELECTRON PROCESSES
 //
 // 1.A USER INTERFACE
 //
 let LoadingScreen;
-let RiskAnalysisQuestionnaire;
 let DashboardWindow;
 
-const createLoadingScreen = () => {
+function createLoadingScreen() {
     LoadingScreen = new BrowserWindow({
         width: 400,
         height: 300,
@@ -42,17 +41,16 @@ const createLoadingScreen = () => {
     });
 
     LoadingScreen.loadFile('app/Interface/LoadingMenu/loading.html');
-    LoadingScreen.on('closed', () => (LoadingScreen = null));
 }
 
-const createRAQ = () => {
-    RiskAnalysisQuestionnaire = new BrowserWindow({
+function createRAQ() {
+    const RiskAnalysisQuestionnaire = new BrowserWindow({
         width: 600,
         height: 800,
-        frame: false,
+        //frame: false,
         show: true,
-        alwaysOnTop: true,
-        resizable: false,
+        //alwaysOnTop: true,
+        //resizable: false,
         webPreferences: {
             nodeIntegration: true,
             contextIsolation: false,
@@ -60,18 +58,15 @@ const createRAQ = () => {
         }
     });
 
-    RiskAnalysisQuestionnaire.loadFile('app/Interface/RiskAnalysisQuestionnaire/RAQ.html');
-    RiskAnalysisQuestionnaire.on('closed', () => {
-        RiskAnalysisQuestionnaire = null
-        createDashboardWindow()
-    });
+    RiskAnalysisQuestionnaire.loadFile('app/Interface/RiskAnalysisQuestionnaire/index.html');
+    RiskAnalysisQuestionnaire.on('closed', createDashboardWindow);
 }
 
-const createDashboardWindow = () => {
+function createDashboardWindow() {
     DashboardWindow = new BrowserWindow({
         width: 400,
         height: 400,
-        frame: false,
+        //frame: false,
         show: false,
         fullscreen: true,
         webPreferences: {
@@ -87,20 +82,18 @@ const createDashboardWindow = () => {
     createLoadingScreen();
 
     // Once the dashboard window sends the ready-to-launch we can show it, otherwise we'll hold off... 
-    ipcMain.once("ready-to-launch", (event, arg) => {
+    ipcMain.once("ready-to-launch", () => {
         // If the application is ready to launch we can swap the loading screen with the dashboard screen.
-        LoadingScreen.close()
-        DashboardWindow.show()
+        LoadingScreen.close();
+        DashboardWindow.show();
 
-    })
-
-    DashboardWindow.on('closed', () => {
-        AnalysisRenderer = null
-        AnalysisRenderer.close()
-        DataRender = null
-        DataRender.close()
-        DashboardWindow = null
     });
+
+    // The Windows are already destroyed by the time this gets called. It's throwing an error on close.
+    // DashboardWindow.on('closed', () => {
+    //     if (AnalysisRenderer) AnalysisRenderer.close()
+    //     if (DataRender) DataRender.close()
+    // });
 }
 
 
@@ -111,7 +104,7 @@ const createDashboardWindow = () => {
 let AnalysisRenderer;
 let DataRender;
 
-const createAnalysisRenderer = () => {
+function createAnalysisRenderer() {
     AnalysisRenderer = new BrowserWindow({
         show: false,
         webPreferences: {
@@ -124,7 +117,7 @@ const createAnalysisRenderer = () => {
     AnalysisRenderer.loadFile('app/Hidden/Analysis/analysis_renderer.html');
 }
 
-const createDataRenderer = () => {
+function createDataRenderer() {
     DataRender = new BrowserWindow({
         show: false,
         webPreferences: {
@@ -140,22 +133,21 @@ const createDataRenderer = () => {
 //
 // 2. INTER PROCESS COMMUNICATIONS
 // 2.A ANALYSIS ENDPOINT
-ipcMain.on("dashboard-analysis", (event, arg) => AnalysisRenderer.webContents.send("dashboard", arg));
-ipcMain.on("data-analysis", (event, arg) => AnalysisRenderer.webContents.send("data", arg));
+ipcMain.on("dashboard-analysis", (_, arg) => AnalysisRenderer.webContents.send("dashboard", arg));
+ipcMain.on("data-analysis", (_, arg) => AnalysisRenderer.webContents.send("data", arg));
 
 // 2.B DATA ENDPOINT
-ipcMain.on("dashboard-data", (event, arg) => DataRender.webContents.send("dashboard", arg));
-ipcMain.on("analysis-data", (event, arg) => DataRender.webContents.send("analysis", arg));
+ipcMain.on("dashboard-data", (_, arg) => DataRender.webContents.send("dashboard", arg));
+ipcMain.on("analysis-data", (_, arg) => DataRender.webContents.send("analysis", arg));
 
 // 2.C DASHBOARD ENDPOINT
-ipcMain.on("data-dashboard", (event, arg) => DashboardWindow.webContents.send("data", arg));
-ipcMain.on("analysis-dashboard", (event, arg) => DashboardWindow.webContents.send("analysis", arg));
-
+ipcMain.on("data-dashboard", (_, arg) => DashboardWindow.webContents.send("data", arg));
+ipcMain.on("analysis-dashboard", (_, arg) => DashboardWindow.webContents.send("analysis", arg));
 
 //
 // 3. APPLICATION LIFE CYCLE EVENTS
 //
-app.on('ready', () => {
+function launchApp() {
     // Create a 'main'-Window
     createAnalysisRenderer();
     createDataRenderer();
@@ -174,7 +166,10 @@ app.on('ready', () => {
     }
 
     // Configure Listeners here if events are directly requesting something of the main process
-    ipcMain.on('core-action', (event, arg) => {
+    ipcMain.on('core-action', (_, arg) => {
         console.log(arg) // prints "ping"
     })
-})
+}
+
+
+app.whenReady().then(launchApp);

@@ -2,9 +2,10 @@
     "name": "CyberRiskDashboard",
     "version": "1.0.0",
     "description": "As systems and organizations become larger and more complex, those involved in making design decisions will face challenges regarding ways to identify, analyze, and prepare for threats and hazards, mitigate vulnerabilities, and minimize impact and consequences. This project aims to develop a cyber risk dashboard that supports asset management, threat source identification, and advanced threat assessment techniques to identify and score security vulnerabilities related to the people, processes, and systems of an organization. The dashboard is expected to provide a visual representation of the cyber risks to the organization and provides actionable information that can be used to make decisions and mitigate risks.",
-    "main": "app/core_process.js",
+    "main": "app/electron.js",
     "scripts": {
         "start": "electron .",
+        "watch": "webpack --config webpack-common.js --watch",
         "test": "echo \"Error: no test specified\" && exit 1"
     },
     "repository": {
@@ -18,13 +19,25 @@
         "url": "https://github.com/AedynLadd/CyberRiskDashboard/issues"
     },
     "homepage": "https://github.com/AedynLadd/CyberRiskDashboard#readme",
-    "devDependencies": {
-        "electron": "^14.0.1"
-    },
     "dependencies": {
         "d3": "^6",
         "d3-sankey": "^0.12.3",
+        "electron": "^14.0.1",
         "python-shell": "^3.0.0",
+        "react": "^17.0.2",
+        "react-dom": "^17.0.2",
         "v8-compile-cache": "^2.3.0"
+    },
+    "devDependencies": {
+        "@babel/core": "^7.16.7",
+        "@babel/preset-env": "^7.16.8",
+        "@babel/preset-react": "^7.16.7",
+        "babel-loader": "^8.2.3",
+        "css-loader": "^6.5.1",
+        "sass": "^1.48.0",
+        "sass-loader": "^12.4.0",
+        "style-loader": "^3.3.1",
+        "webpack": "^5.66.0",
+        "webpack-cli": "^4.9.1"
     }
 }
