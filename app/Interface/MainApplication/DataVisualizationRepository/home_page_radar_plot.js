@@ -188,7 +188,7 @@ d3.json(__dirname + "/Data/NIST_criteria.json").then(function (data) {
         .attr("cy", function (d) { return d[1] })
         .attr("r", 3);
 
-    update_right_radar()
+    update_right_radar(null, data)
 
 });
 
@@ -201,5 +201,34 @@ function update_right_radar(element_id = null, data) {
     relevant_data = (element_id != null) ? data[element_id] : data;
     console.log(relevant_data)
     document.getElementById("total_score_title").innerHTML = (element_id != null) ? element_id : "Overall";
-}
 
+
+    const create_score_card = (title, score) => {
+        return ['<div>',
+                    '<div class="score_card_title">', title, '</div>',
+                    '<div class="score_card_subtitle">', score, '</div>',
+                '</div>'].join("")
+    }
+
+    document.getElementById("score_elements").innerHTML = null;
+    let overall_score = 0
+    if(element_id == null){
+        // Prepare Overall Data Panel
+        Object.keys(relevant_data).forEach((function_key) => {
+            // Score of this function
+            let function_score = 0;
+            Object.keys(relevant_data[function_key]["items"]).forEach((category_key) => { function_score += (relevant_data[function_key]["items"][category_key][0]) * 100})  
+            overall_score += function_score;
+            document.getElementById("score_elements").innerHTML += create_score_card(function_key, function_score)
+        })
+
+    } else {
+        Object.keys(relevant_data["items"]).forEach((category_key) => {
+            let category_score = Math.round(relevant_data["items"][category_key][0] * 100);
+            overall_score += category_score
+            // Prepare Specified Data Panel 
+            document.getElementById("score_elements").innerHTML += create_score_card(category_key, category_score)
+        })
+    }
+    document.getElementById("cyber_risk_score").innerHTML = overall_score;
+}

@@ -5,10 +5,50 @@ body {
     background-color: #494a4e;
 }
 
-.total_score_title{
+.total_score_title {
     width: auto;
     height: auto;
     margin-left: 2px;
     margin-right: 2px;
+    font-size: 20px;
+    font-weight: bolder;
     overflow: hidden;
+}
+
+.cyber_risk_score{
+    width: auto;
+    height: auto;
+    margin-left: 2px;
+    margin-right: 2px;
+    font-size: 50px;
+    font-weight: bold;
+    overflow: hidden;
+}
+
+.score_elements {
+    display: flex;
+    flex-wrap: nowrap;
+    margin: auto;
+    width: 90%;
+    overflow-x: auto;
+    justify-content: center;
+}
+
+.score_card{
+    flex: 0 0 auto;
+    width: 70px;
+    height: 70px;
+    margin: 10px 10px 10px 10px;
+    background-color: rgba(185, 185, 185, 0.13);
+    box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.404);
+}
+
+.score_card_title{
+    color: rgb(53, 53, 53);
+    font-weight: lighter;
+}
+
+.score_card_subtitle{
+    color: rgb(39, 39, 39);
+    font-weight: bolder;
 }
