@@ -128,7 +128,7 @@ d3.json(__dirname + "/Data/NIST_criteria.json").then(function (data) {
 
     let i = 0;
     var slice_angle = 360 / Object.entries(data).length;
-    var radius = 210;
+    var radius = 200;
     var center = [350, 240]
 
     // Slices

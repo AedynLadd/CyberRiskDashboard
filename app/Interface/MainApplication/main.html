@@ -19,16 +19,21 @@
         <nav class="stroke">
             <ul>
                 <li><a href="./main.html" id="Home_nav"> Home </a></li>
-                <li onmouseover="changeText('IDENTIFY','Identify_nav')" onmouseout="changeText('ID', 'Identify_nav')"><a
-                        href="./Pages/1-Identify/identify.html" id="Identify_nav" class="Identify"> ID </a></li>
-                <li onmouseover="changeText('PROTECT','Protect_nav')" onmouseout="changeText('PR','Protect_nav')"><a
-                        href="./Pages/2-Protect/protect.html" id="Protect_nav" class="Protect"> PR </a></li>
-                <li onmouseover="changeText('DETECT','Detect_nav')" onmouseout="changeText('DE','Detect_nav')"><a
-                        href="./Pages/3-Detect/detect.html" id="Detect_nav" class="Detect"> DE </a></li>
-                <li onmouseover="changeText('RESPOND','Respond_nav')" onmouseout="changeText('RS','Respond_nav')"><a
-                        href="./Pages/4-Respond/respond.html" id="Respond_nav" class="Respond"> RS </a></li>
-                <li onmouseover="changeText('RECOVER','Recover_nav')" onmouseout="changeText('RC','Recover_nav')"><a
-                        href="./Pages/5-Recover/recover.html" id="Recover_nav" class="Recover"> RC </a></li>
+                <li onmouseover="changeText('IDENTIFY','Identify_nav')" onmouseout="changeText('ID', 'Identify_nav')">
+                    <a href="./Pages/1-Identify/identify.html" id="Identify_nav" class="Identify"> ID </a>
+                </li>
+                <li onmouseover="changeText('PROTECT','Protect_nav')" onmouseout="changeText('PR','Protect_nav')">
+                    <a href="./Pages/2-Protect/protect.html" id="Protect_nav" class="Protect"> PR </a>
+                </li>
+                <li onmouseover="changeText('DETECT','Detect_nav')" onmouseout="changeText('DE','Detect_nav')">
+                    <a href="./Pages/3-Detect/detect.html" id="Detect_nav" class="Detect"> DE </a>
+                </li>
+                <li onmouseover="changeText('RESPOND','Respond_nav')" onmouseout="changeText('RS','Respond_nav')">
+                    <a href="./Pages/4-Respond/respond.html" id="Respond_nav" class="Respond"> RS </a>
+                </li>
+                <li onmouseover="changeText('RECOVER','Recover_nav')" onmouseout="changeText('RC','Recover_nav')">
+                    <a href="./Pages/5-Recover/recover.html" id="Recover_nav" class="Recover"> RC </a>
+                </li>
             </ul>
         </nav>
     </div>
@@ -54,13 +59,9 @@
                 <div>SUGGESTION 4</div>
             </div>
         </div>
-        <div class="left_radar">
-            <div class="total_score_title">
-                <text> WRITING SOMETHING REALLY REALLY LONG</text>
-            </div>
-        </div>
+        <div class="left_radar" id="stackedAreaChart"></div>
         <div class="right_radar">
-            <text class="total_score_title" id="total_score_title"> WRITING SOMETHING REALLY REALLY LONG </text>
+            <text class="total_score_title" id="total_score_title"></text>
         </div>
     </div>
     <!-- END OF MAIN CONTENTS-->
@@ -68,6 +69,7 @@
 <script type="text/javascript" src="js/main.js"></script>
 <script type="text/javascript" src="js/navbar_animation.js"></script>
 <script type="text/javascript" src="./DataVisualizationRepository/home_page_radar_plot.js"></script>
+<script type="text/javascript" src="./DataVisualizationRepository/home_page_stacked_area.js"></script>
 <script type="text/javascript" src="./DataVisualizationRepository/suggestion_cards.js"></script>
 
 </html>
