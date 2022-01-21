@@ -46,8 +46,6 @@ d3.csv(url).then(function (data) {
         .enter().append("rect")
         .attr("x", function (d) { return x(d.group) })
         .attr("y", function (d) { return y(d.variable) })
-        .attr("rx", 4)
-        .attr("ry", 4)
         .attr("width", x.bandwidth())
         .attr("height", y.bandwidth())
         .style("fill", "#ffffff4e")

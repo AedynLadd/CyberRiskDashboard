@@ -44,8 +44,7 @@ d3.json(__dirname + "/Data/NIST_criteria.json").then(function (data) {
         // For each category subcategory
         for (const [key, value] of Object.entries(subcategories)) {
             // use random values
-
-            value[0] = Math.floor(Math.random() * (100 - 25 + 1) + 25) / 100
+            //value[0] = Math.floor(Math.random() * (100 - 25 + 1) + 25) / 100
             // Append the calculated point to our coordinate array
             //angle_located = i + (sub_angle / 2)
 
