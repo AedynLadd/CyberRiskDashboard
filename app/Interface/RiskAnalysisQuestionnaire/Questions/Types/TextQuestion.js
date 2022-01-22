@@ -1,4 +1,5 @@
 import React from 'react'
+import { Box, Divider, ListItem } from '@mui/material'
 
 import QuestionLabel from '../Common/QuestionLabel'
 
@@ -9,10 +10,15 @@ export default function TextQuestion({question, update}) {
         update(newQuestion)
     }
 
+    // 
+
     return (
-        <div>
-            <QuestionLabel question={question} />
-            <input type="text" onChange={handleChange} value={question.answer}></input>
-        </div>
+        <>
+            <Box>
+                <QuestionLabel question={question} />
+                <input type="text" onChange={handleChange} value={question.answer}></input>
+            </Box>
+            <Divider variant='middle'/>
+        </>
     )
 }

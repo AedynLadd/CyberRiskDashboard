@@ -50,7 +50,7 @@ function createRAQ() {
         //frame: false,
         show: true,
         //alwaysOnTop: true,
-        //resizable: false,
+        resizable: false,
         webPreferences: {
             nodeIntegration: true,
             contextIsolation: false,
