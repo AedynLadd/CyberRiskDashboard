@@ -1,5 +1,5 @@
 import React from 'react'
-import { Box, Divider, ListItem } from '@mui/material'
+import { TextField } from '@mui/material'
 
 import QuestionLabel from '../Common/QuestionLabel'
 
@@ -14,11 +14,23 @@ export default function TextQuestion({question, update}) {
 
     return (
         <>
-            <Box>
-                <QuestionLabel question={question} />
-                <input type="text" onChange={handleChange} value={question.answer}></input>
-            </Box>
-            <Divider variant='middle'/>
+            <QuestionLabel question={question} />
+            <TextField
+                sx={{
+                    display: "flex",
+                    maxWidth: 400,
+                    m: 1,
+                    flexWrap: 'wrap',
+                    flex: 'flex-grow'
+                }}
+                placeholder="Enter here"
+                variant="standard"
+                value={question.answer}
+                onChange={handleChange}
+                multiline
+                minRows={1}
+                maxRows={5}
+            ></TextField>
         </>
     )
 }

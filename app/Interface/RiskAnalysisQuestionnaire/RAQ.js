@@ -30,8 +30,9 @@ MultiSelect. (dropdown -> Array[String]) https://www.npmjs.com/package/react-dro
 export default function RAQ() {
 
     const theme = createTheme({
-        palette: dark,
-        spacing: 6
+        palette: {
+            mode: 'dark'
+        }
     })
 
     const [activeStep, setActiveStep] = useState(0)
@@ -42,6 +43,11 @@ export default function RAQ() {
     
     const handleBack = () => {
         setActiveStep((prevActiveStep) => prevActiveStep - 1)
+    }
+
+    const handleFinish = () => {
+        Console.log("We have finished")
+        // TODO: Save the answers in a file
     }
 
     return (
@@ -109,7 +115,7 @@ export default function RAQ() {
                         <StepLabel>Other</StepLabel>
                         <StepContent TransitionProps={{ unmountOnExit: false }}>
                             <Other key={'Other'}/>
-                            <BackNextButtons handleBack={handleBack} handleNext={handleNext} isLastStep={true} />
+                            <BackNextButtons handleBack={handleBack} handleNext={handleFinish} isLastStep={true} />
                         </StepContent>
                     </Step>
                 </Stepper>

@@ -1,9 +1,10 @@
 import React, { useState, useEffect } from 'react'
-import {List, Stack} from '@mui/material'
+import {Box, Stack} from '@mui/material'
 
 import TextQuestion from './types/TextQuestion'
 import YesNoQuestion from './Types/YesNoQuestion'
 import SingleSelect from './Types/SingleSelect'
+import MultiSelect from './Types/MultiSelect'
 
 /*
 Text Input (Regular HTML text box -> String)
@@ -21,47 +22,55 @@ export default function SampleQuestions() {
         text: "What is your name?",
         answer: ''
     })
-    function onTextUpdate(newSample) {
-        setText(newSample)
-    }
 
     const [sampleYesNo, setYesNo] = useState({
         number: 2,
         text: "Do you like patates?",
-        answer: true
+        falseLabel: "Ewwwww",
+        trueLabel: "Yummy!",
+        answer: false
     })
-    function onYesNoUpdate(newSample) {
-        setYesNo(newSample)
-    }
+
+    useEffect(() => {
+
+    }, [sampleYesNo]);
 
     const [sampleSelect, setSelect] = useState({
-        number: 3,
+        number: 2.1,
         text: "Are you a dog or a cat person",
         selectOptions: [
             {value: 'dog', label: 'Dog'},
             {value: 'cat', label: 'Cat'}
         ],
-        answer: {}
+        answer: ""
     })
-    function onSelectUpdate(newSample) {
-        setSelect(newSample)
-    }
+
+    const [sampleMulti, setMulti] = useState({
+        number: 3,
+        text: "Who are your friends?",
+        selectOptions: [
+            {value: 'dog', label: 'Dog'},
+            {value: 'cat', label: 'Cat'},
+            {value: 'bird', label: 'Bird'},
+            {value: 'fish', label: 'Fish'},
+            {value: 'fox', label: 'Fox'}
+        ],
+        answer: []
+    })
     
     useEffect(() => {
-        const singleSelectValue = "value" in sampleSelect.answer ? sampleSelect.answer.value : ''
-        console.log("Text: " + sampleText.answer)
-        console.log("YesNo: " + sampleYesNo.answer)
-        console.log("SingleSelect: " + singleSelectValue)
+        console.log("MultiSelect: " + sampleMulti.answer)
 
         console.log("-----------------------------")
-    }, [sampleText, sampleYesNo, sampleSelect])
+    }, [sampleMulti])
     
     return (
         <div>
             <Stack spacing={2}>
-                <TextQuestion question={sampleText} update={onTextUpdate} />
-                <YesNoQuestion question={sampleYesNo} update={onYesNoUpdate} />
-                <SingleSelect question={sampleSelect} update={onSelectUpdate} />
+                <TextQuestion question={sampleText} update={setText} />
+                <YesNoQuestion question={sampleYesNo} update={setYesNo} />
+                { sampleYesNo.answer ? <Box sx={{pl: 5}}><SingleSelect question={sampleSelect} update={setSelect} /></Box> : null }
+                <MultiSelect question={sampleMulti} update={setMulti} />
             </Stack>
         </div>
     )
