@@ -50,6 +50,20 @@ d3.csv(url).then(function (data) {
         .attr("height", y.bandwidth())
         .style("fill", "#ffffff4e")
         .style("opacity", 0.8)
+        .on("mouseout", function(event,d){
+            //console.log("Moused Out");
+        })
+        .on("mouseover", function(event,d){
+            //console.log("Moused Over");
+        })
+        .on("click", function(event, d){
+            //console.log("Item Clicked");
+            let line_data = data.filter(function(row){
+                return row['group'] == d["group"]; 
+            });
+            generate_line_chart(d["group"], line_data);
+        })
+
 
     renderColor()
 
