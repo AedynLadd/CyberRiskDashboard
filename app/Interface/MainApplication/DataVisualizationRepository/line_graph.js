@@ -32,8 +32,8 @@ function generate_line_chart(group_name, data) {
 
     // Add Y axis
     const y = d3.scaleLinear()
-        .domain([0, 100])
-        .range([100, 0]);
+        .domain([0, 150])
+        .range([150, 0]);
     line_svg.append("g")
         .call(d3.axisLeft(y));
 
@@ -48,7 +48,7 @@ function generate_line_chart(group_name, data) {
         .attr("d", function (d) {
             return d3.line()
                 .x(function (d) { return x(d.variable); })
-                .y(function (d) { return y(+d.valueA); })
+                .y(function (d) { return y(d.valueA); })
                 (d[1])
         })
     // line_svg.selectAll(".line")
