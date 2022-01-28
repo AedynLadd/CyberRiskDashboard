@@ -165,27 +165,35 @@ d3.json(url_cvss).then(data =>  cvss_data = data);
 //
 // Displaying node information
 function display_node_info(node_element){
-    console.log(node_element)
     document.getElementById("networkGraph_info_id").innerHTML = node_element.id
     document.getElementById("networkGraph_info_ip").innerHTML = node_element.name
-    console.log(cvss_data)
-    createTable("networkGraph_info_software_assets", cvss_data)
+    createTable("networkGraph_info_software_assets", node_element.data)
 }
 
-function createTable(id, data) {
+function createTable(id, data_items) {
     var base_div = document.getElementById(id);
     var base_tbl = document.createElement('table');
-
-    // Append the datas
-    max_rows = 3;
-    max_columns = 2;
+    // Data keys
+    // Append the data
+    let max_rows = data_items.length;
+    let max_columns = 2;
     for (let rows = 0; rows <= (max_rows - 1); rows++){
         var tbl_row = base_tbl.insertRow();
         for (let columns = 0; columns <= (max_columns - 1); columns++){
             var cell_element = tbl_row.insertCell();
-            cell_element.appendChild(document.createTextNode('Cell X'));
+            if(columns == 0){
+                cell_info = data_items[rows];
+                console.log(cell_info)
+
+            } else if(columns == 1){
+                cell_info = cvss_data[data_items[rows]].length;
+            }
+
+            cell_element.appendChild(document.createTextNode(cell_info + ''));
         }
     }
+
+    // Create table
     base_div.innerHTML = ""
     base_div.append(base_tbl)
 }
