@@ -25,11 +25,11 @@ function generate_line_chart(group_name, data) {
 
     // Add X axis --> it is a date format
     const x = d3.scaleLinear()
-        .domain(d3.extent(data, function (d) { return d.variable; }))
+        .domain(0, d3.extent(data, function (d) { return d.variable; }))
         .range([0, 500]);
 
     line_svg.append("g")
-        .attr("transform", `translate(0, 100)`)
+        .attr("transform", `translate(0, 150)`)
         .call(d3.axisBottom(x).ticks(5));
 
     // Add Y axis
@@ -50,7 +50,7 @@ function generate_line_chart(group_name, data) {
         .attr("d", function (d) {
             return d3.line()
                 .x(function (d) { return x(d.variable); })
-                .y(function (d) { return y(d.valueA); })
+                .y(function (d) { return y(+d.valueA); })
                 (d[1])
         })
     // line_svg.selectAll(".line")
