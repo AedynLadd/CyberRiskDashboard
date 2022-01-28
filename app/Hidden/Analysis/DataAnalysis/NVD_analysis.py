@@ -31,7 +31,7 @@ def get_product_CVES(product, organization = None, version_number = None):
 
     CVD_identifier = "cpe:2.3:*:{}:{}:{}".format(organization, product, version_number)
 
-    req = requests.get("https://services.nvd.nist.gov/rest/json/cves/1.0/?cpeMatchString={}".format(CVD_identifier))
+    req = requests.get("https://services.nvd.nist.gov/rest/json/cves/1.0/?cpeMatchString={}&resultsPerPage=1000".format(CVD_identifier))
 
     return req.json()
 
@@ -42,14 +42,16 @@ def format_cves(product_cves):
     for cve in product_cves["result"]["CVE_Items"]:
         try:
             cve_scores.append({
+                "cve_id": cve["cve"]["CVE_data_meta"]["ID"],
                 "base_score": cve["impact"]["baseMetricV3"]["cvssV3"]["baseScore"],
                 "exploitabilityScore": cve["impact"]["baseMetricV3"]["exploitabilityScore"],
                 "impactScore": cve["impact"]["baseMetricV3"]["impactScore"]
             })
         except Exception as e:
-            # If an expection occurs its most likely because only a v2 cvss is available
+            # If an expection occurs its most likely because only a v2 cve is available
             # This is ok, we just change some variable names
             cve_scores.append({
+                "cve_id": cve["cve"]["CVE_data_meta"]["ID"],
                 "base_score": cve["impact"]["baseMetricV2"]["cvssV2"]["baseScore"],
                 "exploitabilityScore": cve["impact"]["baseMetricV2"]["exploitabilityScore"],
                 "impactScore": cve["impact"]["baseMetricV2"]["impactScore"]

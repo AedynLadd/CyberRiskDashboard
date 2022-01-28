@@ -156,6 +156,9 @@ d3.json(url).then(function (data) {
     }
 })
 
+let cvss_data = undefined
+url_cvss = "../../Data/NVD_analysis.json"
+d3.json(url_cvss).then(data =>  cvss_data = data);
 
 //
 // INFORMATION TAB
@@ -165,4 +168,24 @@ function display_node_info(node_element){
     console.log(node_element)
     document.getElementById("networkGraph_info_id").innerHTML = node_element.id
     document.getElementById("networkGraph_info_ip").innerHTML = node_element.name
+    console.log(cvss_data)
+    createTable("networkGraph_info_software_assets", cvss_data)
+}
+
+function createTable(id, data) {
+    var base_div = document.getElementById(id);
+    var base_tbl = document.createElement('table');
+
+    // Append the datas
+    max_rows = 3;
+    max_columns = 2;
+    for (let rows = 0; rows <= (max_rows - 1); rows++){
+        var tbl_row = base_tbl.insertRow();
+        for (let columns = 0; columns <= (max_columns - 1); columns++){
+            var cell_element = tbl_row.insertCell();
+            cell_element.appendChild(document.createTextNode('Cell X'));
+        }
+    }
+    base_div.innerHTML = ""
+    base_div.append(base_tbl)
 }
