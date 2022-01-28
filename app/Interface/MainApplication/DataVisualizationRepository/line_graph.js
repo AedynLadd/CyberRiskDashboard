@@ -1,4 +1,5 @@
 console.log("hello")
+const { group } = require("d3");
 var d3 = require("d3")
 
 var line_svg = d3.select("#LineGraph")
@@ -11,21 +12,22 @@ var line_svg = d3.select("#LineGraph")
 
 // color palette
 const color = d3.scaleOrdinal()
-.range(['#e41a1c', '#377eb8', '#4daf4a', '#984ea3', '#ff7f00', '#ffff33', '#a65628', '#f781bf', '#999999'])
+    .range(['#e41a1c', '#377eb8', '#4daf4a', '#984ea3', '#ff7f00', '#ffff33', '#a65628', '#f781bf', '#999999'])
 
 
 function generate_line_chart(group_name, data) {
-    // console.log(group_name);
-    // console.log(data);
-    // Filter by group name
+    console.log(group_name);
+    console.log(data);
+    // Reformat our data to be better suited for a line graph
+    restructured_data = restructure(data, ["valueA", "valueB", "valueC"]);
 
     //const sumstat = d3.group(data, d => d.group);
-    //console.log(sumstat)
 
     // Add X axis --> it is a date format
     const x = d3.scaleLinear()
         .domain(d3.extent(data, function (d) { return d.variable; }))
         .range([0, 500]);
+
     line_svg.append("g")
         .attr("transform", `translate(0, 100)`)
         .call(d3.axisBottom(x).ticks(5));
@@ -79,6 +81,36 @@ function generate_line_chart(group_name, data) {
     //     })
 }
 
+
+function restructure(data, group_variables) {
+    console.log(group_variables)
+    var restructured_data = new Object();
+
+    (data).forEach(element => {
+        (group_variables).forEach(group => {
+            if (restructured_data[group] == undefined) {
+                restructured_data[group] = [
+                    group,
+                    [{
+                        "date": element["variable"],
+                        "name": group,
+                        "n": parseInt(element[group])
+                    }]
+                ];
+            } else {
+                restructured_data[group][1]
+                    .push(
+                        {
+                            "date": element["variable"],
+                            "name": group,
+                            "n": parseInt(element[group])
+                        });
+            }
+        })
+    });
+    console.log(restructured_data);
+    return restructured_data;
+}
 // url = "./../Data/anomaly_heatmap.csv"
 // d3.csv(url).then(function (data) {
 
