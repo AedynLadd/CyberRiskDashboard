@@ -44,17 +44,15 @@ d3.csv(url).then(function (data) {
     const dataPoints = svg.selectAll()
         .data(data, function (d) { return d.group + ':' + d.variable; })
         .enter().append("rect")
+        .attr("class", "heatmap_point")
         .attr("x", function (d) { return x(d.group) })
         .attr("y", function (d) { return y(d.variable) })
         .attr("width", x.bandwidth())
         .attr("height", y.bandwidth())
         .style("fill", "#ffffff4e")
-        .style("opacity", 0.8)
         .on("mouseout", function(event,d){
-            //console.log("Moused Out");
         })
         .on("mouseover", function(event,d){
-            //console.log("Moused Over");
         })
         .on("click", function(event, d){
             //console.log("Item Clicked");

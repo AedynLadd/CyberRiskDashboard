@@ -1,1 +1,507 @@
-{"R Programming": [], "Tableau Public": [], "Python": [{"base_score": 6.1, "exploitabilityScore": 2.8, "impactScore": 2.7}, {"base_score": 5.9, "exploitabilityScore": 1.6, "impactScore": 4.2}, {"base_score": 7.2, "exploitabilityScore": 3.9, "impactScore": 2.7}, {"base_score": 9.8, "exploitabilityScore": 3.9, "impactScore": 5.9}, {"base_score": 7.5, "exploitabilityScore": 3.9, "impactScore": 3.6}, {"base_score": 5.7, "exploitabilityScore": 2.1, "impactScore": 3.6}, {"base_score": 9.8, "exploitabilityScore": 3.9, "impactScore": 5.9}, {"base_score": 8.8, "exploitabilityScore": 2.8, "impactScore": 5.9}, {"base_score": 6.5, "exploitabilityScore": 2.8, "impactScore": 3.6}, {"base_score": 7.5, "exploitabilityScore": 3.9, "impactScore": 3.6}, {"base_score": 5.9, "exploitabilityScore": 2.2, "impactScore": 3.6}, {"base_score": 7.8, "exploitabilityScore": 1.8, "impactScore": 5.9}, {"base_score": 9.8, "exploitabilityScore": 3.9, "impactScore": 5.9}, {"base_score": 5.5, "exploitabilityScore": 1.8, "impactScore": 3.6}, {"base_score": 9.8, "exploitabilityScore": 3.9, "impactScore": 5.9}, {"base_score": 5.0, "exploitabilityScore": 10.0, "impactScore": 2.9}, {"base_score": 6.1, "exploitabilityScore": 2.8, "impactScore": 2.7}, {"base_score": 6.1, "exploitabilityScore": 2.8, "impactScore": 2.7}, {"base_score": 7.5, "exploitabilityScore": 3.9, "impactScore": 3.6}, {"base_score": 6.1, "exploitabilityScore": 2.8, "impactScore": 2.7}], "SAS": [], "Apache Spark": [], "Excel": [{"base_score": 8.8, "exploitabilityScore": 2.8, "impactScore": 5.9}, {"base_score": 7.8, "exploitabilityScore": 1.8, "impactScore": 5.9}, {"base_score": 7.8, "exploitabilityScore": 1.8, "impactScore": 5.9}, {"base_score": 7.8, "exploitabilityScore": 1.8, "impactScore": 5.9}, {"base_score": 7.8, "exploitabilityScore": 1.8, "impactScore": 5.9}, {"base_score": 7.8, "exploitabilityScore": 1.8, "impactScore": 5.9}, {"base_score": 5.5, "exploitabilityScore": 1.8, "impactScore": 3.6}, {"base_score": 7.8, "exploitabilityScore": 1.8, "impactScore": 5.9}, {"base_score": 7.8, "exploitabilityScore": 1.8, "impactScore": 5.9}, {"base_score": 8.8, "exploitabilityScore": 2.8, "impactScore": 5.9}, {"base_score": 7.8, "exploitabilityScore": 1.8, "impactScore": 5.9}, {"base_score": 7.8, "exploitabilityScore": 1.8, "impactScore": 5.9}, {"base_score": 7.8, "exploitabilityScore": 1.8, "impactScore": 5.9}, {"base_score": 7.8, "exploitabilityScore": 1.8, "impactScore": 5.9}, {"base_score": 8.8, "exploitabilityScore": 2.8, "impactScore": 5.9}, {"base_score": 8.8, "exploitabilityScore": 2.8, "impactScore": 5.9}, {"base_score": 8.8, "exploitabilityScore": 2.8, "impactScore": 5.9}, {"base_score": 5.5, "exploitabilityScore": 1.8, "impactScore": 3.6}, {"base_score": 8.8, "exploitabilityScore": 2.8, "impactScore": 5.9}, {"base_score": 8.8, "exploitabilityScore": 2.8, "impactScore": 5.9}], "RapidMiner": [], "KNIME": [], "QlikView": [{"base_score": 6.4, "exploitabilityScore": 10.0, "impactScore": 4.9}], "Splunk": [{"base_score": 8.8, "exploitabilityScore": 2.8, "impactScore": 5.9}, {"base_score": 4.3, "exploitabilityScore": 8.6, "impactScore": 2.9}, {"base_score": 4.3, "exploitabilityScore": 2.8, "impactScore": 1.4}, {"base_score": 7.8, "exploitabilityScore": 1.8, "impactScore": 5.9}, {"base_score": 9.8, "exploitabilityScore": 3.9, "impactScore": 5.9}, {"base_score": 7.0, "exploitabilityScore": 1.0, "impactScore": 5.9}, {"base_score": 3.5, "exploitabilityScore": 2.1, "impactScore": 1.4}, {"base_score": 5.4, "exploitabilityScore": 2.3, "impactScore": 2.7}, {"base_score": 6.5, "exploitabilityScore": 2.8, "impactScore": 3.6}, {"base_score": 6.1, "exploitabilityScore": 2.8, "impactScore": 2.7}, {"base_score": 7.5, "exploitabilityScore": 3.9, "impactScore": 3.6}, {"base_score": 7.5, "exploitabilityScore": 3.9, "impactScore": 3.6}, {"base_score": 5.3, "exploitabilityScore": 3.9, "impactScore": 1.4}, {"base_score": 4.3, "exploitabilityScore": 8.6, "impactScore": 2.9}, {"base_score": 4.3, "exploitabilityScore": 8.6, "impactScore": 2.9}, {"base_score": 4.3, "exploitabilityScore": 8.6, "impactScore": 2.9}, {"base_score": 4.0, "exploitabilityScore": 8.0, "impactScore": 2.9}, {"base_score": 4.8, "exploitabilityScore": 1.7, "impactScore": 2.7}, {"base_score": 6.1, "exploitabilityScore": 2.8, "impactScore": 2.7}, {"base_score": 4.8, "exploitabilityScore": 1.7, "impactScore": 2.7}], "Datapine": [], "MySQL": [{"base_score": 4.9, "exploitabilityScore": 1.2, "impactScore": 3.6}, {"base_score": 4.9, "exploitabilityScore": 1.2, "impactScore": 3.6}, {"base_score": 2.7, "exploitabilityScore": 1.2, "impactScore": 1.4}, {"base_score": 5.3, "exploitabilityScore": 1.6, "impactScore": 3.6}, {"base_score": 4.9, "exploitabilityScore": 1.2, "impactScore": 3.6}, {"base_score": 5.3, "exploitabilityScore": 1.6, "impactScore": 3.6}, {"base_score": 5.5, "exploitabilityScore": 1.2, "impactScore": 4.2}, {"base_score": 4.9, "exploitabilityScore": 1.2, "impactScore": 3.6}, {"base_score": 6.3, "exploitabilityScore": 0.4, "impactScore": 5.9}, {"base_score": 6.3, "exploitabilityScore": 0.4, "impactScore": 5.9}, {"base_score": 6.3, "exploitabilityScore": 0.4, "impactScore": 5.9}, {"base_score": 6.3, "exploitabilityScore": 0.4, "impactScore": 5.9}, {"base_score": 6.3, "exploitabilityScore": 0.4, "impactScore": 5.9}, {"base_score": 6.3, "exploitabilityScore": 0.4, "impactScore": 5.9}, {"base_score": 6.3, "exploitabilityScore": 0.4, "impactScore": 5.9}, {"base_score": 4.9, "exploitabilityScore": 1.2, "impactScore": 3.6}, {"base_score": 3.8, "exploitabilityScore": 1.2, "impactScore": 2.5}, {"base_score": 4.9, "exploitabilityScore": 1.2, "impactScore": 3.6}, {"base_score": 4.3, "exploitabilityScore": 2.8, "impactScore": 1.4}, {"base_score": 4.9, "exploitabilityScore": 1.2, "impactScore": 3.6}], "Erwin": [], "Talend": []}
+{
+    "R Programming": [],
+    "Tableau Public": [],
+    "Python": [
+        {
+            "cve_id": "CVE-2021-32052",
+            "base_score": 6.1,
+            "exploitabilityScore": 2.8,
+            "impactScore": 2.7
+        },
+        {
+            "cve_id": "CVE-2021-23336",
+            "base_score": 5.9,
+            "exploitabilityScore": 1.6,
+            "impactScore": 4.2
+        },
+        {
+            "cve_id": "CVE-2020-26116",
+            "base_score": 7.2,
+            "exploitabilityScore": 3.9,
+            "impactScore": 2.7
+        },
+        {
+            "cve_id": "CVE-2021-29921",
+            "base_score": 9.8,
+            "exploitabilityScore": 3.9,
+            "impactScore": 5.9
+        },
+        {
+            "cve_id": "CVE-2016-2183",
+            "base_score": 7.5,
+            "exploitabilityScore": 3.9,
+            "impactScore": 3.6
+        },
+        {
+            "cve_id": "CVE-2021-3426",
+            "base_score": 5.7,
+            "exploitabilityScore": 2.1,
+            "impactScore": 3.6
+        },
+        {
+            "cve_id": "CVE-2021-3177",
+            "base_score": 9.8,
+            "exploitabilityScore": 3.9,
+            "impactScore": 5.9
+        },
+        {
+            "cve_id": "CVE-2020-29396",
+            "base_score": 8.8,
+            "exploitabilityScore": 2.8,
+            "impactScore": 5.9
+        },
+        {
+            "cve_id": "CVE-2020-8492",
+            "base_score": 6.5,
+            "exploitabilityScore": 2.8,
+            "impactScore": 3.6
+        },
+        {
+            "cve_id": "CVE-2019-20907",
+            "base_score": 7.5,
+            "exploitabilityScore": 3.9,
+            "impactScore": 3.6
+        },
+        {
+            "cve_id": "CVE-2020-14422",
+            "base_score": 5.9,
+            "exploitabilityScore": 2.2,
+            "impactScore": 3.6
+        },
+        {
+            "cve_id": "CVE-2020-15523",
+            "base_score": 7.8,
+            "exploitabilityScore": 1.8,
+            "impactScore": 5.9
+        },
+        {
+            "cve_id": "CVE-2020-15801",
+            "base_score": 9.8,
+            "exploitabilityScore": 3.9,
+            "impactScore": 5.9
+        },
+        {
+            "cve_id": "CVE-2020-8315",
+            "base_score": 5.5,
+            "exploitabilityScore": 1.8,
+            "impactScore": 3.6
+        },
+        {
+            "cve_id": "CVE-2020-27619",
+            "base_score": 9.8,
+            "exploitabilityScore": 3.9,
+            "impactScore": 5.9
+        },
+        {
+            "cve_id": "CVE-2009-3720",
+            "base_score": 5.0,
+            "exploitabilityScore": 10.0,
+            "impactScore": 2.9
+        },
+        {
+            "cve_id": "CVE-2021-28359",
+            "base_score": 6.1,
+            "exploitabilityScore": 2.8,
+            "impactScore": 2.7
+        },
+        {
+            "cve_id": "CVE-2019-16935",
+            "base_score": 6.1,
+            "exploitabilityScore": 2.8,
+            "impactScore": 2.7
+        },
+        {
+            "cve_id": "CVE-2021-28667",
+            "base_score": 7.5,
+            "exploitabilityScore": 3.9,
+            "impactScore": 3.6
+        },
+        {
+            "cve_id": "CVE-2019-9947",
+            "base_score": 6.1,
+            "exploitabilityScore": 2.8,
+            "impactScore": 2.7
+        }
+    ],
+    "SAS": [],
+    "Apache Spark": [],
+    "Excel": [
+        {
+            "cve_id": "CVE-2022-21840",
+            "base_score": 8.8,
+            "exploitabilityScore": 2.8,
+            "impactScore": 5.9
+        },
+        {
+            "cve_id": "CVE-2021-43256",
+            "base_score": 7.8,
+            "exploitabilityScore": 1.8,
+            "impactScore": 5.9
+        },
+        {
+            "cve_id": "CVE-2021-40442",
+            "base_score": 7.8,
+            "exploitabilityScore": 1.8,
+            "impactScore": 5.9
+        },
+        {
+            "cve_id": "CVE-2021-42292",
+            "base_score": 7.8,
+            "exploitabilityScore": 1.8,
+            "impactScore": 5.9
+        },
+        {
+            "cve_id": "CVE-2021-40485",
+            "base_score": 7.8,
+            "exploitabilityScore": 1.8,
+            "impactScore": 5.9
+        },
+        {
+            "cve_id": "CVE-2021-40474",
+            "base_score": 7.8,
+            "exploitabilityScore": 1.8,
+            "impactScore": 5.9
+        },
+        {
+            "cve_id": "CVE-2021-40472",
+            "base_score": 5.5,
+            "exploitabilityScore": 1.8,
+            "impactScore": 3.6
+        },
+        {
+            "cve_id": "CVE-2021-38655",
+            "base_score": 7.8,
+            "exploitabilityScore": 1.8,
+            "impactScore": 5.9
+        },
+        {
+            "cve_id": "CVE-2021-38660",
+            "base_score": 7.8,
+            "exploitabilityScore": 1.8,
+            "impactScore": 5.9
+        },
+        {
+            "cve_id": "CVE-2021-34501",
+            "base_score": 8.8,
+            "exploitabilityScore": 2.8,
+            "impactScore": 5.9
+        },
+        {
+            "cve_id": "CVE-2017-8631",
+            "base_score": 7.8,
+            "exploitabilityScore": 1.8,
+            "impactScore": 5.9
+        },
+        {
+            "cve_id": "CVE-2020-0650",
+            "base_score": 7.8,
+            "exploitabilityScore": 1.8,
+            "impactScore": 5.9
+        },
+        {
+            "cve_id": "CVE-2020-0651",
+            "base_score": 7.8,
+            "exploitabilityScore": 1.8,
+            "impactScore": 5.9
+        },
+        {
+            "cve_id": "CVE-2020-0652",
+            "base_score": 7.8,
+            "exploitabilityScore": 1.8,
+            "impactScore": 5.9
+        },
+        {
+            "cve_id": "CVE-2020-0759",
+            "base_score": 8.8,
+            "exploitabilityScore": 2.8,
+            "impactScore": 5.9
+        },
+        {
+            "cve_id": "CVE-2020-0760",
+            "base_score": 8.8,
+            "exploitabilityScore": 2.8,
+            "impactScore": 5.9
+        },
+        {
+            "cve_id": "CVE-2020-0906",
+            "base_score": 8.8,
+            "exploitabilityScore": 2.8,
+            "impactScore": 5.9
+        },
+        {
+            "cve_id": "CVE-2020-1224",
+            "base_score": 5.5,
+            "exploitabilityScore": 1.8,
+            "impactScore": 3.6
+        },
+        {
+            "cve_id": "CVE-2020-1225",
+            "base_score": 8.8,
+            "exploitabilityScore": 2.8,
+            "impactScore": 5.9
+        },
+        {
+            "cve_id": "CVE-2020-1226",
+            "base_score": 8.8,
+            "exploitabilityScore": 2.8,
+            "impactScore": 5.9
+        }
+    ],
+    "RapidMiner": [],
+    "KNIME": [],
+    "QlikView": [
+        {
+            "cve_id": "CVE-2015-3623",
+            "base_score": 6.4,
+            "exploitabilityScore": 10.0,
+            "impactScore": 4.9
+        }
+    ],
+    "Splunk": [
+        {
+            "cve_id": "CVE-2019-10390",
+            "base_score": 8.8,
+            "exploitabilityScore": 2.8,
+            "impactScore": 5.9
+        },
+        {
+            "cve_id": "CVE-2010-2429",
+            "base_score": 4.3,
+            "exploitabilityScore": 8.6,
+            "impactScore": 2.9
+        },
+        {
+            "cve_id": "CVE-2013-6772",
+            "base_score": 4.3,
+            "exploitabilityScore": 2.8,
+            "impactScore": 1.4
+        },
+        {
+            "cve_id": "CVE-2013-6773",
+            "base_score": 7.8,
+            "exploitabilityScore": 1.8,
+            "impactScore": 5.9
+        },
+        {
+            "cve_id": "CVE-2017-17067",
+            "base_score": 9.8,
+            "exploitabilityScore": 3.9,
+            "impactScore": 5.9
+        },
+        {
+            "cve_id": "CVE-2017-18348",
+            "base_score": 7.0,
+            "exploitabilityScore": 1.0,
+            "impactScore": 5.9
+        },
+        {
+            "cve_id": "CVE-2017-5607",
+            "base_score": 3.5,
+            "exploitabilityScore": 2.1,
+            "impactScore": 1.4
+        },
+        {
+            "cve_id": "CVE-2019-5727",
+            "base_score": 5.4,
+            "exploitabilityScore": 2.3,
+            "impactScore": 2.7
+        },
+        {
+            "cve_id": "CVE-2018-7431",
+            "base_score": 6.5,
+            "exploitabilityScore": 2.8,
+            "impactScore": 3.6
+        },
+        {
+            "cve_id": "CVE-2018-7427",
+            "base_score": 6.1,
+            "exploitabilityScore": 2.8,
+            "impactScore": 2.7
+        },
+        {
+            "cve_id": "CVE-2018-7432",
+            "base_score": 7.5,
+            "exploitabilityScore": 3.9,
+            "impactScore": 3.6
+        },
+        {
+            "cve_id": "CVE-2018-7429",
+            "base_score": 7.5,
+            "exploitabilityScore": 3.9,
+            "impactScore": 3.6
+        },
+        {
+            "cve_id": "CVE-2018-11409",
+            "base_score": 5.3,
+            "exploitabilityScore": 3.9,
+            "impactScore": 1.4
+        },
+        {
+            "cve_id": "CVE-2014-8380",
+            "base_score": 4.3,
+            "exploitabilityScore": 8.6,
+            "impactScore": 2.9
+        },
+        {
+            "cve_id": "CVE-2014-2578",
+            "base_score": 4.3,
+            "exploitabilityScore": 8.6,
+            "impactScore": 2.9
+        },
+        {
+            "cve_id": "CVE-2012-6447",
+            "base_score": 4.3,
+            "exploitabilityScore": 8.6,
+            "impactScore": 2.9
+        },
+        {
+            "cve_id": "CVE-2011-4643",
+            "base_score": 4.0,
+            "exploitabilityScore": 8.0,
+            "impactScore": 2.9
+        },
+        {
+            "cve_id": "CVE-2017-12572",
+            "base_score": 4.8,
+            "exploitabilityScore": 1.7,
+            "impactScore": 2.7
+        },
+        {
+            "cve_id": "CVE-2016-4859",
+            "base_score": 6.1,
+            "exploitabilityScore": 2.8,
+            "impactScore": 2.7
+        },
+        {
+            "cve_id": "CVE-2016-4858",
+            "base_score": 4.8,
+            "exploitabilityScore": 1.7,
+            "impactScore": 2.7
+        }
+    ],
+    "Datapine": [],
+    "MySQL": [
+        {
+            "cve_id": "CVE-2022-21322",
+            "base_score": 6.3,
+            "exploitabilityScore": 0.4,
+            "impactScore": 5.9
+        },
+        {
+            "cve_id": "CVE-2022-21323",
+            "base_score": 2.9,
+            "exploitabilityScore": 0.4,
+            "impactScore": 2.5
+        },
+        {
+            "cve_id": "CVE-2022-21321",
+            "base_score": 2.9,
+            "exploitabilityScore": 0.4,
+            "impactScore": 2.5
+        },
+        {
+            "cve_id": "CVE-2022-21378",
+            "base_score": 5.5,
+            "exploitabilityScore": 1.2,
+            "impactScore": 4.2
+        },
+        {
+            "cve_id": "CVE-2022-21368",
+            "base_score": 4.7,
+            "exploitabilityScore": 1.2,
+            "impactScore": 3.4
+        },
+        {
+            "cve_id": "CVE-2022-21374",
+            "base_score": 4.9,
+            "exploitabilityScore": 1.2,
+            "impactScore": 3.6
+        },
+        {
+            "cve_id": "CVE-2022-21372",
+            "base_score": 2.7,
+            "exploitabilityScore": 1.2,
+            "impactScore": 1.4
+        },
+        {
+            "cve_id": "CVE-2022-21367",
+            "base_score": 5.5,
+            "exploitabilityScore": 1.2,
+            "impactScore": 4.2
+        },
+        {
+            "cve_id": "CVE-2022-21370",
+            "base_score": 4.9,
+            "exploitabilityScore": 1.2,
+            "impactScore": 3.6
+        },
+        {
+            "cve_id": "CVE-2022-21363",
+            "base_score": 6.6,
+            "exploitabilityScore": 0.7,
+            "impactScore": 5.9
+        },
+        {
+            "cve_id": "CVE-2022-21362",
+            "base_score": 4.9,
+            "exploitabilityScore": 1.2,
+            "impactScore": 3.6
+        },
+        {
+            "cve_id": "CVE-2022-21358",
+            "base_score": 6.5,
+            "exploitabilityScore": 2.8,
+            "impactScore": 3.6
+        },
+        {
+            "cve_id": "CVE-2022-21357",
+            "base_score": 2.9,
+            "exploitabilityScore": 0.4,
+            "impactScore": 2.5
+        },
+        {
+            "cve_id": "CVE-2022-21356",
+            "base_score": 6.3,
+            "exploitabilityScore": 0.4,
+            "impactScore": 5.9
+        },
+        {
+            "cve_id": "CVE-2022-21355",
+            "base_score": 2.9,
+            "exploitabilityScore": 0.4,
+            "impactScore": 2.5
+        },
+        {
+            "cve_id": "CVE-2022-21344",
+            "base_score": 4.9,
+            "exploitabilityScore": 1.2,
+            "impactScore": 3.6
+        },
+        {
+            "cve_id": "CVE-2022-21342",
+            "base_score": 4.9,
+            "exploitabilityScore": 1.2,
+            "impactScore": 3.6
+        },
+        {
+            "cve_id": "CVE-2022-21352",
+            "base_score": 5.9,
+            "exploitabilityScore": 0.7,
+            "impactScore": 5.2
+        },
+        {
+            "cve_id": "CVE-2022-21351",
+            "base_score": 7.1,
+            "exploitabilityScore": 2.8,
+            "impactScore": 4.2
+        },
+        {
+            "cve_id": "CVE-2022-21348",
+            "base_score": 4.9,
+            "exploitabilityScore": 1.2,
+            "impactScore": 3.6
+        }
+    ],
+    "Erwin": [],
+    "Talend": []
+}

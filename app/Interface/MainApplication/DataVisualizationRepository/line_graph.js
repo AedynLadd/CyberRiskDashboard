@@ -1,4 +1,4 @@
-const { group } = require("d3");
+const { max, svg } = require("d3");
 var d3 = require("d3")
 
 var line_svg = d3.select("#LineGraph")
@@ -9,59 +9,64 @@ var line_svg = d3.select("#LineGraph")
     .append("g")
     .attr("transform", "translate(40,20)")
 
-// color palette
-const color = d3.scaleOrdinal()
-    .range(['#e41a1c', '#377eb8', '#4daf4a', '#984ea3', '#ff7f00', '#ffff33', '#a65628', '#f781bf', '#999999'])
-
 
 function generate_line_chart(group_name, data) {
-    console.log(group_name);
-    console.log(data);
+    line_svg.selectAll("g.line_axis").remove();
+    line_svg.selectAll("path.data_display").remove();
+
     // Reformat our data to be better suited for a line graph
     restructured_data = restructure(data, ["valueA", "valueB", "valueC"]);
-    structured_A = restructured_data.valueA[1];
-
-    //const sumstat = d3.group(data, d => d.group);
 
     // Add X axis --> it is a date format
-    const x = d3.scaleLinear()
-        .domain(0, d3.extent(data, function (d) { return d.variable; }))
-        .range([0, 500]);
+    var x = d3.scaleLinear()
+        .domain(d3.extent(data, d => new Date(d.variable)))
+        .range([0, 900]);
+
     line_svg.append("g")
-        .attr("transform", `translate(0, 160)`)
-        .call(d3.axisBottom(x).ticks(5));
+        .attr("class", "line_axis")
+        .attr("transform", `translate(0, 300)`)
+        .call(d3.axisBottom(x).tickFormat(d3.timeFormat("%B, %d, %Y")).ticks(5));
 
     // Add Y axis
-    const y = d3.scaleLinear()
-        .domain([0, 160])
-        .range([160, 0]);
+    var y = d3.scaleLinear()
+        .domain([0, d3.max(data, function(d){
+            var max_of_set = [d.valueA, d.valueB, d.valueC]
+            return d3.max(max_of_set)
+        })])
+        .range([300, 0]);
+
     line_svg.append("g")
+        .attr("class", "line_axis")
         .call(d3.axisLeft(y));
 
-    console.log("got to here 1")
 
+    var color = d3.scaleOrdinal()
+        .range(["#f5f37cd5", "#bebc45d5"]);
+    
     // Draw line chart
     line_svg.selectAll(".line")
-        .data(structured_A)
-        .join("path")
+        .data(Object.values(restructured_data))
+        .enter()
+        .append("path")
+        .attr("class", "data_display")
         .attr("fill", "none")
-        //.attr("stroke", function (d) { return color(d[0]) })
-        .attr("stroke", '#4daf4a')
-        .attr("stroke-width", 2)
+        .attr("stroke", d => color(d[0]))
         .attr("d", function (d) {
-            console.log("got to here 2")
-            console.log(structured_A)
-            console.log("got to here 3")
             return d3.line()
-                .x(function (d) { return x(d.date); })
-                .y(function (d) { return y(+d.n); })
+                .x(d => x(new Date(d.date)))
+                .y(d => y(d.n))
                 (d[1])
+        })
+        .on("mouseover", function(d){
+            d3.select(this).attr("stroke-width", 3)
+        })
+        .on("mouseout", function(d){
+            d3.select(this).attr("stroke-width", 1)
         })
 }
 
 
 function restructure(data, group_variables) {
-    console.log(group_variables)
     var restructured_data = new Object();
 
     (data).forEach(element => {
@@ -86,6 +91,6 @@ function restructure(data, group_variables) {
             }
         })
     });
-    console.log(restructured_data);
+
     return restructured_data;
 }
