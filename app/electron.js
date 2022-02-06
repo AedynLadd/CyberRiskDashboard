@@ -20,8 +20,12 @@
  */
 
 
-const { app, BrowserWindow, ipcMain } = require('electron');
+const { app, BrowserWindow, ipcMain, dialog } = require('electron');
 const fs = require('fs');
+const fu = require('./fileUtils');
+const path = require('path');
+
+const CONFIG_PATH = './app/Hidden/Data/data_config.json';
 
 // 1. ELECTRON PROCESSES
 //
@@ -29,6 +33,32 @@ const fs = require('fs');
 //
 let LoadingScreen;
 let DashboardWindow;
+let RiskAnalysisQuestionnaire;
+
+ipcMain.handle('openDialog', (_, args) => {
+    return dialog.showOpenDialog({
+        title: "Pick a file",
+        properties: ['openFile'],
+        filters: args.filters
+    });
+});
+
+ipcMain.handle('readCSV', (_, args) => {
+    return fu.readCSV(args.filePath, args.skipHeader);
+});
+
+ipcMain.handle('readJson', (_, args) => {
+    return fu.readJson(args.filePath);
+});
+
+ipcMain.handle('writeJson', (_, args) => {
+    fu.writeJson(args.filePath, args.json);
+    return args.filePath;
+});
+
+ipcMain.handle('closeRAQ', () => {
+    RiskAnalysisQuestionnaire.close();
+});
 
 function createLoadingScreen() {
     LoadingScreen = new BrowserWindow({
@@ -44,7 +74,7 @@ function createLoadingScreen() {
 }
 
 function createRAQ() {
-    const RiskAnalysisQuestionnaire = new BrowserWindow({
+    RiskAnalysisQuestionnaire = new BrowserWindow({
         width: 600,
         height: 800,
         //frame: false,
@@ -52,9 +82,10 @@ function createRAQ() {
         //alwaysOnTop: true,
         resizable: false,
         webPreferences: {
-            nodeIntegration: true,
-            contextIsolation: false,
-            enableRemoteModule: true,
+            nodeIntegration: false,
+            worldSafeExecuteJavaScript: true,
+            contextIsolation: true,
+            preload: path.join(__dirname, 'preload.js')
         }
     });
 
@@ -71,8 +102,7 @@ function createDashboardWindow() {
         fullscreen: true,
         webPreferences: {
             nodeIntegration: true,
-            contextIsolation: false,
-            enableRemoteModule: true,
+            contextIsolation: false
         }
     });
 
@@ -153,7 +183,7 @@ function launchApp() {
     createDataRenderer();
 
     // Check to see if the Risk Analysis Config file exists or not
-    if (fs.existsSync('./app/Hidden/Data/data_config.json')) {
+    if (fs.existsSync(CONFIG_PATH)) {
         // If the file exists we carry on with our launch as usual
         console.log("file exists");
         // Create a 'main'-Window

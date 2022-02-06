@@ -10,6 +10,10 @@ export default function MultiSelect({question, update}) {
         update(newQuestion)
     }
 
+    function labelForValue(value) {
+        return question.selectOptions.filter(x => x.value === value)[0].label;
+    }
+
     const defaultValue = question.answer ? question.answer : []
 
     return (
@@ -24,7 +28,10 @@ export default function MultiSelect({question, update}) {
                 renderValue={(selected) => (
                     <Box sx={{display: "flex", flexWrap: "wrap", gap: 0.5}}>
                         {selected.map((value) => (
-                            <Chip key={value} label={value} />
+                            <Chip
+                                key={value}
+                                label={labelForValue(value)}
+                            />
                         ))}
                     </Box>
                 )}

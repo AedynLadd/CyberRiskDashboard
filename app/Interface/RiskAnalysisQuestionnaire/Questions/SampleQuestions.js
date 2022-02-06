@@ -5,6 +5,10 @@ import TextQuestion from './types/TextQuestion'
 import YesNoQuestion from './Types/YesNoQuestion'
 import SingleSelect from './Types/SingleSelect'
 import MultiSelect from './Types/MultiSelect'
+import ListQuestion from './Types/ListQuestion'
+import FileQuestion from './Types/FileQuestion'
+
+import { boolean, string, array } from './Common/Defaults'
 
 /*
 Text Input (Regular HTML text box -> String)
@@ -16,11 +20,11 @@ If Y/N -> Next Question (on trigger either yes/no -> Show imbedded question)
 MultiSelect. (dropdown -> Array[String]) https://www.npmjs.com/package/react-dropdown
 */
 
-export default function SampleQuestions() {
+export default function SampleQuestions({answers, update}) {
     const [sampleText, setText] = useState({
         number: 1,
         text: "What is your name?",
-        answer: ''
+        answer: string(answers[1])
     })
 
     const [sampleYesNo, setYesNo] = useState({
@@ -28,41 +32,55 @@ export default function SampleQuestions() {
         text: "Do you like patates?",
         falseLabel: "Ewwwww",
         trueLabel: "Yummy!",
-        answer: false
+        answer: boolean(answers[2])
     })
-
-    useEffect(() => {
-
-    }, [sampleYesNo]);
 
     const [sampleSelect, setSelect] = useState({
         number: 2.1,
-        text: "Are you a dog or a cat person",
+        text: "What's your favorite patates?",
         selectOptions: [
-            {value: 'dog', label: 'Dog'},
-            {value: 'cat', label: 'Cat'}
+            {value: 'fried', label: 'Fries'},
+            {value: 'mashed', label: 'Mashed'},
+            {value: 'baked', label: 'Baked'}
         ],
-        answer: ""
+        answer: string(answers[2.1])
     })
 
     const [sampleMulti, setMulti] = useState({
         number: 3,
         text: "Who are your friends?",
         selectOptions: [
-            {value: 'dog', label: 'Dog'},
-            {value: 'cat', label: 'Cat'},
-            {value: 'bird', label: 'Bird'},
-            {value: 'fish', label: 'Fish'},
-            {value: 'fox', label: 'Fox'}
+            {value: 'dog', label: 'Zaytoun'},
+            {value: 'cat', label: 'Leo'},
+            {value: 'bird', label: 'Picanta'},
+            {value: 'fish', label: 'Nemo'},
+            {value: 'fox', label: 'Malooun'}
         ],
-        answer: []
+        answer: array(answers[3])
     })
-    
-    useEffect(() => {
-        console.log("MultiSelect: " + sampleMulti.answer)
 
-        console.log("-----------------------------")
-    }, [sampleMulti])
+    const [sampleList, setList] = useState({
+        number: 4,
+        text: "Who's in your family?",
+        answer: array(answers[4])
+    })
+
+    const [sampleFile, setFile] = useState({
+        number: 5,
+        text: "Pick a file",
+        answer: string(answers[5])
+    });
+
+    useEffect(() => {
+        update({
+            [sampleText.number]: sampleText.answer,
+            [sampleYesNo.number]: sampleYesNo.answer,
+            [sampleSelect.number]: sampleSelect.answer,
+            [sampleMulti.number]: sampleMulti.answer,
+            [sampleList.number]: sampleList.answer,
+            [sampleFile.number]: sampleFile.answer
+        })
+    }, [sampleText, sampleYesNo, sampleSelect, sampleMulti, sampleList, sampleFile])
     
     return (
         <div>
@@ -71,6 +89,8 @@ export default function SampleQuestions() {
                 <YesNoQuestion question={sampleYesNo} update={setYesNo} />
                 { sampleYesNo.answer ? <Box sx={{pl: 5}}><SingleSelect question={sampleSelect} update={setSelect} /></Box> : null }
                 <MultiSelect question={sampleMulti} update={setMulti} />
+                <ListQuestion question={sampleList} update={setList} />
+                <FileQuestion question={sampleFile} update={setFile} />
             </Stack>
         </div>
     )
