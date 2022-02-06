@@ -77,7 +77,7 @@ for i in range (len(users)):
     numApps = rng.integers(low=1, high=8, size=1)
     apps = []
     apps = np.random.choice(applic, numApps, replace = False)
-    st.append(apps)
+    st.append(list(apps))
 
     with open("programs.csv", "a") as f:
         writer = csv.writer(f)

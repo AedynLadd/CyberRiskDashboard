@@ -20,8 +20,16 @@
     margin-bottom: 25px;
 }
 
+.heatmap_point{
+    opacity: 0.8;
+}
 
-.information_control{
+.heatmap_point:hover{
+    stroke: rgba(255, 0, 0, 0.5);
+    stroke-width: 1px;
+}
+
+.LineGraph{
     grid-area: 4 / 5 / 8 / 20;
     background-color: rgb(126, 126, 126);
 }
@@ -45,4 +53,8 @@ nav.fill ul li a.Detect:after {
     content: '.';
     color: transparent;
     height: 2px;
+}
+
+.data_display{
+    stroke-width: 1px;
 }

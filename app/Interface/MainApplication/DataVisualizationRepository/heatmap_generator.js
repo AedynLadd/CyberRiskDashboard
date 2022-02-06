@@ -44,14 +44,24 @@ d3.csv(url).then(function (data) {
     const dataPoints = svg.selectAll()
         .data(data, function (d) { return d.group + ':' + d.variable; })
         .enter().append("rect")
+        .attr("class", "heatmap_point")
         .attr("x", function (d) { return x(d.group) })
         .attr("y", function (d) { return y(d.variable) })
-        .attr("rx", 4)
-        .attr("ry", 4)
         .attr("width", x.bandwidth())
         .attr("height", y.bandwidth())
         .style("fill", "#ffffff4e")
-        .style("opacity", 0.8)
+        .on("mouseout", function(event,d){
+        })
+        .on("mouseover", function(event,d){
+        })
+        .on("click", function(event, d){
+            //console.log("Item Clicked");
+            let line_data = data.filter(function(row){
+                return row['group'] == d["group"]; 
+            });
+            generate_line_chart(d["group"], line_data);
+        })
+
 
     renderColor()
 
@@ -72,7 +82,7 @@ d3.csv(url).then(function (data) {
 
                 var Difference_In_Time = date2.getTime() - date1.getTime();
                 var Difference_In_Days = Difference_In_Time / (1000 * 3600 * 24);
-                return Difference_In_Days*60
+                return Difference_In_Days*30
             })
             .duration(500)
             .style('fill', function (d, i, a) {

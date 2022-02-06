@@ -19,11 +19,9 @@ import json
 # We begin by importing the data...
 user_directory = pd.read_csv("./directory.csv")
 
-print(user_directory)
 # group by department
 user_directory_grouped = user_directory.groupby("Department")
 user_directory_grouped = user_directory_grouped.apply(lambda x: x['Username'].unique())
-print(user_directory_grouped)
 
 sankey_df = {
     "family": {},

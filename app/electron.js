@@ -97,7 +97,7 @@ function createDashboardWindow() {
     DashboardWindow = new BrowserWindow({
         width: 400,
         height: 400,
-        //frame: false,
+        frame: false,
         show: false,
         fullscreen: true,
         webPreferences: {

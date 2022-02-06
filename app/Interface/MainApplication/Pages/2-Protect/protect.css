@@ -26,7 +26,7 @@
     min-width: 3;
     fill: rgb(54, 54, 54);
     stroke: rgb(37, 37, 37);
-  }
+}
 
 .node:hover {
     stroke: #3e08496e;
