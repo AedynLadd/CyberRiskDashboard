@@ -12,19 +12,6 @@ programs_data = pd.read_csv("./programs.csv")
 #unique_programs = programs_data["Applications"].explode().unique()
 unique_programs = ["R Programming", "Tableau Public", "Python", "SAS", "Apache Spark", "Excel", "RapidMiner", "KNIME", "QlikView", "Splunk", "Datapine", "MySQL", "Erwin", "Talend"]
 
-
-def get_product_CPES(product, organization = None, version_number = None):
-    organization = "*" if organization == None else organization # If organization doesn't exist or is unknown replace with *
-    version_number = "*" if version_number == None else version_number
-
-    CVD_identifier = "cpe:2.3:*:{}:{}:{}".format(organization, product, version_number)
-    
-    req = requests.get("https://services.nvd.nist.gov/rest/json/cpes/1.0/?cpeMatchString={}&addOns=cves&includeDeprecated=false".format(CVD_identifier))
-    
-    time.sleep(1)
-
-    return req.json()
-
 def get_product_CVES(product, organization = None, version_number = None):
     organization = "*" if organization == None else organization # If organization doesn't exist or is unknown replace with *
     version_number = "*" if version_number == None else version_number
@@ -32,7 +19,7 @@ def get_product_CVES(product, organization = None, version_number = None):
     CVD_identifier = "cpe:2.3:*:{}:{}:{}".format(organization, product, version_number)
 
     req = requests.get("https://services.nvd.nist.gov/rest/json/cves/1.0/?cpeMatchString={}&resultsPerPage=1000".format(CVD_identifier))
-
+    time.sleep(3)
     return req.json()
 
 def format_cves(product_cves):
@@ -40,27 +27,41 @@ def format_cves(product_cves):
     cve_scores = []
 
     for cve in product_cves["result"]["CVE_Items"]:
+        print(cve)
+
         try:
             cve_scores.append({
                 "cve_id": cve["cve"]["CVE_data_meta"]["ID"],
-                "base_score": cve["impact"]["baseMetricV3"]["cvssV3"]["baseScore"],
-                "exploitabilityScore": cve["impact"]["baseMetricV3"]["exploitabilityScore"],
-                "impactScore": cve["impact"]["baseMetricV3"]["impactScore"]
+                "impact": {
+                    "vectorString": cve["impact"]["baseMetricV3"]["cvssV3"]["vectorString"],
+                    "base_score": cve["impact"]["baseMetricV3"]["cvssV3"]["baseScore"],
+                    "exploitabilityScore": cve["impact"]["baseMetricV3"]["exploitabilityScore"],
+                    "impactScore": cve["impact"]["baseMetricV3"]["impactScore"]
+                },
+                "description": {
+                    "value": cve["cve"]["description"]["description_data"]
+                }
             })
         except Exception as e:
             # If an expection occurs its most likely because only a v2 cve is available
             # This is ok, we just change some variable names
             cve_scores.append({
                 "cve_id": cve["cve"]["CVE_data_meta"]["ID"],
-                "base_score": cve["impact"]["baseMetricV2"]["cvssV2"]["baseScore"],
-                "exploitabilityScore": cve["impact"]["baseMetricV2"]["exploitabilityScore"],
-                "impactScore": cve["impact"]["baseMetricV2"]["impactScore"]
+                "impact": {
+                    "vectorString": cve["impact"]["baseMetricV2"]["cvssV2"]["vectorString"],
+                    "base_score": cve["impact"]["baseMetricV2"]["cvssV2"]["baseScore"],
+                    "exploitabilityScore": cve["impact"]["baseMetricV2"]["exploitabilityScore"],
+                    "impactScore": cve["impact"]["baseMetricV2"]["impactScore"]
+                },
+                "description": {
+                     "description": cve["cve"]["description"]["description_data"]
+                }
             })
 
     return cve_scores
 
 programs_and_cves = {}
-
+test = 1
 for program in unique_programs:
     print("Finding CVES for {}".format(program))
     try:

@@ -198,8 +198,8 @@ function createSoftwareTable(id, data_items) {
                     cell_info = data_items[rows - 1];
                 } else if (columns == 1) {
                     cell_info = cvss_data[data_items[rows - 1]].length;
-                    if(cell_info == 20) {
-                        cell_info = "20+";
+                    if(cell_info >= 1000) {
+                        cell_info = "1000+";
                     }
                 }
             }
