@@ -3,14 +3,14 @@ var d3 = require("d3")
 url = "../../Data/trainingsDone.csv"
 
 d3.csv(url).then(function (data) {
-    console.log(data)
+
     var svg = d3.select("#Bar1Detect")
         .attr("id", "bar1_svg")
         .append("svg")
         .attr("width", "100%")
         .attr("height", "100%")
         .append("g")
-        .attr("transform", "translate(30,0)")
+        .attr("transform", "translate(30,20)")
 
     var element = document.getElementById("bar1_svg").getBoundingClientRect();
     console.log(element.width)
@@ -19,13 +19,7 @@ d3.csv(url).then(function (data) {
     element.height = element.height * 0.85
 
     // Reformat our data to be better suited for a line graph
-    restructured_data = restructure(data);
-    console.log(restructured_data);
-    
-    //const myGroups = Array.from(new Set(data.map(d => d.group)));
-
-    //const myVars = Array.from(new Set(data.map(d => d.variable)));
-    //const intial_date = myVars[0];
+    restructured_data = restructure(data, ["1", "2", "3", "4", "5", "6", "7", "8", "9"]);
 
     // BUILDING THE AXIS
     // Build X scales and axis:
@@ -49,17 +43,17 @@ d3.csv(url).then(function (data) {
 
     // Bars
     svg.selectAll("mybar")
-        .data(data)
+        .data(restructured_data)
         .join("rect")
-        .attr("x", d => x(d.Country))
-        .attr("y", d => y(d.Value))
+        .attr("x", d => x(d.NumTrainings))
+        .attr("y", d => y(d.NumPeople))
         .attr("width", x.bandwidth())
-        .attr("height", d => element.height - y(d.Value))
-        //.attr("fill", "#69b3a2")
+        .attr("height", d => element.height - y(d.NumPeople))
+        .attr("fill", "#69b3a2")
     
 })
 
-function restructure(data, group_variables) {
+function restructure(data, numTrainings) {
     var list = [
         [1, 0],
         [2, 0],
@@ -94,5 +88,18 @@ function restructure(data, group_variables) {
         }
     });
 
-    return list;
+    var restructured_data = new Object();
+
+    (numTrainings).forEach(group => {
+        if (restructured_data[group] == undefined) {
+            restructured_data[group] = 
+                {
+                    "NumTrainings": list[group-1][0],
+                    "NumPeople": list[group-1][1]
+                }
+            ;
+        }
+    })
+
+    return restructured_data;
 }
