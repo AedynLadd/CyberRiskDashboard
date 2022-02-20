@@ -4,19 +4,19 @@ url = "../../Data/trainingsDone.csv"
 
 d3.csv(url).then(function (data) {
 
-    var svg = d3.select("#Bar1Detect")
-        .attr("id", "bar1_svg")
+    var svg = d3.select("#Bar2Detect")
+        .attr("id", "bar2_svg")
         .append("svg")
         .attr("width", "100%")
         .attr("height", "100%")
         .append("g")
-        .attr("transform", "translate(30,20)")
+        .attr("transform", "translate(30,5)")
 
-    var element = document.getElementById("bar1_svg").getBoundingClientRect();
+    var element = document.getElementById("bar2_svg").getBoundingClientRect();
     console.log(element.width)
     console.log(element.height)
-    element.width = element.width * 0.95
-    element.height = element.height * 0.85
+    element.width = element.width * 0.90
+    element.height = element.height * 0.80
 
     // Reformat our data to be better suited for a line graph
     restructured_data = restructure(data, ["1", "2", "3", "4", "5", "6", "7", "8", "9"]);
@@ -28,7 +28,7 @@ d3.csv(url).then(function (data) {
         .domain(["1", "2", "3", "4", "5", "6", "7", "8", "9"])
         .padding(0.2);
     svg.append("g")
-        .attr("transform", `translate(0, 200)`)
+        .attr("transform", `translate(0, 243)`)
         .call(d3.axisBottom(x))
         .selectAll("text")
           .attr("transform", "translate(-10,0)rotate(-45)")
