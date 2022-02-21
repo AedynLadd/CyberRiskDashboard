@@ -88,9 +88,9 @@ for i in range (len(userID)):
     #these are arbitrary values for STATE changes these to something more meaningful
     users.append(User(userID[i], userIP[i], fnms[i], lnms[i], unms[i], emls[i], deps[i], numbs[i], locs[i]))
 
-headers1 = ["ID", "IP", "First Name", "Last Name", "Username", "Email", "Department", "Phone Number", "Location"]
+headers1 = ["ID", "IP", "FirstName", "LastName", "Username", "Email", "Department", "PhoneNumber", "Location", "NumberofTrainings", "Trainings"]
 
-with open("directory.csv", "w") as f:
+with open("trainingsDone.csv", "w", newline="") as f:
     writer = csv.writer(f)
     writer.writerow(headers1)
 
@@ -107,13 +107,13 @@ for i in range (len(users)):
     st.append(users[i].getLocation())
     
     numTrainings = rng.integers(low=1, high=8, size=1)
+    st.append(int(numTrainings))
     trnings = []
     trnings = np.random.choice(trainings, numTrainings, replace = False)
     st.append(list(trnings))
 
-    with open("trainingsDone.csv", "a") as f:
+    with open("trainingsDone.csv", "a", newline="") as f:
         writer = csv.writer(f)
         writer.writerow(st)
 
 print("All finished with directory!")
-#https://www.esecurityplanet.com/products/cybersecurity-training/

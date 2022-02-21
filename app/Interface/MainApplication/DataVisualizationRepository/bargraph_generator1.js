@@ -13,8 +13,6 @@ d3.csv(url).then(function (data) {
         .attr("transform", "translate(30,5)")
 
     var element = document.getElementById("bar1_svg").getBoundingClientRect();
-    console.log(element.width)
-    console.log(element.height)
     element.width = element.width * 0.90
     element.height = element.height * 0.80
 

@@ -13,10 +13,8 @@ d3.csv(url).then(function (data) {
         .attr("transform", "translate(30,5)")
 
     var element = document.getElementById("bar2_svg").getBoundingClientRect();
-    console.log(element.width)
-    console.log(element.height)
     element.width = element.width * 0.90
-    element.height = element.height * 0.80
+    element.height = element.height * 0.78
 
     // Reformat our data to be better suited for a line graph
     restructured_data = restructure(data, ["1", "2", "3", "4", "5", "6", "7", "8", "9"]);
@@ -25,10 +23,10 @@ d3.csv(url).then(function (data) {
     // Build X scales and axis:
     const x = d3.scaleBand()
         .range([0, element.width])
-        .domain(["1", "2", "3", "4", "5", "6", "7", "8", "9"])
+        .domain(["ES", "NI", "Kn", "Co", "Cy", "Mi", "Pr", "In", "Lu"])
         .padding(0.2);
     svg.append("g")
-        .attr("transform", `translate(0, 243)`)
+        .attr("transform", `translate(0, 238)`)
         .call(d3.axisBottom(x))
         .selectAll("text")
           .attr("transform", "translate(-10,0)rotate(-45)")
