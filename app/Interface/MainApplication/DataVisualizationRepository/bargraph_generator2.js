@@ -17,7 +17,7 @@ d3.csv(url).then(function (data) {
     element.height = element.height * 0.78
 
     // Reformat our data to be better suited for a line graph
-    restructured_data = restructure(data, ["1", "2", "3", "4", "5", "6", "7", "8", "9"]);
+    var restructured_data2 = restructure2(data, ["1", "2", "3", "4", "5", "6", "7", "8", "9"]);
 
     // BUILDING THE AXIS
     // Build X scales and axis:
@@ -35,69 +35,77 @@ d3.csv(url).then(function (data) {
     // Build Y scales and axis:
     const y = d3.scaleLinear()
         .range([element.height, 0])
-        .domain([0, 30])
+        .domain([0, 70])
     svg.append("g")
         .call(d3.axisLeft(y));
 
     // Bars
     svg.selectAll("mybar")
-        .data(restructured_data)
+        .data(Object.values(restructured_data2))
         .join("rect")
-        .attr("x", d => x(d.NumTrainings))
+        .attr("x", d => x(d.TrainingTypes))
         .attr("y", d => y(d.NumPeople))
         .attr("width", x.bandwidth())
         .attr("height", d => element.height - y(d.NumPeople))
-        .attr("fill", "#69b3a2")
+        .attr("fill", "#3e08496e")
     
 })
 
-function restructure(data, numTrainings) {
+function restructure2(data, numTrainings) {
     var list = [
-        [1, 0],
-        [2, 0],
-        [3, 0],
-        [4, 0],
-        [5, 0],
-        [6, 0],
-        [7, 0],
-        [8, 0],
-        [9, 0],
+        ["ES", 0],
+        ["NI", 0],
+        ["Kn", 0],
+        ["Co", 0],
+        ["Cy", 0],
+        ["Mi", 0],
+        ["Pr", 0],
+        ["In", 0],
+        ["Lu", 0],
     ];
 
     (data).forEach(element => {
-        if(parseInt(element.NumberofTrainings) == 1) {
+        if(element.Trainings.indexOf("ESET") !== -1) {
             list[0][1]+= 1;
-        } else if (parseInt(element.NumberofTrainings) == 2){
+        } 
+        if (element.Trainings.indexOf("NINJIO") !== -1) {
             list[1][1]+= 1;
-        } else if (parseInt(element.NumberofTrainings) == 3){
+        }
+        if (element.Trainings.indexOf("KnowBe4") !== -1){
             list[2][1]+= 1;
-        } else if (parseInt(element.NumberofTrainings) == 4){
+        }
+        if (element.Trainings.indexOf("Cofense") !== -1){
             list[3][1]+= 1;
-        } else if (parseInt(element.NumberofTrainings) == 5){
+        }
+        if (element.Trainings.indexOf("Cybsafe") !== -1){
             list[4][1]+= 1;
-        } else if (parseInt(element.NumberofTrainings) == 6){
+        }
+        if (element.Trainings.indexOf("Mimecast") !== -1){
             list[5][1]+= 1;
-        } else if (parseInt(element.NumberofTrainings) == 7){
+        }
+        if (element.Trainings.indexOf("Proofpoint") !== -1){
             list[6][1]+= 1;
-        } else if (parseInt(element.NumberofTrainings) == 8){
+        }
+        if (element.Trainings.indexOf("Infosec IQ") !== -1){
             list[7][1]+= 1;
-        } else if (parseInt(element.NumberofTrainings) == 9){
+        }
+        if (element.Trainings.indexOf("Lucy") !== -1){
             list[8][1]+= 1;
         }
     });
 
-    var restructured_data = new Object();
+    var restructured_data2 = new Object();
 
     (numTrainings).forEach(group => {
-        if (restructured_data[group] == undefined) {
-            restructured_data[group] = 
+        if (restructured_data2[group] == undefined) {
+            restructured_data2[group] = 
                 {
-                    "NumTrainings": list[group-1][0],
+                    "TrainingTypes": list[group-1][0],
                     "NumPeople": list[group-1][1]
                 }
             ;
         }
     })
 
-    return restructured_data;
+    return restructured_data2;
 }

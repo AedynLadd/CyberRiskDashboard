@@ -17,7 +17,8 @@ d3.csv(url).then(function (data) {
     element.height = element.height * 0.80
 
     // Reformat our data to be better suited for a line graph
-    restructured_data = restructure(data, ["1", "2", "3", "4", "5", "6", "7", "8", "9"]);
+    restructured_data1 = restructured1(data, ["1", "2", "3", "4", "5", "6", "7", "8", "9"]);
+    console.log(restructured_data1)
 
     // BUILDING THE AXIS
     // Build X scales and axis:
@@ -41,17 +42,17 @@ d3.csv(url).then(function (data) {
 
     // Bars
     svg.selectAll("mybar")
-        .data(restructured_data)
+        .data(Object.values(restructured_data1))
         .join("rect")
         .attr("x", d => x(d.NumTrainings))
         .attr("y", d => y(d.NumPeople))
         .attr("width", x.bandwidth())
         .attr("height", d => element.height - y(d.NumPeople))
-        .attr("fill", "#69b3a2")
+        .attr("fill", "#3e08496e")
     
 })
 
-function restructure(data, numTrainings) {
+function restructured1(data, numTrainings) {
     var list = [
         [1, 0],
         [2, 0],
@@ -86,11 +87,11 @@ function restructure(data, numTrainings) {
         }
     });
 
-    var restructured_data = new Object();
+    var restructured_data1 = new Object();
 
     (numTrainings).forEach(group => {
-        if (restructured_data[group] == undefined) {
-            restructured_data[group] = 
+        if (restructured_data1[group] == undefined) {
+            restructured_data1[group] = 
                 {
                     "NumTrainings": list[group-1][0],
                     "NumPeople": list[group-1][1]
@@ -99,5 +100,5 @@ function restructure(data, numTrainings) {
         }
     })
 
-    return restructured_data;
+    return restructured_data1;
 }
