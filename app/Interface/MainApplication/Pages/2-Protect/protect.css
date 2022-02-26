@@ -1,11 +1,11 @@
 /* MAIN PROTECT PAGE */
 /* Start on row X column Y, and end on row W column Z*/
-.information_source {
+.NumberTrainings {
     grid-area: 1 / 1 / 3 / 10;
     background-color: rgb(126, 126, 126);
 }
 
-.auditing {
+.TrainingsDone {
     grid-area: 1 / 10 / 3 / 20;
     background-color: rgb(126, 126, 126);
 }
