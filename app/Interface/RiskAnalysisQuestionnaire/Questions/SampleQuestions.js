@@ -7,6 +7,7 @@ import SingleSelect from './Types/SingleSelect'
 import MultiSelect from './Types/MultiSelect'
 import ListQuestion from './Types/ListQuestion'
 import FileQuestion from './Types/FileQuestion'
+import AssetQuestion from './Types/AssetQuestion'
 
 import { boolean, string, array } from './Common/Defaults'
 
@@ -71,6 +72,13 @@ export default function SampleQuestions({answers, update}) {
         answer: string(answers[5])
     });
 
+    const [sampleAssets, setsampleAssets] = useState({
+        number: 6,
+        text: "What are your assets?",
+        subtext: "Add them and update them :)",
+        answer: array(answers[6])
+    })
+
     useEffect(() => {
         update({
             [sampleText.number]: sampleText.answer,
@@ -78,10 +86,16 @@ export default function SampleQuestions({answers, update}) {
             [sampleSelect.number]: sampleSelect.answer,
             [sampleMulti.number]: sampleMulti.answer,
             [sampleList.number]: sampleList.answer,
-            [sampleFile.number]: sampleFile.answer
+            [sampleFile.number]: sampleFile.answer,
+            [sampleAssets.number]: sampleAssets.answer
         })
-    }, [sampleText, sampleYesNo, sampleSelect, sampleMulti, sampleList, sampleFile])
+    }, [sampleText, sampleYesNo, sampleSelect, sampleMulti, sampleList, sampleFile, sampleAssets])
     
+    useEffect(() => {
+        console.log(sampleAssets.answer)
+        console.log("========================")
+    }, [sampleAssets])
+
     return (
         <div>
             <Stack spacing={2}>
@@ -91,6 +105,7 @@ export default function SampleQuestions({answers, update}) {
                 <MultiSelect question={sampleMulti} update={setMulti} />
                 <ListQuestion question={sampleList} update={setList} />
                 <FileQuestion question={sampleFile} update={setFile} />
+                <AssetQuestion question={sampleAssets} update={setsampleAssets} />
             </Stack>
         </div>
     )

@@ -4,6 +4,7 @@ import YesNoQuestion from './Types/YesNoQuestion'
 import ListQuestion from './Types/ListQuestion'
 
 import { boolean, array } from './Common/Defaults'
+import CheckboxList from './Types/CheckboxList'
 
 
 export default function Governance({answers, update}) {
@@ -24,9 +25,8 @@ export default function Governance({answers, update}) {
     const [q11_2, setQ11_2] = useState({
         number: 11.2,
         text: "For each policy, check if its cybersecurity roles and responsibilities are applied internally and/or externally?",
-        trueLabel: "Yes",
-        falseLabel: "No",
-        answer: boolean(answers[11.2])
+        answer: array(answers[11.2]),
+        values: array(answers[11.1])
     })
 
     const [q11_3, setQ11_3] = useState({
@@ -62,6 +62,13 @@ export default function Governance({answers, update}) {
         })
     }, [q11, q11_1, q11_2, q11_3, q12, q13])
 
+    useEffect(() =>{
+        const newQ11_2 = {...q11_2}
+        newQ11_2.values = q11_1.answer
+        setQ11_2(newQ11_2)
+        newQ11_2.answer = new Array(q11_1.answer.length).fill(false)
+    }, [q11_1])
+
     return (
         <div>
             <Stack spacing={2}>
@@ -69,7 +76,7 @@ export default function Governance({answers, update}) {
                 { q11.answer ? 
                     <Box sx={{pl: 5}}>
                         <ListQuestion question={q11_1} update ={setQ11_1} />
-                        <YesNoQuestion question={q11_2} update ={setQ11_2} />
+                        <CheckboxList question={q11_2} update ={setQ11_2} />
                         <YesNoQuestion question={q11_3} update ={setQ11_3} />
                     </Box> : null }
                 <ListQuestion question={q12} update={setQ12} />

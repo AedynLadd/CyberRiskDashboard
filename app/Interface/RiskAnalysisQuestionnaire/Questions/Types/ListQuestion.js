@@ -1,26 +1,23 @@
 import React from 'react';
-import { useState, useRef } from 'react';
 import { v4 as uuidv4 } from 'uuid';
 
 import { 
     Box,
-    Button,
     IconButton,
     List,
     ListItem,
     ListItemButton,
     ListItemText,
-    Stack,
-    TextField
+    Stack
 } from '@mui/material';
 import DeleteIcon from '@mui/icons-material/Delete';
 
 import QuestionLabel from '../Common/QuestionLabel';
 import FileSelector from '../Common/FileSelector';
+import TextInputButton from '../Common/TextInputButton';
 
 export default function ListQuestion({question, update}) {
     const entries = []
-    const inputRef = useRef()
 
     question.answer.sort().map(value => {
         entries.push({
@@ -37,22 +34,11 @@ export default function ListQuestion({question, update}) {
         update(newQuestion)
     }
 
-    const handleTextAdd = () => {
-        const newValue = inputRef.current.value;
-        if (!newValue) return
-        inputRef.current.value = ""
-
+    const handleTextAdd = (newValue) => {
         const newQuestion = {...question}
         newQuestion.answer = entries.map(entry => entry.value)
         newQuestion.answer.push(newValue)
         update(newQuestion)
-
-    }
-
-    const handleTextKeyPress = e => {
-        if (e.key === "Enter") {
-            handleTextAdd()
-        }
     }
 
     const handleFileSelection = (filePath) => {
@@ -71,24 +57,9 @@ export default function ListQuestion({question, update}) {
     return (
         <>
             <QuestionLabel question={question} />
-            <Box sx={{m: 1}}>
+            <Box>
                 <Stack direction="row">
-                    <TextField
-                        inputRef={inputRef}
-                        sx={{
-                            display: "flex",
-                            maxWidth: 300,
-                            m: 1,
-                            flexWrap: 'wrap',
-                            flex: 'flex-grow'
-                        }}
-                        placeholder="Enter here"
-                        variant="standard"
-                        onKeyPress={handleTextKeyPress}
-                    ></TextField>
-                    <Button
-                        onClick={handleTextAdd}
-                    >Add</Button>
+                    <TextInputButton handleAdd={handleTextAdd} sx={{width: 350}}></TextInputButton>
                     <FileSelector
                         onFileSelect={handleFileSelection}
                         showSelection={false}

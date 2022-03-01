@@ -15,14 +15,15 @@ export default function FileSelector({onFileSelect, initialValue, showSelection}
 
     return (
         <Box>
-            <Stack direction="row" sx={{width: 1}}>
+            <Stack direction="row" sx={{width: 1, height: 1}}>
                 {showSelection ? <TextField
                     inputRef={textField}
                     variant="outlined"
                     disabled={true}
                     defaultValue={initialValue}
                     sx={{
-                        width: 1
+                        width: 1,
+                        paddingRight: 2
                     }}
                 ></TextField> : null}
                 <Button

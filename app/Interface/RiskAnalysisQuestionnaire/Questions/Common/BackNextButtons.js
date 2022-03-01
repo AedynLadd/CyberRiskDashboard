@@ -4,7 +4,7 @@ import { Button, Box } from '@mui/material'
 export default function BackNextButtons({handleBack, handleNext, isFirstStep, isLastStep}) {
 
     return (
-        <Box sx={{ mb: 2 }}>
+        <Box sx={{ mb: 2, mt: 2 }}>
             <div>
                 <Button
                     variant="contained"
