@@ -13,8 +13,8 @@ d3.csv(url).then(function (data) {
         .attr("transform", "translate(30,5)")
 
     var element = document.getElementById("bar2_svg").getBoundingClientRect();
-    element.width = element.width * 0.90
-    element.height = element.height * 0.78
+    element.width = element.width * 0.85
+    element.height = element.height * 0.73
 
     // Reformat our data to be better suited for a line graph
     var restructured_data2 = restructure2(data, ["1", "2", "3", "4", "5", "6", "7", "8", "9"]);
@@ -26,11 +26,18 @@ d3.csv(url).then(function (data) {
         .domain(["ES", "NI", "Kn", "Co", "Cy", "Mi", "Pr", "In", "Lu"])
         .padding(0.2);
     svg.append("g")
-        .attr("transform", `translate(0, 238)`)
+        .attr("transform", `translate(0, 222)`)
         .call(d3.axisBottom(x))
         .selectAll("text")
           .attr("transform", "translate(-10,0)rotate(-45)")
           .style("text-anchor", "end")
+    
+    svg.append("text")      // text label for the x axis
+        .attr("x", element.width/2 - 35)
+        .attr("y",  element.height + 25 )
+        .style("text-anchor", "middle")
+        .style("font-size","11px")
+        .text("Trainings");
 
     // Build Y scales and axis:
     const y = d3.scaleLinear()
@@ -38,6 +45,14 @@ d3.csv(url).then(function (data) {
         .domain([0, 70])
     svg.append("g")
         .call(d3.axisLeft(y));
+    
+    svg.append("text")
+        .attr("x", (element.width/2))             
+        .attr("y", 5)
+        .attr("text-anchor", "middle")  
+        .style("font-size", "11px") 
+        .style("text-decoration", "underline")  
+        .text("Trainings Taken vs Number of People Who Took");
 
     // Bars
     svg.selectAll("mybar")
