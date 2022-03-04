@@ -1,4 +1,4 @@
-const { groups } = require("d3");
+const { groups, svg } = require("d3");
 var d3 = require("d3");
 
 d3.json(__dirname + "/Data/NIST_criteria.json").then(function (data) {
@@ -12,6 +12,7 @@ d3.json(__dirname + "/Data/NIST_criteria.json").then(function (data) {
         .attr("height", "100%")
         .append("g")
 
+
     // Stack the data: each group will be represented on top of each other
     const stack = d3.stack()
         .keys(new_data.groups)
@@ -23,31 +24,35 @@ d3.json(__dirname + "/Data/NIST_criteria.json").then(function (data) {
     //
     const xScale = d3.scaleLinear()
         .domain([new_data.data[0].index_val, new_data.data[2].index_val])
-        .range([5, 90]);
-
-    // stacked_svg.append("g")
-    //     .attr("transform", `translate(0, ${height})`)
-    //     .call(d3.axisBottom(x).ticks(5));
+        .range([5, dimensions.width*0.82]);
 
     const yScale = d3.scaleLinear()
         .domain([0, 2300]) // Scores can range from 0 (lowest) to 23*100 (max of all categories)
-        .range([dimensions.height, 0]);
+        .range([dimensions.height*0.85, 0]);
+    
+    stacked_svg.append("g")
+        .attr("transform", `translate(35, ${dimensions.height*0.85})`)
+        .call(d3.axisBottom(xScale).ticks(10));
+    
+    stacked_svg.append("g")
+        .attr("transform", `translate(40, 0)`)
+        .call(d3.axisLeft(yScale).ticks(10));
 
     const colorScale = d3.scaleOrdinal()
         .domain(new_data.groups)
         .range(new_data.colors);
 
     const areaGen = d3.area()
-        .x((d) => xScale(d.data.index_val))
+        .x((d) => (xScale(d.data.index_val)*0.222))
         .y0((d) => yScale(d[0]))
-        .y1((d) => yScale(d[1]));
-
+        .y1((d) => yScale(d[1]))
 
     stacked_svg.selectAll(".StackedAreas")
         .data(series)
         .join("path")
         .attr("class", "stackedAreas")
         .attr("fill", (d) => colorScale(d.key))
+        .attr("transform", 'translate(40, 0)')
         .attr("d", areaGen)
         .on("mouseout", function(event,d) { d3.select(this).attr("fill", d => colorScale(d.key))})
         .on("mouseover", function (event, d) {

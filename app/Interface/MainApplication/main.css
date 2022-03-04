@@ -2,20 +2,23 @@ body {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     padding: 0;
     margin: 0;
-    background-color: #494a4e;
+    background-color: #3d3e41;
 }
 
+/* Right scoreboard data */
 .total_score_title {
+    color: rgba(216, 216, 216, 0.808);
     width: auto;
     height: auto;
     margin-left: 2px;
     margin-right: 2px;
-    font-size: 20px;
+    font-size: 30px;
     font-weight: bolder;
     overflow: hidden;
 }
 
 .cyber_risk_score{
+    color: rgba(216, 216, 216, 0.808);
     width: auto;
     height: auto;
     margin-left: 2px;
@@ -27,11 +30,9 @@ body {
 
 .score_elements {
     display: flex;
-    flex-wrap: nowrap;
-    margin: auto;
     width: 90%;
-    overflow-x: auto;
-    justify-content: center;
+    margin: auto;
+    overflow-x: overlay;
 }
 
 .score_card{
@@ -40,7 +41,12 @@ body {
     height: 70px;
     margin: 10px 10px 10px 10px;
     background-color: rgba(185, 185, 185, 0.13);
-    box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.404);
+    box-shadow: 0px 0px 1px 0px rgba(0, 0, 0, 0.404);
+}
+
+.score_card:hover{
+    background-color: rgba(185, 185, 185, 0.295) ;
+    box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.171);
 }
 
 .score_card_title{
@@ -51,4 +57,52 @@ body {
 .score_card_subtitle{
     color: rgb(39, 39, 39);
     font-weight: bolder;
+}
+
+.score_info_element{
+    margin-top: 20px;
+    height: 150px;
+    overflow-y: hidden;
+}
+
+.score_info_element_title{
+    margin-left: 25px;
+    margin-right: 25px;
+    font-size: 20px;
+    color: rgba(216, 216, 216, 0.808);
+    font-weight: bolder;
+    height: 20px;
+    max-height: 40px;
+    overflow-y: hidden;
+}
+
+.score_info_element_desc{
+    margin-top: 10px;
+    margin-left: 25px;
+    margin-right: 25px;
+    color: rgba(216, 216, 216, 0.808);
+    font-weight:lighter;
+    height: 150px;
+    overflow-y: hidden;
+}
+
+/* Custom Scroll Bar for right radar info */
+::-webkit-scrollbar {
+    height: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f100;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    border-radius: 25px;
+    background: rgba(255, 255, 255, 0.534);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: rgb(41, 41, 41);
 }

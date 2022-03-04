@@ -1,0 +1,12 @@
+{
+    "resultsPerPage": 0,
+    "startIndex": 0,
+    "totalResults": 0,
+    "result": {
+        "CVE_data_type": "CVE",
+        "CVE_data_format": "MITRE",
+        "CVE_data_version": "4.0",
+        "CVE_data_timestamp": "2022-02-08T16:47Z",
+        "CVE_Items": []
+    }
+}

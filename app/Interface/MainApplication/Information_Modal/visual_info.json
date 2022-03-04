@@ -1,0 +1,25 @@
+{
+    "visuals": {
+        "network_graph": {
+            "name": "Network Graph"
+        },
+        "chord_plot": {
+            "name": "Chord Plot"
+        },
+        "heatmap": {
+            "name": "Heatmap"
+        },
+        "line_chart": {
+            "name": "Line Chart"
+        },
+        "radar_plot": {
+            "name": "Radar Plot"
+        },
+        "stacked_area": {
+            "name": "Stacked Area"
+        },
+        "sankey_diagram": {
+            "name": "Sankey Diagram"
+        }
+    }
+}
