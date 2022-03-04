@@ -38,6 +38,12 @@ nav ul {
     margin-bottom: 10px;
 }
 
+nav ul li.settings_button {
+    position: absolute;
+    right: 20px;
+    top: 10px;
+}
+
 nav ul li {
     width: 8vw;
     display: inline-block;
@@ -119,10 +125,22 @@ nav.stroke ul li a.Respond:after {
     background-color: #ff4b4b6e;
 }
 
+nav.stroke ul li a.Identify:after {
+    background-color: #4be4ff6e;
+}
+
+nav.stroke ul li a.settings_button:hover:after {
+    width: 0%;
+}
+
 nav.stroke ul li a:hover:after {
     width: 95%;
 }
 
 nav.fill ul li a {
     transition: all 2s;
+}
+
+.settings_button{
+    font-size: 30px;
 }

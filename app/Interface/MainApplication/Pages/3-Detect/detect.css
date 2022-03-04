@@ -3,12 +3,12 @@
 
 .HeatmapDetect{
     grid-area: 1 / 1 / 4 / 20;
-    background-color: rgb(126, 126, 126);
+    background-color: rgba(244, 253, 255, 0.123);
 }
 
 .controls{
     grid-area: 4 / 1 / 8 / 5;
-    background-color: rgb(126, 126, 126);
+    background-color: rgba(244, 253, 255, 0.123);
 }
 
 .detectControl{
@@ -31,7 +31,7 @@
 
 .LineGraph{
     grid-area: 4 / 5 / 8 / 20;
-    background-color: rgb(126, 126, 126);
+    background-color: rgba(244, 253, 255, 0.123);
 }
 
 
