@@ -61,21 +61,26 @@
 .radarPlot {
     grid-area: 1 / 6 / 5 / 15;
     background-color: rgba(244, 253, 255, 0.349);
+    display: inline-block;
 }
 
 .left_radar {
     grid-area: 1 / 1 / 5 / 6;
     background-color: rgba(244, 253, 255, 0.349);
+    display: inline-block;
 }
 
 .right_radar {
     grid-area: 1 / 15 / 5 / 20;
     background-color: rgba(244, 253, 255, 0.349);
+    overflow: hidden;
+    display: inline-block;
 }
 
 .suggestions {
     grid-area: 5 / 1 / 9 / 20;  
     background-color: rgba(244, 253, 255, 0.349);
+    display: inline-block;
 }
 
 .suggestion_card{ 

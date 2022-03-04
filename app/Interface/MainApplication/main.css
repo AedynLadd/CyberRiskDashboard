@@ -61,8 +61,8 @@ body {
 
 .score_info_element{
     margin-top: 20px;
-    height: 150px;
-    overflow-y: hidden;
+    height: auto;
+    overflow-y: auto;
 }
 
 .score_info_element_title{
@@ -82,13 +82,15 @@ body {
     margin-right: 25px;
     color: rgba(216, 216, 216, 0.808);
     font-weight:lighter;
-    height: 150px;
-    overflow-y: hidden;
+    position: absolute;
+    height: 200px;
+    overflow-y: auto;
 }
 
 /* Custom Scroll Bar for right radar info */
 ::-webkit-scrollbar {
     height: 5px;
+    width: 5px;
 }
 
 /* Track */

@@ -118,6 +118,7 @@ d3.json(__dirname + "/Data/NIST_criteria.json").then(function (data) {
                 console.log(d3.select(this).style("stroke-width"))
                 d3.select(this).style("stroke-width", (current_state == "0px") ? "3px" : "0px");
                 update_right_radar((d3.select(this).style("stroke-width") == "0px") ? null : d3.select(this).attr("id"), data);
+                update_framework_descriptor((d3.select(this).style("stroke-width") == "0px") ? null : d3.select(this).attr("id"));
             });
 
 
@@ -125,8 +126,8 @@ d3.json(__dirname + "/Data/NIST_criteria.json").then(function (data) {
 
     let i = 0;
     var slice_angle = 360 / Object.entries(data).length;
-    var radius = 200;
-    var center = [350, 240]
+    var radius = 195;
+    var center = [350, 221]
 
     // Slices
     for (const [key, value] of Object.entries(data)) {
@@ -233,7 +234,13 @@ function update_right_radar(element_id = null, data) {
 
 
 function update_framework_descriptor(Framework_element_path){
-    var framework_item = Framework_descriptors[Framework_element_path]
-    document.getElementById("score_info_element_title").innerHTML = framework_item["Title"]
-    document.getElementById("score_info_element_desc").innerHTML = framework_item["Description"];
+    if(Framework_element_path == null){
+        var framework_item = Framework_descriptors["overview"]
+        document.getElementById("score_info_element_title").innerHTML = framework_item["Title"]
+        document.getElementById("score_info_element_desc").innerHTML = framework_item["Description"];
+    } else {
+        var framework_item = Framework_descriptors[Framework_element_path]
+        document.getElementById("score_info_element_title").innerHTML = framework_item["Title"]
+        document.getElementById("score_info_element_desc").innerHTML = framework_item["Description"];
+    }
 }
