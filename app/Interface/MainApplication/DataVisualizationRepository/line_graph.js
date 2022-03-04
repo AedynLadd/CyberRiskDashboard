@@ -12,6 +12,7 @@ var line_svg = d3.select("#LineGraph")
 
 function generate_line_chart(group_name, data) {
     line_svg.selectAll("g.line_axis").remove();
+    line_svg.selectAll("text.line_axis").remove();
     line_svg.selectAll("path.data_display").remove();
 
     // Reformat our data to be better suited for a line graph
@@ -27,6 +28,14 @@ function generate_line_chart(group_name, data) {
         .attr("transform", `translate(0, 300)`)
         .call(d3.axisBottom(x).tickFormat(d3.timeFormat("%B, %d, %Y")).ticks(5));
 
+    line_svg.append("text")      // text label for the x axis
+        .attr("x", 450)
+        .attr("y",  320)
+        .attr("class", "line_axis")
+        .style("text-anchor", "middle")
+        .style("font-size","11px")
+        .text("Dates");
+
     // Add Y axis
     var y = d3.scaleLinear()
         .domain([0, d3.max(data, function(d){
@@ -38,6 +47,15 @@ function generate_line_chart(group_name, data) {
     line_svg.append("g")
         .attr("class", "line_axis")
         .call(d3.axisLeft(y));
+    
+    line_svg.append("text")
+        .attr("x", 450)             
+        .attr("y", 5)
+        .attr("text-anchor", "middle")
+        .attr("class", "line_axis")
+        .style("font-size", "11px") 
+        .style("text-decoration", "underline")  
+        .text("Trainings Taken vs Number of People Who Took");
 
 
     var color = d3.scaleOrdinal()

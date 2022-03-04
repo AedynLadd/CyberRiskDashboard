@@ -44,16 +44,14 @@ d3.json(__dirname + "/Data/NIST_criteria.json").then(function (data) {
         // For each category subcategory
         for (const [key, value] of Object.entries(subcategories)) {
             // use random values
-            //value[0] = Math.floor(Math.random() * (100 - 25 + 1) + 25) / 100
             // Append the calculated point to our coordinate array
-            //angle_located = i + (sub_angle / 2)
+            angle_located = i + (sub_angle / 2) + 180
+            //console.log(sub_angle)
+            //angle_located = sub_angle
+            y = ((radius - 40) * value[0]) * Math.cos(-1*angle_located * (Math.PI / 180));
+            x = ((radius - 40) * value[0]) * Math.sin(-1*angle_located * (Math.PI / 180));
 
-            angle_located = (i + sub_angle / 2) + 36.5
-
-            y = ((radius - 40) * value[0]) * Math.cos(angle_located * (Math.PI / 180));
-            x = ((radius - 40) * value[0]) * Math.sin(angle_located * (Math.PI / 180));
-
-            coordinates.push([x + center[0], y + center[1]])
+            coordinates.push([x + center[0], y + center[1], key])
 
             // Add an arc for the subtitle
             var subtitle_arc = d3.arc()
@@ -120,6 +118,7 @@ d3.json(__dirname + "/Data/NIST_criteria.json").then(function (data) {
                 console.log(d3.select(this).style("stroke-width"))
                 d3.select(this).style("stroke-width", (current_state == "0px") ? "3px" : "0px");
                 update_right_radar((d3.select(this).style("stroke-width") == "0px") ? null : d3.select(this).attr("id"), data);
+                update_framework_descriptor((d3.select(this).style("stroke-width") == "0px") ? null : d3.select(this).attr("id"));
             });
 
 
@@ -127,8 +126,8 @@ d3.json(__dirname + "/Data/NIST_criteria.json").then(function (data) {
 
     let i = 0;
     var slice_angle = 360 / Object.entries(data).length;
-    var radius = 200;
-    var center = [350, 240]
+    var radius = 195;
+    var center = [350, 221]
 
     // Slices
     for (const [key, value] of Object.entries(data)) {
@@ -179,6 +178,9 @@ d3.json(__dirname + "/Data/NIST_criteria.json").then(function (data) {
         .data(coordinates)
         .enter()
         .append("circle")
+        .on("click", function(event, d) {
+            console.log(d);
+        })
         .attr("cx", center[0])
         .attr("cy", center[1])
         .transition()
@@ -191,19 +193,17 @@ d3.json(__dirname + "/Data/NIST_criteria.json").then(function (data) {
 
 });
 
-
 //
 // UPDATES TO THE RADAR INFO
 //
 // Update the right radar element category overview data...
 function update_right_radar(element_id = null, data) {
     relevant_data = (element_id != null) ? data[element_id] : data;
-    console.log(relevant_data)
+
     document.getElementById("total_score_title").innerHTML = (element_id != null) ? element_id : "Overall";
 
-
     const create_score_card = (title, score) => {
-        return ['<div>',
+        return ['<div class="score_card" onclick="update_framework_descriptor(\''+ title + '\')">',
                     '<div class="score_card_title">', title, '</div>',
                     '<div class="score_card_subtitle">', score, '</div>',
                 '</div>'].join("")
@@ -230,4 +230,17 @@ function update_right_radar(element_id = null, data) {
         })
     }
     document.getElementById("cyber_risk_score").innerHTML = overall_score;
+}
+
+
+function update_framework_descriptor(Framework_element_path){
+    if(Framework_element_path == null){
+        var framework_item = Framework_descriptors["overview"]
+        document.getElementById("score_info_element_title").innerHTML = framework_item["Title"]
+        document.getElementById("score_info_element_desc").innerHTML = framework_item["Description"];
+    } else {
+        var framework_item = Framework_descriptors[Framework_element_path]
+        document.getElementById("score_info_element_title").innerHTML = framework_item["Title"]
+        document.getElementById("score_info_element_desc").innerHTML = framework_item["Description"];
+    }
 }

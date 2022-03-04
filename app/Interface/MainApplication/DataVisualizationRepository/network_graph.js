@@ -9,10 +9,12 @@ d3.json(url).then(function (data) {
         .attr("width", "100%")
         .attr("height", "100%")
 
+
     svg_w = svg.style("width")
     svg_w = parseInt(svg_w.substring(0, svg_w.length - 2))
     svg_h = svg.style("height")
     svg_h = parseInt(svg_h.substring(0, svg_h.length - 2));
+
 
     // initialize the simulation forces
     const simulation = d3.forceSimulation(data.nodes)
@@ -198,7 +200,7 @@ function createSoftwareTable(id, data_items) {
                     cell_info = data_items[rows - 1];
                 } else if (columns == 1) {
                     cell_info = cvss_data[data_items[rows - 1]].length;
-                    if(cell_info >= 1000) {
+                    if (cell_info >= 1000) {
                         cell_info = "1000+";
                     }
                 }
