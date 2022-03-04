@@ -1,44 +1,40 @@
 import React, { useState, useEffect } from 'react'
-import {Box, Stack} from '@mui/material'
+import {Stack} from '@mui/material'
 
-import TextQuestion from './types/TextQuestion'
 import YesNoQuestion from './Types/YesNoQuestion'
-import SingleSelect from './Types/SingleSelect'
-import MultiSelect from './Types/MultiSelect'
-import ListQuestion from './Types/ListQuestion'
-import FileQuestion from './Types/FileQuestion'
+import AssetQuestion from './Types/AssetQuestion'
 
-import { boolean, string, array } from './Common/Defaults'
+import { boolean, array } from './Common/Defaults'
 
 export default function RiskAssessment({answers, update}) {
 
-    const [q14, setQ14] = useState({
-        number: 14,
-        text: "Identify your organization's critical assets:",
-        answer: array(answers[14])
-    })
-
     const [q15, setQ15] = useState({
         number: 15,
-        text: "Identify the vulnerability  for each asset",
-        selectOptions: [
-            {value: 'fried', label: 'Fries'},
-            {value: 'mashed', label: 'Mashed'},
-            {value: 'baked', label: 'Baked'}
-        ],
-        answer: string(answers[15])
+        text: "Identify your organization’s valuable assets:",
+        subtext: "Add them and update them.",
+        answer: array(answers[15])
+    })
+
+    const [q16, setQ16] = useState({
+        number: 16,
+        text: "To obtain your cyber threat intelligence, do you use information sharing forums and other sources?",
+        falseLabel: "No",
+        trueLabel: "Yes",
+        answer: boolean(answers[16])
     })
 
     useEffect(() => {
         update({
-            [q14.number]: q14.answer
+            [q15.number]: q15.answer,
+            [q16.number]: q16.answer
         })
-    }, [q14])
+    }, [q15, q16])
     
     return (
         <div>
             <Stack spacing={2}>
-                <ListQuestion question={q14} update={setQ14} />
+                <AssetQuestion question={q15} update={setQ15} />   
+                <YesNoQuestion question={q16} update={setQ16} />
             </Stack>
         </div>
     )
