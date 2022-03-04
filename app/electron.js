@@ -19,11 +19,13 @@
  *  Last modified  : 2018-02-25 15:31:40
  */
 
+console.log("working?")
 
 const { app, BrowserWindow, ipcMain, dialog } = require('electron');
 const fs = require('fs');
 const fu = require('./fileUtils');
 const path = require('path');
+const { CircleNotifications } = require('@mui/icons-material');
 
 const CONFIG_PATH = './app/Hidden/Data/data_config.json';
 
@@ -73,7 +75,7 @@ function createLoadingScreen() {
     LoadingScreen.loadFile('app/Interface/LoadingMenu/loading.html');
 }
 
-function createRAQ() {
+function createRAQ(first_time = true) {
     RiskAnalysisQuestionnaire = new BrowserWindow({
         width: 600,
         height: 800,
@@ -90,7 +92,11 @@ function createRAQ() {
     });
 
     RiskAnalysisQuestionnaire.loadFile('app/Interface/RiskAnalysisQuestionnaire/index.html');
-    RiskAnalysisQuestionnaire.on('closed', createDashboardWindow);
+    RiskAnalysisQuestionnaire.on('closed', function(){
+            if(first_time){
+                createDashboardWindow()
+            }
+    });
 }
 
 function createDashboardWindow() {
@@ -174,6 +180,7 @@ ipcMain.on("analysis-data", (_, arg) => DataRender.webContents.send("analysis", 
 ipcMain.on("data-dashboard", (_, arg) => DashboardWindow.webContents.send("data", arg));
 ipcMain.on("analysis-dashboard", (_, arg) => DashboardWindow.webContents.send("analysis", arg));
 
+
 //
 // 3. APPLICATION LIFE CYCLE EVENTS
 //
@@ -181,7 +188,7 @@ function launchApp() {
     // Create a 'main'-Window
     createAnalysisRenderer();
     createDataRenderer();
-
+    console.log("launching")
     // Check to see if the Risk Analysis Config file exists or not
     if (fs.existsSync(CONFIG_PATH)) {
         // If the file exists we carry on with our launch as usual
@@ -197,7 +204,14 @@ function launchApp() {
 
     // Configure Listeners here if events are directly requesting something of the main process
     ipcMain.on('core-action', (_, arg) => {
-        console.log(arg) // prints "ping"
+        if(arg == "summon_raq"){
+            console.log("Summoning RAQ")
+            createRAQ(false)
+        }
+        if(arg == "close_app"){
+            console.log("closing app")
+            app.exit()
+        }
     })
 }
 
