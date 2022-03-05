@@ -1,7 +1,10 @@
 {
     "visuals": {
-        "network_graph": {
+        "networkGraph": {
             "name": "Network Graph"
+        },
+        "networkInfo":{ 
+            "name": "Network Info"
         },
         "chord_plot": {
             "name": "Chord Plot"
@@ -15,11 +18,17 @@
         "radar_plot": {
             "name": "Radar Plot"
         },
-        "stacked_area": {
+        "stackedAreaChart": {
             "name": "Stacked Area"
         },
         "sankey_diagram": {
             "name": "Sankey Diagram"
+        },
+        "right_radar_info": {
+            "name": "Right Info"
+        },
+        "suggestion_cards": {
+            "name": "Suggestions"
         }
     }
 }

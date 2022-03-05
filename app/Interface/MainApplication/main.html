@@ -15,7 +15,7 @@
     <!-- The Settings Modal -->
     <div id="settings_modal" class="settings_modal">
         <!-- Modal content -->
-        <div class="modal-content">
+        <div class="modal-content" id = "modal_content">
             <span class="modal_close">&times;</span>
             <p class="settings_identifier">Settings</p>
             <button class="settings_button_list" id="settings_button_list_RAQ">RAQ</button>
@@ -58,9 +58,9 @@
     <!-- MAIN CONTENTS -->
     <div class="dashboardHomeGrid">
         <!-- <div class="item1" id="my_dataviz"></div> -->
-        <div class="radarPlot" id="radar_chart_vis"></div>
+        <div class="radarPlot" id="radar_plot"></div>
         <div class="left_radar" id="stackedAreaChart"></div>
-        <div class="right_radar">
+        <div class="right_radar" id="right_radar_info">
             <text class="total_score_title" id="total_score_title"></text>
             <div class="cyber_risk_score" id="cyber_risk_score"></div>
             <div class="score_elements" id="score_elements"></div>

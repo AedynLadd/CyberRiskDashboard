@@ -141,6 +141,7 @@ let AnalysisRenderer;
 let DataRender;
 
 function createAnalysisRenderer() {
+    console.log("creating analysis renderer")
     AnalysisRenderer = new BrowserWindow({
         show: false,
         webPreferences: {
@@ -154,6 +155,7 @@ function createAnalysisRenderer() {
 }
 
 function createDataRenderer() {
+    console.log("creating data renderer")
     DataRender = new BrowserWindow({
         show: false,
         webPreferences: {
@@ -188,7 +190,8 @@ function launchApp() {
     // Create a 'main'-Window
     createAnalysisRenderer();
     createDataRenderer();
-    console.log("launching")
+    
+    console.log("launching application")
     // Check to see if the Risk Analysis Config file exists or not
     if (fs.existsSync(CONFIG_PATH)) {
         // If the file exists we carry on with our launch as usual

@@ -1,7 +1,7 @@
 var d3 = require("d3");
 
 d3.json(__dirname + "/Data/NIST_criteria.json").then(function (data) {
-    var svg = d3.select("#radar_chart_vis")
+    var svg = d3.select("#radar_plot")
         .append("svg")
         .attr("width", "100%")
         .attr("height", "100%")
