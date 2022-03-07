@@ -34,6 +34,9 @@ class User:
     def getUState(self):
         return self.uState
 
+#populate from sql
+
+
 rng = np.random.default_rng(99999)
 orgIPrange = "191.214.233."
 

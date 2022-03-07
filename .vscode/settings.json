@@ -1,0 +1,5 @@
+{
+    "python.analysis.extraPaths": [
+        "./app/Hidden/Analysis/DataAnalysis/Queriers"
+    ]
+}
