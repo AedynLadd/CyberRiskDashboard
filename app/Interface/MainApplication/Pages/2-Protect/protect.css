@@ -24,18 +24,18 @@
     fill-opacity: .9;
     min-height: 3;
     min-width: 3;
-    fill: rgb(54, 54, 54);
-    stroke: rgb(37, 37, 37);
+    fill: rgb(97, 74, 93);
+    stroke: #490c556e;
 }
 
 .node:hover {
-    stroke: #3e08496e;
+    stroke: #2b262c6e;
     stroke-width: 3px;
 }
 
 .link {
     fill: none;
-    stroke: #3e08496e;
+    stroke: #490c556e;
     stroke-opacity: .9;
 }
 

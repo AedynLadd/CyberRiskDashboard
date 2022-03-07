@@ -23,6 +23,8 @@ d3.json(dir + "/Information_Modal/visual_info.json").then(function (data) {
       new_help_item.style.position = "absolute";
       new_help_item.style.left = offsets.left + "px";
       new_help_item.style.top = offsets.top + "px";
+      new_help_item.style.width = offsets.width + "px";
+      new_help_item.style.height = offsets.height + "px";
       new_help_item.style.display = "none";
     }
   }
@@ -44,7 +46,6 @@ d3.json(dir + "/Information_Modal/visual_info.json").then(function (data) {
   // When the user clicks the button, open the modal 
   btn.onclick = function () {
     modal.style.display = "block";
-    settings_content.style.display = "";
   }
 
   // When the user clicks on <span> (x), close the modal
@@ -54,20 +55,21 @@ d3.json(dir + "/Information_Modal/visual_info.json").then(function (data) {
 
   // When the user clicks anywhere outside of the modal, close it
   window.onclick = function (event) {
-    if (event.target == modal) {
-      if (help_menu_on) {
-        settings_content.style.display = "block";
-        // hide the help modals
-        for (item in help_items_displayed) {
-          console.log(item)
-          this_help_element = document.getElementById(item)
-          this_help_element.style.display = "none";
-        }
-        help_menu_on = false
-      } else {
+    if (help_menu_on & event.target != settings_button_list_HELP) {
+      content_displaying = document.getElementById("modal_content");
+      content_displaying.style.display = "block";
+      // hide the help modals
+      for (item in help_items_displayed) {
+        console.log(item)
+        this_help_element = document.getElementById(item)
+        this_help_element.style.display = "none";
+      }
+      help_menu_on = false
+    } else {
+      if (event.target == modal) {
         modal.style.display = "none";
       }
-    }
+    } 
   }
 
   //
@@ -79,11 +81,16 @@ d3.json(dir + "/Information_Modal/visual_info.json").then(function (data) {
   }
 
 
-  function create_help_card(key) {
+  function create_help_card(key, height, width) {
 
     var div_element = [
       "<div class='help_modal_element' id='help_me_" + key + "'>",
-      key,
+      "<div class='help_modal_element_title' id='help_me_" + key + "'>",
+      data["visuals"][key]["name"],
+      "</div>",
+      "<div class='help_modal_element_title' id='help_me_" + key + "'>",
+      data["visuals"][key]["description"],
+      "</div>",
       "</div>"
     ]
 
@@ -91,10 +98,8 @@ d3.json(dir + "/Information_Modal/visual_info.json").then(function (data) {
   }
 
   settings_button_list_HELP.onclick = function (event) {
-    console.log("was clicked?")
-    help_menu_on = true
-    settings_content.style.display = "none";
 
+    help_menu_on = true
     for (key in data["visuals"]) {
       var visual_element = document.getElementById(key)
       if (visual_element != null) {
@@ -103,6 +108,8 @@ d3.json(dir + "/Information_Modal/visual_info.json").then(function (data) {
         new_help_item.style.display = "block";
       }
     }
+    content_displaying = document.getElementById("modal_content");
+    content_displaying.style.display = "none";
   }
 
   settings_button_list_RAQ.onclick = function (event) {

@@ -1,34 +1,44 @@
 {
     "visuals": {
         "networkGraph": {
-            "name": "Network Graph"
+            "name": "Network Graph",
+            "description": "none"
         },
         "networkInfo":{ 
-            "name": "Network Info"
+            "name": "Network Info",
+            "description": "none"
         },
         "chord_plot": {
-            "name": "Chord Plot"
+            "name": "Chord Plot",
+            "description": "none"
         },
         "heatmap": {
-            "name": "Heatmap"
+            "name": "Heatmap",
+            "description": "none"
         },
         "line_chart": {
-            "name": "Line Chart"
+            "name": "Line Chart",
+            "description": "none"
         },
         "radar_plot": {
-            "name": "Radar Plot"
+            "name": "Radar Plot",
+            "description": "none"
         },
         "stackedAreaChart": {
-            "name": "Stacked Area"
+            "name": "Stacked Area",
+            "description": "none"
         },
         "sankey_diagram": {
-            "name": "Sankey Diagram"
+            "name": "Sankey Diagram",
+            "description": "none"
         },
         "right_radar_info": {
-            "name": "Right Info"
+            "name": "Right Info",
+            "description": "none"
         },
         "suggestion_cards": {
-            "name": "Suggestions"
+            "name": "Suggestions",
+            "description": "none"
         }
     }
 }

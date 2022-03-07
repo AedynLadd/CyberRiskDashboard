@@ -118,7 +118,6 @@ d3.json(__dirname + "/Data/NIST_criteria.json").then(function (data) {
                 console.log(d3.select(this).style("stroke-width"))
                 d3.select(this).style("stroke-width", (current_state == "0px") ? "3px" : "0px");
                 update_right_radar((d3.select(this).style("stroke-width") == "0px") ? null : d3.select(this).attr("id"), data);
-                update_framework_descriptor((d3.select(this).style("stroke-width") == "0px") ? null : d3.select(this).attr("id"));
             });
 
 
@@ -199,7 +198,7 @@ d3.json(__dirname + "/Data/NIST_criteria.json").then(function (data) {
 // Update the right radar element category overview data...
 function update_right_radar(element_id = null, data) {
     relevant_data = (element_id != null) ? data[element_id] : data;
-
+    
     document.getElementById("total_score_title").innerHTML = (element_id != null) ? element_id : "Overall";
 
     const create_score_card = (title, score) => {
@@ -220,7 +219,6 @@ function update_right_radar(element_id = null, data) {
             overall_score += function_score;
             document.getElementById("score_elements").innerHTML += create_score_card(function_key, function_score)
         })
-
     } else {
         Object.keys(relevant_data["items"]).forEach((category_key) => {
             let category_score = Math.round(relevant_data["items"][category_key][0] * 100);
@@ -230,6 +228,8 @@ function update_right_radar(element_id = null, data) {
         })
     }
     document.getElementById("cyber_risk_score").innerHTML = overall_score;
+
+    update_framework_descriptor(element_id);
 }
 
 

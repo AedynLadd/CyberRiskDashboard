@@ -1,2002 +1,1001 @@
-ID,IP,First Name,Last Name,Username,State,Applications
-
-1,191.214.233.1,Frances,Frazier,frances1,FIN,"['SAS', 'Datapine', 'QlikView', 'MySQL']"
-
-2,191.214.233.2,Cathy,Lewis,cathy2,REQ,"['Erwin', 'RapidMiner', 'Python', 'QlikView', 'Splunk']"
-
-3,191.214.233.3,Sherri,Wofford,sherri3,FIN,"['RapidMiner', 'Talend']"
-
-4,191.214.233.4,Don,Dougher,don4,REQ,"['Python', 'MySQL', 'Tableau Public', 'Talend']"
-
-5,191.214.233.5,Mary,Canta,mary5,REQ,['MySQL']
-
-6,191.214.233.6,Ashley,Fox,ashley6,FIN,['Datapine']
-
-7,191.214.233.7,Gilbert,Macias,gilbert7,REQ,"['QlikView', 'Talend', 'Splunk']"
-
-8,191.214.233.8,Everette,Smith,everette8,REQ,"['Erwin', 'Tableau Public', 'Splunk', 'KNIME', 'Talend', 'Excel']"
-
-9,191.214.233.9,Arthur,Gonzalez,arthur9,INT,"['Tableau Public', 'Erwin']"
-
-10,191.214.233.10,Isaac,Mcgee,isaac10,REQ,"['R Programming', 'QlikView', 'Datapine', 'Splunk']"
-
-11,191.214.233.11,Manuel,Bently,manuel11,FIN,"['Erwin', 'Tableau Public', 'QlikView', 'KNIME', 'SAS', 'MySQL', 'Apache Spark']"
-
-12,191.214.233.12,Tyrone,Andre,tyrone12,INT,"['SAS', 'Erwin', 'Splunk', 'MySQL']"
-
-13,191.214.233.13,George,Lazor,george13,REQ,['Tableau Public']
-
-14,191.214.233.14,Dennis,Wood,dennis14,FIN,"['Python', 'Erwin', 'Splunk', 'QlikView']"
-
-15,191.214.233.15,William,Byers,william15,FIN,"['Tableau Public', 'Datapine', 'Talend', 'Erwin']"
-
-16,191.214.233.16,Kimberly,Cole,kimberly16,FIN,"['Python', 'Splunk', 'Tableau Public']"
-
-17,191.214.233.17,Julie,Patrick,julie17,REQ,"['Tableau Public', 'MySQL', 'Talend', 'Datapine', 'QlikView', 'Excel', 'Erwin']"
-
-18,191.214.233.18,Rose,Gietz,rose18,REQ,"['Python', 'Tableau Public', 'SAS', 'QlikView', 'MySQL', 'RapidMiner', 'Talend']"
-
-19,191.214.233.19,Timothy,Brodowski,timothy19,FIN,['Talend']
-
-20,191.214.233.20,Kimberly,Laura,kimberly20,INT,"['RapidMiner', 'KNIME', 'R Programming', 'Datapine']"
-
-21,191.214.233.21,Robin,Burkhart,robin21,INT,"['RapidMiner', 'KNIME', 'Excel', 'Datapine', 'Talend', 'Erwin']"
-
-22,191.214.233.22,Rebecca,Flynn,rebecca22,INT,"['Erwin', 'Tableau Public', 'MySQL', 'R Programming', 'SAS']"
-
-23,191.214.233.23,Nancy,Massanelli,nancy23,FIN,"['Splunk', 'R Programming', 'QlikView', 'KNIME', 'Erwin']"
-
-24,191.214.233.24,Gary,Petersen,gary24,REQ,"['Python', 'Datapine', 'Excel', 'Erwin', 'SAS']"
-
-25,191.214.233.25,Cheryl,Santana,cheryl25,FIN,"['Talend', 'Datapine', 'Apache Spark', 'KNIME', 'Excel']"
-
-26,191.214.233.26,Lauri,Baker,lauri26,INT,"['Splunk', 'R Programming', 'RapidMiner']"
-
-27,191.214.233.27,Ryan,Johnston,ryan27,REQ,['RapidMiner']
-
-28,191.214.233.28,Harry,Moore,harry28,REQ,"['Datapine', 'Talend', 'Erwin']"
-
-29,191.214.233.29,Rachel,Craig,rachel29,REQ,"['R Programming', 'Excel', 'Erwin', 'QlikView', 'Apache Spark']"
-
-30,191.214.233.30,Thomas,Williams,thomas30,INT,"['RapidMiner', 'R Programming', 'QlikView', 'Excel', 'Python', 'KNIME', 'Splunk']"
-
-31,191.214.233.31,Calvin,Galbraith,calvin31,REQ,"['Talend', 'Splunk', 'R Programming', 'Erwin', 'Excel', 'QlikView', 'SAS']"
-
-32,191.214.233.32,Calvin,Dale,calvin32,REQ,['Erwin']
-
-33,191.214.233.33,James,Nelson,james33,INT,"['Datapine', 'Tableau Public']"
-
-34,191.214.233.34,Linda,Gonzales,linda34,INT,"['KNIME', 'Apache Spark']"
-
-35,191.214.233.35,Jennifer,Gillispie,jennifer35,REQ,"['Apache Spark', 'Python', 'R Programming', 'Erwin', 'RapidMiner']"
-
-36,191.214.233.36,Susan,Placencia,susan36,INT,"['R Programming', 'Apache Spark']"
-
-37,191.214.233.37,Cheryl,Porras,cheryl37,INT,"['Talend', 'KNIME', 'Excel', 'Splunk']"
-
-38,191.214.233.38,John,Buck,john38,INT,"['Python', 'Tableau Public', 'R Programming', 'QlikView']"
-
-39,191.214.233.39,Amy,Dunn,amy39,REQ,"['Python', 'Datapine', 'Splunk', 'RapidMiner', 'Tableau Public', 'SAS']"
-
-40,191.214.233.40,Don,Purdom,don40,FIN,"['R Programming', 'Python']"
-
-41,191.214.233.41,Gregory,Laird,gregory41,REQ,"['Python', 'KNIME']"
-
-42,191.214.233.42,Dorothy,Bouchard,dorothy42,REQ,"['Erwin', 'Talend', 'KNIME', 'RapidMiner', 'R Programming', 'MySQL', 'QlikView']"
-
-43,191.214.233.43,Jeffrey,Dicicco,jeffrey43,INT,"['Python', 'Splunk']"
-
-44,191.214.233.44,Jeanette,Jenkins,jeanette44,REQ,"['Tableau Public', 'MySQL']"
-
-45,191.214.233.45,Richard,Simon,richard45,FIN,"['Tableau Public', 'Erwin', 'Talend', 'KNIME', 'QlikView', 'MySQL']"
-
-46,191.214.233.46,David,Turner,david46,INT,"['QlikView', 'RapidMiner', 'SAS']"
-
-47,191.214.233.47,Gloria,Hodges,gloria47,REQ,"['KNIME', 'Apache Spark', 'Erwin', 'Tableau Public', 'RapidMiner', 'SAS']"
-
-48,191.214.233.48,Bonita,Huggard,bonita48,REQ,"['MySQL', 'Apache Spark', 'Python', 'KNIME', 'Tableau Public', 'Splunk', 'Datapine']"
-
-49,191.214.233.49,Betsy,Spence,betsy49,INT,"['QlikView', 'Splunk', 'Datapine', 'MySQL']"
-
-50,191.214.233.50,Melissa,Jackson,melissa50,INT,"['Splunk', 'Apache Spark', 'Tableau Public', 'R Programming', 'Talend', 'MySQL']"
-
-51,191.214.233.51,Elizabeth,Benet,elizabeth51,FIN,"['Talend', 'MySQL', 'QlikView', 'Splunk', 'Excel', 'RapidMiner', 'Tableau Public']"
-
-52,191.214.233.52,Jonas,Farrar,jonas52,FIN,"['Splunk', 'KNIME', 'Tableau Public', 'Excel']"
-
-53,191.214.233.53,Dennis,Koslosky,dennis53,INT,"['Talend', 'RapidMiner', 'Excel']"
-
-54,191.214.233.54,Samuel,Salvemini,samuel54,FIN,"['Excel', 'Datapine', 'Splunk']"
-
-55,191.214.233.55,Cameron,Winner,cameron55,REQ,"['SAS', 'KNIME', 'Datapine', 'Python']"
-
-56,191.214.233.56,Juanita,Nakata,juanita56,FIN,"['Erwin', 'KNIME', 'Excel', 'QlikView', 'Python', 'Tableau Public', 'SAS']"
-
-57,191.214.233.57,Ronda,Sanders,ronda57,INT,['Python']
-
-58,191.214.233.58,May,Hubbard,may58,FIN,"['RapidMiner', 'R Programming', 'MySQL', 'QlikView', 'Excel']"
-
-59,191.214.233.59,Andre,Tavolario,andre59,INT,"['MySQL', 'Excel']"
-
-60,191.214.233.60,Betty,Marion,betty60,INT,['Erwin']
-
-61,191.214.233.61,Gary,Carpenter,gary61,REQ,"['Splunk', 'Tableau Public', 'Apache Spark', 'Datapine']"
-
-62,191.214.233.62,Charles,Thorn,charles62,REQ,"['Talend', 'Excel', 'Apache Spark', 'MySQL', 'Python', 'RapidMiner']"
-
-63,191.214.233.63,Juan,Mcduffie,juan63,FIN,"['Python', 'R Programming', 'Apache Spark']"
-
-64,191.214.233.64,Florencio,Santana,florencio64,FIN,"['Apache Spark', 'Datapine', 'Talend', 'Python', 'R Programming', 'SAS', 'MySQL']"
-
-65,191.214.233.65,Leon,Hedley,leon65,INT,['R Programming']
-
-66,191.214.233.66,Thomas,Washington,thomas66,INT,"['Tableau Public', 'QlikView']"
-
-67,191.214.233.67,Jack,Young,jack67,INT,"['Tableau Public', 'QlikView', 'Datapine']"
-
-68,191.214.233.68,Jacqueline,Marion,jacqueline68,REQ,"['MySQL', 'Datapine', 'Apache Spark']"
-
-69,191.214.233.69,Samantha,Cespedes,samantha69,INT,"['R Programming', 'Datapine', 'Splunk', 'SAS']"
-
-70,191.214.233.70,Alessandra,Chritton,alessandra70,INT,"['Apache Spark', 'Python', 'Datapine', 'QlikView', 'Excel']"
-
-71,191.214.233.71,Claude,Spearman,claude71,FIN,"['Splunk', 'R Programming', 'Excel', 'Datapine', 'Python', 'Tableau Public']"
-
-72,191.214.233.72,Ralph,Andersen,ralph72,REQ,"['Apache Spark', 'Splunk', 'Excel', 'QlikView']"
-
-73,191.214.233.73,Shelley,Dixon,shelley73,INT,"['Datapine', 'QlikView', 'Splunk']"
-
-74,191.214.233.74,Mary,Creekmore,mary74,REQ,"['Python', 'Tableau Public', 'MySQL', 'Apache Spark', 'SAS']"
-
-75,191.214.233.75,Willie,Brooks,willie75,REQ,"['Erwin', 'RapidMiner', 'SAS', 'Talend']"
-
-76,191.214.233.76,Jon,Mills,jon76,INT,"['Datapine', 'RapidMiner']"
-
-77,191.214.233.77,Garrett,Miller,garrett77,REQ,"['Excel', 'MySQL', 'Apache Spark']"
-
-78,191.214.233.78,Joe,Ferreira,joe78,REQ,"['Tableau Public', 'Erwin', 'SAS']"
-
-79,191.214.233.79,Michael,Johnson,michael79,FIN,['Excel']
-
-80,191.214.233.80,Judy,Scott,judy80,REQ,"['Apache Spark', 'Erwin', 'Excel']"
-
-81,191.214.233.81,Michael,Edwards,michael81,REQ,"['Excel', 'Tableau Public', 'Apache Spark', 'SAS', 'Datapine', 'Erwin', 'RapidMiner']"
-
-82,191.214.233.82,Richard,Gonzalez,richard82,INT,"['Erwin', 'R Programming', 'Datapine']"
-
-83,191.214.233.83,Florence,Pilling,florence83,FIN,"['Erwin', 'Excel', 'KNIME']"
-
-84,191.214.233.84,Paula,Gonzalez,paula84,INT,"['KNIME', 'R Programming', 'SAS', 'Datapine']"
-
-85,191.214.233.85,Dominique,Mccullough,dominique85,REQ,"['QlikView', 'RapidMiner', 'SAS', 'Excel', 'Python', 'KNIME']"
-
-86,191.214.233.86,Linda,Slaughter,linda86,REQ,"['Apache Spark', 'Excel', 'QlikView', 'KNIME', 'Erwin', 'Talend']"
-
-87,191.214.233.87,Dianne,Goforth,dianne87,REQ,"['Erwin', 'MySQL', 'KNIME', 'Datapine', 'Splunk']"
-
-88,191.214.233.88,Sean,Cearns,sean88,FIN,['Datapine']
-
-89,191.214.233.89,Jerome,Smith,jerome89,FIN,"['Datapine', 'Python', 'KNIME', 'QlikView', 'RapidMiner']"
-
-90,191.214.233.90,Chester,Buckley,chester90,INT,['QlikView']
-
-91,191.214.233.91,Jack,Fields,jack91,INT,"['Erwin', 'Splunk', 'Python']"
-
-92,191.214.233.92,Alberto,Jordan,alberto92,FIN,"['Apache Spark', 'RapidMiner', 'Excel', 'Splunk', 'Datapine']"
-
-93,191.214.233.93,Diana,Miller,diana93,INT,"['RapidMiner', 'QlikView', 'R Programming', 'Talend', 'Tableau Public']"
-
-94,191.214.233.94,Melissa,Booker,melissa94,REQ,"['KNIME', 'Apache Spark', 'Tableau Public', 'RapidMiner', 'Python']"
-
-95,191.214.233.95,Peggy,Fanning,peggy95,FIN,"['Talend', 'R Programming']"
-
-96,191.214.233.96,William,Peters,william96,INT,"['RapidMiner', 'Splunk', 'QlikView']"
-
-97,191.214.233.97,Long,Ballard,long97,FIN,"['Excel', 'KNIME', 'SAS', 'RapidMiner', 'Tableau Public', 'Apache Spark']"
-
-98,191.214.233.98,Antonia,Joseph,antonia98,FIN,"['Apache Spark', 'Python', 'MySQL', 'Talend', 'Datapine', 'RapidMiner']"
-
-99,191.214.233.99,Jeffrey,Martinez,jeffrey99,INT,"['RapidMiner', 'QlikView', 'Datapine']"
-
-100,191.214.233.100,Timothy,Larkin,timothy100,REQ,"['Splunk', 'KNIME', 'Datapine', 'Tableau Public']"
-
-101,191.214.233.101,Mary,Young,mary101,FIN,"['Excel', 'Tableau Public', 'Talend', 'Apache Spark']"
-
-102,191.214.233.102,Clinton,White,clinton102,FIN,"['Python', 'Splunk', 'Apache Spark', 'Tableau Public', 'Datapine', 'SAS', 'Excel']"
-
-103,191.214.233.103,Randal,Cronk,randal103,FIN,"['QlikView', 'Apache Spark', 'R Programming', 'SAS', 'KNIME', 'Datapine']"
-
-104,191.214.233.104,Antonio,Dietrich,antonio104,INT,"['Datapine', 'SAS', 'MySQL', 'QlikView', 'Apache Spark', 'Tableau Public']"
-
-105,191.214.233.105,Terry,Daughtry,terry105,FIN,"['SAS', 'Tableau Public', 'Python']"
-
-106,191.214.233.106,Thomas,Buster,thomas106,REQ,"['KNIME', 'SAS', 'Datapine']"
-
-107,191.214.233.107,Henry,Selman,henry107,INT,"['Datapine', 'Tableau Public', 'MySQL', 'QlikView', 'Python']"
-
-108,191.214.233.108,Daisy,Kent,daisy108,REQ,"['Python', 'Excel', 'Splunk', 'RapidMiner']"
-
-109,191.214.233.109,Annie,Jackson,annie109,INT,"['Erwin', 'KNIME', 'Python', 'RapidMiner', 'QlikView', 'Apache Spark', 'Splunk']"
-
-110,191.214.233.110,Pearline,Martinez,pearline110,REQ,"['Tableau Public', 'Splunk', 'SAS', 'MySQL', 'Excel', 'Apache Spark', 'KNIME']"
-
-111,191.214.233.111,Diane,Larson,diane111,INT,"['Tableau Public', 'Python', 'Datapine']"
-
-112,191.214.233.112,Robert,Brown,robert112,FIN,"['Datapine', 'Talend', 'MySQL', 'R Programming', 'KNIME', 'Python']"
-
-113,191.214.233.113,Madelene,Tennyson,madelene113,REQ,"['Excel', 'Python', 'KNIME', 'Erwin', 'Tableau Public', 'Datapine', 'Talend']"
-
-114,191.214.233.114,Lynn,Grimsley,lynn114,INT,"['Apache Spark', 'RapidMiner']"
-
-115,191.214.233.115,Irene,Hanson,irene115,REQ,"['QlikView', 'R Programming', 'Splunk', 'Datapine', 'SAS', 'Python', 'KNIME']"
-
-116,191.214.233.116,James,Rosario,james116,INT,"['MySQL', 'RapidMiner', 'R Programming', 'Datapine']"
-
-117,191.214.233.117,Stephanie,Argenbright,stephanie117,REQ,"['QlikView', 'Datapine', 'RapidMiner', 'Apache Spark', 'KNIME', 'Erwin']"
-
-118,191.214.233.118,Omar,Taylor,omar118,INT,"['R Programming', 'Excel', 'SAS', 'Apache Spark', 'Erwin', 'Talend']"
-
-119,191.214.233.119,Gregory,Healy,gregory119,INT,"['QlikView', 'Splunk']"
-
-120,191.214.233.120,Gregorio,Brush,gregorio120,REQ,"['Splunk', 'Talend']"
-
-121,191.214.233.121,Amanda,Chapman,amanda121,INT,"['Tableau Public', 'SAS']"
-
-122,191.214.233.122,Stacy,Thornhill,stacy122,CON,"['MySQL', 'QlikView', 'Python', 'SAS', 'Apache Spark']"
-
-123,191.214.233.123,Lucille,Nichols,lucille123,FIN,"['SAS', 'Talend']"
-
-124,191.214.233.124,Marlo,Dickson,marlo124,REQ,"['Talend', 'Tableau Public']"
-
-125,191.214.233.125,Aaron,Hernandez,aaron125,INT,"['Datapine', 'SAS', 'Excel', 'Splunk', 'KNIME', 'Python', 'Erwin']"
-
-126,191.214.233.126,Carol,Hayes,carol126,INT,"['Excel', 'Apache Spark']"
-
-127,191.214.233.127,Johnnie,Smith,johnnie127,REQ,"['RapidMiner', 'MySQL', 'Splunk', 'SAS']"
-
-128,191.214.233.128,Gigi,Guadalupe,gigi128,FIN,"['Python', 'RapidMiner', 'R Programming', 'Splunk', 'Talend']"
-
-129,191.214.233.129,Cynthia,Romero,cynthia129,INT,"['SAS', 'R Programming']"
-
-130,191.214.233.130,John,Olmos,john130,REQ,"['Excel', 'MySQL', 'Apache Spark', 'Datapine', 'RapidMiner', 'Talend', 'KNIME']"
-
-131,191.214.233.131,Carrie,Gilson,carrie131,REQ,"['KNIME', 'Tableau Public', 'Talend', 'SAS', 'Erwin', 'Excel', 'R Programming']"
-
-132,191.214.233.132,Guadalupe,Amundson,guadalupe132,FIN,"['Erwin', 'RapidMiner', 'Apache Spark', 'Talend']"
-
-133,191.214.233.133,Terry,Abbott,terry133,INT,"['Datapine', 'Excel', 'Splunk', 'Talend', 'Erwin', 'R Programming']"
-
-134,191.214.233.134,Georgiana,Elliott,georgiana134,INT,['Datapine']
-
-135,191.214.233.135,Emily,Lozey,emily135,FIN,"['Tableau Public', 'Excel', 'Talend', 'QlikView', 'KNIME', 'RapidMiner', 'SAS']"
-
-136,191.214.233.136,Robert,Nelson,robert136,FIN,['KNIME']
-
-137,191.214.233.137,Ian,Rivera,ian137,FIN,"['R Programming', 'QlikView', 'KNIME', 'SAS', 'Tableau Public', 'Erwin']"
-
-138,191.214.233.138,Katherine,Smith,katherine138,REQ,"['QlikView', 'Datapine', 'MySQL', 'Talend']"
-
-139,191.214.233.139,Leslie,Bisio,leslie139,REQ,"['Datapine', 'Excel']"
-
-140,191.214.233.140,Justin,Lombardi,justin140,REQ,"['Apache Spark', 'KNIME']"
-
-141,191.214.233.141,Lisa,Christopherso,lisa141,REQ,"['KNIME', 'Talend', 'Python', 'QlikView', 'Datapine']"
-
-142,191.214.233.142,Glenn,Demarco,glenn142,REQ,"['Python', 'Erwin', 'R Programming', 'Splunk', 'Talend']"
-
-143,191.214.233.143,Marcus,Mcmillen,marcus143,FIN,"['Splunk', 'R Programming', 'RapidMiner', 'QlikView', 'Tableau Public', 'Python']"
-
-144,191.214.233.144,Jean,Best,jean144,REQ,['R Programming']
-
-145,191.214.233.145,Tony,Huffman,tony145,INT,"['Excel', 'QlikView', 'KNIME']"
-
-146,191.214.233.146,Esther,Hauser,esther146,INT,"['Talend', 'SAS', 'Splunk']"
-
-147,191.214.233.147,Kyla,Knowlton,kyla147,FIN,"['MySQL', 'Tableau Public']"
-
-148,191.214.233.148,Jean,Friedland,jean148,FIN,"['R Programming', 'MySQL', 'Erwin', 'Apache Spark', 'Excel']"
-
-149,191.214.233.149,Gerald,Kanemoto,gerald149,FIN,"['Splunk', 'QlikView', 'Tableau Public', 'Datapine']"
-
-150,191.214.233.150,Yuko,Dawkins,yuko150,FIN,"['Apache Spark', 'QlikView', 'Excel', 'Python', 'Splunk', 'KNIME', 'Tableau Public']"
-
-151,191.214.233.151,Steven,Hemmen,steven151,FIN,"['Talend', 'Erwin', 'RapidMiner', 'SAS']"
-
-152,191.214.233.152,Tina,Vail,tina152,INT,"['Tableau Public', 'Talend', 'Apache Spark']"
-
-153,191.214.233.153,Marie,Sullivan,marie153,REQ,['QlikView']
-
-154,191.214.233.154,Janice,Porter,janice154,REQ,"['Datapine', 'RapidMiner', 'SAS', 'MySQL', 'Erwin', 'Python', 'Splunk']"
-
-155,191.214.233.155,Richard,Cepeda,richard155,REQ,"['Tableau Public', 'Splunk']"
-
-156,191.214.233.156,Jeffrey,Plaza,jeffrey156,REQ,"['QlikView', 'Splunk', 'Datapine', 'R Programming']"
-
-157,191.214.233.157,Michael,Garcia,michael157,REQ,"['Datapine', 'RapidMiner', 'Apache Spark', 'QlikView', 'R Programming']"
-
-158,191.214.233.158,Pat,Fuller,pat158,INT,"['Python', 'Apache Spark', 'SAS', 'Tableau Public', 'QlikView', 'Erwin', 'Excel']"
-
-159,191.214.233.159,Rodolfo,Wendell,rodolfo159,INT,"['Tableau Public', 'Splunk', 'Datapine', 'R Programming', 'Apache Spark']"
-
-160,191.214.233.160,Jamila,Rancourt,jamila160,INT,"['SAS', 'Excel', 'Talend', 'Tableau Public', 'Erwin']"
-
-161,191.214.233.161,Beulah,Sheppard,beulah161,INT,"['QlikView', 'Tableau Public']"
-
-162,191.214.233.162,Michael,Gouge,michael162,REQ,['QlikView']
-
-163,191.214.233.163,Jeffrey,Hines,jeffrey163,INT,"['QlikView', 'Talend']"
-
-164,191.214.233.164,Geneva,Duncan,geneva164,INT,"['Talend', 'Apache Spark', 'Erwin', 'Tableau Public', 'Datapine', 'Python', 'KNIME']"
-
-165,191.214.233.165,Erica,Poole,erica165,REQ,"['QlikView', 'MySQL', 'R Programming']"
-
-166,191.214.233.166,Katie,Hummel,katie166,REQ,"['Talend', 'KNIME', 'Splunk', 'Tableau Public']"
-
-167,191.214.233.167,Nadia,Henderson,nadia167,FIN,"['Tableau Public', 'KNIME', 'Talend', 'MySQL']"
-
-168,191.214.233.168,Rosaline,Chavez,rosaline168,FIN,['Talend']
-
-169,191.214.233.169,William,Tyler,william169,FIN,"['KNIME', 'Datapine', 'Excel', 'Apache Spark', 'MySQL']"
-
-170,191.214.233.170,Joel,Sarabia,joel170,INT,"['Apache Spark', 'R Programming']"
-
-171,191.214.233.171,Laura,Britt,laura171,REQ,['Talend']
-
-172,191.214.233.172,Richard,Birch,richard172,REQ,"['Tableau Public', 'Splunk', 'Apache Spark', 'Erwin']"
-
-173,191.214.233.173,Richard,Marshall,richard173,REQ,"['MySQL', 'QlikView', 'Python', 'Talend', 'R Programming', 'KNIME']"
-
-174,191.214.233.174,Mary,Paden,mary174,FIN,['RapidMiner']
-
-175,191.214.233.175,Laurine,Harrison,laurine175,INT,"['Erwin', 'Apache Spark', 'R Programming', 'RapidMiner']"
-
-176,191.214.233.176,Linda,Day,linda176,REQ,"['R Programming', 'Erwin', 'Apache Spark', 'Python', 'Tableau Public', 'MySQL']"
-
-177,191.214.233.177,James,Woodis,james177,REQ,"['Erwin', 'Tableau Public', 'SAS']"
-
-178,191.214.233.178,David,Hay,david178,FIN,"['MySQL', 'Excel', 'Python', 'Apache Spark', 'Talend']"
-
-179,191.214.233.179,Steven,Lain,steven179,INT,"['KNIME', 'MySQL', 'RapidMiner']"
-
-180,191.214.233.180,Chad,Jessen,chad180,REQ,"['KNIME', 'QlikView', 'Talend', 'Python', 'Excel', 'SAS', 'Tableau Public']"
-
-181,191.214.233.181,Bobby,Olds,bobby181,REQ,"['Erwin', 'Apache Spark', 'SAS', 'RapidMiner', 'Excel', 'Tableau Public']"
-
-182,191.214.233.182,Barbara,Hemphill,barbara182,FIN,['Datapine']
-
-183,191.214.233.183,Melissa,Miller,melissa183,INT,"['QlikView', 'Datapine', 'Excel', 'Apache Spark', 'Erwin']"
-
-184,191.214.233.184,Irma,Martin,irma184,REQ,"['R Programming', 'Apache Spark', 'SAS', 'Erwin', 'Python']"
-
-185,191.214.233.185,Krystle,Ruiz,krystle185,FIN,"['Excel', 'MySQL', 'Datapine', 'R Programming']"
-
-186,191.214.233.186,Patricia,Harrier,patricia186,INT,"['QlikView', 'Python', 'KNIME', 'MySQL', 'Datapine']"
-
-187,191.214.233.187,Theresa,Steinberg,theresa187,REQ,"['Talend', 'Python', 'Erwin', 'Excel', 'Splunk', 'R Programming', 'KNIME']"
-
-188,191.214.233.188,Alberta,Koehler,alberta188,FIN,['Apache Spark']
-
-189,191.214.233.189,Janice,Macmillan,janice189,INT,"['KNIME', 'SAS', 'Tableau Public', 'RapidMiner', 'QlikView', 'MySQL']"
-
-190,191.214.233.190,Jennifer,Piraino,jennifer190,INT,"['Talend', 'Python', 'QlikView', 'KNIME', 'SAS', 'R Programming']"
-
-191,191.214.233.191,Sandy,Carothers,sandy191,REQ,"['Splunk', 'MySQL']"
-
-192,191.214.233.192,Basil,Perry,basil192,REQ,"['Datapine', 'Talend', 'Python']"
-
-193,191.214.233.193,Lisa,Pugh,lisa193,FIN,"['Tableau Public', 'R Programming', 'Python', 'SAS']"
-
-194,191.214.233.194,Brenda,Hall,brenda194,REQ,"['Excel', 'Datapine', 'Splunk', 'Apache Spark', 'SAS', 'RapidMiner', 'Talend']"
-
-195,191.214.233.195,Melissa,Livengood,melissa195,INT,"['QlikView', 'Excel', 'Tableau Public', 'Python', 'Talend', 'KNIME']"
-
-196,191.214.233.196,Sandra,Martin,sandra196,REQ,"['Talend', 'Python', 'R Programming', 'Tableau Public', 'Splunk', 'Apache Spark', 'KNIME']"
-
-197,191.214.233.197,Jon,Dinh,jon197,FIN,"['Tableau Public', 'Apache Spark', 'Talend', 'SAS', 'QlikView', 'Erwin', 'R Programming']"
-
-198,191.214.233.198,Phyllis,Ferrini,phyllis198,FIN,"['Talend', 'Python', 'Splunk', 'Tableau Public', 'R Programming', 'KNIME', 'RapidMiner']"
-
-199,191.214.233.199,Herbert,Josilowsky,herbert199,INT,"['MySQL', 'Datapine', 'Excel', 'KNIME']"
-
-200,191.214.233.200,Justin,Lambert,justin200,REQ,"['Tableau Public', 'Datapine', 'Splunk', 'RapidMiner']"
-
-201,191.214.233.201,Gary,Jacobs,gary201,REQ,"['Splunk', 'MySQL', 'Talend', 'Datapine', 'RapidMiner', 'SAS']"
-
-202,191.214.233.202,Clara,Seals,clara202,INT,"['Excel', 'SAS']"
-
-203,191.214.233.203,Reynaldo,Hults,reynaldo203,REQ,"['Tableau Public', 'Python', 'Datapine']"
-
-204,191.214.233.204,Martin,Fox,martin204,INT,"['SAS', 'Datapine', 'Excel', 'MySQL', 'RapidMiner', 'Tableau Public', 'QlikView']"
-
-205,191.214.233.205,Gregory,Odell,gregory205,FIN,"['SAS', 'Talend']"
-
-206,191.214.233.206,Bennett,Jacobs,bennett206,FIN,"['MySQL', 'RapidMiner', 'Splunk']"
-
-207,191.214.233.207,Lynnette,Robinson,lynnette207,REQ,['KNIME']
-
-208,191.214.233.208,Larry,Paull,larry208,REQ,"['KNIME', 'Apache Spark']"
-
-209,191.214.233.209,Silas,Lima,silas209,REQ,"['Datapine', 'Splunk', 'Tableau Public', 'Apache Spark', 'Erwin']"
-
-210,191.214.233.210,John,Stubbs,john210,FIN,"['Python', 'SAS', 'Apache Spark', 'QlikView', 'MySQL']"
-
-211,191.214.233.211,Caroline,Greene,caroline211,REQ,"['RapidMiner', 'Apache Spark', 'Talend', 'MySQL', 'Splunk']"
-
-212,191.214.233.212,Graciela,Purvis,graciela212,REQ,"['SAS', 'Apache Spark', 'Datapine', 'Tableau Public', 'R Programming', 'RapidMiner']"
-
-213,191.214.233.213,Gregory,Bishop,gregory213,INT,"['RapidMiner', 'R Programming', 'Datapine', 'SAS', 'Python', 'Apache Spark']"
-
-214,191.214.233.214,Joseph,Williams,joseph214,FIN,"['KNIME', 'Talend', 'RapidMiner', 'Tableau Public', 'Splunk']"
-
-215,191.214.233.215,Hubert,Beier,hubert215,INT,"['SAS', 'Splunk', 'MySQL']"
-
-216,191.214.233.216,Jessie,Mcallister,jessie216,FIN,"['Python', 'Datapine']"
-
-217,191.214.233.217,John,Gabriel,john217,REQ,"['RapidMiner', 'Datapine', 'MySQL', 'SAS', 'KNIME', 'Excel']"
-
-218,191.214.233.218,Abraham,May,abraham218,INT,"['Excel', 'MySQL', 'SAS', 'Erwin', 'RapidMiner', 'QlikView']"
-
-219,191.214.233.219,Ernest,Vargas,ernest219,REQ,"['SAS', 'RapidMiner', 'KNIME']"
-
-220,191.214.233.220,Frank,Hall,frank220,REQ,"['Datapine', 'Splunk', 'Erwin', 'Excel', 'Python', 'MySQL']"
-
-221,191.214.233.221,Richard,Story,richard221,REQ,"['Talend', 'Excel', 'SAS', 'Python', 'RapidMiner', 'Erwin', 'KNIME']"
-
-222,191.214.233.222,Kenneth,Trevino,kenneth222,REQ,"['Talend', 'Datapine']"
-
-223,191.214.233.223,William,Manzano,william223,REQ,"['Splunk', 'QlikView', 'R Programming']"
-
-224,191.214.233.224,Joann,Hansen,joann224,REQ,"['QlikView', 'RapidMiner', 'Talend']"
-
-225,191.214.233.225,Brenda,Cunha,brenda225,INT,"['RapidMiner', 'Splunk', 'Apache Spark']"
-
-226,191.214.233.226,Denise,Rushing,denise226,INT,"['KNIME', 'R Programming', 'Splunk', 'Tableau Public', 'SAS', 'Datapine']"
-
-227,191.214.233.227,Marlene,Olsen,marlene227,INT,"['RapidMiner', 'SAS', 'Python']"
-
-228,191.214.233.228,John,Knaus,john228,INT,['KNIME']
-
-229,191.214.233.229,Keith,Hammers,keith229,INT,"['Python', 'Talend', 'QlikView', 'RapidMiner', 'SAS', 'Excel', 'Erwin']"
-
-230,191.214.233.230,Margaret,Ramirez,margaret230,REQ,['Excel']
-
-231,191.214.233.231,Stella,Watson,stella231,FIN,"['Talend', 'Erwin', 'Python', 'KNIME', 'QlikView', 'Tableau Public', 'MySQL']"
-
-232,191.214.233.232,Charlotte,Jones,charlotte232,REQ,['Python']
-
-233,191.214.233.233,Terry,Stockton,terry233,REQ,['KNIME']
-
-234,191.214.233.234,Edward,Brown,edward234,FIN,"['MySQL', 'R Programming']"
-
-235,191.214.233.235,Pauline,Poloskey,pauline235,FIN,"['Erwin', 'MySQL', 'QlikView', 'Splunk', 'Datapine', 'SAS']"
-
-236,191.214.233.236,Paige,Coots,paige236,FIN,"['RapidMiner', 'QlikView', 'KNIME', 'Datapine', 'Apache Spark', 'Excel', 'Erwin']"
-
-237,191.214.233.237,Kelly,Chapman,kelly237,INT,"['Excel', 'Talend', 'Python']"
-
-238,191.214.233.238,Earnest,Griffith,earnest238,FIN,"['R Programming', 'MySQL', 'Datapine', 'Excel', 'KNIME']"
-
-239,191.214.233.239,Kathy,Hardinger,kathy239,INT,"['Splunk', 'Python', 'Apache Spark', 'R Programming', 'MySQL', 'QlikView']"
-
-240,191.214.233.240,Patricia,Fleming,patricia240,REQ,"['QlikView', 'R Programming', 'Splunk', 'KNIME']"
-
-241,191.214.233.241,Tyrone,Capron,tyrone241,FIN,"['Talend', 'MySQL', 'Python', 'Datapine', 'Excel', 'Apache Spark', 'SAS']"
-
-242,191.214.233.242,Ray,Lindgren,ray242,INT,"['KNIME', 'Talend', 'R Programming', 'RapidMiner', 'Excel', 'Splunk']"
-
-243,191.214.233.243,Jason,Lesky,jason243,REQ,"['Splunk', 'Erwin', 'Tableau Public', 'SAS']"
-
-244,191.214.233.244,Kenneth,Jackson,kenneth244,REQ,"['Python', 'Apache Spark']"
-
-245,191.214.233.245,Marshall,Bell,marshall245,REQ,"['Talend', 'Datapine', 'Python', 'KNIME', 'Splunk', 'Excel']"
-
-246,191.214.233.246,Merle,Hahn,merle246,INT,"['SAS', 'Tableau Public', 'R Programming', 'Python', 'RapidMiner']"
-
-247,191.214.233.247,Earl,Pineda,earl247,FIN,"['Apache Spark', 'R Programming', 'Excel', 'MySQL']"
-
-248,191.214.233.248,Nathan,Coburn,nathan248,INT,"['Apache Spark', 'KNIME', 'Splunk']"
-
-249,191.214.233.249,Shirley,Parra,shirley249,REQ,"['MySQL', 'KNIME', 'Apache Spark', 'Excel', 'Erwin']"
-
-250,191.214.233.250,Carrie,Mcdermott,carrie250,CON,"['Tableau Public', 'Erwin', 'Splunk', 'Python', 'KNIME', 'SAS']"
-
-251,191.214.233.251,Aleta,Matos,aleta251,FIN,"['Splunk', 'Datapine', 'KNIME']"
-
-252,191.214.233.252,Amy,Belles,amy252,FIN,"['Talend', 'MySQL', 'QlikView', 'Apache Spark', 'Splunk', 'Excel']"
-
-253,191.214.233.253,Stephen,Raney,stephen253,INT,"['Python', 'QlikView', 'SAS', 'Datapine', 'Excel', 'Splunk', 'Apache Spark']"
-
-254,191.214.233.254,Gary,Bryant,gary254,FIN,"['Erwin', 'Excel', 'MySQL', 'Talend', 'Apache Spark']"
-
-255,191.214.233.255,Andres,Moore,andres255,FIN,"['Datapine', 'Apache Spark', 'RapidMiner']"
-
-256,191.214.233.256,Joseph,Hulsey,joseph256,FIN,"['Talend', 'Tableau Public', 'R Programming', 'Datapine', 'Excel', 'RapidMiner']"
-
-257,191.214.233.257,Teresa,Hinnenkamp,teresa257,REQ,"['KNIME', 'R Programming', 'Datapine', 'QlikView', 'Excel']"
-
-258,191.214.233.258,Daniel,Simms,daniel258,FIN,"['Tableau Public', 'Splunk']"
-
-259,191.214.233.259,Gerald,Harris,gerald259,FIN,"['Talend', 'QlikView', 'KNIME', 'MySQL']"
-
-260,191.214.233.260,Lucy,Harris,lucy260,INT,"['R Programming', 'QlikView', 'RapidMiner', 'KNIME', 'Tableau Public']"
-
-261,191.214.233.261,Harris,Diaz,harris261,FIN,['SAS']
-
-262,191.214.233.262,Marian,Morgan,marian262,FIN,"['Apache Spark', 'Datapine']"
-
-263,191.214.233.263,Judson,Schoemaker,judson263,REQ,"['Tableau Public', 'Apache Spark', 'RapidMiner']"
-
-264,191.214.233.264,James,Talib,james264,INT,"['Datapine', 'SAS', 'R Programming', 'RapidMiner', 'Python']"
-
-265,191.214.233.265,Katrina,Edgar,katrina265,INT,"['Excel', 'Tableau Public', 'MySQL', 'R Programming', 'Python', 'Apache Spark']"
-
-266,191.214.233.266,Valerie,Barbee,valerie266,FIN,"['Talend', 'Splunk', 'MySQL', 'Python', 'Datapine']"
-
-267,191.214.233.267,Virginia,Luc,virginia267,REQ,"['QlikView', 'Splunk', 'Apache Spark', 'R Programming']"
-
-268,191.214.233.268,Clarence,Drage,clarence268,REQ,['Excel']
-
-269,191.214.233.269,Val,Daugherty,val269,FIN,"['Apache Spark', 'Excel']"
-
-270,191.214.233.270,Lila,Klingenberg,lila270,REQ,['R Programming']
-
-271,191.214.233.271,Marian,Zachary,marian271,REQ,"['Python', 'QlikView', 'Tableau Public', 'MySQL']"
-
-272,191.214.233.272,Anna,Barry,anna272,INT,['R Programming']
-
-273,191.214.233.273,James,Ammon,james273,REQ,['Datapine']
-
-274,191.214.233.274,Margaret,Williams,margaret274,FIN,['KNIME']
-
-275,191.214.233.275,Norma,Rhodes,norma275,INT,['Apache Spark']
-
-276,191.214.233.276,Viola,Williamson,viola276,INT,"['Excel', 'SAS', 'R Programming', 'Datapine', 'QlikView', 'MySQL', 'KNIME']"
-
-277,191.214.233.277,Julie,Mcconkey,julie277,INT,"['QlikView', 'KNIME', 'Talend', 'MySQL', 'Tableau Public', 'SAS']"
-
-278,191.214.233.278,Noella,Luebke,noella278,INT,['Datapine']
-
-279,191.214.233.279,Billy,Wisbey,billy279,INT,"['Talend', 'Erwin']"
-
-280,191.214.233.280,Charles,Ware,charles280,FIN,"['Talend', 'RapidMiner', 'QlikView', 'Splunk']"
-
-281,191.214.233.281,Julie,Kash,julie281,REQ,"['KNIME', 'Erwin', 'Tableau Public', 'Datapine', 'Apache Spark', 'SAS', 'Python']"
-
-282,191.214.233.282,David,Simon,david282,REQ,['KNIME']
-
-283,191.214.233.283,Gertrude,Gibbons,gertrude283,REQ,"['QlikView', 'Erwin', 'Apache Spark', 'Splunk']"
-
-284,191.214.233.284,David,Holder,david284,INT,"['Talend', 'SAS', 'KNIME', 'Datapine', 'Apache Spark', 'Erwin']"
-
-285,191.214.233.285,Patricia,Johnson,patricia285,FIN,"['R Programming', 'Excel', 'SAS', 'Splunk', 'KNIME', 'Datapine', 'RapidMiner']"
-
-286,191.214.233.286,Marcus,Knight,marcus286,FIN,"['MySQL', 'Excel', 'SAS']"
-
-287,191.214.233.287,Dana,Danford,dana287,INT,"['KNIME', 'Talend', 'QlikView', 'Excel']"
-
-288,191.214.233.288,Dolores,Williams,dolores288,FIN,"['Excel', 'Datapine']"
-
-289,191.214.233.289,Frances,Alexander,frances289,INT,"['Datapine', 'SAS', 'QlikView', 'Splunk', 'R Programming']"
-
-290,191.214.233.290,Ray,Williams,ray290,INT,"['KNIME', 'Talend', 'SAS', 'QlikView']"
-
-291,191.214.233.291,Bobby,Mosby,bobby291,REQ,"['MySQL', 'Python', 'Excel']"
-
-292,191.214.233.292,Francisca,Owens,francisca292,REQ,"['Tableau Public', 'KNIME', 'R Programming']"
-
-293,191.214.233.293,Judith,Munoz,judith293,INT,"['Apache Spark', 'Erwin', 'Datapine', 'Splunk']"
-
-294,191.214.233.294,Fred,Branson,fred294,INT,['SAS']
-
-295,191.214.233.295,Bernice,Gard,bernice295,REQ,"['MySQL', 'Apache Spark', 'SAS', 'R Programming', 'Excel', 'Tableau Public']"
-
-296,191.214.233.296,James,Melvin,james296,FIN,"['Excel', 'Splunk', 'RapidMiner']"
-
-297,191.214.233.297,Kathleen,Smith,kathleen297,FIN,['KNIME']
-
-298,191.214.233.298,Earl,Person,earl298,FIN,"['Python', 'RapidMiner', 'R Programming', 'Apache Spark']"
-
-299,191.214.233.299,Deborah,Bellamy,deborah299,REQ,"['SAS', 'Tableau Public']"
-
-300,191.214.233.300,Nadia,Byrnes,nadia300,INT,"['Tableau Public', 'Python', 'RapidMiner', 'Splunk', 'Talend']"
-
-301,191.214.233.301,Lauren,Stroik,lauren301,REQ,['RapidMiner']
-
-302,191.214.233.302,Linda,Miller,linda302,FIN,"['MySQL', 'RapidMiner', 'Excel', 'Apache Spark', 'Talend']"
-
-303,191.214.233.303,Daniel,Abreu,daniel303,REQ,"['Tableau Public', 'MySQL', 'Excel', 'Datapine']"
-
-304,191.214.233.304,Jane,Carr,jane304,REQ,"['Erwin', 'Apache Spark']"
-
-305,191.214.233.305,Shanelle,Salinas,shanelle305,INT,"['Erwin', 'Excel']"
-
-306,191.214.233.306,Terri,Parsons,terri306,INT,"['Excel', 'MySQL', 'SAS', 'Erwin', 'Apache Spark']"
-
-307,191.214.233.307,Terry,Jones,terry307,REQ,['Excel']
-
-308,191.214.233.308,Nina,Mccabe,nina308,INT,"['Erwin', 'Excel', 'SAS', 'Apache Spark', 'QlikView', 'MySQL', 'Python']"
-
-309,191.214.233.309,Nanette,Lewis,nanette309,REQ,"['Tableau Public', 'Splunk']"
-
-310,191.214.233.310,Nathan,Leffert,nathan310,FIN,"['Splunk', 'R Programming']"
-
-311,191.214.233.311,Andrew,Berryhill,andrew311,INT,"['R Programming', 'Datapine', 'Talend', 'QlikView', 'Erwin', 'MySQL']"
-
-312,191.214.233.312,Andrew,Palmese,andrew312,INT,['Talend']
-
-313,191.214.233.313,Audrey,Seggerman,audrey313,FIN,"['RapidMiner', 'Excel', 'Splunk', 'KNIME']"
-
-314,191.214.233.314,Amy,Whitley,amy314,REQ,"['QlikView', 'MySQL', 'R Programming', 'Talend', 'Erwin', 'KNIME', 'Excel']"
-
-315,191.214.233.315,George,Sayler,george315,FIN,"['SAS', 'Apache Spark', 'MySQL']"
-
-316,191.214.233.316,William,Howell,william316,REQ,"['SAS', 'Python']"
-
-317,191.214.233.317,Jamika,Graves,jamika317,FIN,"['Excel', 'Apache Spark', 'R Programming', 'Python', 'Datapine']"
-
-318,191.214.233.318,Amy,Mattox,amy318,INT,['Datapine']
-
-319,191.214.233.319,Linda,Neumayer,linda319,FIN,['Talend']
-
-320,191.214.233.320,Richard,Wood,richard320,INT,"['Splunk', 'MySQL', 'RapidMiner']"
-
-321,191.214.233.321,Brenda,Maslow,brenda321,INT,['Python']
-
-322,191.214.233.322,Mary,Hullett,mary322,FIN,"['SAS', 'Tableau Public', 'MySQL', 'QlikView', 'RapidMiner']"
-
-323,191.214.233.323,Sarah,Hope,sarah323,FIN,"['KNIME', 'MySQL', 'Excel']"
-
-324,191.214.233.324,Michael,Ruiz,michael324,FIN,"['Tableau Public', 'Erwin', 'QlikView']"
-
-325,191.214.233.325,Michael,Jimenez,michael325,INT,"['Datapine', 'Erwin', 'Tableau Public', 'KNIME', 'R Programming', 'Splunk']"
-
-326,191.214.233.326,Craig,Brison,craig326,REQ,['Excel']
-
-327,191.214.233.327,Paul,Danger,paul327,FIN,"['Erwin', 'MySQL', 'Splunk', 'Tableau Public', 'R Programming', 'Datapine', 'RapidMiner']"
-
-328,191.214.233.328,Paul,Green,paul328,REQ,"['Tableau Public', 'RapidMiner', 'R Programming', 'Datapine', 'MySQL', 'Splunk', 'Apache Spark']"
-
-329,191.214.233.329,Nina,Wizar,nina329,INT,"['Excel', 'KNIME', 'Apache Spark', 'Talend', 'Python', 'R Programming']"
-
-330,191.214.233.330,Alejandro,Hall,alejandro330,FIN,"['Excel', 'Apache Spark']"
-
-331,191.214.233.331,Cynthia,Sanchez,cynthia331,REQ,"['Talend', 'SAS', 'R Programming']"
-
-332,191.214.233.332,Joey,Melancon,joey332,INT,"['Python', 'KNIME', 'Splunk', 'MySQL']"
-
-333,191.214.233.333,Chris,Walker,chris333,REQ,"['KNIME', 'Excel', 'Python', 'Tableau Public', 'RapidMiner', 'MySQL', 'Splunk']"
-
-334,191.214.233.334,John,Elliot,john334,REQ,['KNIME']
-
-335,191.214.233.335,Jetta,Benavidez,jetta335,FIN,['Splunk']
-
-336,191.214.233.336,Irene,Green,irene336,INT,"['MySQL', 'Erwin', 'QlikView', 'Tableau Public']"
-
-337,191.214.233.337,Mildred,Bates,mildred337,REQ,"['QlikView', 'R Programming']"
-
-338,191.214.233.338,Raphael,Mccauley,raphael338,REQ,['QlikView']
-
-339,191.214.233.339,Joan,Schott,joan339,FIN,"['Apache Spark', 'R Programming', 'RapidMiner']"
-
-340,191.214.233.340,Tracey,Auston,tracey340,FIN,"['Talend', 'RapidMiner', 'R Programming', 'Erwin', 'QlikView', 'Datapine']"
-
-341,191.214.233.341,Jenny,Emerson,jenny341,INT,"['KNIME', 'Apache Spark', 'Datapine', 'QlikView', 'MySQL', 'R Programming']"
-
-342,191.214.233.342,Amelia,Short,amelia342,FIN,"['QlikView', 'MySQL', 'Python']"
-
-343,191.214.233.343,Simone,Fischer,simone343,REQ,"['Python', 'MySQL']"
-
-344,191.214.233.344,Steve,Kingore,steve344,REQ,"['Datapine', 'R Programming', 'Splunk']"
-
-345,191.214.233.345,Kim,Harris,kim345,REQ,"['Apache Spark', 'SAS', 'Erwin', 'R Programming', 'RapidMiner']"
-
-346,191.214.233.346,Zachary,Bullock,zachary346,INT,"['RapidMiner', 'Apache Spark', 'Talend', 'Excel']"
-
-347,191.214.233.347,Sharon,May,sharon347,FIN,"['Excel', 'RapidMiner', 'R Programming', 'Datapine', 'Python', 'Tableau Public', 'Talend']"
-
-348,191.214.233.348,Linda,Leray,linda348,INT,"['Erwin', 'Talend', 'Excel', 'Splunk', 'R Programming', 'Python']"
-
-349,191.214.233.349,Miss,Thompson,miss349,REQ,"['KNIME', 'Datapine']"
-
-350,191.214.233.350,Frank,Kent,frank350,FIN,"['Talend', 'MySQL', 'Apache Spark', 'SAS']"
-
-351,191.214.233.351,Shannon,Marsh,shannon351,REQ,"['Datapine', 'RapidMiner', 'Erwin', 'KNIME', 'Excel', 'Splunk', 'Tableau Public']"
-
-352,191.214.233.352,Theodore,Born,theodore352,FIN,"['Python', 'SAS', 'Excel', 'Erwin', 'Splunk', 'QlikView', 'Talend']"
-
-353,191.214.233.353,Virginia,Mitchell,virginia353,REQ,"['Datapine', 'Erwin']"
-
-354,191.214.233.354,Ray,Brousseau,ray354,FIN,['KNIME']
-
-355,191.214.233.355,Lorenzo,Edwards,lorenzo355,FIN,"['Datapine', 'Erwin', 'SAS', 'KNIME', 'Excel']"
-
-356,191.214.233.356,Martha,Morse,martha356,REQ,"['SAS', 'R Programming', 'Python', 'Splunk', 'KNIME', 'QlikView', 'Tableau Public']"
-
-357,191.214.233.357,Jonathan,Johnson,jonathan357,FIN,"['R Programming', 'RapidMiner', 'Apache Spark', 'Python', 'Tableau Public', 'KNIME', 'Excel']"
-
-358,191.214.233.358,Betty,Jenkins,betty358,FIN,"['KNIME', 'R Programming', 'Erwin', 'QlikView', 'Splunk', 'Excel', 'Tableau Public']"
-
-359,191.214.233.359,Gerald,Appell,gerald359,INT,"['Tableau Public', 'RapidMiner', 'Splunk', 'QlikView', 'KNIME']"
-
-360,191.214.233.360,Scott,Hodde,scott360,FIN,['RapidMiner']
-
-361,191.214.233.361,Sabrina,Huffman,sabrina361,FIN,"['Talend', 'R Programming', 'Python']"
-
-362,191.214.233.362,Susan,Driver,susan362,INT,"['RapidMiner', 'KNIME', 'MySQL', 'Talend']"
-
-363,191.214.233.363,Evelyn,Reed,evelyn363,REQ,"['Datapine', 'Tableau Public', 'KNIME', 'SAS']"
-
-364,191.214.233.364,Sara,Jones,sara364,CON,"['Python', 'Splunk']"
-
-365,191.214.233.365,Elizabeth,Erickson,elizabeth365,REQ,"['Apache Spark', 'Datapine', 'Python', 'RapidMiner', 'Excel', 'Talend']"
-
-366,191.214.233.366,Rosemary,Campbell,rosemary366,FIN,"['Splunk', 'Tableau Public']"
-
-367,191.214.233.367,Matthew,Vasquez,matthew367,FIN,"['R Programming', 'QlikView', 'MySQL', 'Python', 'Datapine']"
-
-368,191.214.233.368,Michael,Robichaud,michael368,FIN,"['RapidMiner', 'Apache Spark', 'Splunk', 'SAS', 'Erwin', 'MySQL', 'Datapine']"
-
-369,191.214.233.369,Lori,Coleman,lori369,INT,"['Excel', 'Tableau Public', 'SAS', 'Erwin']"
-
-370,191.214.233.370,Sumiko,Parker,sumiko370,INT,"['QlikView', 'Excel', 'RapidMiner', 'MySQL', 'Talend', 'Apache Spark', 'SAS']"
-
-371,191.214.233.371,Orlando,Aguilar,orlando371,REQ,"['Excel', 'Apache Spark', 'Datapine', 'MySQL']"
-
-372,191.214.233.372,Becky,Landon,becky372,REQ,"['Python', 'Erwin']"
-
-373,191.214.233.373,Jeffrey,Reyes,jeffrey373,FIN,['Talend']
-
-374,191.214.233.374,Stan,Miller,stan374,REQ,"['MySQL', 'Apache Spark', 'Splunk', 'Excel', 'Datapine', 'SAS', 'Python']"
-
-375,191.214.233.375,Lloyd,Estrada,lloyd375,INT,"['QlikView', 'Excel']"
-
-376,191.214.233.376,Dorothy,Poteat,dorothy376,FIN,"['Datapine', 'Excel', 'Splunk', 'Tableau Public', 'RapidMiner', 'QlikView']"
-
-377,191.214.233.377,Erica,Restivo,erica377,REQ,"['Excel', 'QlikView', 'Splunk', 'Apache Spark']"
-
-378,191.214.233.378,Cassidy,Black,cassidy378,REQ,"['R Programming', 'MySQL']"
-
-379,191.214.233.379,Thomas,Younglas,thomas379,FIN,"['MySQL', 'RapidMiner', 'KNIME']"
-
-380,191.214.233.380,Jack,Lococo,jack380,INT,"['Excel', 'Splunk', 'R Programming', 'Erwin', 'Talend']"
-
-381,191.214.233.381,Thomas,West,thomas381,REQ,"['Python', 'SAS', 'Talend', 'KNIME', 'R Programming', 'QlikView']"
-
-382,191.214.233.382,Thelma,Rieker,thelma382,INT,"['QlikView', 'SAS', 'Datapine']"
-
-383,191.214.233.383,Carol,Suben,carol383,FIN,"['Tableau Public', 'Splunk', 'R Programming', 'QlikView', 'Talend', 'Apache Spark', 'Erwin']"
-
-384,191.214.233.384,Betty,Winslow,betty384,REQ,"['Apache Spark', 'KNIME']"
-
-385,191.214.233.385,Jennifer,Arellano,jennifer385,INT,"['R Programming', 'Excel', 'KNIME']"
-
-386,191.214.233.386,Steven,Randall,steven386,INT,"['Tableau Public', 'Datapine', 'Excel', 'MySQL']"
-
-387,191.214.233.387,Edward,Henderson,edward387,REQ,"['Excel', 'Talend', 'R Programming', 'MySQL', 'Python']"
-
-388,191.214.233.388,Willie,Knight,willie388,REQ,['SAS']
-
-389,191.214.233.389,Helen,Torres,helen389,REQ,"['RapidMiner', 'Splunk', 'MySQL', 'SAS', 'Python', 'KNIME']"
-
-390,191.214.233.390,Imelda,Jackson,imelda390,FIN,"['Tableau Public', 'SAS']"
-
-391,191.214.233.391,Debra,King,debra391,REQ,"['Talend', 'Apache Spark', 'R Programming', 'QlikView']"
-
-392,191.214.233.392,Hans,Estrello,hans392,INT,"['RapidMiner', 'R Programming', 'Talend', 'KNIME', 'Excel', 'MySQL']"
-
-393,191.214.233.393,Mark,Myers,mark393,FIN,"['Excel', 'Erwin', 'RapidMiner', 'KNIME', 'QlikView', 'SAS']"
-
-394,191.214.233.394,Angela,Landes,angela394,INT,"['KNIME', 'Apache Spark', 'QlikView', 'Python', 'RapidMiner']"
-
-395,191.214.233.395,James,Harrison,james395,INT,"['R Programming', 'Talend']"
-
-396,191.214.233.396,Susan,Binder,susan396,FIN,"['QlikView', 'Datapine', 'R Programming', 'Tableau Public', 'KNIME', 'Excel']"
-
-397,191.214.233.397,Heather,Swearengin,heather397,REQ,"['Splunk', 'SAS', 'Python']"
-
-398,191.214.233.398,Adam,Leleux,adam398,REQ,"['Tableau Public', 'Python', 'Talend', 'KNIME', 'Erwin']"
-
-399,191.214.233.399,Angela,Blankenship,angela399,INT,"['R Programming', 'Talend', 'KNIME', 'QlikView']"
-
-400,191.214.233.400,Kathleen,Britton,kathleen400,INT,"['Python', 'MySQL', 'QlikView']"
-
-401,191.214.233.401,June,Mcintosh,june401,INT,['KNIME']
-
-402,191.214.233.402,Anna,Pease,anna402,INT,"['Datapine', 'Tableau Public', 'Talend', 'SAS']"
-
-403,191.214.233.403,Cathy,Burks,cathy403,REQ,"['RapidMiner', 'MySQL', 'Tableau Public', 'Datapine', 'Python', 'Erwin']"
-
-404,191.214.233.404,Joseph,Key,joseph404,INT,"['SAS', 'RapidMiner', 'Apache Spark', 'Talend', 'Datapine', 'Erwin', 'Python']"
-
-405,191.214.233.405,Elissa,Laramie,elissa405,REQ,"['RapidMiner', 'Erwin', 'SAS', 'MySQL']"
-
-406,191.214.233.406,Martin,Ferguson,martin406,INT,['Talend']
-
-407,191.214.233.407,Samuel,Wetzel,samuel407,FIN,"['Apache Spark', 'QlikView', 'Tableau Public', 'RapidMiner']"
-
-408,191.214.233.408,Wayne,Gates,wayne408,REQ,"['Erwin', 'Tableau Public']"
-
-409,191.214.233.409,Carl,Nolin,carl409,INT,"['Tableau Public', 'KNIME', 'RapidMiner', 'QlikView', 'Datapine', 'MySQL', 'Talend']"
-
-410,191.214.233.410,Cinthia,Bowman,cinthia410,REQ,"['R Programming', 'Tableau Public']"
-
-411,191.214.233.411,Lee,Mercado,lee411,REQ,"['Excel', 'Apache Spark', 'QlikView', 'Erwin', 'MySQL', 'R Programming']"
-
-412,191.214.233.412,Arthur,Hathaway,arthur412,INT,"['Datapine', 'Excel', 'Python', 'QlikView', 'Splunk']"
-
-413,191.214.233.413,Sheryl,Thompson,sheryl413,FIN,"['Datapine', 'MySQL', 'R Programming', 'Erwin', 'RapidMiner']"
-
-414,191.214.233.414,Nancy,Connel,nancy414,FIN,"['Apache Spark', 'Talend', 'SAS', 'MySQL', 'Erwin']"
-
-415,191.214.233.415,Judy,Lewis,judy415,REQ,['KNIME']
-
-416,191.214.233.416,Christopher,Bond,christopher416,FIN,"['Talend', 'QlikView']"
-
-417,191.214.233.417,Dianne,Cauthon,dianne417,INT,"['SAS', 'R Programming', 'Erwin', 'Python']"
-
-418,191.214.233.418,Jane,Baudino,jane418,REQ,['Talend']
-
-419,191.214.233.419,Michael,Anderson,michael419,REQ,"['Tableau Public', 'MySQL', 'RapidMiner', 'Talend', 'Excel']"
-
-420,191.214.233.420,Robert,Niswander,robert420,FIN,"['Splunk', 'SAS', 'RapidMiner']"
-
-421,191.214.233.421,Ruth,James,ruth421,FIN,"['Apache Spark', 'Datapine', 'MySQL', 'Excel', 'Splunk']"
-
-422,191.214.233.422,Patrick,Miller,patrick422,FIN,"['Python', 'Splunk', 'Erwin']"
-
-423,191.214.233.423,Abraham,Meyer,abraham423,FIN,"['MySQL', 'QlikView', 'Python', 'Talend', 'KNIME']"
-
-424,191.214.233.424,Charles,Hernandez,charles424,INT,"['Datapine', 'Tableau Public', 'Apache Spark', 'RapidMiner', 'Splunk', 'Python', 'MySQL']"
-
-425,191.214.233.425,Nora,Johnson,nora425,FIN,"['Erwin', 'Splunk', 'Tableau Public', 'RapidMiner', 'Python']"
-
-426,191.214.233.426,Pamela,Malone,pamela426,FIN,"['RapidMiner', 'KNIME', 'Tableau Public', 'R Programming', 'Datapine', 'Splunk', 'Erwin']"
-
-427,191.214.233.427,Mark,Wright,mark427,INT,"['R Programming', 'QlikView', 'Talend', 'Python', 'Erwin', 'Apache Spark']"
-
-428,191.214.233.428,Christine,Kerber,christine428,FIN,"['Splunk', 'Python']"
-
-429,191.214.233.429,Sandra,Sampson,sandra429,REQ,"['KNIME', 'Erwin', 'SAS', 'RapidMiner', 'R Programming', 'Tableau Public']"
-
-430,191.214.233.430,Alison,Wilson,alison430,REQ,['SAS']
-
-431,191.214.233.431,John,Fitzpatrick,john431,INT,"['Excel', 'Apache Spark', 'MySQL', 'Datapine', 'RapidMiner', 'QlikView']"
-
-432,191.214.233.432,Nicholas,Mcdonald,nicholas432,FIN,"['RapidMiner', 'Erwin', 'Talend', 'SAS', 'R Programming', 'Tableau Public']"
-
-433,191.214.233.433,Clay,Jones,clay433,INT,['KNIME']
-
-434,191.214.233.434,Daniel,Molnar,daniel434,REQ,"['Tableau Public', 'Datapine', 'Erwin', 'Python', 'SAS', 'Talend', 'RapidMiner']"
-
-435,191.214.233.435,Dorothy,Mcwaters,dorothy435,REQ,"['Python', 'Excel', 'QlikView', 'Apache Spark', 'Datapine', 'Splunk']"
-
-436,191.214.233.436,Jacqueline,Roman,jacqueline436,FIN,"['QlikView', 'KNIME', 'MySQL', 'Talend']"
-
-437,191.214.233.437,Luis,Cole,luis437,INT,"['KNIME', 'SAS', 'Splunk', 'Tableau Public', 'R Programming', 'Apache Spark', 'MySQL']"
-
-438,191.214.233.438,David,Blossom,david438,INT,"['RapidMiner', 'Talend', 'Splunk']"
-
-439,191.214.233.439,Edward,Kinsey,edward439,FIN,"['R Programming', 'MySQL', 'QlikView', 'Datapine', 'Tableau Public', 'SAS', 'Excel']"
-
-440,191.214.233.440,Stanley,Gordon,stanley440,REQ,"['Talend', 'Tableau Public', 'RapidMiner', 'Excel']"
-
-441,191.214.233.441,Christopher,Kelly,christopher441,INT,"['Python', 'QlikView', 'Apache Spark', 'Talend', 'Erwin', 'Tableau Public', 'KNIME']"
-
-442,191.214.233.442,Tyrone,Holden,tyrone442,INT,"['Datapine', 'KNIME', 'R Programming']"
-
-443,191.214.233.443,Calvin,Mermis,calvin443,REQ,['Datapine']
-
-444,191.214.233.444,Ethan,Brescia,ethan444,FIN,"['Datapine', 'Erwin', 'Apache Spark', 'QlikView', 'SAS']"
-
-445,191.214.233.445,Jane,Wright,jane445,REQ,"['KNIME', 'Datapine']"
-
-446,191.214.233.446,Jesus,Hollenbeck,jesus446,INT,"['MySQL', 'Excel', 'Erwin', 'Apache Spark', 'QlikView', 'RapidMiner']"
-
-447,191.214.233.447,Edna,Martinez,edna447,REQ,"['RapidMiner', 'R Programming']"
-
-448,191.214.233.448,Lillian,Frein,lillian448,REQ,"['Datapine', 'Splunk']"
-
-449,191.214.233.449,Antonietta,Bronson,antonietta449,INT,"['MySQL', 'SAS']"
-
-450,191.214.233.450,Virgil,Wiggins,virgil450,REQ,"['QlikView', 'Datapine', 'Splunk']"
-
-451,191.214.233.451,Judith,Svobodny,judith451,FIN,"['QlikView', 'Tableau Public', 'Python', 'RapidMiner', 'KNIME']"
-
-452,191.214.233.452,Trinidad,Laino,trinidad452,REQ,['RapidMiner']
-
-453,191.214.233.453,Travis,Hermann,travis453,INT,"['QlikView', 'Erwin', 'RapidMiner', 'MySQL', 'R Programming']"
-
-454,191.214.233.454,Eddie,Bania,eddie454,REQ,"['Apache Spark', 'R Programming', 'MySQL', 'Erwin', 'Splunk', 'Tableau Public', 'SAS']"
-
-455,191.214.233.455,Joanne,Cutler,joanne455,INT,"['KNIME', 'SAS']"
-
-456,191.214.233.456,Jessie,Voelker,jessie456,INT,"['KNIME', 'Apache Spark', 'Python', 'Datapine', 'RapidMiner', 'Tableau Public']"
-
-457,191.214.233.457,Debra,Bokor,debra457,INT,['RapidMiner']
-
-458,191.214.233.458,Felicia,Schnipper,felicia458,INT,"['RapidMiner', 'Excel']"
-
-459,191.214.233.459,Pauline,Savic,pauline459,REQ,"['R Programming', 'Erwin', 'Talend', 'Excel']"
-
-460,191.214.233.460,Edward,Brauer,edward460,FIN,"['QlikView', 'Apache Spark', 'R Programming']"
-
-461,191.214.233.461,Wanda,Bruce,wanda461,CON,"['R Programming', 'Erwin', 'Splunk']"
-
-462,191.214.233.462,Barbara,Moore,barbara462,FIN,"['QlikView', 'Talend']"
-
-463,191.214.233.463,Richie,Pate,richie463,FIN,['R Programming']
-
-464,191.214.233.464,Grant,Phillips,grant464,FIN,['Python']
-
-465,191.214.233.465,Merlin,Halley,merlin465,REQ,"['RapidMiner', 'SAS', 'Excel']"
-
-466,191.214.233.466,Sarah,Wahlen,sarah466,FIN,['QlikView']
-
-467,191.214.233.467,Heidi,Swoager,heidi467,FIN,"['KNIME', 'RapidMiner', 'Apache Spark', 'R Programming', 'Datapine', 'Tableau Public']"
-
-468,191.214.233.468,Michael,Montgomery,michael468,REQ,"['Excel', 'R Programming', 'RapidMiner', 'KNIME', 'Erwin', 'Python', 'Tableau Public']"
-
-469,191.214.233.469,Kay,Henry,kay469,INT,"['Python', 'Apache Spark', 'QlikView']"
-
-470,191.214.233.470,Joel,Contreras,joel470,INT,"['Talend', 'Excel', 'Datapine']"
-
-471,191.214.233.471,Linda,Williams,linda471,REQ,"['Talend', 'R Programming', 'Apache Spark', 'Erwin', 'Splunk', 'KNIME', 'QlikView']"
-
-472,191.214.233.472,Sterling,Ward,sterling472,INT,"['SAS', 'Splunk', 'Excel', 'Talend']"
-
-473,191.214.233.473,Chad,Lowry,chad473,REQ,"['KNIME', 'SAS', 'RapidMiner', 'Talend']"
-
-474,191.214.233.474,Louise,Gil,louise474,INT,['QlikView']
-
-475,191.214.233.475,Steven,Cobb,steven475,INT,"['Python', 'RapidMiner', 'QlikView', 'R Programming', 'Splunk']"
-
-476,191.214.233.476,Jessica,Nickerson,jessica476,FIN,"['Talend', 'Datapine', 'QlikView', 'SAS']"
-
-477,191.214.233.477,Darcie,Wyatt,darcie477,FIN,"['Splunk', 'R Programming']"
-
-478,191.214.233.478,Joe,Norwood,joe478,INT,"['Splunk', 'Datapine', 'Apache Spark', 'KNIME']"
-
-479,191.214.233.479,Ruthie,Walker,ruthie479,FIN,"['RapidMiner', 'SAS', 'Datapine', 'Splunk']"
-
-480,191.214.233.480,Richard,Wagner,richard480,INT,['SAS']
-
-481,191.214.233.481,Linda,Batarse,linda481,FIN,"['Excel', 'R Programming', 'QlikView', 'RapidMiner', 'SAS', 'Datapine']"
-
-482,191.214.233.482,Paul,Tremblay,paul482,FIN,"['Datapine', 'Apache Spark', 'Python']"
-
-483,191.214.233.483,Mary,Hering,mary483,FIN,"['Splunk', 'QlikView', 'KNIME', 'SAS', 'Python', 'Talend']"
-
-484,191.214.233.484,Gail,Busby,gail484,REQ,"['R Programming', 'Apache Spark', 'RapidMiner']"
-
-485,191.214.233.485,Gordon,Butler,gordon485,FIN,['Python']
-
-486,191.214.233.486,David,Martinez,david486,FIN,"['MySQL', 'QlikView']"
-
-487,191.214.233.487,Shanell,Miller,shanell487,INT,"['MySQL', 'Apache Spark', 'KNIME', 'QlikView', 'Python', 'SAS', 'Tableau Public']"
-
-488,191.214.233.488,Shelton,Maceachern,shelton488,INT,"['R Programming', 'MySQL', 'RapidMiner', 'KNIME', 'Erwin', 'Talend', 'Tableau Public']"
-
-489,191.214.233.489,Regina,Seay,regina489,REQ,"['Python', 'Splunk', 'Erwin', 'KNIME', 'Apache Spark']"
-
-490,191.214.233.490,Anthony,Freeze,anthony490,INT,['Tableau Public']
-
-491,191.214.233.491,Paul,Moody,paul491,CON,"['MySQL', 'R Programming', 'Tableau Public']"
-
-492,191.214.233.492,Gary,Lipphardt,gary492,FIN,"['R Programming', 'Talend', 'Splunk', 'Excel']"
-
-493,191.214.233.493,Mary,Ayling,mary493,FIN,"['KNIME', 'Tableau Public', 'Excel', 'QlikView', 'Talend', 'Splunk', 'R Programming']"
-
-494,191.214.233.494,Michael,Reed,michael494,FIN,"['MySQL', 'RapidMiner', 'Erwin', 'QlikView', 'R Programming']"
-
-495,191.214.233.495,Brenda,Smith,brenda495,INT,"['MySQL', 'Excel', 'R Programming', 'Talend']"
-
-496,191.214.233.496,Morgan,Nimmo,morgan496,INT,"['MySQL', 'Tableau Public', 'QlikView', 'RapidMiner']"
-
-497,191.214.233.497,Brenda,Rose,brenda497,INT,"['Apache Spark', 'Splunk']"
-
-498,191.214.233.498,Joan,Andrews,joan498,FIN,"['QlikView', 'KNIME', 'RapidMiner', 'Apache Spark', 'Datapine', 'Splunk']"
-
-499,191.214.233.499,Erik,Evans,erik499,INT,"['Excel', 'QlikView']"
-
-500,191.214.233.500,Ryan,Bergesen,ryan500,FIN,['Splunk']
-
-501,191.214.233.501,Joseph,Rodrigues,joseph501,FIN,"['KNIME', 'Talend', 'RapidMiner', 'Erwin', 'Splunk']"
-
-502,191.214.233.502,Lakisha,Porter,lakisha502,REQ,"['Excel', 'Splunk']"
-
-503,191.214.233.503,Chrystal,Canady,chrystal503,REQ,"['Apache Spark', 'Datapine', 'Erwin', 'Python', 'RapidMiner']"
-
-504,191.214.233.504,Kimberly,King,kimberly504,FIN,"['Python', 'Datapine', 'QlikView', 'Tableau Public', 'R Programming']"
-
-505,191.214.233.505,Michael,Lee,michael505,REQ,"['Python', 'Talend', 'Datapine', 'QlikView']"
-
-506,191.214.233.506,Damien,Simmons,damien506,FIN,"['Erwin', 'Splunk', 'SAS', 'QlikView', 'RapidMiner', 'KNIME']"
-
-507,191.214.233.507,Niki,Patch,niki507,INT,"['Splunk', 'RapidMiner', 'Erwin', 'Talend', 'QlikView', 'Apache Spark']"
-
-508,191.214.233.508,William,Li,william508,INT,"['Python', 'SAS', 'Erwin', 'Tableau Public', 'Splunk', 'Datapine', 'Excel']"
-
-509,191.214.233.509,Douglas,Thompson,douglas509,REQ,"['KNIME', 'MySQL', 'Erwin', 'Tableau Public', 'SAS', 'Datapine', 'Talend']"
-
-510,191.214.233.510,Jane,Cowan,jane510,REQ,"['SAS', 'Erwin', 'KNIME', 'QlikView']"
-
-511,191.214.233.511,Zane,Reddick,zane511,INT,['Talend']
-
-512,191.214.233.512,Robert,Lewis,robert512,FIN,"['Apache Spark', 'Excel', 'Erwin', 'Python', 'Tableau Public']"
-
-513,191.214.233.513,Elia,Hudson,elia513,FIN,"['Talend', 'Apache Spark', 'Excel', 'Erwin']"
-
-514,191.214.233.514,Louella,Echard,louella514,FIN,"['R Programming', 'RapidMiner']"
-
-515,191.214.233.515,Linda,Grow,linda515,INT,"['QlikView', 'Erwin', 'Python']"
-
-516,191.214.233.516,Travis,Kidd,travis516,REQ,"['KNIME', 'Datapine', 'R Programming', 'Python', 'SAS', 'MySQL']"
-
-517,191.214.233.517,Myrtle,Jones,myrtle517,REQ,['Talend']
-
-518,191.214.233.518,Patricia,Aybar,patricia518,INT,"['SAS', 'Splunk']"
-
-519,191.214.233.519,Elanor,Dequattro,elanor519,FIN,"['Erwin', 'Tableau Public', 'Python', 'MySQL', 'Talend', 'RapidMiner']"
-
-520,191.214.233.520,Kathy,Rudder,kathy520,FIN,['Talend']
-
-521,191.214.233.521,Joshua,Sweet,joshua521,REQ,"['KNIME', 'R Programming', 'Tableau Public', 'MySQL', 'Excel', 'Datapine', 'RapidMiner']"
-
-522,191.214.233.522,Alicia,Nutt,alicia522,REQ,"['Erwin', 'Talend', 'SAS', 'Apache Spark', 'Splunk', 'Datapine']"
-
-523,191.214.233.523,Bonnie,Bernardino,bonnie523,INT,"['QlikView', 'Apache Spark', 'Talend', 'Tableau Public', 'SAS', 'KNIME', 'Erwin']"
-
-524,191.214.233.524,Gene,Corrigan,gene524,REQ,"['SAS', 'Splunk', 'KNIME', 'Excel', 'R Programming', 'Apache Spark', 'RapidMiner']"
-
-525,191.214.233.525,Frank,Anthony,frank525,REQ,['Talend']
-
-526,191.214.233.526,Patricia,Anthony,patricia526,REQ,['KNIME']
-
-527,191.214.233.527,Andrew,Mathews,andrew527,REQ,"['Talend', 'RapidMiner']"
-
-528,191.214.233.528,Kelly,Gray,kelly528,INT,['SAS']
-
-529,191.214.233.529,Albert,Miller,albert529,REQ,['Excel']
-
-530,191.214.233.530,Michael,Okane,michael530,INT,"['Apache Spark', 'QlikView', 'R Programming', 'Splunk']"
-
-531,191.214.233.531,Robert,Storey,robert531,FIN,"['MySQL', 'KNIME']"
-
-532,191.214.233.532,Billy,Watt,billy532,FIN,"['KNIME', 'Splunk']"
-
-533,191.214.233.533,Jim,Croteau,jim533,FIN,"['Tableau Public', 'Erwin', 'SAS', 'Python']"
-
-534,191.214.233.534,Cynthia,Wright,cynthia534,REQ,"['Excel', 'R Programming', 'Tableau Public', 'RapidMiner', 'Python', 'Talend', 'QlikView']"
-
-535,191.214.233.535,Hector,Kemp,hector535,INT,['RapidMiner']
-
-536,191.214.233.536,John,Jackson,john536,FIN,"['KNIME', 'QlikView', 'Datapine', 'Tableau Public', 'Python', 'Talend', 'R Programming']"
-
-537,191.214.233.537,Jacques,Granderson,jacques537,REQ,"['Talend', 'SAS']"
-
-538,191.214.233.538,Brian,Carr,brian538,INT,"['KNIME', 'Tableau Public', 'RapidMiner', 'R Programming', 'QlikView', 'Excel']"
-
-539,191.214.233.539,Joseph,Whitman,joseph539,REQ,"['Excel', 'RapidMiner', 'Splunk']"
-
-540,191.214.233.540,Thomas,Runnels,thomas540,FIN,['Tableau Public']
-
-541,191.214.233.541,Kermit,Dorland,kermit541,REQ,"['Erwin', 'Datapine', 'Tableau Public', 'R Programming', 'RapidMiner', 'Excel']"
-
-542,191.214.233.542,Charles,Henson,charles542,REQ,"['Erwin', 'Tableau Public', 'Apache Spark', 'MySQL', 'SAS', 'RapidMiner']"
-
-543,191.214.233.543,Brandon,Stgermain,brandon543,FIN,['MySQL']
-
-544,191.214.233.544,Nancy,Parente,nancy544,INT,"['SAS', 'Excel', 'Erwin', 'Apache Spark', 'Python']"
-
-545,191.214.233.545,Arthur,Brock,arthur545,INT,['MySQL']
-
-546,191.214.233.546,John,Marlatt,john546,FIN,"['Erwin', 'MySQL', 'KNIME', 'Python']"
-
-547,191.214.233.547,Cecille,Degan,cecille547,FIN,"['Python', 'KNIME', 'Splunk']"
-
-548,191.214.233.548,Stacey,Sasser,stacey548,REQ,['Python']
-
-549,191.214.233.549,Arnold,Johnson,arnold549,REQ,"['Excel', 'Python', 'Erwin', 'KNIME', 'SAS']"
-
-550,191.214.233.550,John,Slate,john550,FIN,['Apache Spark']
-
-551,191.214.233.551,Cynthia,Tointon,cynthia551,REQ,"['R Programming', 'KNIME', 'Talend', 'MySQL', 'Datapine', 'Erwin']"
-
-552,191.214.233.552,Robert,Slager,robert552,REQ,"['Datapine', 'R Programming', 'Splunk', 'Talend', 'Python', 'Tableau Public']"
-
-553,191.214.233.553,John,Montgomery,john553,FIN,"['SAS', 'Python', 'Apache Spark', 'Excel', 'R Programming', 'Talend']"
-
-554,191.214.233.554,Jacob,Ruiz,jacob554,FIN,"['MySQL', 'Erwin', 'RapidMiner', 'KNIME']"
-
-555,191.214.233.555,Alicia,Faulk,alicia555,INT,"['Excel', 'Apache Spark', 'QlikView', 'MySQL', 'SAS', 'Erwin', 'RapidMiner']"
-
-556,191.214.233.556,Shavonda,Rebuck,shavonda556,CON,"['SAS', 'Excel', 'Erwin', 'Talend', 'Python', 'Apache Spark']"
-
-557,191.214.233.557,Glenn,Langley,glenn557,REQ,"['Tableau Public', 'Talend', 'Splunk', 'RapidMiner', 'Excel']"
-
-558,191.214.233.558,Xiomara,Fillinger,xiomara558,INT,"['Erwin', 'KNIME', 'Tableau Public', 'SAS', 'RapidMiner', 'Apache Spark', 'R Programming']"
-
-559,191.214.233.559,Delores,Gonzales,delores559,FIN,"['Apache Spark', 'Splunk', 'R Programming', 'RapidMiner', 'Tableau Public']"
-
-560,191.214.233.560,Tammy,Kelemen,tammy560,CON,"['Excel', 'Erwin', 'Datapine', 'QlikView']"
-
-561,191.214.233.561,Charles,Desouza,charles561,FIN,"['Talend', 'R Programming', 'Excel']"
-
-562,191.214.233.562,Stacy,Pulaski,stacy562,FIN,"['Apache Spark', 'Erwin', 'Python', 'KNIME', 'RapidMiner', 'QlikView', 'R Programming']"
-
-563,191.214.233.563,Jacob,Klipfel,jacob563,INT,"['Talend', 'Datapine', 'RapidMiner']"
-
-564,191.214.233.564,Gordon,Slevin,gordon564,FIN,"['RapidMiner', 'Apache Spark', 'R Programming', 'SAS', 'MySQL']"
-
-565,191.214.233.565,Edward,Olson,edward565,REQ,"['Splunk', 'SAS', 'Tableau Public', 'MySQL', 'Apache Spark', 'KNIME', 'Datapine']"
-
-566,191.214.233.566,Kimberly,Haupt,kimberly566,INT,"['Talend', 'Splunk', 'Erwin', 'R Programming', 'Excel']"
-
-567,191.214.233.567,Willie,Davis,willie567,FIN,"['Talend', 'QlikView', 'Datapine', 'MySQL']"
-
-568,191.214.233.568,Susie,Cooper,susie568,INT,"['KNIME', 'QlikView', 'Talend', 'Python']"
-
-569,191.214.233.569,Eric,Wade,eric569,INT,"['KNIME', 'Tableau Public', 'Datapine']"
-
-570,191.214.233.570,Nathaniel,Kaster,nathaniel570,FIN,"['Erwin', 'Tableau Public', 'KNIME', 'Excel', 'MySQL', 'SAS', 'RapidMiner']"
-
-571,191.214.233.571,Dorothy,Robinson,dorothy571,REQ,"['KNIME', 'SAS']"
-
-572,191.214.233.572,George,Scoby,george572,REQ,"['Erwin', 'QlikView', 'MySQL', 'Apache Spark', 'Datapine', 'SAS']"
-
-573,191.214.233.573,Richard,Paniagua,richard573,REQ,"['Apache Spark', 'RapidMiner', 'R Programming', 'Datapine', 'Excel', 'Splunk', 'MySQL']"
-
-574,191.214.233.574,Brenda,Russo,brenda574,INT,['Datapine']
-
-575,191.214.233.575,Arnold,Yates,arnold575,FIN,"['R Programming', 'SAS', 'Apache Spark', 'Tableau Public', 'Excel', 'Splunk', 'KNIME']"
-
-576,191.214.233.576,Millard,Swanson,millard576,INT,"['Tableau Public', 'Datapine', 'KNIME', 'Excel', 'RapidMiner', 'QlikView', 'MySQL']"
-
-577,191.214.233.577,John,Fairbanks,john577,REQ,"['Excel', 'R Programming', 'SAS', 'MySQL']"
-
-578,191.214.233.578,Douglas,Miranda,douglas578,INT,"['RapidMiner', 'QlikView', 'SAS', 'Erwin']"
-
-579,191.214.233.579,Melanie,Humann,melanie579,REQ,"['Python', 'SAS', 'Tableau Public', 'Apache Spark']"
-
-580,191.214.233.580,Laurel,Mccullough,laurel580,FIN,"['Python', 'Apache Spark']"
-
-581,191.214.233.581,Dennis,Powell,dennis581,REQ,"['MySQL', 'Splunk', 'R Programming', 'Excel']"
-
-582,191.214.233.582,James,Mays,james582,INT,"['Excel', 'Talend', 'Python', 'Erwin']"
-
-583,191.214.233.583,James,Brown,james583,FIN,"['Datapine', 'MySQL', 'Tableau Public', 'QlikView']"
-
-584,191.214.233.584,Edna,Barger,edna584,INT,"['MySQL', 'Talend', 'KNIME', 'Tableau Public', 'SAS', 'Splunk']"
-
-585,191.214.233.585,Maxine,Faison,maxine585,FIN,"['KNIME', 'Splunk', 'Apache Spark']"
-
-586,191.214.233.586,Keenan,Nolan,keenan586,INT,"['R Programming', 'KNIME', 'Excel', 'Erwin', 'Splunk']"
-
-587,191.214.233.587,Juana,Bailey,juana587,INT,['Talend']
-
-588,191.214.233.588,Marion,Gallion,marion588,REQ,['Datapine']
-
-589,191.214.233.589,Russell,Beavers,russell589,FIN,['SAS']
-
-590,191.214.233.590,Mary,Cantrell,mary590,FIN,"['Datapine', 'Python']"
-
-591,191.214.233.591,Laurel,Koch,laurel591,INT,['R Programming']
-
-592,191.214.233.592,Ronnie,Brainard,ronnie592,REQ,"['Erwin', 'Datapine', 'SAS', 'KNIME', 'QlikView']"
-
-593,191.214.233.593,Tammie,Shattuck,tammie593,INT,"['Erwin', 'Python', 'Splunk']"
-
-594,191.214.233.594,Ernestine,Thomas,ernestine594,REQ,"['MySQL', 'QlikView', 'Apache Spark', 'Splunk', 'KNIME', 'Tableau Public']"
-
-595,191.214.233.595,Donna,Grimaldo,donna595,FIN,"['R Programming', 'Datapine', 'MySQL', 'KNIME', 'Splunk', 'SAS']"
-
-596,191.214.233.596,Viola,Waters,viola596,FIN,['Splunk']
-
-597,191.214.233.597,Reginald,Lara,reginald597,REQ,"['MySQL', 'KNIME', 'Splunk', 'Erwin', 'QlikView', 'Tableau Public']"
-
-598,191.214.233.598,Elizabeth,Nunnenkamp,elizabeth598,INT,"['Excel', 'Erwin', 'Apache Spark']"
-
-599,191.214.233.599,Angel,Palmer,angel599,REQ,"['Python', 'SAS']"
-
-600,191.214.233.600,Margie,Heinlen,margie600,REQ,"['SAS', 'Datapine', 'Splunk', 'Erwin', 'QlikView', 'MySQL', 'R Programming']"
-
-601,191.214.233.601,Andre,Galbraith,andre601,REQ,"['SAS', 'QlikView']"
-
-602,191.214.233.602,Margaret,Little,margaret602,INT,"['QlikView', 'Apache Spark', 'Python', 'Splunk', 'Datapine', 'Talend', 'RapidMiner']"
-
-603,191.214.233.603,Jacqueline,Pierce,jacqueline603,REQ,"['Apache Spark', 'MySQL']"
-
-604,191.214.233.604,Bianca,Fletcher,bianca604,REQ,"['QlikView', 'RapidMiner']"
-
-605,191.214.233.605,Rosa,Pryce,rosa605,INT,"['Talend', 'SAS', 'RapidMiner', 'Erwin', 'Python', 'R Programming']"
-
-606,191.214.233.606,Kelly,Hammond,kelly606,INT,['Erwin']
-
-607,191.214.233.607,Leonora,Crisson,leonora607,REQ,"['R Programming', 'RapidMiner', 'Apache Spark', 'Datapine', 'Splunk', 'KNIME', 'Python']"
-
-608,191.214.233.608,Victoria,Stroot,victoria608,INT,"['R Programming', 'RapidMiner', 'Talend']"
-
-609,191.214.233.609,Matthew,Cabaniss,matthew609,FIN,"['Apache Spark', 'Datapine', 'Python']"
-
-610,191.214.233.610,Jeffrey,Cupp,jeffrey610,FIN,"['Erwin', 'SAS', 'Splunk', 'RapidMiner', 'Apache Spark', 'Datapine', 'QlikView']"
-
-611,191.214.233.611,Travis,Straight,travis611,INT,"['Splunk', 'Datapine', 'Erwin', 'Apache Spark', 'RapidMiner']"
-
-612,191.214.233.612,Stanley,Bradley,stanley612,REQ,"['R Programming', 'RapidMiner', 'Excel', 'Datapine', 'Splunk']"
-
-613,191.214.233.613,Willie,Friscia,willie613,FIN,"['RapidMiner', 'Datapine', 'Excel', 'QlikView', 'Erwin', 'Tableau Public', 'Talend']"
-
-614,191.214.233.614,Michael,Willis,michael614,REQ,"['Python', 'R Programming', 'RapidMiner', 'KNIME', 'Talend']"
-
-615,191.214.233.615,Andrea,Diminich,andrea615,FIN,['Datapine']
-
-616,191.214.233.616,Joseph,Kranawetter,joseph616,REQ,"['SAS', 'Splunk']"
-
-617,191.214.233.617,Tristan,Moore,tristan617,INT,"['KNIME', 'Apache Spark', 'Talend', 'Datapine', 'QlikView', 'RapidMiner', 'SAS']"
-
-618,191.214.233.618,Amy,Morris,amy618,FIN,"['MySQL', 'QlikView', 'Excel', 'Python', 'Tableau Public', 'Splunk', 'SAS']"
-
-619,191.214.233.619,Henry,Swihart,henry619,FIN,"['MySQL', 'Talend', 'Apache Spark', 'SAS', 'Splunk']"
-
-620,191.214.233.620,Carl,Sandoval,carl620,FIN,"['Apache Spark', 'MySQL', 'Tableau Public', 'Datapine', 'RapidMiner', 'Erwin', 'QlikView']"
-
-621,191.214.233.621,Theo,Willsey,theo621,REQ,"['KNIME', 'MySQL', 'Apache Spark']"
-
-622,191.214.233.622,Charles,Vazquez,charles622,INT,"['Splunk', 'QlikView', 'Apache Spark']"
-
-623,191.214.233.623,Jeffrey,Sedlock,jeffrey623,INT,"['SAS', 'Talend', 'RapidMiner', 'QlikView', 'R Programming', 'Tableau Public']"
-
-624,191.214.233.624,Willard,Bostick,willard624,FIN,"['QlikView', 'Tableau Public', 'R Programming', 'KNIME', 'Excel', 'Erwin']"
-
-625,191.214.233.625,Rebecca,Lewis,rebecca625,INT,"['MySQL', 'Splunk', 'R Programming', 'Tableau Public', 'Excel', 'Erwin']"
-
-626,191.214.233.626,Ernest,Bianchi,ernest626,FIN,"['Erwin', 'KNIME', 'Tableau Public', 'Python', 'Datapine']"
-
-627,191.214.233.627,Monica,Smith,monica627,REQ,"['Splunk', 'Apache Spark', 'MySQL', 'RapidMiner']"
-
-628,191.214.233.628,Katherine,Richards,katherine628,FIN,"['RapidMiner', 'Talend', 'Erwin', 'Excel', 'Python', 'Datapine']"
-
-629,191.214.233.629,Tena,Stewart,tena629,FIN,"['Python', 'Datapine', 'KNIME', 'Tableau Public', 'MySQL', 'Talend']"
-
-630,191.214.233.630,Maria,Oldenkamp,maria630,FIN,"['MySQL', 'R Programming']"
-
-631,191.214.233.631,Laura,Hampton,laura631,REQ,['QlikView']
-
-632,191.214.233.632,Bobby,Slaughter,bobby632,REQ,['Excel']
-
-633,191.214.233.633,Esther,Miller,esther633,FIN,['QlikView']
-
-634,191.214.233.634,Robert,Pippin,robert634,INT,['KNIME']
-
-635,191.214.233.635,Richard,Gonzalez,richard635,FIN,"['SAS', 'MySQL', 'Datapine', 'Excel', 'Splunk', 'Erwin', 'R Programming']"
-
-636,191.214.233.636,Mary,Bulson,mary636,INT,"['Datapine', 'MySQL', 'Apache Spark']"
-
-637,191.214.233.637,Clara,White,clara637,REQ,"['Splunk', 'MySQL', 'Excel', 'QlikView', 'RapidMiner', 'Erwin']"
-
-638,191.214.233.638,Terrence,Bousquet,terrence638,INT,['Erwin']
-
-639,191.214.233.639,Cesar,Pritchard,cesar639,FIN,"['Python', 'KNIME', 'Splunk', 'Datapine', 'SAS', 'QlikView', 'Tableau Public']"
-
-640,191.214.233.640,Dawn,Elsass,dawn640,REQ,"['MySQL', 'Tableau Public', 'R Programming', 'KNIME']"
-
-641,191.214.233.641,Juana,Yokum,juana641,INT,"['Python', 'Talend', 'Excel', 'R Programming', 'SAS', 'Splunk']"
-
-642,191.214.233.642,Jennifer,Myles,jennifer642,INT,"['Excel', 'MySQL', 'Tableau Public']"
-
-643,191.214.233.643,Jerome,Boone,jerome643,FIN,"['Tableau Public', 'Datapine', 'KNIME', 'Erwin']"
-
-644,191.214.233.644,Guy,Toth,guy644,FIN,"['SAS', 'Talend', 'Tableau Public', 'Excel', 'R Programming', 'Splunk']"
-
-645,191.214.233.645,Amber,Carr,amber645,REQ,"['R Programming', 'Python', 'Datapine', 'RapidMiner', 'Erwin', 'Apache Spark']"
-
-646,191.214.233.646,Maryellen,Pittman,maryellen646,INT,['MySQL']
-
-647,191.214.233.647,Lucy,Moore,lucy647,REQ,"['Python', 'R Programming', 'Datapine', 'SAS', 'Erwin', 'Excel', 'MySQL']"
-
-648,191.214.233.648,Clark,Mitchell,clark648,REQ,"['KNIME', 'QlikView', 'SAS', 'Tableau Public', 'Erwin', 'R Programming']"
-
-649,191.214.233.649,Matthew,Manning,matthew649,REQ,"['RapidMiner', 'MySQL', 'Excel', 'Datapine', 'R Programming', 'Talend']"
-
-650,191.214.233.650,Pablo,Steinman,pablo650,FIN,"['Python', 'RapidMiner', 'Erwin']"
-
-651,191.214.233.651,Valerie,Sittre,valerie651,INT,"['SAS', 'Talend']"
-
-652,191.214.233.652,Piedad,Macomber,piedad652,REQ,"['Excel', 'R Programming']"
-
-653,191.214.233.653,Jennifer,Fullbright,jennifer653,REQ,"['Erwin', 'Excel', 'SAS', 'Apache Spark', 'Splunk']"
-
-654,191.214.233.654,Roger,Taylor,roger654,REQ,"['KNIME', 'Tableau Public']"
-
-655,191.214.233.655,Tamara,Kilgore,tamara655,REQ,"['Tableau Public', 'Datapine', 'KNIME', 'Excel', 'Splunk', 'QlikView']"
-
-656,191.214.233.656,Micheal,Willis,micheal656,FIN,['Python']
-
-657,191.214.233.657,Janie,Acuff,janie657,FIN,"['Python', 'RapidMiner', 'Erwin', 'KNIME', 'Talend', 'QlikView', 'Excel']"
-
-658,191.214.233.658,Daniel,Woodard,daniel658,REQ,"['Talend', 'Apache Spark', 'SAS', 'Datapine']"
-
-659,191.214.233.659,Rebecca,Edwards,rebecca659,INT,"['Datapine', 'Talend', 'Splunk', 'RapidMiner', 'Python', 'MySQL', 'Tableau Public']"
-
-660,191.214.233.660,Dean,Brown,dean660,REQ,"['R Programming', 'SAS', 'Datapine', 'Tableau Public', 'KNIME', 'QlikView']"
-
-661,191.214.233.661,Alberta,Garcia,alberta661,INT,"['RapidMiner', 'MySQL', 'KNIME', 'SAS']"
-
-662,191.214.233.662,Travis,Cianciola,travis662,FIN,"['MySQL', 'Apache Spark', 'KNIME', 'QlikView', 'Datapine', 'Python']"
-
-663,191.214.233.663,Neal,Ramaker,neal663,REQ,['SAS']
-
-664,191.214.233.664,Kathy,Stamper,kathy664,REQ,"['Splunk', 'Apache Spark', 'RapidMiner', 'SAS', 'Erwin']"
-
-665,191.214.233.665,Chad,Berube,chad665,FIN,['R Programming']
-
-666,191.214.233.666,Jerry,Schroeder,jerry666,FIN,"['Erwin', 'Apache Spark', 'Datapine', 'KNIME', 'R Programming', 'Python', 'Splunk']"
-
-667,191.214.233.667,Meghan,Garson,meghan667,FIN,"['KNIME', 'SAS']"
-
-668,191.214.233.668,Anne,Chauarria,anne668,INT,"['Erwin', 'MySQL']"
-
-669,191.214.233.669,Sharon,Lagasca,sharon669,INT,"['R Programming', 'Tableau Public', 'RapidMiner', 'Python', 'Excel', 'Erwin', 'QlikView']"
-
-670,191.214.233.670,Raymond,Winkleman,raymond670,REQ,"['Talend', 'R Programming', 'Erwin', 'Tableau Public', 'MySQL', 'KNIME', 'Python']"
-
-671,191.214.233.671,Mildred,Hinchee,mildred671,FIN,"['Splunk', 'SAS', 'KNIME', 'Erwin', 'Tableau Public', 'Datapine', 'Talend']"
-
-672,191.214.233.672,Sherry,Hill,sherry672,FIN,"['Erwin', 'QlikView', 'Tableau Public', 'Splunk', 'Python']"
-
-673,191.214.233.673,Antonio,Langham,antonio673,INT,"['Erwin', 'SAS', 'KNIME', 'R Programming', 'Datapine']"
-
-674,191.214.233.674,Betty,Buckhalter,betty674,REQ,"['RapidMiner', 'MySQL', 'Talend', 'Splunk']"
-
-675,191.214.233.675,Lola,Dolan,lola675,FIN,"['Tableau Public', 'QlikView', 'KNIME']"
-
-676,191.214.233.676,Heidi,Oguin,heidi676,FIN,"['Datapine', 'Talend', 'SAS', 'KNIME', 'Erwin', 'MySQL']"
-
-677,191.214.233.677,Cheryl,Kubin,cheryl677,REQ,"['Tableau Public', 'Apache Spark', 'Python', 'MySQL']"
-
-678,191.214.233.678,Mable,Smith,mable678,FIN,"['R Programming', 'Apache Spark']"
-
-679,191.214.233.679,Steven,Schoenberger,steven679,REQ,"['RapidMiner', 'R Programming', 'Apache Spark', 'Excel', 'Tableau Public', 'Erwin', 'MySQL']"
-
-680,191.214.233.680,Tabitha,Taylor,tabitha680,INT,"['RapidMiner', 'Talend', 'Tableau Public']"
-
-681,191.214.233.681,Joann,Love,joann681,REQ,"['Apache Spark', 'Splunk', 'Datapine']"
-
-682,191.214.233.682,Rena,Huff,rena682,REQ,"['RapidMiner', 'Splunk']"
-
-683,191.214.233.683,Jerome,Stephens,jerome683,INT,"['Tableau Public', 'Erwin', 'MySQL']"
-
-684,191.214.233.684,Amy,Cordova,amy684,REQ,"['Datapine', 'Splunk', 'Tableau Public', 'Apache Spark', 'QlikView', 'R Programming', 'MySQL']"
-
-685,191.214.233.685,Courtney,Oshaughnessy,courtney685,INT,"['Apache Spark', 'SAS']"
-
-686,191.214.233.686,Melody,Daley,melody686,INT,"['Datapine', 'MySQL']"
-
-687,191.214.233.687,Barbara,Ricciardi,barbara687,FIN,['Splunk']
-
-688,191.214.233.688,Donald,Brown,donald688,INT,"['Splunk', 'Talend', 'Erwin']"
-
-689,191.214.233.689,Vernon,Brown,vernon689,REQ,"['R Programming', 'MySQL', 'Python', 'Excel']"
-
-690,191.214.233.690,Mark,Lusk,mark690,FIN,['Talend']
-
-691,191.214.233.691,Kimberly,Osborn,kimberly691,FIN,"['Datapine', 'Excel', 'QlikView']"
-
-692,191.214.233.692,David,Emond,david692,REQ,"['Excel', 'Splunk', 'Python', 'KNIME', 'Erwin']"
-
-693,191.214.233.693,Mary,Lovelady,mary693,REQ,"['Tableau Public', 'QlikView', 'R Programming', 'MySQL', 'Splunk', 'RapidMiner']"
-
-694,191.214.233.694,Donald,Whitehead,donald694,FIN,"['Apache Spark', 'Tableau Public', 'KNIME', 'SAS', 'R Programming', 'Python', 'Excel']"
-
-695,191.214.233.695,Larry,Bernal,larry695,INT,"['Splunk', 'Erwin', 'Python', 'Apache Spark', 'QlikView', 'R Programming']"
-
-696,191.214.233.696,Dorothy,Holmes,dorothy696,INT,"['SAS', 'Python', 'Apache Spark', 'Tableau Public']"
-
-697,191.214.233.697,Eddie,Williams,eddie697,FIN,"['Python', 'Talend']"
-
-698,191.214.233.698,Carla,Andrews,carla698,REQ,"['MySQL', 'SAS', 'Excel', 'RapidMiner', 'Python', 'QlikView']"
-
-699,191.214.233.699,Everette,Reeder,everette699,REQ,"['MySQL', 'KNIME', 'Python', 'Apache Spark', 'Splunk', 'Talend']"
-
-700,191.214.233.700,Rachel,Nguyen,rachel700,INT,"['Datapine', 'KNIME', 'SAS', 'MySQL', 'Splunk', 'Apache Spark', 'Excel']"
-
-701,191.214.233.701,Emil,Unger,emil701,FIN,['SAS']
-
-702,191.214.233.702,Lindsay,Longwell,lindsay702,REQ,"['Excel', 'Python']"
-
-703,191.214.233.703,Amanda,Cohee,amanda703,INT,"['Excel', 'RapidMiner', 'Erwin', 'MySQL', 'Tableau Public', 'R Programming']"
-
-704,191.214.233.704,Stevie,Robarge,stevie704,INT,"['SAS', 'Tableau Public', 'Splunk']"
-
-705,191.214.233.705,Fidel,Sheridan,fidel705,INT,"['Erwin', 'Python', 'Excel', 'R Programming', 'Tableau Public', 'SAS', 'Apache Spark']"
-
-706,191.214.233.706,Donald,Hugle,donald706,INT,"['R Programming', 'SAS', 'Python']"
-
-707,191.214.233.707,Dustin,Peterson,dustin707,INT,"['RapidMiner', 'R Programming', 'Talend', 'KNIME', 'Erwin', 'Excel']"
-
-708,191.214.233.708,Michael,Menendez,michael708,INT,['Splunk']
-
-709,191.214.233.709,Doug,Freeman,doug709,INT,"['Apache Spark', 'Datapine', 'Splunk']"
-
-710,191.214.233.710,Brian,Massie,brian710,REQ,"['SAS', 'MySQL', 'KNIME']"
-
-711,191.214.233.711,Leon,Campbell,leon711,REQ,"['Apache Spark', 'MySQL', 'Talend', 'Datapine', 'KNIME', 'Python']"
-
-712,191.214.233.712,Brandon,Crigger,brandon712,REQ,"['Python', 'RapidMiner', 'R Programming', 'Apache Spark', 'Tableau Public', 'Erwin', 'SAS']"
-
-713,191.214.233.713,Laura,Jarrett,laura713,FIN,['MySQL']
-
-714,191.214.233.714,Alejandra,Carter,alejandra714,FIN,"['Excel', 'Talend', 'Erwin', 'RapidMiner', 'Tableau Public', 'MySQL']"
-
-715,191.214.233.715,Ronnie,Luchetti,ronnie715,INT,['RapidMiner']
-
-716,191.214.233.716,Rosemary,Berntson,rosemary716,INT,"['Python', 'Erwin', 'R Programming', 'SAS', 'Talend']"
-
-717,191.214.233.717,Jamar,Newcomer,jamar717,FIN,"['SAS', 'Splunk', 'QlikView', 'Python', 'RapidMiner']"
-
-718,191.214.233.718,Kyle,Harrington,kyle718,INT,"['R Programming', 'Datapine', 'Python', 'KNIME', 'Excel']"
-
-719,191.214.233.719,Margaret,Ingwersen,margaret719,FIN,"['Tableau Public', 'Erwin', 'Excel', 'Splunk']"
-
-720,191.214.233.720,Mickey,Thomas,mickey720,FIN,"['Splunk', 'RapidMiner']"
-
-721,191.214.233.721,John,Federgreen,john721,FIN,"['Excel', 'Talend', 'MySQL', 'Tableau Public', 'R Programming', 'Apache Spark']"
-
-722,191.214.233.722,Gregory,Katz,gregory722,REQ,"['Excel', 'Splunk', 'Datapine', 'KNIME']"
-
-723,191.214.233.723,Phillip,Browne,phillip723,INT,"['RapidMiner', 'Python', 'SAS', 'Datapine', 'Apache Spark', 'R Programming', 'QlikView']"
-
-724,191.214.233.724,Pamela,Dominguez,pamela724,INT,"['SAS', 'R Programming', 'Tableau Public', 'Excel', 'Python']"
-
-725,191.214.233.725,Renee,Matthews,renee725,FIN,"['R Programming', 'MySQL', 'RapidMiner', 'Python']"
-
-726,191.214.233.726,Yvonne,Black,yvonne726,FIN,"['Datapine', 'Talend', 'KNIME', 'Erwin', 'QlikView']"
-
-727,191.214.233.727,Jamie,Daniels,jamie727,INT,"['SAS', 'Talend', 'QlikView', 'Apache Spark']"
-
-728,191.214.233.728,Kerri,Garcia,kerri728,FIN,"['Tableau Public', 'Erwin', 'RapidMiner']"
-
-729,191.214.233.729,Louise,Delreal,louise729,FIN,"['Erwin', 'Tableau Public', 'MySQL', 'KNIME']"
-
-730,191.214.233.730,Chris,Sheffield,chris730,INT,"['QlikView', 'SAS', 'Python']"
-
-731,191.214.233.731,Vicky,Knoy,vicky731,FIN,"['Datapine', 'Talend', 'QlikView']"
-
-732,191.214.233.732,Jane,Siegel,jane732,REQ,"['Python', 'QlikView', 'MySQL']"
-
-733,191.214.233.733,Jonathan,Musetti,jonathan733,INT,"['Talend', 'MySQL', 'R Programming', 'Excel']"
-
-734,191.214.233.734,Karen,Deanda,karen734,REQ,"['Splunk', 'Tableau Public', 'Datapine', 'Erwin']"
-
-735,191.214.233.735,Arthur,Mcguire,arthur735,FIN,"['R Programming', 'KNIME']"
-
-736,191.214.233.736,Jane,Throneberry,jane736,FIN,"['QlikView', 'Splunk', 'Talend', 'Datapine', 'MySQL']"
-
-737,191.214.233.737,Lucy,Buxton,lucy737,REQ,['RapidMiner']
-
-738,191.214.233.738,Kathleen,Diclaudio,kathleen738,INT,['QlikView']
-
-739,191.214.233.739,Stefanie,Murphy,stefanie739,INT,['QlikView']
-
-740,191.214.233.740,Ada,Abbott,ada740,REQ,"['Python', 'SAS', 'Apache Spark', 'Datapine', 'Talend', 'R Programming', 'KNIME']"
-
-741,191.214.233.741,George,Young,george741,FIN,"['Datapine', 'QlikView', 'RapidMiner', 'Tableau Public', 'Splunk', 'Erwin']"
-
-742,191.214.233.742,Kathy,Brown,kathy742,REQ,"['KNIME', 'Tableau Public', 'Datapine']"
-
-743,191.214.233.743,Maurice,Mcnutt,maurice743,INT,['KNIME']
-
-744,191.214.233.744,Bradley,Miller,bradley744,REQ,"['Erwin', 'MySQL']"
-
-745,191.214.233.745,Jason,Washington,jason745,INT,"['Tableau Public', 'Python', 'SAS', 'Datapine']"
-
-746,191.214.233.746,Stacy,Huff,stacy746,REQ,"['R Programming', 'RapidMiner']"
-
-747,191.214.233.747,Betty,Curley,betty747,INT,"['Python', 'Datapine', 'R Programming', 'MySQL', 'SAS', 'Talend', 'Splunk']"
-
-748,191.214.233.748,Jennifer,Etheridge,jennifer748,REQ,"['Excel', 'Splunk']"
-
-749,191.214.233.749,Linda,Daley,linda749,REQ,"['R Programming', 'KNIME', 'MySQL', 'Splunk', 'Python', 'SAS']"
-
-750,191.214.233.750,Heather,Fisher,heather750,INT,"['SAS', 'Python', 'Erwin', 'R Programming', 'Apache Spark', 'MySQL']"
-
-751,191.214.233.751,Olivia,Gartner,olivia751,INT,"['Talend', 'Python', 'R Programming']"
-
-752,191.214.233.752,Katherine,Patel,katherine752,FIN,"['R Programming', 'Excel']"
-
-753,191.214.233.753,Claudio,Wright,claudio753,FIN,"['Splunk', 'R Programming', 'Talend', 'Datapine', 'Tableau Public']"
-
-754,191.214.233.754,Cynthia,Sherwood,cynthia754,REQ,['Talend']
-
-755,191.214.233.755,Virginia,Chunn,virginia755,INT,"['QlikView', 'R Programming']"
-
-756,191.214.233.756,Jessica,Cecena,jessica756,FIN,"['Erwin', 'Python', 'RapidMiner', 'QlikView', 'Apache Spark', 'Datapine']"
-
-757,191.214.233.757,Sarah,Bagby,sarah757,FIN,"['KNIME', 'Excel', 'Talend', 'QlikView']"
-
-758,191.214.233.758,Daphine,Oubre,daphine758,FIN,"['R Programming', 'QlikView', 'Tableau Public']"
-
-759,191.214.233.759,John,Still,john759,FIN,['Apache Spark']
-
-760,191.214.233.760,Steven,Lance,steven760,CON,"['SAS', 'Datapine', 'R Programming']"
-
-761,191.214.233.761,Jeanette,Monahan,jeanette761,FIN,"['Apache Spark', 'MySQL', 'Tableau Public', 'RapidMiner', 'Excel', 'Erwin']"
-
-762,191.214.233.762,Merrill,Brewster,merrill762,REQ,"['RapidMiner', 'Erwin', 'KNIME', 'R Programming', 'Apache Spark', 'Splunk', 'QlikView']"
-
-763,191.214.233.763,Julia,Smith,julia763,INT,"['Tableau Public', 'Excel', 'Erwin', 'R Programming', 'Datapine', 'QlikView', 'Talend']"
-
-764,191.214.233.764,Bruce,Mouret,bruce764,REQ,"['Tableau Public', 'Apache Spark', 'RapidMiner', 'R Programming', 'Datapine']"
-
-765,191.214.233.765,John,Loeb,john765,INT,"['Apache Spark', 'Excel', 'QlikView', 'MySQL', 'Python']"
-
-766,191.214.233.766,Vickie,Davis,vickie766,INT,"['Tableau Public', 'R Programming', 'Talend', 'SAS', 'RapidMiner', 'MySQL', 'Erwin']"
-
-767,191.214.233.767,Antonia,Casey,antonia767,REQ,"['MySQL', 'Talend', 'Datapine']"
-
-768,191.214.233.768,Jennifer,Petrich,jennifer768,REQ,"['Python', 'Excel', 'Datapine', 'MySQL']"
-
-769,191.214.233.769,John,Hernandez,john769,INT,"['RapidMiner', 'Datapine', 'SAS', 'Talend', 'Excel', 'KNIME', 'R Programming']"
-
-770,191.214.233.770,Evelyn,Volk,evelyn770,INT,"['Splunk', 'Python', 'RapidMiner', 'R Programming', 'Talend']"
-
-771,191.214.233.771,David,Braxton,david771,REQ,"['QlikView', 'Python', 'Splunk', 'Datapine']"
-
-772,191.214.233.772,Mark,Ruhl,mark772,FIN,"['MySQL', 'Erwin', 'RapidMiner', 'Apache Spark']"
-
-773,191.214.233.773,Johnnie,Tsosie,johnnie773,FIN,"['Python', 'Erwin']"
-
-774,191.214.233.774,Paul,Johnson,paul774,INT,"['Datapine', 'RapidMiner', 'Erwin', 'QlikView', 'MySQL', 'Python']"
-
-775,191.214.233.775,Earl,Norton,earl775,INT,"['Splunk', 'Talend', 'Tableau Public', 'Excel', 'Erwin', 'SAS', 'QlikView']"
-
-776,191.214.233.776,Fairy,Carter,fairy776,FIN,"['Splunk', 'R Programming', 'RapidMiner', 'Talend', 'Apache Spark', 'Datapine', 'MySQL']"
-
-777,191.214.233.777,Christie,Wilson,christie777,REQ,"['Splunk', 'SAS', 'Apache Spark']"
-
-778,191.214.233.778,Helene,Cutts,helene778,INT,"['Apache Spark', 'Python', 'Datapine', 'MySQL', 'Splunk']"
-
-779,191.214.233.779,Greg,Luby,greg779,INT,"['Python', 'Excel', 'Tableau Public', 'Splunk']"
-
-780,191.214.233.780,Angela,Rowan,angela780,FIN,"['RapidMiner', 'Erwin', 'Splunk', 'KNIME', 'QlikView', 'MySQL']"
-
-781,191.214.233.781,John,Brewer,john781,INT,"['RapidMiner', 'Apache Spark', 'Tableau Public', 'Talend', 'Python', 'Splunk', 'KNIME']"
-
-782,191.214.233.782,Shawna,Beasley,shawna782,FIN,['Apache Spark']
-
-783,191.214.233.783,Jeff,Marsden,jeff783,REQ,"['R Programming', 'Splunk']"
-
-784,191.214.233.784,Karen,Vincent,karen784,FIN,"['Datapine', 'SAS', 'Excel']"
-
-785,191.214.233.785,Todd,Rascon,todd785,INT,"['Talend', 'Python', 'Apache Spark', 'Tableau Public', 'Erwin', 'KNIME']"
-
-786,191.214.233.786,Leonard,Ayala,leonard786,INT,['RapidMiner']
-
-787,191.214.233.787,Arthur,Aziz,arthur787,REQ,"['Talend', 'Python']"
-
-788,191.214.233.788,Nicholas,Fisher,nicholas788,FIN,"['Tableau Public', 'Erwin', 'MySQL', 'Talend', 'Splunk']"
-
-789,191.214.233.789,Brandon,Jack,brandon789,INT,"['Erwin', 'RapidMiner']"
-
-790,191.214.233.790,Pamela,Bank,pamela790,INT,"['Python', 'Erwin', 'R Programming']"
-
-791,191.214.233.791,Melvin,Miller,melvin791,INT,"['Excel', 'Tableau Public', 'Erwin', 'Datapine', 'Splunk', 'QlikView', 'KNIME']"
-
-792,191.214.233.792,Jacalyn,Davidson,jacalyn792,INT,"['Datapine', 'Erwin', 'KNIME', 'RapidMiner']"
-
-793,191.214.233.793,Betsy,Watts,betsy793,REQ,"['RapidMiner', 'Talend', 'Erwin', 'QlikView', 'MySQL', 'Datapine']"
-
-794,191.214.233.794,Carri,Vann,carri794,REQ,"['Datapine', 'Apache Spark', 'KNIME', 'R Programming']"
-
-795,191.214.233.795,William,Fleming,william795,FIN,"['Apache Spark', 'Tableau Public', 'Datapine']"
-
-796,191.214.233.796,Howard,Stevens,howard796,REQ,"['Apache Spark', 'Erwin', 'Excel', 'MySQL', 'KNIME', 'RapidMiner', 'Splunk']"
-
-797,191.214.233.797,Kimberly,Schein,kimberly797,FIN,['Python']
-
-798,191.214.233.798,Byron,Taylor,byron798,FIN,"['Python', 'SAS', 'RapidMiner', 'MySQL', 'Erwin', 'KNIME', 'Excel']"
-
-799,191.214.233.799,Robert,Graber,robert799,INT,"['KNIME', 'MySQL', 'R Programming', 'QlikView', 'SAS', 'Talend', 'Datapine']"
-
-800,191.214.233.800,Shawn,Stello,shawn800,REQ,"['Python', 'KNIME', 'SAS', 'Splunk', 'Tableau Public', 'RapidMiner', 'Apache Spark']"
-
-801,191.214.233.801,Rolando,West,rolando801,INT,"['Excel', 'Datapine', 'MySQL', 'Erwin', 'R Programming', 'Python']"
-
-802,191.214.233.802,Margaret,Peak,margaret802,FIN,"['R Programming', 'KNIME', 'Apache Spark', 'Datapine']"
-
-803,191.214.233.803,Rachel,Wheat,rachel803,INT,"['Datapine', 'Apache Spark']"
-
-804,191.214.233.804,Effie,Zabinski,effie804,REQ,"['QlikView', 'Apache Spark']"
-
-805,191.214.233.805,Melissa,Borrego,melissa805,REQ,"['Erwin', 'KNIME', 'QlikView', 'Splunk', 'Tableau Public', 'Excel', 'RapidMiner']"
-
-806,191.214.233.806,Sang,Chilson,sang806,FIN,"['Talend', 'Splunk', 'QlikView']"
-
-807,191.214.233.807,Mattie,Schrimsher,mattie807,REQ,"['Talend', 'Apache Spark', 'Python', 'SAS', 'QlikView', 'MySQL', 'Tableau Public']"
-
-808,191.214.233.808,Stephen,Jackson,stephen808,FIN,"['MySQL', 'R Programming', 'Datapine', 'RapidMiner', 'SAS', 'QlikView', 'Apache Spark']"
-
-809,191.214.233.809,Lindsey,Morris,lindsey809,REQ,"['QlikView', 'Datapine', 'R Programming', 'Python']"
-
-810,191.214.233.810,Tracy,Laidlaw,tracy810,REQ,"['R Programming', 'MySQL', 'Erwin']"
-
-811,191.214.233.811,Richard,Houle,richard811,INT,"['KNIME', 'Erwin', 'MySQL', 'Apache Spark']"
-
-812,191.214.233.812,Nellie,Daly,nellie812,REQ,"['SAS', 'Python', 'Erwin', 'Tableau Public', 'Apache Spark', 'R Programming']"
-
-813,191.214.233.813,Mark,Lamison,mark813,INT,"['MySQL', 'KNIME', 'Apache Spark', 'Talend', 'R Programming', 'RapidMiner']"
-
-814,191.214.233.814,Danny,Johnson,danny814,REQ,['Excel']
-
-815,191.214.233.815,Lesley,Elio,lesley815,REQ,"['QlikView', 'Tableau Public', 'Erwin', 'RapidMiner', 'Splunk']"
-
-816,191.214.233.816,Andrew,Cruz,andrew816,REQ,"['Tableau Public', 'R Programming', 'QlikView', 'Excel', 'Datapine', 'Apache Spark', 'RapidMiner']"
-
-817,191.214.233.817,Ma,Choice,ma817,REQ,"['Datapine', 'Tableau Public']"
-
-818,191.214.233.818,Richard,Lewis,richard818,REQ,"['Excel', 'R Programming', 'SAS', 'RapidMiner', 'Tableau Public']"
-
-819,191.214.233.819,Lauren,Scott,lauren819,REQ,['R Programming']
-
-820,191.214.233.820,Mary,Branch,mary820,INT,"['MySQL', 'KNIME', 'Erwin', 'Apache Spark', 'R Programming']"
-
-821,191.214.233.821,Virginia,Haycook,virginia821,FIN,"['Erwin', 'Tableau Public', 'QlikView', 'KNIME', 'Apache Spark', 'Excel']"
-
-822,191.214.233.822,Jonathon,Bailey,jonathon822,INT,"['Tableau Public', 'SAS', 'MySQL', 'RapidMiner', 'Splunk']"
-
-823,191.214.233.823,Michael,Bolt,michael823,INT,"['Apache Spark', 'MySQL']"
-
-824,191.214.233.824,Carlton,Hiles,carlton824,INT,"['Splunk', 'SAS', 'Tableau Public', 'QlikView', 'Excel', 'Talend', 'Erwin']"
-
-825,191.214.233.825,Heather,Maxwell,heather825,FIN,['RapidMiner']
-
-826,191.214.233.826,Darrell,Britcher,darrell826,FIN,"['Python', 'Tableau Public']"
-
-827,191.214.233.827,John,Robertson,john827,INT,"['Apache Spark', 'Tableau Public', 'MySQL', 'KNIME', 'Datapine']"
-
-828,191.214.233.828,Nancy,Hiott,nancy828,REQ,"['Talend', 'Excel']"
-
-829,191.214.233.829,Clarence,Hernandez,clarence829,REQ,"['Datapine', 'SAS']"
-
-830,191.214.233.830,Julianne,Davis,julianne830,REQ,"['RapidMiner', 'SAS', 'Tableau Public', 'Apache Spark', 'Talend', 'MySQL', 'Python']"
-
-831,191.214.233.831,Melinda,Cline,melinda831,INT,"['RapidMiner', 'Apache Spark', 'MySQL']"
-
-832,191.214.233.832,Joseph,Daniel,joseph832,INT,"['SAS', 'RapidMiner']"
-
-833,191.214.233.833,Tristan,Herbert,tristan833,FIN,['Talend']
-
-834,191.214.233.834,Chris,Gault,chris834,REQ,"['Tableau Public', 'Excel', 'Erwin']"
-
-835,191.214.233.835,Jeremiah,Mccracken,jeremiah835,FIN,"['KNIME', 'Talend', 'Splunk', 'Tableau Public']"
-
-836,191.214.233.836,William,Gallagher,william836,REQ,"['R Programming', 'Apache Spark', 'SAS', 'Splunk', 'Python', 'Excel']"
-
-837,191.214.233.837,Yong,Denk,yong837,INT,"['R Programming', 'MySQL']"
-
-838,191.214.233.838,Tammie,Oppenheim,tammie838,INT,"['KNIME', 'R Programming', 'Datapine', 'RapidMiner', 'MySQL']"
-
-839,191.214.233.839,Jared,Cipolla,jared839,FIN,['Erwin']
-
-840,191.214.233.840,Brittany,Johnson,brittany840,REQ,"['MySQL', 'Talend', 'Excel', 'KNIME']"
-
-841,191.214.233.841,Daniel,Duncan,daniel841,FIN,"['Tableau Public', 'MySQL', 'Excel', 'QlikView', 'Datapine', 'Apache Spark', 'Splunk']"
-
-842,191.214.233.842,Anne,Straus,anne842,INT,"['MySQL', 'Tableau Public', 'SAS', 'KNIME', 'QlikView', 'Erwin', 'Excel']"
-
-843,191.214.233.843,Pedro,Blankenship,pedro843,FIN,"['Tableau Public', 'SAS', 'R Programming']"
-
-844,191.214.233.844,Ruth,Sims,ruth844,REQ,"['R Programming', 'Excel', 'SAS', 'Tableau Public', 'Python']"
-
-845,191.214.233.845,Kimberly,Kelley,kimberly845,INT,['Erwin']
-
-846,191.214.233.846,Norma,Branton,norma846,FIN,['MySQL']
-
-847,191.214.233.847,Selma,Brimmage,selma847,REQ,"['Tableau Public', 'Erwin', 'Datapine', 'R Programming']"
-
-848,191.214.233.848,Cynthia,Harvard,cynthia848,FIN,['Splunk']
-
-849,191.214.233.849,Mark,Laue,mark849,INT,"['Erwin', 'RapidMiner', 'MySQL', 'QlikView', 'SAS', 'Excel', 'KNIME']"
-
-850,191.214.233.850,Patricia,Whitaker,patricia850,FIN,"['Excel', 'Erwin', 'MySQL', 'Splunk', 'Talend']"
-
-851,191.214.233.851,Pauline,Lloyd,pauline851,REQ,['KNIME']
-
-852,191.214.233.852,Lilliam,Laney,lilliam852,INT,"['SAS', 'KNIME', 'Python', 'Talend', 'Excel', 'Apache Spark']"
-
-853,191.214.233.853,Grant,Anderson,grant853,FIN,"['R Programming', 'Apache Spark', 'KNIME', 'Tableau Public', 'SAS', 'Datapine', 'Splunk']"
-
-854,191.214.233.854,William,Lane,william854,FIN,"['QlikView', 'SAS']"
-
-855,191.214.233.855,Ronald,Parekh,ronald855,INT,"['RapidMiner', 'Excel', 'Datapine', 'Talend', 'Tableau Public', 'SAS']"
-
-856,191.214.233.856,Keith,Hoffman,keith856,INT,"['Talend', 'KNIME', 'SAS', 'QlikView', 'Apache Spark', 'MySQL', 'RapidMiner']"
-
-857,191.214.233.857,Monica,Scott,monica857,INT,"['RapidMiner', 'R Programming', 'Erwin']"
-
-858,191.214.233.858,Marian,Vrabel,marian858,INT,"['Apache Spark', 'Python', 'Erwin']"
-
-859,191.214.233.859,Laura,Rivas,laura859,FIN,"['Splunk', 'Erwin', 'R Programming', 'Excel', 'Datapine']"
-
-860,191.214.233.860,William,Aldrich,william860,FIN,"['Excel', 'MySQL', 'Apache Spark', 'Splunk', 'Tableau Public', 'KNIME']"
-
-861,191.214.233.861,Tabitha,Newman,tabitha861,REQ,"['R Programming', 'RapidMiner']"
-
-862,191.214.233.862,Carol,Lopez,carol862,INT,['Erwin']
-
-863,191.214.233.863,Alice,Oconnor,alice863,REQ,"['Excel', 'SAS', 'Tableau Public', 'MySQL']"
-
-864,191.214.233.864,Elaine,Long,elaine864,INT,"['Erwin', 'Tableau Public', 'Python']"
-
-865,191.214.233.865,David,Hopper,david865,FIN,"['Talend', 'Tableau Public', 'R Programming', 'SAS', 'Python']"
-
-866,191.214.233.866,Hubert,Silveri,hubert866,REQ,"['Tableau Public', 'Talend', 'KNIME', 'SAS']"
-
-867,191.214.233.867,Arianne,Gordy,arianne867,INT,"['Datapine', 'Splunk', 'Talend', 'RapidMiner', 'MySQL']"
-
-868,191.214.233.868,Rose,Carle,rose868,FIN,"['R Programming', 'RapidMiner', 'Excel', 'Apache Spark', 'KNIME', 'SAS', 'Tableau Public']"
-
-869,191.214.233.869,Mary,Davis,mary869,INT,"['Datapine', 'Apache Spark', 'Tableau Public', 'Erwin', 'SAS', 'KNIME', 'Excel']"
-
-870,191.214.233.870,Shannon,Lopez,shannon870,FIN,"['Erwin', 'RapidMiner', 'Excel', 'Splunk', 'MySQL', 'Talend', 'QlikView']"
-
-871,191.214.233.871,James,Blanchard,james871,FIN,"['R Programming', 'Talend', 'Tableau Public', 'Apache Spark', 'Python']"
-
-872,191.214.233.872,Stella,Cox,stella872,REQ,"['QlikView', 'KNIME', 'Tableau Public']"
-
-873,191.214.233.873,Jeff,Daughtry,jeff873,REQ,"['Splunk', 'Excel', 'SAS', 'Erwin', 'RapidMiner', 'Tableau Public']"
-
-874,191.214.233.874,John,Barnes,john874,FIN,"['R Programming', 'RapidMiner', 'KNIME', 'Excel', 'Splunk', 'SAS', 'Erwin']"
-
-875,191.214.233.875,Maria,Elsass,maria875,REQ,"['Datapine', 'Excel', 'RapidMiner', 'KNIME', 'MySQL', 'Python', 'Erwin']"
-
-876,191.214.233.876,Charles,Robledo,charles876,REQ,"['Datapine', 'KNIME', 'SAS', 'Splunk', 'R Programming', 'Erwin']"
-
-877,191.214.233.877,Tamela,Balmer,tamela877,INT,"['Excel', 'Python', 'Erwin', 'Splunk', 'QlikView', 'SAS']"
-
-878,191.214.233.878,Cathleen,Jacobs,cathleen878,INT,"['SAS', 'RapidMiner', 'Apache Spark', 'QlikView', 'Splunk', 'Excel']"
-
-879,191.214.233.879,Jerry,Maguire,jerry879,FIN,"['R Programming', 'Erwin', 'Talend', 'SAS', 'Splunk', 'Excel']"
-
-880,191.214.233.880,Vera,Pappalardo,vera880,REQ,"['Splunk', 'Talend', 'MySQL', 'KNIME']"
-
-881,191.214.233.881,Joanne,Medlock,joanne881,INT,"['Datapine', 'KNIME', 'Talend', 'Python', 'Apache Spark']"
-
-882,191.214.233.882,Elizabeth,Pajerski,elizabeth882,INT,"['RapidMiner', 'Talend', 'Datapine']"
-
-883,191.214.233.883,Cheryl,Jackson,cheryl883,FIN,"['Talend', 'SAS', 'Datapine']"
-
-884,191.214.233.884,Jessica,Hudak,jessica884,REQ,"['QlikView', 'Erwin', 'R Programming', 'Apache Spark', 'KNIME', 'RapidMiner', 'MySQL']"
-
-885,191.214.233.885,Kacie,Richardson,kacie885,REQ,['Erwin']
-
-886,191.214.233.886,Danny,Anderson,danny886,REQ,"['Excel', 'KNIME', 'Tableau Public']"
-
-887,191.214.233.887,Thelma,Bayardo,thelma887,REQ,"['Python', 'RapidMiner', 'Datapine', 'KNIME', 'Splunk']"
-
-888,191.214.233.888,Eugene,Payne,eugene888,REQ,['QlikView']
-
-889,191.214.233.889,Dorothy,Shores,dorothy889,FIN,"['KNIME', 'R Programming', 'Python', 'QlikView', 'Datapine']"
-
-890,191.214.233.890,Elma,High,elma890,REQ,"['Datapine', 'SAS', 'Splunk', 'QlikView']"
-
-891,191.214.233.891,Don,Miller,don891,FIN,"['Python', 'Apache Spark', 'QlikView', 'RapidMiner', 'Datapine', 'Erwin']"
-
-892,191.214.233.892,Mildred,Prince,mildred892,REQ,"['Erwin', 'SAS', 'R Programming', 'Tableau Public', 'Excel', 'Apache Spark', 'Datapine']"
-
-893,191.214.233.893,Ralph,Rivera,ralph893,INT,"['R Programming', 'Tableau Public', 'Datapine']"
-
-894,191.214.233.894,Shanna,Marmo,shanna894,INT,"['MySQL', 'SAS', 'Tableau Public']"
-
-895,191.214.233.895,Keith,Watson,keith895,INT,"['Splunk', 'Talend', 'Datapine', 'RapidMiner', 'Erwin', 'R Programming', 'QlikView']"
-
-896,191.214.233.896,Howard,Shaw,howard896,INT,"['Python', 'Excel', 'Erwin']"
-
-897,191.214.233.897,Betty,Kurth,betty897,REQ,"['Python', 'Talend']"
-
-898,191.214.233.898,Warren,Thiele,warren898,REQ,"['Splunk', 'RapidMiner', 'KNIME', 'Datapine', 'Excel', 'Python']"
-
-899,191.214.233.899,Thuy,Palmer,thuy899,FIN,['Excel']
-
-900,191.214.233.900,Ernest,English,ernest900,REQ,"['Python', 'Erwin', 'Excel', 'KNIME', 'Apache Spark']"
-
-901,191.214.233.901,Soon,Padgett,soon901,FIN,"['RapidMiner', 'MySQL', 'SAS', 'Splunk', 'QlikView', 'KNIME']"
-
-902,191.214.233.902,Ruth,George,ruth902,INT,"['QlikView', 'Excel', 'R Programming', 'KNIME', 'Splunk', 'Python', 'Tableau Public']"
-
-903,191.214.233.903,Richard,Anderson,richard903,INT,"['Splunk', 'Excel', 'Datapine']"
-
-904,191.214.233.904,James,Reed,james904,REQ,"['Apache Spark', 'MySQL', 'Talend']"
-
-905,191.214.233.905,Rosemary,Palafox,rosemary905,REQ,"['Excel', 'Python']"
-
-906,191.214.233.906,Linda,Reddick,linda906,REQ,"['RapidMiner', 'KNIME', 'MySQL', 'Talend', 'Datapine', 'QlikView']"
-
-907,191.214.233.907,Theresa,Smith,theresa907,INT,"['Tableau Public', 'Excel']"
-
-908,191.214.233.908,Chris,Adams,chris908,FIN,"['Apache Spark', 'Tableau Public', 'Splunk', 'QlikView']"
-
-909,191.214.233.909,Michael,Garbe,michael909,INT,"['Tableau Public', 'Splunk', 'SAS', 'KNIME', 'R Programming', 'Datapine', 'Erwin']"
-
-910,191.214.233.910,Ben,Brisson,ben910,INT,"['Splunk', 'R Programming', 'RapidMiner', 'Python', 'KNIME', 'Talend']"
-
-911,191.214.233.911,Elinor,Cataldo,elinor911,INT,"['Erwin', 'Apache Spark', 'KNIME']"
-
-912,191.214.233.912,David,Nichols,david912,FIN,['SAS']
-
-913,191.214.233.913,Joel,Lewis,joel913,REQ,"['Erwin', 'QlikView']"
-
-914,191.214.233.914,Jose,Pitts,jose914,REQ,"['RapidMiner', 'R Programming']"
-
-915,191.214.233.915,Jack,Mohamed,jack915,INT,"['Apache Spark', 'KNIME']"
-
-916,191.214.233.916,Carol,Witek,carol916,FIN,"['R Programming', 'KNIME', 'QlikView']"
-
-917,191.214.233.917,Letitia,Cannon,letitia917,FIN,['R Programming']
-
-918,191.214.233.918,Dennis,Fuqua,dennis918,FIN,"['Splunk', 'RapidMiner', 'QlikView', 'Tableau Public', 'Apache Spark']"
-
-919,191.214.233.919,Zona,Roback,zona919,REQ,['R Programming']
-
-920,191.214.233.920,Thomas,Shannon,thomas920,REQ,['MySQL']
-
-921,191.214.233.921,Margaret,Reynolds,margaret921,REQ,"['Datapine', 'Apache Spark', 'MySQL']"
-
-922,191.214.233.922,Ines,Curran,ines922,INT,"['Talend', 'KNIME', 'Excel', 'Tableau Public']"
-
-923,191.214.233.923,Yvonne,Piccinini,yvonne923,INT,"['Splunk', 'KNIME', 'MySQL', 'Excel', 'Python', 'Datapine']"
-
-924,191.214.233.924,Trudie,Nixon,trudie924,INT,"['MySQL', 'Talend']"
-
-925,191.214.233.925,Rita,Hamer,rita925,INT,"['R Programming', 'Excel', 'Erwin', 'RapidMiner']"
-
-926,191.214.233.926,Eddie,Stanford,eddie926,INT,"['Excel', 'SAS', 'QlikView', 'Datapine', 'Apache Spark', 'Erwin']"
-
-927,191.214.233.927,Jose,Evans,jose927,INT,"['Splunk', 'Datapine', 'MySQL', 'Erwin', 'RapidMiner', 'Tableau Public', 'KNIME']"
-
-928,191.214.233.928,Marjorie,Dougherty,marjorie928,REQ,"['Excel', 'Python', 'SAS', 'R Programming', 'Apache Spark', 'RapidMiner', 'Talend']"
-
-929,191.214.233.929,Michael,Reeder,michael929,INT,"['Python', 'Datapine', 'R Programming', 'QlikView', 'Apache Spark', 'Tableau Public']"
-
-930,191.214.233.930,Clement,Bednorz,clement930,REQ,"['Erwin', 'Talend', 'R Programming', 'SAS', 'QlikView']"
-
-931,191.214.233.931,Rita,Kim,rita931,INT,"['Python', 'R Programming']"
-
-932,191.214.233.932,Richard,Crawford,richard932,INT,"['Erwin', 'Talend', 'QlikView', 'Excel', 'RapidMiner', 'Python']"
-
-933,191.214.233.933,Stephen,Johnson,stephen933,FIN,"['Tableau Public', 'R Programming', 'MySQL', 'Erwin']"
-
-934,191.214.233.934,Nancy,Yeoman,nancy934,REQ,"['Talend', 'Tableau Public', 'KNIME', 'R Programming', 'Apache Spark']"
-
-935,191.214.233.935,Gail,Hernandez,gail935,INT,['RapidMiner']
-
-936,191.214.233.936,Angel,Floto,angel936,FIN,"['RapidMiner', 'R Programming', 'Talend', 'MySQL', 'Apache Spark', 'KNIME', 'Python']"
-
-937,191.214.233.937,Maryann,Johnson,maryann937,REQ,"['KNIME', 'RapidMiner', 'Tableau Public']"
-
-938,191.214.233.938,Raymond,Briggs,raymond938,INT,['MySQL']
-
-939,191.214.233.939,James,Wells,james939,FIN,['Apache Spark']
-
-940,191.214.233.940,Benjamin,Alexander,benjamin940,FIN,"['Datapine', 'QlikView']"
-
-941,191.214.233.941,Robyn,Schindele,robyn941,REQ,"['Python', 'Excel', 'RapidMiner', 'Apache Spark', 'Erwin']"
-
-942,191.214.233.942,Angela,Wilczynski,angela942,FIN,"['KNIME', 'Tableau Public']"
-
-943,191.214.233.943,Alyce,Pitts,alyce943,INT,"['Excel', 'KNIME']"
-
-944,191.214.233.944,Mitchell,Lentz,mitchell944,FIN,"['Tableau Public', 'SAS', 'R Programming', 'RapidMiner', 'Erwin', 'Talend']"
-
-945,191.214.233.945,Ellen,Nicholas,ellen945,FIN,['R Programming']
-
-946,191.214.233.946,Philip,Thibault,philip946,REQ,"['Talend', 'R Programming', 'Tableau Public', 'Python', 'Apache Spark', 'Splunk']"
-
-947,191.214.233.947,Amanda,Kramer,amanda947,FIN,"['Python', 'Talend', 'R Programming']"
-
-948,191.214.233.948,Calvin,Minarik,calvin948,INT,"['Talend', 'MySQL', 'RapidMiner', 'KNIME', 'Splunk']"
-
-949,191.214.233.949,David,Gaddie,david949,REQ,"['MySQL', 'RapidMiner', 'Talend', 'Datapine']"
-
-950,191.214.233.950,Rex,Smith,rex950,INT,"['SAS', 'Talend', 'QlikView', 'Python', 'MySQL', 'R Programming', 'Tableau Public']"
-
-951,191.214.233.951,Heather,Komar,heather951,REQ,"['Excel', 'QlikView', 'RapidMiner']"
-
-952,191.214.233.952,Jan,Horton,jan952,INT,"['Apache Spark', 'QlikView', 'Python', 'MySQL', 'RapidMiner', 'Talend']"
-
-953,191.214.233.953,Zelda,May,zelda953,FIN,"['Datapine', 'Apache Spark', 'Tableau Public', 'KNIME']"
-
-954,191.214.233.954,David,Huff,david954,FIN,"['Splunk', 'R Programming', 'Talend', 'Datapine', 'Excel']"
-
-955,191.214.233.955,Dorothy,Upright,dorothy955,FIN,"['Python', 'Splunk', 'QlikView', 'RapidMiner', 'SAS']"
-
-956,191.214.233.956,Bruce,Netzer,bruce956,INT,"['SAS', 'QlikView', 'Erwin', 'RapidMiner', 'Python', 'Talend']"
-
-957,191.214.233.957,Elaine,Larimore,elaine957,REQ,"['Splunk', 'Python', 'Tableau Public']"
-
-958,191.214.233.958,Sara,Underwood,sara958,INT,['RapidMiner']
-
-959,191.214.233.959,Amanda,Dewinter,amanda959,FIN,['MySQL']
-
-960,191.214.233.960,Martin,Laskin,martin960,FIN,"['Talend', 'SAS', 'Excel', 'Splunk', 'Erwin']"
-
-961,191.214.233.961,Gregory,Zamora,gregory961,INT,"['Datapine', 'RapidMiner']"
-
-962,191.214.233.962,Terri,Riley,terri962,REQ,"['Apache Spark', 'Datapine', 'QlikView']"
-
-963,191.214.233.963,Nicholas,Voskamp,nicholas963,FIN,"['Splunk', 'Excel', 'RapidMiner', 'Tableau Public']"
-
-964,191.214.233.964,Charles,Mcclellan,charles964,REQ,['Tableau Public']
-
-965,191.214.233.965,Paula,Erwin,paula965,FIN,"['Erwin', 'KNIME', 'RapidMiner', 'Python', 'SAS']"
-
-966,191.214.233.966,Calvin,Duncan,calvin966,INT,"['SAS', 'Excel', 'Talend', 'Splunk']"
-
-967,191.214.233.967,Abby,Rivas,abby967,REQ,"['Splunk', 'KNIME']"
-
-968,191.214.233.968,Jessica,Bruhn,jessica968,INT,"['Splunk', 'Python', 'SAS', 'RapidMiner', 'Excel', 'Talend']"
-
-969,191.214.233.969,Howard,Ware,howard969,INT,"['Splunk', 'RapidMiner']"
-
-970,191.214.233.970,Carroll,Kent,carroll970,FIN,"['QlikView', 'Splunk', 'SAS', 'Python', 'Tableau Public']"
-
-971,191.214.233.971,Darlene,Roach,darlene971,REQ,"['Apache Spark', 'QlikView', 'Talend', 'Erwin']"
-
-972,191.214.233.972,Adam,Sanford,adam972,REQ,"['RapidMiner', 'MySQL', 'Tableau Public']"
-
-973,191.214.233.973,Margaret,Sneed,margaret973,INT,"['R Programming', 'MySQL', 'Tableau Public', 'KNIME', 'Splunk', 'Apache Spark']"
-
-974,191.214.233.974,Stewart,Mays,stewart974,INT,"['Tableau Public', 'MySQL', 'SAS']"
-
-975,191.214.233.975,Scott,Lara,scott975,REQ,['Datapine']
-
-976,191.214.233.976,Barbara,Crump,barbara976,FIN,['Tableau Public']
-
-977,191.214.233.977,Randall,Nowlen,randall977,INT,"['R Programming', 'MySQL']"
-
-978,191.214.233.978,Tony,Smith,tony978,FIN,"['Erwin', 'Datapine', 'Apache Spark', 'SAS', 'Splunk', 'MySQL', 'QlikView']"
-
-979,191.214.233.979,Brigida,Reynolds,brigida979,FIN,"['Talend', 'KNIME', 'Splunk', 'QlikView', 'Erwin']"
-
-980,191.214.233.980,Leah,Graziano,leah980,FIN,"['Talend', 'Splunk', 'QlikView', 'KNIME']"
-
-981,191.214.233.981,Stephanie,Curtis,stephanie981,INT,"['Tableau Public', 'Splunk', 'Erwin', 'Excel', 'MySQL', 'R Programming']"
-
-982,191.214.233.982,Elma,Cousins,elma982,REQ,"['Erwin', 'Splunk', 'KNIME', 'Talend', 'RapidMiner', 'MySQL']"
-
-983,191.214.233.983,Molly,Collier,molly983,REQ,"['Python', 'MySQL', 'Tableau Public', 'Excel']"
-
-984,191.214.233.984,Ashley,Jones,ashley984,REQ,"['Tableau Public', 'SAS', 'RapidMiner', 'QlikView', 'Excel', 'R Programming']"
-
-985,191.214.233.985,Jo,Slaughter,jo985,REQ,"['Splunk', 'Excel', 'KNIME', 'R Programming', 'SAS', 'Apache Spark']"
-
-986,191.214.233.986,Douglas,Gamble,douglas986,REQ,"['Tableau Public', 'Excel', 'Datapine']"
-
-987,191.214.233.987,James,Brown,james987,INT,"['Apache Spark', 'Splunk', 'Talend', 'Erwin', 'R Programming', 'MySQL', 'Excel']"
-
-988,191.214.233.988,Lora,Day,lora988,INT,"['Python', 'SAS', 'Splunk', 'Excel', 'KNIME']"
-
-989,191.214.233.989,Shelly,Watson,shelly989,REQ,"['KNIME', 'Python', 'Splunk', 'SAS']"
-
-990,191.214.233.990,Holly,Nelson,holly990,FIN,"['Erwin', 'Splunk', 'Excel', 'Talend', 'Datapine']"
-
-991,191.214.233.991,John,Chavez,john991,REQ,['SAS']
-
-992,191.214.233.992,Virgilio,Irons,virgilio992,INT,"['Splunk', 'Apache Spark', 'Python', 'SAS', 'R Programming']"
-
-993,191.214.233.993,William,Rutt,william993,INT,['Tableau Public']
-
-994,191.214.233.994,Amanda,Dominguez,amanda994,INT,"['QlikView', 'KNIME', 'Talend', 'Tableau Public']"
-
-995,191.214.233.995,Elyse,Lasala,elyse995,INT,"['QlikView', 'SAS', 'Apache Spark', 'Splunk', 'KNIME', 'Python']"
-
-996,191.214.233.996,Henry,Beaty,henry996,REQ,"['Tableau Public', 'Python']"
-
-997,191.214.233.997,Sue,Jensen,sue997,REQ,"['Erwin', 'QlikView', 'Excel', 'MySQL']"
-
-998,191.214.233.998,Gwendolyn,Melara,gwendolyn998,INT,"['Excel', 'Datapine', 'QlikView', 'Apache Spark']"
-
-999,191.214.233.999,Roger,Schenck,roger999,REQ,"['KNIME', 'Python']"
-
-1000,191.214.233.1000,Kathy,Sosa,kathy1000,REQ,"['QlikView', 'Datapine']"
-
+ID,IP,First Name,Last Name,Username,State,Applications
+1,191.214.233.1,Mary,Scott,mary1,INT,"['R Programming', 'Erwin', 'SAS', 'RapidMiner']"
+2,191.214.233.2,Lois,Foster,lois2,REQ,"['QlikView', 'R Programming', 'Python', 'Talend', 'MySQL']"
+3,191.214.233.3,Jesse,Dionne,jesse3,FIN,"['Talend', 'Erwin']"
+4,191.214.233.4,Michael,Williams,michael4,INT,"['Python', 'Excel', 'Talend', 'Tableau Public']"
+5,191.214.233.5,Silvia,Doyle,silvia5,FIN,['Erwin']
+6,191.214.233.6,June,Cooper,june6,FIN,['QlikView']
+7,191.214.233.7,Carrie,Manzo,carrie7,INT,"['Splunk', 'Python', 'MySQL']"
+8,191.214.233.8,Gregory,Allen,gregory8,FIN,"['Python', 'QlikView', 'KNIME', 'R Programming', 'Apache Spark', 'Talend']"
+9,191.214.233.9,Debra,Bowers,debra9,REQ,"['Splunk', 'Erwin']"
+10,191.214.233.10,Lowell,Rice,lowell10,INT,"['Erwin', 'Python', 'Apache Spark', 'Splunk']"
+11,191.214.233.11,Beth,Sinka,beth11,REQ,"['Talend', 'Excel', 'Erwin', 'QlikView', 'Tableau Public', 'Apache Spark', 'Datapine']"
+12,191.214.233.12,Gregory,Loveless,gregory12,FIN,"['MySQL', 'QlikView', 'Erwin', 'Datapine']"
+13,191.214.233.13,James,Kamp,james13,REQ,['MySQL']
+14,191.214.233.14,Tianna,Ahrendt,tianna14,REQ,"['SAS', 'Erwin', 'Datapine', 'Splunk']"
+15,191.214.233.15,William,Peters,william15,INT,"['Splunk', 'Python', 'MySQL', 'KNIME']"
+16,191.214.233.16,Laura,Davis,laura16,FIN,"['Erwin', 'QlikView', 'Apache Spark']"
+17,191.214.233.17,Luis,Bernardini,luis17,FIN,"['Python', 'Datapine', 'SAS', 'RapidMiner', 'Excel', 'MySQL', 'KNIME']"
+18,191.214.233.18,Jane,Milligan,jane18,INT,"['Apache Spark', 'QlikView', 'Erwin', 'RapidMiner', 'R Programming', 'Splunk', 'Excel']"
+19,191.214.233.19,James,Tucker,james19,REQ,['Excel']
+20,191.214.233.20,Alfredo,Parsons,alfredo20,REQ,"['KNIME', 'Apache Spark', 'Datapine', 'RapidMiner']"
+21,191.214.233.21,Alfred,Gist,alfred21,INT,"['Datapine', 'RapidMiner', 'Talend', 'Excel', 'MySQL', 'Python']"
+22,191.214.233.22,Pamela,Johnson,pamela22,INT,"['MySQL', 'QlikView', 'Python', 'Datapine', 'KNIME']"
+23,191.214.233.23,Robert,Vaughn,robert23,REQ,"['Excel', 'Talend', 'KNIME', 'Apache Spark', 'MySQL']"
+24,191.214.233.24,Donald,Bingler,donald24,INT,"['Excel', 'Talend', 'RapidMiner', 'Python', 'SAS']"
+25,191.214.233.25,Wai,Lundberg,wai25,INT,"['Talend', 'KNIME', 'Excel', 'Apache Spark', 'Erwin']"
+26,191.214.233.26,Ryan,Leblanc,ryan26,INT,"['KNIME', 'Talend', 'Python']"
+27,191.214.233.27,Gayle,Pretti,gayle27,FIN,['Talend']
+28,191.214.233.28,Arturo,Marsh,arturo28,FIN,"['Excel', 'Python', 'KNIME']"
+29,191.214.233.29,Shirley,Dunn,shirley29,REQ,"['MySQL', 'KNIME', 'Python', 'Tableau Public', 'Datapine']"
+30,191.214.233.30,Ryan,Pietrowski,ryan30,FIN,"['MySQL', 'R Programming', 'Excel', 'RapidMiner', 'KNIME', 'Talend', 'Apache Spark']"
+31,191.214.233.31,Angelia,Canclini,angelia31,INT,"['SAS', 'QlikView', 'RapidMiner', 'Tableau Public', 'Splunk', 'Python', 'Excel']"
+32,191.214.233.32,Janet,Knight,janet32,FIN,['RapidMiner']
+33,191.214.233.33,Grace,White,grace33,REQ,"['RapidMiner', 'KNIME']"
+34,191.214.233.34,Shannon,Pence,shannon34,REQ,"['KNIME', 'Python']"
+35,191.214.233.35,Penny,Wesley,penny35,FIN,"['SAS', 'Talend', 'MySQL', 'R Programming', 'QlikView']"
+36,191.214.233.36,Rosa,Neihart,rosa36,REQ,"['Splunk', 'MySQL']"
+37,191.214.233.37,Maria,Moore,maria37,FIN,"['R Programming', 'Datapine', 'MySQL', 'Talend']"
+38,191.214.233.38,Sue,Spearin,sue38,FIN,"['KNIME', 'RapidMiner', 'Datapine', 'SAS']"
+39,191.214.233.39,Michael,Davis,michael39,INT,"['Python', 'RapidMiner', 'Erwin', 'R Programming', 'Excel', 'Talend']"
+40,191.214.233.40,Phyllis,Wenk,phyllis40,REQ,"['KNIME', 'Splunk']"
+41,191.214.233.41,Arnold,Collins,arnold41,FIN,"['SAS', 'QlikView']"
+42,191.214.233.42,Douglas,Amos,douglas42,REQ,"['SAS', 'RapidMiner', 'KNIME', 'Python', 'MySQL', 'Excel', 'Apache Spark']"
+43,191.214.233.43,Brenda,Hillyer,brenda43,REQ,"['Erwin', 'Talend']"
+44,191.214.233.44,Alice,Allen,alice44,REQ,"['Datapine', 'MySQL']"
+45,191.214.233.45,Melida,Walker,melida45,REQ,"['SAS', 'Python', 'RapidMiner', 'R Programming', 'KNIME', 'Splunk']"
+46,191.214.233.46,Helen,Weaver,helen46,INT,"['Python', 'Splunk', 'Erwin']"
+47,191.214.233.47,Patricia,Goggins,patricia47,FIN,"['Splunk', 'Apache Spark', 'MySQL', 'KNIME', 'Python', 'RapidMiner']"
+48,191.214.233.48,Cassandra,Beavers,cassandra48,FIN,"['Splunk', 'Tableau Public', 'Talend', 'QlikView', 'Apache Spark', 'RapidMiner', 'KNIME']"
+49,191.214.233.49,Jennifer,Poirier,jennifer49,INT,"['KNIME', 'Python', 'Datapine', 'R Programming']"
+50,191.214.233.50,William,Nahhas,william50,INT,"['RapidMiner', 'Excel', 'Talend', 'SAS', 'Tableau Public', 'QlikView']"
+51,191.214.233.51,Roy,Lambert,roy51,REQ,"['Tableau Public', 'Erwin', 'KNIME', 'R Programming', 'Talend', 'Splunk', 'Excel']"
+52,191.214.233.52,Ryan,Foust,ryan52,FIN,"['MySQL', 'Excel', 'QlikView', 'Python']"
+53,191.214.233.53,James,Archila,james53,REQ,"['QlikView', 'Tableau Public', 'KNIME']"
+54,191.214.233.54,Jule,Situ,jule54,REQ,"['QlikView', 'Splunk', 'Excel']"
+55,191.214.233.55,Richard,Cassidy,richard55,REQ,"['Erwin', 'Excel', 'R Programming', 'MySQL']"
+56,191.214.233.56,Barbara,Maloney,barbara56,FIN,"['Talend', 'Splunk', 'SAS', 'KNIME', 'Tableau Public', 'MySQL', 'Apache Spark']"
+57,191.214.233.57,Elizabeth,Tuttle,elizabeth57,FIN,['MySQL']
+58,191.214.233.58,Amber,Howard,amber58,INT,"['Talend', 'Apache Spark', 'Python', 'R Programming', 'Datapine']"
+59,191.214.233.59,David,Joecks,david59,INT,"['Tableau Public', 'Talend']"
+60,191.214.233.60,Kevin,Bernardi,kevin60,REQ,['R Programming']
+61,191.214.233.61,Pearl,Tretheway,pearl61,FIN,"['Erwin', 'RapidMiner', 'R Programming', 'MySQL']"
+62,191.214.233.62,Seymour,Ruiz,seymour62,INT,"['Python', 'QlikView', 'Tableau Public', 'Excel', 'Splunk', 'SAS']"
+63,191.214.233.63,Donnell,Figueroa,donnell63,REQ,"['MySQL', 'Python', 'Erwin']"
+64,191.214.233.64,Maria,Davis,maria64,FIN,"['Python', 'Excel', 'MySQL', 'Apache Spark', 'Talend', 'KNIME', 'RapidMiner']"
+65,191.214.233.65,Helen,Pierce,helen65,REQ,['Tableau Public']
+66,191.214.233.66,Sharon,Evans,sharon66,FIN,"['R Programming', 'QlikView']"
+67,191.214.233.67,Ann,Murphy,ann67,INT,"['Talend', 'Python', 'Erwin']"
+68,191.214.233.68,Raymond,Key,raymond68,INT,"['Talend', 'QlikView', 'Excel']"
+69,191.214.233.69,Stephanie,Shalash,stephanie69,REQ,"['SAS', 'KNIME', 'RapidMiner', 'Python']"
+70,191.214.233.70,Rachel,Jordan,rachel70,REQ,"['Datapine', 'R Programming', 'Excel', 'Talend', 'SAS']"
+71,191.214.233.71,Cherri,Brelsford,cherri71,INT,"['QlikView', 'Tableau Public', 'Erwin', 'MySQL', 'Datapine', 'Excel']"
+72,191.214.233.72,Martina,Christopher,martina72,INT,"['Tableau Public', 'Erwin', 'SAS', 'R Programming']"
+73,191.214.233.73,Jack,Page,jack73,FIN,"['MySQL', 'Excel', 'KNIME']"
+74,191.214.233.74,Cynthia,Boehm,cynthia74,FIN,"['MySQL', 'Erwin', 'Excel', 'R Programming', 'Datapine']"
+75,191.214.233.75,Linwood,Shelton,linwood75,INT,"['RapidMiner', 'Tableau Public', 'MySQL', 'Splunk']"
+76,191.214.233.76,Amanda,Thomas,amanda76,FIN,"['Erwin', 'MySQL']"
+77,191.214.233.77,Jennifer,Amaya,jennifer77,FIN,"['Excel', 'Talend', 'Erwin']"
+78,191.214.233.78,Michael,Rodgers,michael78,REQ,"['RapidMiner', 'Excel', 'Tableau Public']"
+79,191.214.233.79,Leon,Stengel,leon79,INT,['Excel']
+80,191.214.233.80,Jody,Mendoza,jody80,REQ,"['Splunk', 'Erwin', 'SAS']"
+81,191.214.233.81,William,South,william81,FIN,"['SAS', 'MySQL', 'QlikView', 'KNIME', 'Datapine', 'RapidMiner', 'Python']"
+82,191.214.233.82,James,Murphy,james82,INT,"['Splunk', 'Erwin', 'Datapine']"
+83,191.214.233.83,Robert,Felver,robert83,REQ,"['Tableau Public', 'QlikView', 'Splunk']"
+84,191.214.233.84,Shirley,Wischmeier,shirley84,INT,"['Excel', 'Talend', 'Python', 'MySQL']"
+85,191.214.233.85,Joyce,Terry,joyce85,REQ,"['Datapine', 'MySQL', 'RapidMiner', 'KNIME', 'Talend', 'Python']"
+86,191.214.233.86,Frances,Zolezzi,frances86,INT,"['RapidMiner', 'Tableau Public', 'Splunk', 'MySQL', 'R Programming', 'KNIME']"
+87,191.214.233.87,Julee,Pena,julee87,REQ,"['Datapine', 'Talend', 'QlikView', 'Apache Spark', 'Erwin']"
+88,191.214.233.88,Christy,Wood,christy88,REQ,['Datapine']
+89,191.214.233.89,Peggy,Williams,peggy89,FIN,"['KNIME', 'SAS', 'R Programming', 'Tableau Public', 'Splunk']"
+90,191.214.233.90,Ernest,Ivancic,ernest90,REQ,['Erwin']
+91,191.214.233.91,David,Alday,david91,INT,"['MySQL', 'RapidMiner', 'Splunk']"
+92,191.214.233.92,Crystal,Nelson,crystal92,REQ,"['Excel', 'Apache Spark', 'SAS', 'RapidMiner', 'Datapine']"
+93,191.214.233.93,Rachel,Shea,rachel93,FIN,"['Excel', 'Apache Spark', 'Tableau Public', 'SAS', 'Splunk']"
+94,191.214.233.94,Mary,Foley,mary94,FIN,"['R Programming', 'Excel', 'RapidMiner', 'SAS', 'Datapine']"
+95,191.214.233.95,Christopher,Sitter,christopher95,INT,"['Apache Spark', 'QlikView']"
+96,191.214.233.96,Diana,Adams,diana96,REQ,"['SAS', 'RapidMiner', 'Apache Spark']"
+97,191.214.233.97,Jose,Powell,jose97,FIN,"['Splunk', 'Tableau Public', 'Apache Spark', 'QlikView', 'Python', 'KNIME']"
+98,191.214.233.98,Bernard,Bloom,bernard98,INT,"['KNIME', 'Splunk', 'Tableau Public', 'RapidMiner', 'Python', 'Erwin']"
+99,191.214.233.99,Ann,Bush,ann99,REQ,"['Datapine', 'Splunk', 'MySQL']"
+100,191.214.233.100,Josefina,Ray,josefina100,REQ,"['R Programming', 'KNIME', 'MySQL', 'Erwin']"
+101,191.214.233.101,Thelma,Massey,thelma101,INT,"['MySQL', 'RapidMiner', 'Erwin', 'Python']"
+102,191.214.233.102,Bridget,Chisam,bridget102,INT,"['RapidMiner', 'Datapine', 'Python', 'QlikView', 'SAS', 'Talend', 'MySQL']"
+103,191.214.233.103,Luther,Scandurra,luther103,INT,"['KNIME', 'Erwin', 'RapidMiner', 'Apache Spark', 'QlikView', 'Talend']"
+104,191.214.233.104,Howard,Reilly,howard104,INT,"['R Programming', 'KNIME', 'Erwin', 'Splunk', 'SAS', 'QlikView']"
+105,191.214.233.105,Jeffery,Matteucci,jeffery105,FIN,"['Erwin', 'KNIME', 'Datapine']"
+106,191.214.233.106,William,Petillo,william106,FIN,"['Tableau Public', 'Erwin', 'Talend']"
+107,191.214.233.107,Elma,Brown,elma107,INT,"['Apache Spark', 'MySQL', 'Erwin', 'Tableau Public', 'KNIME']"
+108,191.214.233.108,Cinderella,Wilson,cinderella108,FIN,"['QlikView', 'Erwin', 'Datapine', 'RapidMiner']"
+109,191.214.233.109,Vanessa,Ingerson,vanessa109,INT,"['RapidMiner', 'Apache Spark', 'Python', 'Talend', 'R Programming', 'Excel', 'SAS']"
+110,191.214.233.110,Flora,Dashner,flora110,REQ,"['MySQL', 'RapidMiner', 'QlikView', 'Tableau Public', 'Excel', 'Python', 'KNIME']"
+111,191.214.233.111,Eugene,Romano,eugene111,INT,"['SAS', 'Datapine', 'Erwin']"
+112,191.214.233.112,Ronald,Spencer,ronald112,FIN,"['R Programming', 'MySQL', 'RapidMiner', 'Datapine', 'Tableau Public', 'Erwin']"
+113,191.214.233.113,Robin,Hill,robin113,INT,"['Erwin', 'Tableau Public', 'Talend', 'MySQL', 'SAS', 'Excel', 'R Programming']"
+114,191.214.233.114,Eleanor,Battles,eleanor114,INT,"['Apache Spark', 'Excel']"
+115,191.214.233.115,Veronica,Gonzalez,veronica115,INT,"['Datapine', 'Excel', 'Splunk', 'RapidMiner', 'Python', 'Talend', 'Apache Spark']"
+116,191.214.233.116,John,Porter,john116,REQ,"['KNIME', 'MySQL', 'RapidMiner', 'Tableau Public']"
+117,191.214.233.117,Fredrick,Furukawa,fredrick117,FIN,"['Erwin', 'Talend', 'R Programming', 'QlikView', 'SAS', 'MySQL']"
+118,191.214.233.118,Andrea,Price,andrea118,INT,"['R Programming', 'MySQL', 'Apache Spark', 'Talend', 'Python', 'SAS']"
+119,191.214.233.119,Rolando,Heizman,rolando119,INT,"['Apache Spark', 'R Programming']"
+120,191.214.233.120,Ruth,Haas,ruth120,REQ,"['Datapine', 'RapidMiner']"
+121,191.214.233.121,Angela,Suttles,angela121,REQ,"['MySQL', 'Apache Spark']"
+122,191.214.233.122,Yvonne,Woods,yvonne122,INT,"['RapidMiner', 'Talend', 'QlikView', 'Excel', 'Apache Spark']"
+123,191.214.233.123,Amanda,Suriel,amanda123,FIN,"['RapidMiner', 'Talend']"
+124,191.214.233.124,Ashley,Morguson,ashley124,INT,"['Tableau Public', 'SAS']"
+125,191.214.233.125,Russell,Kintopp,russell125,INT,"['Python', 'Erwin', 'RapidMiner', 'SAS', 'Splunk', 'QlikView', 'MySQL']"
+126,191.214.233.126,Linda,Hawkins,linda126,INT,"['MySQL', 'Python']"
+127,191.214.233.127,Shirley,Pieper,shirley127,FIN,"['Python', 'QlikView', 'Talend', 'MySQL']"
+128,191.214.233.128,Scott,Mckinney,scott128,INT,"['MySQL', 'Talend', 'RapidMiner', 'QlikView', 'SAS']"
+129,191.214.233.129,Valerie,Atkins,valerie129,INT,"['Tableau Public', 'Datapine']"
+130,191.214.233.130,Michael,Conover,michael130,INT,"['Apache Spark', 'Excel', 'SAS', 'R Programming', 'Tableau Public', 'Splunk', 'KNIME']"
+131,191.214.233.131,Clarence,Skiles,clarence131,INT,"['RapidMiner', 'QlikView', 'Tableau Public', 'Erwin', 'Python', 'Talend', 'Datapine']"
+132,191.214.233.132,Franklin,Thompson,franklin132,FIN,"['RapidMiner', 'Tableau Public', 'QlikView', 'SAS']"
+133,191.214.233.133,Denise,Villela,denise133,FIN,"['Erwin', 'R Programming', 'Python', 'RapidMiner', 'SAS', 'KNIME']"
+134,191.214.233.134,Kevin,Markus,kevin134,INT,['QlikView']
+135,191.214.233.135,Tammy,Hansen,tammy135,INT,"['Python', 'KNIME', 'Apache Spark', 'Excel', 'R Programming', 'Datapine', 'RapidMiner']"
+136,191.214.233.136,Tonya,Montoya,tonya136,FIN,['RapidMiner']
+137,191.214.233.137,Marla,Sherman,marla137,INT,"['Splunk', 'KNIME', 'Excel', 'RapidMiner', 'Tableau Public', 'SAS']"
+138,191.214.233.138,Bridget,Pressley,bridget138,REQ,"['SAS', 'Erwin', 'Excel', 'Talend']"
+139,191.214.233.139,Geneva,Arnold,geneva139,REQ,"['Talend', 'Splunk']"
+140,191.214.233.140,Tami,King,tami140,REQ,"['Splunk', 'SAS']"
+141,191.214.233.141,Darron,Gant,darron141,FIN,"['Splunk', 'R Programming', 'Apache Spark', 'SAS', 'Tableau Public']"
+142,191.214.233.142,Ellen,Naylor,ellen142,REQ,"['Talend', 'Apache Spark', 'SAS', 'Erwin', 'Datapine']"
+143,191.214.233.143,Julian,Foster,julian143,REQ,"['Excel', 'Splunk', 'QlikView', 'RapidMiner', 'Tableau Public', 'Python']"
+144,191.214.233.144,Iva,Nunn,iva144,FIN,['Datapine']
+145,191.214.233.145,Rita,Kallas,rita145,REQ,"['KNIME', 'RapidMiner', 'Tableau Public']"
+146,191.214.233.146,Emerson,Madden,emerson146,REQ,"['Splunk', 'Tableau Public', 'Erwin']"
+147,191.214.233.147,Sharon,Cruz,sharon147,REQ,"['R Programming', 'Talend']"
+148,191.214.233.148,Judith,Davidson,judith148,INT,"['R Programming', 'Apache Spark', 'QlikView', 'Excel', 'Erwin']"
+149,191.214.233.149,Helen,Coleman,helen149,INT,"['QlikView', 'KNIME', 'Tableau Public', 'RapidMiner']"
+150,191.214.233.150,James,Bannister,james150,INT,"['RapidMiner', 'Tableau Public', 'Excel', 'Splunk', 'Python', 'SAS', 'Erwin']"
+151,191.214.233.151,Sandra,Guerin,sandra151,FIN,"['Erwin', 'SAS', 'Splunk', 'Tableau Public']"
+152,191.214.233.152,Kevin,Crabtree,kevin152,INT,"['Python', 'KNIME', 'Excel']"
+153,191.214.233.153,Aaron,Snyder,aaron153,FIN,['KNIME']
+154,191.214.233.154,Toni,Driscoll,toni154,REQ,"['Tableau Public', 'RapidMiner', 'Erwin', 'QlikView', 'Python', 'Splunk', 'R Programming']"
+155,191.214.233.155,Luann,Ly,luann155,FIN,"['QlikView', 'RapidMiner']"
+156,191.214.233.156,William,Caudle,william156,INT,"['KNIME', 'Python', 'QlikView', 'Datapine']"
+157,191.214.233.157,Ryan,Johnson,ryan157,REQ,"['Apache Spark', 'Talend', 'RapidMiner', 'Tableau Public', 'R Programming']"
+158,191.214.233.158,Rasheeda,Jones,rasheeda158,INT,"['KNIME', 'Python', 'Apache Spark', 'RapidMiner', 'Splunk', 'Erwin', 'Datapine']"
+159,191.214.233.159,Sonny,Porter,sonny159,CON,"['MySQL', 'Apache Spark', 'SAS', 'Erwin', 'Python']"
+160,191.214.233.160,Kenneth,Delreal,kenneth160,FIN,"['Python', 'Tableau Public', 'R Programming', 'QlikView', 'Talend']"
+161,191.214.233.161,Bert,Daniel,bert161,INT,"['Excel', 'Splunk']"
+162,191.214.233.162,Juliet,Shaver,juliet162,FIN,['Datapine']
+163,191.214.233.163,Sarah,Mcdonough,sarah163,FIN,"['Splunk', 'Talend']"
+164,191.214.233.164,April,Vanvalkenburg,april164,INT,"['Talend', 'Erwin', 'R Programming', 'MySQL', 'Splunk', 'SAS', 'QlikView']"
+165,191.214.233.165,Josephine,Walker,josephine165,INT,"['Datapine', 'Python', 'R Programming']"
+166,191.214.233.166,Nancy,Jimenez,nancy166,INT,"['Apache Spark', 'Erwin', 'Datapine', 'R Programming']"
+167,191.214.233.167,Christopher,Welch,christopher167,REQ,"['Python', 'Apache Spark', 'RapidMiner', 'R Programming']"
+168,191.214.233.168,Danny,Neville,danny168,FIN,['KNIME']
+169,191.214.233.169,Juanita,Freyman,juanita169,INT,"['Python', 'Tableau Public', 'QlikView', 'SAS', 'Excel']"
+170,191.214.233.170,Manuel,Redman,manuel170,FIN,"['Splunk', 'Talend']"
+171,191.214.233.171,Ann,Cullinan,ann171,CON,['Erwin']
+172,191.214.233.172,Helen,Silver,helen172,FIN,"['Erwin', 'QlikView', 'Tableau Public', 'Datapine']"
+173,191.214.233.173,Theresa,Ross,theresa173,REQ,"['Apache Spark', 'QlikView', 'KNIME', 'Erwin', 'Tableau Public', 'Datapine']"
+174,191.214.233.174,Russell,Witter,russell174,FIN,['R Programming']
+175,191.214.233.175,Nelson,Harper,nelson175,REQ,"['Talend', 'KNIME', 'Tableau Public', 'MySQL']"
+176,191.214.233.176,Josephine,Mazzella,josephine176,INT,"['QlikView', 'Python', 'Excel', 'Apache Spark', 'SAS', 'KNIME']"
+177,191.214.233.177,Lawrence,Haverstock,lawrence177,INT,"['Talend', 'RapidMiner', 'SAS']"
+178,191.214.233.178,Juan,Baptiste,juan178,FIN,"['MySQL', 'Erwin', 'R Programming', 'SAS', 'Apache Spark']"
+179,191.214.233.179,Jacob,Amburgey,jacob179,REQ,"['Apache Spark', 'KNIME', 'RapidMiner']"
+180,191.214.233.180,Jeremy,Frisby,jeremy180,INT,"['RapidMiner', 'Talend', 'Erwin', 'QlikView', 'Datapine', 'SAS', 'R Programming']"
+181,191.214.233.181,Eloise,Wilkins,eloise181,INT,"['KNIME', 'R Programming', 'Python', 'QlikView', 'Erwin', 'Splunk']"
+182,191.214.233.182,Shirley,Jubilee,shirley182,INT,['RapidMiner']
+183,191.214.233.183,Geraldine,Rowland,geraldine183,FIN,"['Erwin', 'Excel', 'MySQL', 'R Programming', 'Splunk']"
+184,191.214.233.184,Rachel,Belden,rachel184,REQ,"['KNIME', 'Talend', 'RapidMiner', 'Erwin', 'Apache Spark']"
+185,191.214.233.185,Rosemary,Hale,rosemary185,FIN,"['Splunk', 'SAS', 'Talend', 'Tableau Public']"
+186,191.214.233.186,Luciano,Amaro,luciano186,REQ,"['KNIME', 'Excel', 'MySQL', 'Erwin', 'Talend']"
+187,191.214.233.187,Charlie,Harmon,charlie187,INT,"['MySQL', 'Datapine', 'KNIME', 'Erwin', 'QlikView', 'RapidMiner', 'Talend']"
+188,191.214.233.188,Vicki,Latimer,vicki188,FIN,['R Programming']
+189,191.214.233.189,Edward,Oldham,edward189,FIN,"['MySQL', 'Excel', 'QlikView', 'R Programming', 'Erwin', 'Datapine']"
+190,191.214.233.190,Marlene,Meekins,marlene190,REQ,"['QlikView', 'Tableau Public', 'Splunk', 'Datapine', 'MySQL', 'Excel']"
+191,191.214.233.191,Kelly,Baker,kelly191,REQ,"['R Programming', 'Erwin']"
+192,191.214.233.192,Walter,Page,walter192,FIN,"['Splunk', 'KNIME', 'QlikView']"
+193,191.214.233.193,Sarah,Fanelli,sarah193,INT,"['Python', 'R Programming', 'Erwin', 'KNIME']"
+194,191.214.233.194,Jesse,Cunningham,jesse194,INT,"['MySQL', 'Apache Spark', 'Excel', 'KNIME', 'Tableau Public', 'Talend', 'Erwin']"
+195,191.214.233.195,Annie,Richard,annie195,INT,"['RapidMiner', 'Datapine', 'Talend', 'Excel', 'KNIME', 'Tableau Public']"
+196,191.214.233.196,Kenneth,Chidester,kenneth196,FIN,"['Excel', 'Apache Spark', 'Python', 'QlikView', 'Splunk', 'KNIME', 'RapidMiner']"
+197,191.214.233.197,Eugene,Tirey,eugene197,REQ,"['Tableau Public', 'Datapine', 'QlikView', 'Excel', 'SAS', 'R Programming', 'Erwin']"
+198,191.214.233.198,Donna,Anderson,donna198,REQ,"['KNIME', 'Erwin', 'SAS', 'Python', 'MySQL', 'RapidMiner', 'QlikView']"
+199,191.214.233.199,Phyllis,Ortega,phyllis199,FIN,"['Python', 'Splunk', 'MySQL', 'Datapine']"
+200,191.214.233.200,Jessie,Summers,jessie200,REQ,"['RapidMiner', 'SAS', 'Talend', 'QlikView']"
+201,191.214.233.201,Julie,Magdaleno,julie201,REQ,"['RapidMiner', 'Talend', 'Excel', 'Erwin', 'Datapine', 'MySQL']"
+202,191.214.233.202,Thomas,Washington,thomas202,FIN,"['R Programming', 'Splunk']"
+203,191.214.233.203,Chad,Riley,chad203,FIN,"['Splunk', 'QlikView', 'Python']"
+204,191.214.233.204,Margaret,Mccarty,margaret204,INT,"['KNIME', 'Erwin', 'SAS', 'MySQL', 'Talend', 'Apache Spark', 'Excel']"
+205,191.214.233.205,Cheryl,Bell,cheryl205,FIN,"['RapidMiner', 'KNIME']"
+206,191.214.233.206,Jacob,Bell,jacob206,FIN,"['RapidMiner', 'Datapine', 'Apache Spark']"
+207,191.214.233.207,Fannie,Carter,fannie207,FIN,['R Programming']
+208,191.214.233.208,Fay,Fuller,fay208,REQ,"['QlikView', 'R Programming']"
+209,191.214.233.209,Joseph,Crespo,joseph209,REQ,"['KNIME', 'Erwin', 'Splunk', 'Datapine', 'RapidMiner']"
+210,191.214.233.210,Joan,Mccleary,joan210,REQ,"['Datapine', 'QlikView', 'SAS', 'Excel', 'KNIME']"
+211,191.214.233.211,Ramon,Danos,ramon211,INT,"['RapidMiner', 'Tableau Public', 'Python', 'Apache Spark', 'KNIME']"
+212,191.214.233.212,Kristin,Kimmerle,kristin212,REQ,"['Python', 'Tableau Public', 'QlikView', 'Erwin', 'KNIME', 'SAS']"
+213,191.214.233.213,Deborah,Leon,deborah213,FIN,"['Splunk', 'QlikView', 'Excel', 'R Programming', 'Datapine', 'RapidMiner']"
+214,191.214.233.214,Raymond,Anderson,raymond214,INT,"['Talend', 'Splunk', 'R Programming', 'SAS', 'MySQL']"
+215,191.214.233.215,Mary,Rowell,mary215,FIN,"['Excel', 'Apache Spark', 'Datapine']"
+216,191.214.233.216,Jerri,Davenport,jerri216,REQ,"['Excel', 'MySQL']"
+217,191.214.233.217,Louise,Tyler,louise217,FIN,"['Python', 'Splunk', 'Excel', 'R Programming', 'KNIME', 'Erwin']"
+218,191.214.233.218,Larry,Gonzales,larry218,INT,"['Datapine', 'Erwin', 'SAS', 'RapidMiner', 'QlikView', 'MySQL']"
+219,191.214.233.219,Laurie,Bierman,laurie219,INT,"['Tableau Public', 'Excel', 'R Programming']"
+220,191.214.233.220,Michael,Lewis,michael220,FIN,"['KNIME', 'SAS', 'Tableau Public', 'Apache Spark', 'Talend', 'QlikView']"
+221,191.214.233.221,Craig,Cuevas,craig221,FIN,"['Excel', 'SAS', 'Splunk', 'Erwin', 'R Programming', 'Datapine', 'Talend']"
+222,191.214.233.222,Jose,White,jose222,REQ,"['R Programming', 'MySQL']"
+223,191.214.233.223,Kathleen,Johnson,kathleen223,REQ,"['Splunk', 'Tableau Public', 'RapidMiner']"
+224,191.214.233.224,Virginia,Martinez,virginia224,FIN,"['KNIME', 'Erwin', 'Excel']"
+225,191.214.233.225,Michael,Diaz,michael225,REQ,"['Erwin', 'RapidMiner', 'SAS']"
+226,191.214.233.226,Edward,White,edward226,FIN,"['Excel', 'RapidMiner', 'Talend', 'QlikView', 'Apache Spark', 'SAS']"
+227,191.214.233.227,Albert,Gill,albert227,FIN,"['Excel', 'Erwin', 'Python']"
+228,191.214.233.228,Kimberly,Surdam,kimberly228,REQ,['SAS']
+229,191.214.233.229,Glenn,Plath,glenn229,INT,"['Splunk', 'MySQL', 'Excel', 'RapidMiner', 'KNIME', 'Talend', 'Erwin']"
+230,191.214.233.230,Julie,Reel,julie230,INT,['Tableau Public']
+231,191.214.233.231,Georgeanna,Easton,georgeanna231,REQ,"['RapidMiner', 'Python', 'MySQL', 'R Programming', 'Splunk', 'SAS', 'Apache Spark']"
+232,191.214.233.232,Tanner,Robinette,tanner232,REQ,['Datapine']
+233,191.214.233.233,John,Fields,john233,FIN,['QlikView']
+234,191.214.233.234,Janice,Chapen,janice234,FIN,"['KNIME', 'Datapine']"
+235,191.214.233.235,Mary,Ruis,mary235,CON,"['SAS', 'Splunk', 'MySQL', 'Apache Spark', 'KNIME', 'Datapine']"
+236,191.214.233.236,Rose,Boggess,rose236,REQ,"['Apache Spark', 'Splunk', 'Erwin', 'Datapine', 'Tableau Public', 'R Programming', 'MySQL']"
+237,191.214.233.237,Patrick,Shaffer,patrick237,INT,"['Tableau Public', 'Excel', 'RapidMiner']"
+238,191.214.233.238,Charles,Reid,charles238,REQ,"['Excel', 'KNIME', 'Datapine', 'QlikView', 'MySQL']"
+239,191.214.233.239,Nadia,Deshaw,nadia239,REQ,"['RapidMiner', 'QlikView', 'R Programming', 'Python', 'Apache Spark', 'Datapine']"
+240,191.214.233.240,Ruthe,Christian,ruthe240,INT,"['Splunk', 'Talend', 'RapidMiner', 'SAS']"
+241,191.214.233.241,Cheryl,Roberts,cheryl241,REQ,"['QlikView', 'SAS', 'RapidMiner', 'Tableau Public', 'Splunk', 'Erwin', 'Apache Spark']"
+242,191.214.233.242,Willie,Rodriguez,willie242,FIN,"['Datapine', 'SAS', 'Python', 'MySQL', 'Apache Spark', 'R Programming']"
+243,191.214.233.243,Elizabeth,Teague,elizabeth243,INT,"['MySQL', 'Datapine', 'Apache Spark', 'QlikView']"
+244,191.214.233.244,Erica,Mallard,erica244,FIN,"['KNIME', 'QlikView']"
+245,191.214.233.245,Tara,Griffin,tara245,FIN,"['Datapine', 'Erwin', 'QlikView', 'Tableau Public', 'Splunk', 'MySQL']"
+246,191.214.233.246,Laura,Smith,laura246,REQ,"['Talend', 'SAS', 'Splunk', 'Erwin', 'KNIME']"
+247,191.214.233.247,George,Aceuedo,george247,CON,"['MySQL', 'Python', 'QlikView', 'Apache Spark']"
+248,191.214.233.248,Shaun,Dean,shaun248,INT,"['QlikView', 'MySQL', 'Talend']"
+249,191.214.233.249,Johnny,Dill,johnny249,INT,"['Python', 'Excel', 'Datapine', 'QlikView', 'MySQL']"
+250,191.214.233.250,Karl,Smith,karl250,INT,"['R Programming', 'Python', 'Erwin', 'MySQL', 'QlikView', 'Apache Spark']"
+251,191.214.233.251,Silvia,Sadler,silvia251,FIN,"['Splunk', 'Tableau Public', 'Python']"
+252,191.214.233.252,Edward,Pulver,edward252,INT,"['Datapine', 'Tableau Public', 'MySQL', 'Excel', 'R Programming', 'Erwin']"
+253,191.214.233.253,Dorothy,Pfaff,dorothy253,FIN,"['Excel', 'SAS', 'R Programming', 'Python', 'Talend', 'QlikView', 'Datapine']"
+254,191.214.233.254,Bonnie,Caines,bonnie254,REQ,"['Excel', 'KNIME', 'Apache Spark', 'Erwin', 'MySQL']"
+255,191.214.233.255,Julie,Miller,julie255,FIN,"['Tableau Public', 'RapidMiner', 'Erwin']"
+256,191.214.233.256,Donny,Hicks,donny256,FIN,"['Erwin', 'Python', 'Datapine', 'QlikView', 'Apache Spark', 'R Programming']"
+257,191.214.233.257,Milan,Oaks,milan257,FIN,"['SAS', 'Python', 'MySQL', 'Datapine', 'Excel']"
+258,191.214.233.258,Robert,Talley,robert258,FIN,"['Talend', 'KNIME']"
+259,191.214.233.259,Clara,Cline,clara259,INT,"['Datapine', 'Talend', 'RapidMiner', 'Splunk']"
+260,191.214.233.260,Therese,Reagan,therese260,FIN,"['SAS', 'RapidMiner', 'KNIME', 'MySQL', 'Tableau Public']"
+261,191.214.233.261,Tommy,Anderson,tommy261,INT,['KNIME']
+262,191.214.233.262,Jean,Blanton,jean262,REQ,"['Datapine', 'Excel']"
+263,191.214.233.263,Roderick,Carmona,roderick263,REQ,"['KNIME', 'QlikView', 'Apache Spark']"
+264,191.214.233.264,Tammara,Frates,tammara264,CON,"['Excel', 'Datapine', 'QlikView', 'MySQL', 'Tableau Public']"
+265,191.214.233.265,Julia,Holsomback,julia265,REQ,"['Python', 'Erwin', 'Splunk', 'R Programming', 'KNIME', 'QlikView']"
+266,191.214.233.266,Robert,Jones,robert266,REQ,"['Apache Spark', 'Talend', 'KNIME', 'Excel', 'Datapine']"
+267,191.214.233.267,Charles,Pease,charles267,FIN,"['Python', 'Tableau Public', 'R Programming', 'QlikView']"
+268,191.214.233.268,Tammy,Barber,tammy268,REQ,['Splunk']
+269,191.214.233.269,Jeremiah,Roberts,jeremiah269,REQ,"['Talend', 'MySQL']"
+270,191.214.233.270,Jay,Lee,jay270,INT,['Excel']
+271,191.214.233.271,Jack,Lecky,jack271,REQ,"['Talend', 'QlikView', 'R Programming', 'Datapine']"
+272,191.214.233.272,Emily,Peterson,emily272,FIN,['MySQL']
+273,191.214.233.273,Delmar,Rodriguez,delmar273,REQ,['RapidMiner']
+274,191.214.233.274,Fannie,Rowe,fannie274,FIN,['SAS']
+275,191.214.233.275,James,Foucault,james275,FIN,['Datapine']
+276,191.214.233.276,Steven,Turner,steven276,REQ,"['Erwin', 'R Programming', 'Splunk', 'Talend', 'Apache Spark', 'KNIME', 'QlikView']"
+277,191.214.233.277,Bryan,Kruse,bryan277,INT,"['Datapine', 'Erwin', 'Apache Spark', 'Excel', 'R Programming', 'Tableau Public']"
+278,191.214.233.278,Joseph,Brown,joseph278,INT,['Erwin']
+279,191.214.233.279,Patricia,Martel,patricia279,INT,"['Tableau Public', 'RapidMiner']"
+280,191.214.233.280,Ralph,King,ralph280,INT,"['RapidMiner', 'Erwin', 'SAS', 'R Programming']"
+281,191.214.233.281,Lloyd,Keyes,lloyd281,CON,"['Excel', 'Datapine', 'Apache Spark', 'RapidMiner', 'QlikView', 'KNIME', 'Erwin']"
+282,191.214.233.282,John,Mcgraw,john282,INT,['KNIME']
+283,191.214.233.283,Al,Woody,al283,FIN,"['SAS', 'QlikView', 'RapidMiner', 'Datapine']"
+284,191.214.233.284,Jon,Kent,jon284,FIN,"['Talend', 'MySQL', 'Splunk', 'Excel', 'QlikView', 'Erwin']"
+285,191.214.233.285,Walton,Peralta,walton285,INT,"['SAS', 'Erwin', 'RapidMiner', 'R Programming', 'Talend', 'Tableau Public', 'Excel']"
+286,191.214.233.286,Lena,Jordan,lena286,INT,"['Python', 'RapidMiner', 'Splunk']"
+287,191.214.233.287,Robert,Nebel,robert287,INT,"['QlikView', 'MySQL', 'RapidMiner', 'Splunk']"
+288,191.214.233.288,William,Misnick,william288,CON,"['Datapine', 'SAS']"
+289,191.214.233.289,Zachary,Whitson,zachary289,INT,"['R Programming', 'Python', 'Splunk', 'RapidMiner', 'Erwin']"
+290,191.214.233.290,Clare,Moody,clare290,INT,"['QlikView', 'MySQL', 'Erwin', 'SAS']"
+291,191.214.233.291,Gordon,Guedjian,gordon291,FIN,"['Python', 'Datapine', 'Talend']"
+292,191.214.233.292,Willie,Lane,willie292,REQ,"['Datapine', 'QlikView', 'RapidMiner']"
+293,191.214.233.293,Ira,Butler,ira293,REQ,"['Python', 'Excel', 'Talend', 'RapidMiner']"
+294,191.214.233.294,Joshua,Knowles,joshua294,FIN,['SAS']
+295,191.214.233.295,Mckenzie,Abbott,mckenzie295,REQ,"['MySQL', 'Tableau Public', 'Splunk', 'Erwin', 'KNIME', 'Python']"
+296,191.214.233.296,Guadalupe,Casarez,guadalupe296,FIN,"['R Programming', 'Excel', 'Erwin']"
+297,191.214.233.297,Veronica,Rosas,veronica297,INT,['MySQL']
+298,191.214.233.298,Willie,Granstrom,willie298,REQ,"['RapidMiner', 'R Programming', 'Apache Spark', 'KNIME']"
+299,191.214.233.299,David,Tomlinson,david299,REQ,"['Datapine', 'Python']"
+300,191.214.233.300,Tracy,Salcedo,tracy300,INT,"['R Programming', 'RapidMiner', 'KNIME', 'Apache Spark', 'Talend']"
+301,191.214.233.301,David,Denney,david301,INT,['SAS']
+302,191.214.233.302,Peter,Laskowski,peter302,INT,"['Erwin', 'QlikView', 'RapidMiner', 'KNIME', 'Tableau Public']"
+303,191.214.233.303,Sandra,Mackey,sandra303,REQ,"['RapidMiner', 'R Programming', 'Splunk', 'Excel']"
+304,191.214.233.304,Alta,Barker,alta304,INT,"['Erwin', 'Talend']"
+305,191.214.233.305,Helena,Riley,helena305,INT,"['SAS', 'Tableau Public']"
+306,191.214.233.306,Eartha,Smith,eartha306,REQ,"['Apache Spark', 'Python', 'QlikView', 'Splunk', 'Excel']"
+307,191.214.233.307,Lee,Funk,lee307,FIN,['Excel']
+308,191.214.233.308,Louis,Martinez,louis308,FIN,"['Excel', 'Talend', 'R Programming', 'Python', 'MySQL', 'Erwin', 'Tableau Public']"
+309,191.214.233.309,Geneva,Barnes,geneva309,REQ,"['Erwin', 'R Programming']"
+310,191.214.233.310,Tina,Schellhase,tina310,INT,"['SAS', 'QlikView']"
+311,191.214.233.311,Samantha,Ballard,samantha311,FIN,"['SAS', 'MySQL', 'RapidMiner', 'Tableau Public', 'Datapine', 'Excel']"
+312,191.214.233.312,Julie,Keeler,julie312,FIN,['Erwin']
+313,191.214.233.313,Frank,Abbott,frank313,FIN,"['Apache Spark', 'Excel', 'Python', 'QlikView']"
+314,191.214.233.314,Adrienne,Webb,adrienne314,FIN,"['KNIME', 'Erwin', 'MySQL', 'Tableau Public', 'R Programming', 'Datapine', 'SAS']"
+315,191.214.233.315,Eleanor,Prater,eleanor315,FIN,"['MySQL', 'Apache Spark', 'Datapine']"
+316,191.214.233.316,Jean,Sanchez,jean316,INT,"['SAS', 'MySQL']"
+317,191.214.233.317,Hazel,Hamilton,hazel317,INT,"['Erwin', 'R Programming', 'Datapine', 'Apache Spark', 'SAS']"
+318,191.214.233.318,Craig,Burt,craig318,INT,['RapidMiner']
+319,191.214.233.319,Micheal,King,micheal319,REQ,['Excel']
+320,191.214.233.320,Scott,Sullivan,scott320,INT,"['Tableau Public', 'QlikView', 'MySQL']"
+321,191.214.233.321,Matthew,Whitney,matthew321,INT,['RapidMiner']
+322,191.214.233.322,Hope,Carlisle,hope322,INT,"['RapidMiner', 'Erwin', 'SAS', 'Splunk', 'QlikView']"
+323,191.214.233.323,Robert,King,robert323,FIN,"['RapidMiner', 'R Programming', 'Datapine']"
+324,191.214.233.324,Jesse,Benbow,jesse324,FIN,"['KNIME', 'Talend', 'Apache Spark']"
+325,191.214.233.325,Mandy,Stribley,mandy325,INT,"['Python', 'MySQL', 'SAS', 'Talend', 'Tableau Public', 'KNIME']"
+326,191.214.233.326,Mary,Benning,mary326,FIN,['RapidMiner']
+327,191.214.233.327,Alan,Smith,alan327,INT,"['SAS', 'R Programming', 'Tableau Public', 'Excel', 'Apache Spark', 'Talend', 'Erwin']"
+328,191.214.233.328,James,Pogue,james328,INT,"['QlikView', 'SAS', 'KNIME', 'Excel', 'MySQL', 'Python', 'R Programming']"
+329,191.214.233.329,Edwin,Kriser,edwin329,REQ,"['KNIME', 'Excel', 'Tableau Public', 'RapidMiner', 'Apache Spark', 'Python']"
+330,191.214.233.330,Katherine,Hulstine,katherine330,INT,"['SAS', 'Apache Spark']"
+331,191.214.233.331,George,Griffey,george331,INT,"['QlikView', 'Talend', 'Erwin']"
+332,191.214.233.332,Thomas,Knight,thomas332,INT,"['QlikView', 'Apache Spark', 'RapidMiner', 'Talend']"
+333,191.214.233.333,Charles,Battle,charles333,FIN,"['Talend', 'R Programming', 'MySQL', 'KNIME', 'Datapine', 'Excel', 'Tableau Public']"
+334,191.214.233.334,Aurora,Arellano,aurora334,REQ,['SAS']
+335,191.214.233.335,Damon,Noriega,damon335,FIN,['Apache Spark']
+336,191.214.233.336,Jamie,Hamill,jamie336,FIN,"['Apache Spark', 'Excel', 'Tableau Public', 'R Programming']"
+337,191.214.233.337,Richard,Harris,richard337,INT,"['Erwin', 'Talend']"
+338,191.214.233.338,Grace,Kern,grace338,INT,['Erwin']
+339,191.214.233.339,David,Gibson,david339,FIN,"['Datapine', 'R Programming', 'KNIME']"
+340,191.214.233.340,Candelaria,Curtis,candelaria340,FIN,"['KNIME', 'RapidMiner', 'Erwin', 'Datapine', 'Splunk', 'Apache Spark']"
+341,191.214.233.341,John,Lybrand,john341,REQ,"['Splunk', 'KNIME', 'Python', 'QlikView', 'Erwin', 'Apache Spark']"
+342,191.214.233.342,Seth,Demaray,seth342,FIN,"['Python', 'R Programming', 'MySQL']"
+343,191.214.233.343,Justin,Nelson,justin343,INT,"['Talend', 'Tableau Public']"
+344,191.214.233.344,Stephany,Thomas,stephany344,INT,"['Tableau Public', 'Apache Spark', 'Datapine']"
+345,191.214.233.345,David,Eubanks,david345,INT,"['MySQL', 'QlikView', 'Excel', 'Talend', 'Tableau Public']"
+346,191.214.233.346,Judith,Michaud,judith346,REQ,"['KNIME', 'Apache Spark', 'R Programming', 'RapidMiner']"
+347,191.214.233.347,Dawn,Foltz,dawn347,FIN,"['R Programming', 'QlikView', 'Tableau Public', 'Erwin', 'Datapine', 'SAS', 'KNIME']"
+348,191.214.233.348,Thelma,Cole,thelma348,FIN,"['Python', 'KNIME', 'RapidMiner', 'SAS', 'Splunk', 'R Programming']"
+349,191.214.233.349,Brent,Miles,brent349,REQ,"['Excel', 'Splunk']"
+350,191.214.233.350,Matthew,Jenkins,matthew350,FIN,"['QlikView', 'Datapine', 'MySQL', 'Excel']"
+351,191.214.233.351,Louis,Chivers,louis351,FIN,"['SAS', 'KNIME', 'Tableau Public', 'Excel', 'QlikView', 'Splunk', 'Erwin']"
+352,191.214.233.352,Jason,Jackson,jason352,FIN,"['KNIME', 'Excel', 'Tableau Public', 'QlikView', 'SAS', 'MySQL', 'RapidMiner']"
+353,191.214.233.353,Carol,Jarquin,carol353,FIN,"['Talend', 'MySQL']"
+354,191.214.233.354,Peter,Morse,peter354,CON,['KNIME']
+355,191.214.233.355,Isaac,Asher,isaac355,FIN,"['Python', 'Talend', 'QlikView', 'KNIME', 'R Programming']"
+356,191.214.233.356,Tammy,White,tammy356,REQ,"['KNIME', 'Excel', 'R Programming', 'MySQL', 'Python', 'Tableau Public', 'Datapine']"
+357,191.214.233.357,Ina,Eastes,ina357,REQ,"['Splunk', 'Talend', 'Apache Spark', 'Python', 'MySQL', 'Excel', 'RapidMiner']"
+358,191.214.233.358,Jake,Humphries,jake358,INT,"['Talend', 'SAS', 'Excel', 'KNIME', 'Python', 'Datapine', 'R Programming']"
+359,191.214.233.359,Janet,Barnfield,janet359,FIN,"['Excel', 'QlikView', 'Tableau Public', 'Datapine', 'R Programming']"
+360,191.214.233.360,Paula,Camilo,paula360,FIN,['QlikView']
+361,191.214.233.361,Jamie,Jett,jamie361,REQ,"['MySQL', 'Python', 'QlikView']"
+362,191.214.233.362,Emmanuel,Woolley,emmanuel362,REQ,"['MySQL', 'KNIME', 'Excel', 'R Programming']"
+363,191.214.233.363,Jennifer,Peters,jennifer363,INT,"['Datapine', 'R Programming', 'Erwin', 'Talend']"
+364,191.214.233.364,Gary,Perez,gary364,FIN,"['SAS', 'QlikView']"
+365,191.214.233.365,Ashlie,Lile,ashlie365,REQ,"['Talend', 'SAS', 'Apache Spark', 'Datapine', 'Python', 'Tableau Public']"
+366,191.214.233.366,Shelly,Ramsey,shelly366,CON,"['Splunk', 'QlikView']"
+367,191.214.233.367,Ruth,Mix,ruth367,FIN,"['QlikView', 'Datapine', 'MySQL', 'Tableau Public', 'SAS']"
+368,191.214.233.368,Stephanie,Perrodin,stephanie368,REQ,"['Tableau Public', 'Apache Spark', 'Datapine', 'R Programming', 'Python', 'KNIME', 'Excel']"
+369,191.214.233.369,Warren,Mason,warren369,FIN,"['RapidMiner', 'Python', 'Talend', 'Tableau Public']"
+370,191.214.233.370,Joyce,Matthew,joyce370,REQ,"['Erwin', 'MySQL', 'KNIME', 'QlikView', 'RapidMiner', 'Excel', 'SAS']"
+371,191.214.233.371,Joan,Fulton,joan371,REQ,"['Splunk', 'R Programming', 'KNIME', 'Python']"
+372,191.214.233.372,Tiffany,Todd,tiffany372,FIN,"['Erwin', 'Python']"
+373,191.214.233.373,Paul,Johnson,paul373,FIN,['Apache Spark']
+374,191.214.233.374,Mildred,Kuebler,mildred374,REQ,"['Python', 'Erwin', 'Splunk', 'R Programming', 'Excel', 'SAS', 'KNIME']"
+375,191.214.233.375,Craig,Wilmore,craig375,FIN,"['Python', 'Excel']"
+376,191.214.233.376,Cynthia,Carlisle,cynthia376,FIN,"['Splunk', 'SAS', 'Apache Spark', 'Datapine', 'Tableau Public', 'Python']"
+377,191.214.233.377,Jeffrey,Duckworth,jeffrey377,FIN,"['R Programming', 'KNIME', 'Datapine', 'Splunk']"
+378,191.214.233.378,Naomi,Faust,naomi378,REQ,"['Tableau Public', 'R Programming']"
+379,191.214.233.379,Robert,Brown,robert379,REQ,"['R Programming', 'Tableau Public', 'Datapine']"
+380,191.214.233.380,Donnie,Crissler,donnie380,FIN,"['Datapine', 'Apache Spark', 'RapidMiner', 'Python', 'KNIME']"
+381,191.214.233.381,Thomas,Crabtree,thomas381,REQ,"['Python', 'KNIME', 'Excel', 'Splunk', 'Erwin', 'Tableau Public']"
+382,191.214.233.382,Oscar,Clark,oscar382,FIN,"['Tableau Public', 'Excel', 'QlikView']"
+383,191.214.233.383,Donald,Egleston,donald383,FIN,"['Talend', 'KNIME', 'Tableau Public', 'Apache Spark', 'SAS', 'Erwin', 'Excel']"
+384,191.214.233.384,Bonita,Grady,bonita384,INT,"['Splunk', 'Talend']"
+385,191.214.233.385,Joe,Moretto,joe385,FIN,"['Tableau Public', 'Python', 'SAS']"
+386,191.214.233.386,Beatrice,Hampton,beatrice386,REQ,"['Apache Spark', 'R Programming', 'QlikView', 'SAS']"
+387,191.214.233.387,Ruth,Ruhl,ruth387,REQ,"['Python', 'KNIME', 'MySQL', 'Apache Spark', 'Talend']"
+388,191.214.233.388,Stephen,Mccullough,stephen388,REQ,['MySQL']
+389,191.214.233.389,Wendell,Resto,wendell389,FIN,"['MySQL', 'Tableau Public', 'SAS', 'Excel', 'Python', 'Talend']"
+390,191.214.233.390,Roxana,Campbell,roxana390,INT,"['Talend', 'Datapine']"
+391,191.214.233.391,Sean,Gould,sean391,INT,"['Datapine', 'KNIME', 'QlikView', 'Apache Spark']"
+392,191.214.233.392,Harriet,Findley,harriet392,REQ,"['RapidMiner', 'Excel', 'Splunk', 'Python', 'Talend', 'QlikView']"
+393,191.214.233.393,Tracy,Nelson,tracy393,INT,"['Apache Spark', 'Talend', 'SAS', 'Datapine', 'Tableau Public', 'Python']"
+394,191.214.233.394,Joanie,Dawson,joanie394,INT,"['MySQL', 'Excel', 'SAS', 'QlikView', 'Talend']"
+395,191.214.233.395,Javier,Werner,javier395,CON,"['KNIME', 'Apache Spark']"
+396,191.214.233.396,Iris,Perez,iris396,INT,"['KNIME', 'Tableau Public', 'Python', 'SAS', 'Talend', 'Erwin']"
+397,191.214.233.397,Nathanael,Cisneros,nathanael397,INT,"['RapidMiner', 'Tableau Public', 'KNIME']"
+398,191.214.233.398,James,Watson,james398,FIN,"['Erwin', 'QlikView', 'Tableau Public', 'KNIME', 'MySQL']"
+399,191.214.233.399,Rebecca,Plamondon,rebecca399,FIN,"['Python', 'QlikView', 'Apache Spark', 'KNIME']"
+400,191.214.233.400,Alma,Sessoms,alma400,REQ,"['KNIME', 'R Programming', 'Python']"
+401,191.214.233.401,Margo,Batz,margo401,FIN,['Erwin']
+402,191.214.233.402,Elmer,Frenzel,elmer402,INT,"['MySQL', 'Tableau Public', 'KNIME', 'Splunk']"
+403,191.214.233.403,Charles,Vaughan,charles403,FIN,"['MySQL', 'RapidMiner', 'Datapine', 'Tableau Public', 'Splunk', 'Talend']"
+404,191.214.233.404,Bonnie,Ross,bonnie404,FIN,"['Datapine', 'RapidMiner', 'Apache Spark', 'Tableau Public', 'Splunk', 'Python', 'Excel']"
+405,191.214.233.405,Kelvin,Rios,kelvin405,INT,"['Datapine', 'Talend', 'KNIME', 'QlikView']"
+406,191.214.233.406,Bradly,Hayward,bradly406,FIN,['Splunk']
+407,191.214.233.407,Clarence,Acevedo,clarence407,REQ,"['RapidMiner', 'Python', 'Excel', 'Talend']"
+408,191.214.233.408,Charles,Brungardt,charles408,INT,"['R Programming', 'Datapine']"
+409,191.214.233.409,Della,Allen,della409,FIN,"['RapidMiner', 'Talend', 'SAS', 'MySQL', 'R Programming', 'QlikView', 'KNIME']"
+410,191.214.233.410,Jean,Creamer,jean410,FIN,"['Talend', 'R Programming']"
+411,191.214.233.411,Margie,Hill,margie411,INT,"['SAS', 'Erwin', 'Apache Spark', 'Excel', 'Datapine', 'Python']"
+412,191.214.233.412,Cindi,Ward,cindi412,FIN,"['KNIME', 'Tableau Public', 'Excel', 'Talend', 'Erwin']"
+413,191.214.233.413,Charles,Atkinson,charles413,REQ,"['Excel', 'SAS', 'Erwin', 'Datapine', 'Python']"
+414,191.214.233.414,Ralph,Maia,ralph414,FIN,"['Datapine', 'Excel', 'MySQL', 'Apache Spark', 'KNIME']"
+415,191.214.233.415,Minnie,Knab,minnie415,FIN,['KNIME']
+416,191.214.233.416,Maggie,Bates,maggie416,REQ,"['RapidMiner', 'Talend']"
+417,191.214.233.417,Micheal,Hernandez,micheal417,FIN,"['Excel', 'Apache Spark', 'MySQL', 'QlikView']"
+418,191.214.233.418,Paula,Sullivan,paula418,REQ,['Python']
+419,191.214.233.419,Elbert,Carter,elbert419,FIN,"['QlikView', 'KNIME', 'Datapine', 'Apache Spark', 'Erwin']"
+420,191.214.233.420,Hattie,Hewitt,hattie420,FIN,"['Tableau Public', 'KNIME', 'Apache Spark']"
+421,191.214.233.421,Keith,Whitton,keith421,FIN,"['SAS', 'KNIME', 'MySQL', 'Apache Spark', 'Talend']"
+422,191.214.233.422,Glen,Stelmack,glen422,INT,"['Talend', 'Python', 'Excel']"
+423,191.214.233.423,Devon,Mitchell,devon423,INT,"['Tableau Public', 'Python', 'Apache Spark', 'Splunk', 'R Programming']"
+424,191.214.233.424,Mae,Gingras,mae424,INT,"['SAS', 'Splunk', 'Talend', 'Datapine', 'RapidMiner', 'QlikView', 'Apache Spark']"
+425,191.214.233.425,Robert,Rudnicki,robert425,INT,"['MySQL', 'Datapine', 'KNIME', 'Apache Spark', 'R Programming']"
+426,191.214.233.426,James,Adams,james426,INT,"['Python', 'QlikView', 'RapidMiner', 'MySQL', 'Datapine', 'Splunk', 'Erwin']"
+427,191.214.233.427,John,Lee,john427,FIN,"['Tableau Public', 'R Programming', 'SAS', 'MySQL', 'Excel', 'Erwin']"
+428,191.214.233.428,Kristi,Guerra,kristi428,REQ,"['Datapine', 'Splunk']"
+429,191.214.233.429,Susan,Sales,susan429,INT,"['R Programming', 'Splunk', 'Python', 'Datapine', 'RapidMiner', 'Talend']"
+430,191.214.233.430,Wilson,Alvarado,wilson430,INT,['Tableau Public']
+431,191.214.233.431,Linda,Lambino,linda431,REQ,"['Talend', 'Tableau Public', 'Splunk', 'SAS', 'Python', 'KNIME']"
+432,191.214.233.432,David,Johnson,david432,REQ,"['Datapine', 'Erwin', 'KNIME', 'Splunk', 'Excel', 'QlikView']"
+433,191.214.233.433,Norma,Williams,norma433,INT,['Talend']
+434,191.214.233.434,Gary,Sinclair,gary434,INT,"['Excel', 'KNIME', 'Talend', 'Apache Spark', 'MySQL', 'QlikView', 'SAS']"
+435,191.214.233.435,April,Besse,april435,FIN,"['Python', 'MySQL', 'RapidMiner', 'Splunk', 'R Programming', 'Erwin']"
+436,191.214.233.436,Margarita,Mabery,margarita436,INT,"['Splunk', 'QlikView', 'Tableau Public', 'Apache Spark']"
+437,191.214.233.437,Kristen,Truong,kristen437,FIN,"['R Programming', 'Python', 'MySQL', 'Apache Spark', 'QlikView', 'Erwin', 'Excel']"
+438,191.214.233.438,Bob,Barnett,bob438,FIN,"['Datapine', 'Splunk', 'Tableau Public']"
+439,191.214.233.439,Louis,Coley,louis439,REQ,"['Splunk', 'MySQL', 'QlikView', 'KNIME', 'Apache Spark', 'Datapine', 'Excel']"
+440,191.214.233.440,Dianne,Stacy,dianne440,INT,"['SAS', 'Excel', 'Apache Spark', 'MySQL']"
+441,191.214.233.441,Lisa,Burgess,lisa441,INT,"['KNIME', 'RapidMiner', 'R Programming', 'Datapine', 'Apache Spark', 'QlikView', 'Erwin']"
+442,191.214.233.442,John,Wigginton,john442,INT,"['Erwin', 'Python', 'R Programming']"
+443,191.214.233.443,George,Burnside,george443,FIN,['MySQL']
+444,191.214.233.444,Joanna,Moore,joanna444,INT,"['Python', 'Splunk', 'RapidMiner', 'Talend', 'Datapine']"
+445,191.214.233.445,Barbara,Gonzalez,barbara445,INT,"['Datapine', 'Python']"
+446,191.214.233.446,Russell,Slocum,russell446,FIN,"['Apache Spark', 'R Programming', 'Talend', 'SAS', 'Tableau Public', 'RapidMiner']"
+447,191.214.233.447,Beth,Smith,beth447,INT,"['Splunk', 'SAS']"
+448,191.214.233.448,Peter,Conn,peter448,REQ,"['Erwin', 'Tableau Public']"
+449,191.214.233.449,Max,Nevarez,max449,INT,"['R Programming', 'RapidMiner']"
+450,191.214.233.450,Phillip,Brown,phillip450,FIN,"['Tableau Public', 'QlikView', 'KNIME']"
+451,191.214.233.451,Mary,Booker,mary451,INT,"['KNIME', 'MySQL', 'RapidMiner', 'QlikView', 'Excel']"
+452,191.214.233.452,Drew,Parker,drew452,FIN,['Excel']
+453,191.214.233.453,Vivian,Jarrell,vivian453,FIN,"['QlikView', 'MySQL', 'Splunk', 'Talend', 'Tableau Public']"
+454,191.214.233.454,James,Iverson,james454,INT,"['Excel', 'MySQL', 'KNIME', 'SAS', 'R Programming', 'Tableau Public', 'Apache Spark']"
+455,191.214.233.455,Winifred,Bates,winifred455,INT,"['SAS', 'Datapine']"
+456,191.214.233.456,Candace,Tatum,candace456,FIN,"['Datapine', 'R Programming', 'Tableau Public', 'Excel', 'Python', 'Erwin']"
+457,191.214.233.457,Claudia,Romero,claudia457,FIN,['RapidMiner']
+458,191.214.233.458,John,Bellas,john458,FIN,"['Python', 'Excel']"
+459,191.214.233.459,Gary,Dieguez,gary459,INT,"['SAS', 'Datapine', 'Excel', 'KNIME']"
+460,191.214.233.460,Flossie,Morrow,flossie460,INT,"['RapidMiner', 'Erwin', 'Apache Spark']"
+461,191.214.233.461,Lawrence,Mccants,lawrence461,INT,"['Excel', 'Erwin', 'QlikView']"
+462,191.214.233.462,Lisa,Jones,lisa462,FIN,"['Tableau Public', 'Python']"
+463,191.214.233.463,Mary,Jones,mary463,INT,['MySQL']
+464,191.214.233.464,Richard,Selleck,richard464,FIN,['R Programming']
+465,191.214.233.465,Sara,King,sara465,INT,"['Erwin', 'Datapine', 'MySQL']"
+466,191.214.233.466,Albert,Heatherly,albert466,REQ,['Talend']
+467,191.214.233.467,Patti,Castillo,patti467,FIN,"['Apache Spark', 'Talend', 'Python', 'RapidMiner', 'MySQL', 'QlikView']"
+468,191.214.233.468,Sammy,Cortez,sammy468,FIN,"['Python', 'RapidMiner', 'QlikView', 'Excel', 'SAS', 'R Programming', 'KNIME']"
+469,191.214.233.469,Thomas,Terry,thomas469,REQ,"['Apache Spark', 'MySQL', 'Talend']"
+470,191.214.233.470,Beulah,Smith,beulah470,INT,"['Tableau Public', 'KNIME', 'Excel']"
+471,191.214.233.471,Eldridge,Purcell,eldridge471,FIN,"['RapidMiner', 'Talend', 'Erwin', 'Tableau Public', 'QlikView', 'KNIME', 'Excel']"
+472,191.214.233.472,Mark,Blakeley,mark472,REQ,"['Erwin', 'QlikView', 'RapidMiner', 'Python']"
+473,191.214.233.473,Doris,Hughes,doris473,FIN,"['RapidMiner', 'Splunk', 'KNIME', 'R Programming']"
+474,191.214.233.474,Leroy,Nicley,leroy474,INT,['Apache Spark']
+475,191.214.233.475,Harry,Forest,harry475,REQ,"['Excel', 'Apache Spark', 'Python', 'QlikView', 'RapidMiner']"
+476,191.214.233.476,Robert,Gonzales,robert476,FIN,"['Talend', 'Excel', 'KNIME', 'SAS']"
+477,191.214.233.477,David,Harmon,david477,REQ,"['MySQL', 'Python']"
+478,191.214.233.478,Jean,Kincaid,jean478,INT,"['SAS', 'Talend', 'Apache Spark', 'Erwin']"
+479,191.214.233.479,Michael,Mckee,michael479,REQ,"['Splunk', 'Datapine', 'Talend', 'MySQL']"
+480,191.214.233.480,Helen,Harris,helen480,REQ,['Excel']
+481,191.214.233.481,Charlette,Jones,charlette481,REQ,"['R Programming', 'SAS', 'Datapine', 'RapidMiner', 'Tableau Public', 'Talend']"
+482,191.214.233.482,Bridget,Thompson,bridget482,FIN,"['Python', 'Tableau Public', 'R Programming']"
+483,191.214.233.483,Roy,Arroyo,roy483,FIN,"['Erwin', 'MySQL', 'Apache Spark', 'Splunk', 'Datapine', 'Excel']"
+484,191.214.233.484,Joshua,Guzman,joshua484,INT,"['Talend', 'SAS', 'Erwin']"
+485,191.214.233.485,Virginia,Robinson,virginia485,INT,['Excel']
+486,191.214.233.486,Alfred,Reitz,alfred486,INT,"['Apache Spark', 'KNIME']"
+487,191.214.233.487,Tarah,Smith,tarah487,FIN,"['RapidMiner', 'Tableau Public', 'QlikView', 'Excel', 'KNIME', 'Erwin', 'Talend']"
+488,191.214.233.488,Gregory,Kreisler,gregory488,FIN,"['Datapine', 'SAS', 'KNIME', 'RapidMiner', 'Apache Spark', 'MySQL', 'QlikView']"
+489,191.214.233.489,Jesus,Cruice,jesus489,REQ,"['Apache Spark', 'Erwin', 'RapidMiner', 'QlikView', 'R Programming']"
+490,191.214.233.490,Norman,Myhre,norman490,INT,['Excel']
+491,191.214.233.491,Rubye,Quinton,rubye491,INT,"['R Programming', 'Datapine', 'RapidMiner']"
+492,191.214.233.492,Sandra,Pander,sandra492,REQ,"['RapidMiner', 'KNIME', 'Apache Spark', 'Erwin']"
+493,191.214.233.493,Horace,Miller,horace493,FIN,"['Datapine', 'KNIME', 'QlikView', 'SAS', 'Apache Spark', 'Tableau Public', 'MySQL']"
+494,191.214.233.494,Mary,Morrow,mary494,FIN,"['RapidMiner', 'MySQL', 'KNIME', 'Excel', 'Splunk']"
+495,191.214.233.495,Jane,Lusk,jane495,INT,"['MySQL', 'Talend', 'Tableau Public', 'Python']"
+496,191.214.233.496,Chu,Coffman,chu496,REQ,"['Tableau Public', 'KNIME', 'R Programming', 'Splunk']"
+497,191.214.233.497,Susan,Frey,susan497,REQ,"['Datapine', 'SAS']"
+498,191.214.233.498,Frederick,Bagwell,frederick498,FIN,"['QlikView', 'SAS', 'Datapine', 'Talend', 'Splunk', 'Excel']"
+499,191.214.233.499,David,Dunson,david499,INT,"['Datapine', 'Python']"
+500,191.214.233.500,Miguel,Anthony,miguel500,FIN,['SAS']
+501,191.214.233.501,Jared,Lo,jared501,FIN,"['QlikView', 'Erwin', 'Python', 'SAS', 'Splunk']"
+502,191.214.233.502,Adam,Painter,adam502,INT,"['Python', 'Excel']"
+503,191.214.233.503,Katherine,Bonilla,katherine503,REQ,"['MySQL', 'Talend', 'QlikView', 'Excel', 'Erwin']"
+504,191.214.233.504,Anna,Kennedy,anna504,INT,"['Excel', 'R Programming', 'QlikView', 'Tableau Public', 'Talend']"
+505,191.214.233.505,Nathan,Trejo,nathan505,REQ,"['QlikView', 'KNIME', 'R Programming', 'Apache Spark']"
+506,191.214.233.506,Kevin,Trotter,kevin506,INT,"['SAS', 'Erwin', 'Splunk', 'R Programming', 'KNIME', 'Apache Spark']"
+507,191.214.233.507,Sarah,Hamilton,sarah507,FIN,"['Erwin', 'Tableau Public', 'Excel', 'RapidMiner', 'KNIME', 'SAS']"
+508,191.214.233.508,Donny,Carlton,donny508,FIN,"['RapidMiner', 'Erwin', 'Splunk', 'Datapine', 'Excel', 'QlikView', 'KNIME']"
+509,191.214.233.509,Ferdinand,Williams,ferdinand509,INT,"['R Programming', 'RapidMiner', 'Apache Spark', 'Tableau Public', 'KNIME', 'MySQL', 'Excel']"
+510,191.214.233.510,Laura,Sanderson,laura510,REQ,"['Datapine', 'SAS', 'Splunk', 'KNIME']"
+511,191.214.233.511,Brian,Pitt,brian511,INT,['R Programming']
+512,191.214.233.512,Dolores,Ramirez,dolores512,INT,"['R Programming', 'QlikView', 'Talend', 'Datapine', 'Python']"
+513,191.214.233.513,Terry,Russell,terry513,INT,"['Tableau Public', 'Datapine', 'Erwin', 'Splunk']"
+514,191.214.233.514,Sandra,Bentley,sandra514,INT,"['Python', 'Talend']"
+515,191.214.233.515,Dee,Strong,dee515,FIN,"['Datapine', 'KNIME', 'Talend']"
+516,191.214.233.516,Donna,Casella,donna516,REQ,"['Erwin', 'Excel', 'Datapine', 'QlikView', 'RapidMiner', 'Splunk']"
+517,191.214.233.517,Flora,Barker,flora517,INT,['Apache Spark']
+518,191.214.233.518,Amanda,Osmun,amanda518,REQ,"['Datapine', 'Excel']"
+519,191.214.233.519,Thomas,Tran,thomas519,FIN,"['R Programming', 'MySQL', 'Apache Spark', 'RapidMiner', 'Splunk', 'Talend']"
+520,191.214.233.520,Armando,Snyder,armando520,FIN,['Tableau Public']
+521,191.214.233.521,Herbert,Dubinsky,herbert521,INT,"['R Programming', 'Tableau Public', 'RapidMiner', 'QlikView', 'Talend', 'KNIME', 'Erwin']"
+522,191.214.233.522,John,Rocha,john522,REQ,"['R Programming', 'Tableau Public', 'Apache Spark', 'Datapine', 'MySQL', 'Splunk']"
+523,191.214.233.523,Mary,Bottoms,mary523,FIN,"['R Programming', 'Tableau Public', 'RapidMiner', 'Datapine', 'Splunk', 'Erwin', 'QlikView']"
+524,191.214.233.524,Wayne,Olberding,wayne524,REQ,"['Erwin', 'Talend', 'SAS', 'Datapine', 'RapidMiner', 'Python', 'QlikView']"
+525,191.214.233.525,Brian,Kitanik,brian525,REQ,['Tableau Public']
+526,191.214.233.526,Michael,Graham,michael526,REQ,['Excel']
+527,191.214.233.527,Leslie,Carroll,leslie527,FIN,"['MySQL', 'Apache Spark']"
+528,191.214.233.528,Eddie,Cultice,eddie528,REQ,['MySQL']
+529,191.214.233.529,Evangeline,Mercuri,evangeline529,FIN,['MySQL']
+530,191.214.233.530,Thelma,Wood,thelma530,INT,"['Excel', 'Talend', 'SAS', 'MySQL']"
+531,191.214.233.531,Edna,Beecher,edna531,INT,"['QlikView', 'Excel']"
+532,191.214.233.532,Jennifer,Whittington,jennifer532,FIN,"['RapidMiner', 'Splunk']"
+533,191.214.233.533,Gerard,Eiben,gerard533,INT,"['Python', 'SAS', 'Splunk', 'Excel']"
+534,191.214.233.534,Christopher,Neale,christopher534,FIN,"['Talend', 'R Programming', 'RapidMiner', 'Apache Spark', 'KNIME', 'Excel', 'QlikView']"
+535,191.214.233.535,Patricia,Craven,patricia535,REQ,['Erwin']
+536,191.214.233.536,Natasha,Isaac,natasha536,REQ,"['KNIME', 'MySQL', 'Excel', 'RapidMiner', 'Apache Spark', 'SAS', 'Erwin']"
+537,191.214.233.537,Nick,Meidinger,nick537,INT,"['QlikView', 'MySQL']"
+538,191.214.233.538,Eric,Baker,eric538,INT,"['Tableau Public', 'Excel', 'RapidMiner', 'KNIME', 'Erwin', 'SAS']"
+539,191.214.233.539,Mark,Smith,mark539,INT,"['Erwin', 'Splunk', 'QlikView']"
+540,191.214.233.540,Loretta,Xiong,loretta540,FIN,['Datapine']
+541,191.214.233.541,Ronald,Shin,ronald541,FIN,"['Excel', 'Tableau Public', 'R Programming', 'Apache Spark', 'Talend', 'SAS']"
+542,191.214.233.542,Howard,Santos,howard542,INT,"['Tableau Public', 'Talend', 'Apache Spark', 'Erwin', 'R Programming', 'KNIME']"
+543,191.214.233.543,Gwendolyn,Watson,gwendolyn543,REQ,['QlikView']
+544,191.214.233.544,Amanda,Kelly,amanda544,INT,"['Talend', 'Apache Spark', 'Python', 'KNIME', 'R Programming']"
+545,191.214.233.545,Eric,Black,eric545,INT,['R Programming']
+546,191.214.233.546,Ashley,Mendoza,ashley546,FIN,"['Splunk', 'Apache Spark', 'Talend', 'SAS']"
+547,191.214.233.547,Vivian,Hara,vivian547,FIN,"['SAS', 'Erwin', 'Excel']"
+548,191.214.233.548,Traci,Knight,traci548,FIN,['RapidMiner']
+549,191.214.233.549,Edward,Aguilar,edward549,FIN,"['R Programming', 'Apache Spark', 'RapidMiner', 'SAS', 'Tableau Public']"
+550,191.214.233.550,Patricia,Clark,patricia550,REQ,['MySQL']
+551,191.214.233.551,Mark,Robinson,mark551,INT,"['Splunk', 'RapidMiner', 'SAS', 'Erwin', 'KNIME', 'Talend']"
+552,191.214.233.552,Benedict,Campbell,benedict552,FIN,"['R Programming', 'Excel', 'SAS', 'MySQL', 'Apache Spark', 'KNIME']"
+553,191.214.233.553,Daniel,Gray,daniel553,REQ,"['Apache Spark', 'SAS', 'Excel', 'KNIME', 'Datapine', 'Tableau Public']"
+554,191.214.233.554,Everett,Griffin,everett554,INT,"['MySQL', 'Datapine', 'Erwin', 'QlikView']"
+555,191.214.233.555,Steve,Viveiros,steve555,INT,"['SAS', 'Splunk', 'Apache Spark', 'QlikView', 'Tableau Public', 'KNIME', 'Talend']"
+556,191.214.233.556,Cynthia,Kedzierski,cynthia556,REQ,"['QlikView', 'Python', 'R Programming', 'Talend', 'Splunk', 'Tableau Public']"
+557,191.214.233.557,Arthur,Jiles,arthur557,INT,"['Apache Spark', 'KNIME', 'Talend', 'R Programming', 'MySQL']"
+558,191.214.233.558,William,Chapman,william558,REQ,"['RapidMiner', 'QlikView', 'Datapine', 'Tableau Public', 'Talend', 'MySQL', 'Apache Spark']"
+559,191.214.233.559,Nancy,Castro,nancy559,REQ,"['QlikView', 'Erwin', 'RapidMiner', 'Datapine', 'R Programming']"
+560,191.214.233.560,Nichole,Gerber,nichole560,REQ,"['Python', 'Erwin', 'Excel', 'MySQL']"
+561,191.214.233.561,Huong,Arroyo,huong561,INT,"['SAS', 'MySQL', 'Apache Spark']"
+562,191.214.233.562,Sandra,Adamo,sandra562,FIN,"['Splunk', 'KNIME', 'Erwin', 'Datapine', 'Apache Spark', 'SAS', 'RapidMiner']"
+563,191.214.233.563,Kathleen,Rodriguez,kathleen563,INT,"['Splunk', 'Python', 'Apache Spark']"
+564,191.214.233.564,Laura,Lemire,laura564,INT,"['Python', 'Erwin', 'SAS', 'Tableau Public', 'QlikView']"
+565,191.214.233.565,Sarah,Duncan,sarah565,FIN,"['Excel', 'Apache Spark', 'Talend', 'Splunk', 'SAS', 'Python', 'Erwin']"
+566,191.214.233.566,William,Gomez,william566,FIN,"['RapidMiner', 'R Programming', 'Datapine', 'Erwin', 'Tableau Public']"
+567,191.214.233.567,Beatrice,Miles,beatrice567,INT,"['Erwin', 'Talend', 'Splunk', 'Apache Spark']"
+568,191.214.233.568,Doris,Proffitt,doris568,FIN,"['SAS', 'KNIME', 'Tableau Public', 'Apache Spark']"
+569,191.214.233.569,Bruce,Gray,bruce569,INT,"['Erwin', 'RapidMiner', 'Python']"
+570,191.214.233.570,Catherine,Gaitan,catherine570,FIN,"['QlikView', 'SAS', 'RapidMiner', 'Tableau Public', 'Erwin', 'Python', 'Excel']"
+571,191.214.233.571,Barbara,Rodriquez,barbara571,INT,"['Erwin', 'Tableau Public']"
+572,191.214.233.572,Steve,Wallis,steve572,FIN,"['Talend', 'Apache Spark', 'MySQL', 'Python', 'RapidMiner', 'KNIME']"
+573,191.214.233.573,Bethann,Reese,bethann573,REQ,"['Datapine', 'Apache Spark', 'MySQL', 'Talend', 'RapidMiner', 'SAS', 'Tableau Public']"
+574,191.214.233.574,Donna,Molina,donna574,FIN,['RapidMiner']
+575,191.214.233.575,Shari,Wenger,shari575,INT,"['Excel', 'Talend', 'Apache Spark', 'Datapine', 'Splunk', 'Python', 'KNIME']"
+576,191.214.233.576,Roxanne,Price,roxanne576,REQ,"['R Programming', 'SAS', 'Apache Spark', 'QlikView', 'Python', 'Splunk', 'RapidMiner']"
+577,191.214.233.577,Stephanie,Palacios,stephanie577,FIN,"['Talend', 'QlikView', 'Erwin', 'R Programming']"
+578,191.214.233.578,Kerry,Jackson,kerry578,REQ,"['SAS', 'Datapine', 'Splunk', 'Talend']"
+579,191.214.233.579,Gregory,Ketchum,gregory579,REQ,"['R Programming', 'Apache Spark', 'Python', 'SAS']"
+580,191.214.233.580,Tiffany,Barker,tiffany580,INT,"['R Programming', 'Datapine']"
+581,191.214.233.581,Michael,Finley,michael581,INT,"['SAS', 'R Programming', 'Talend', 'Python']"
+582,191.214.233.582,Wanda,Berlinger,wanda582,FIN,"['KNIME', 'Erwin', 'Talend', 'QlikView']"
+583,191.214.233.583,Angela,Ziego,angela583,REQ,"['Datapine', 'KNIME', 'Talend', 'Excel']"
+584,191.214.233.584,Lorie,Reardon,lorie584,FIN,"['Datapine', 'QlikView', 'Apache Spark', 'Python', 'Excel', 'Erwin']"
+585,191.214.233.585,Colton,Horton,colton585,REQ,"['RapidMiner', 'KNIME', 'Apache Spark']"
+586,191.214.233.586,Larry,Anderson,larry586,FIN,"['KNIME', 'Apache Spark', 'RapidMiner', 'R Programming', 'QlikView']"
+587,191.214.233.587,Jimmie,Carey,jimmie587,INT,['Tableau Public']
+588,191.214.233.588,Geraldine,Kanoy,geraldine588,FIN,['Python']
+589,191.214.233.589,Kitty,Kubis,kitty589,FIN,['Apache Spark']
+590,191.214.233.590,Joseph,Correa,joseph590,REQ,"['KNIME', 'Datapine']"
+591,191.214.233.591,Beatrice,Addams,beatrice591,FIN,['Excel']
+592,191.214.233.592,Marcelina,Kyung,marcelina592,FIN,"['KNIME', 'Talend', 'R Programming', 'Erwin', 'Apache Spark']"
+593,191.214.233.593,Anna,Wills,anna593,REQ,"['SAS', 'Talend', 'Tableau Public']"
+594,191.214.233.594,Lori,Howze,lori594,INT,"['Tableau Public', 'Splunk', 'QlikView', 'Datapine', 'MySQL', 'RapidMiner']"
+595,191.214.233.595,Edith,Davis,edith595,REQ,"['Apache Spark', 'Erwin', 'RapidMiner', 'Python', 'Datapine', 'MySQL']"
+596,191.214.233.596,Bobby,Scott,bobby596,FIN,['SAS']
+597,191.214.233.597,Cleta,Nelson,cleta597,FIN,"['Splunk', 'Apache Spark', 'SAS', 'QlikView', 'Tableau Public', 'Erwin']"
+598,191.214.233.598,Angela,Keh,angela598,REQ,"['Apache Spark', 'KNIME', 'Talend']"
+599,191.214.233.599,Michael,Masters,michael599,REQ,"['Apache Spark', 'Splunk']"
+600,191.214.233.600,Berta,Hertel,berta600,REQ,"['SAS', 'Tableau Public', 'Apache Spark', 'Excel', 'Erwin', 'Python', 'MySQL']"
+601,191.214.233.601,Anna,Clark,anna601,REQ,"['MySQL', 'Talend']"
+602,191.214.233.602,Rosalie,Abraham,rosalie602,INT,"['Excel', 'Erwin', 'Datapine', 'Apache Spark', 'KNIME', 'SAS', 'Splunk']"
+603,191.214.233.603,Alan,Carnagey,alan603,FIN,"['Apache Spark', 'QlikView']"
+604,191.214.233.604,Donald,Kuehl,donald604,FIN,"['Splunk', 'QlikView']"
+605,191.214.233.605,Melissa,Gilliam,melissa605,FIN,"['Excel', 'Datapine', 'KNIME', 'Tableau Public', 'Erwin', 'Splunk']"
+606,191.214.233.606,Marcia,James,marcia606,REQ,['Python']
+607,191.214.233.607,Jack,Capps,jack607,INT,"['Talend', 'Tableau Public', 'QlikView', 'RapidMiner', 'Datapine', 'KNIME', 'Splunk']"
+608,191.214.233.608,Ebony,Ford,ebony608,INT,"['QlikView', 'Splunk', 'Apache Spark']"
+609,191.214.233.609,Tina,Hamblen,tina609,FIN,"['QlikView', 'Excel', 'Python']"
+610,191.214.233.610,Michael,Sims,michael610,REQ,"['Excel', 'Tableau Public', 'R Programming', 'MySQL', 'Apache Spark', 'Talend', 'Python']"
+611,191.214.233.611,Barbara,Pratt,barbara611,FIN,"['Talend', 'KNIME', 'Tableau Public', 'Erwin', 'QlikView']"
+612,191.214.233.612,Debbie,Vasquez,debbie612,FIN,"['Talend', 'Datapine', 'QlikView', 'Splunk', 'Tableau Public']"
+613,191.214.233.613,James,Forester,james613,REQ,"['RapidMiner', 'Erwin', 'QlikView', 'Talend', 'Excel', 'Datapine', 'R Programming']"
+614,191.214.233.614,Carl,Chance,carl614,REQ,"['Excel', 'Python', 'Talend', 'KNIME', 'Erwin']"
+615,191.214.233.615,Kanisha,Buster,kanisha615,INT,['Splunk']
+616,191.214.233.616,Lora,Mcsherry,lora616,INT,"['MySQL', 'Excel']"
+617,191.214.233.617,Violet,Glidewell,violet617,REQ,"['Tableau Public', 'KNIME', 'Talend', 'Erwin', 'R Programming', 'Excel', 'Datapine']"
+618,191.214.233.618,Luis,Rambo,luis618,INT,"['Splunk', 'QlikView', 'KNIME', 'SAS', 'MySQL', 'Talend', 'Apache Spark']"
+619,191.214.233.619,Alberto,Swaby,alberto619,INT,"['Splunk', 'Excel', 'QlikView', 'SAS', 'MySQL']"
+620,191.214.233.620,Ryan,Burdette,ryan620,REQ,"['Talend', 'SAS', 'MySQL', 'Apache Spark', 'QlikView', 'Python', 'Datapine']"
+621,191.214.233.621,Cecil,Dukes,cecil621,REQ,"['Talend', 'R Programming', 'Splunk']"
+622,191.214.233.622,Joy,Priolo,joy622,FIN,"['Tableau Public', 'Python', 'RapidMiner']"
+623,191.214.233.623,Louise,Lea,louise623,INT,"['Tableau Public', 'Talend', 'Datapine', 'SAS', 'Erwin', 'Python']"
+624,191.214.233.624,Carolyn,Somerville,carolyn624,FIN,"['Datapine', 'Talend', 'Excel', 'Tableau Public', 'QlikView', 'R Programming']"
+625,191.214.233.625,Mildred,Servoss,mildred625,REQ,"['Erwin', 'RapidMiner', 'Excel', 'Tableau Public', 'Talend', 'SAS']"
+626,191.214.233.626,Charles,Mckinney,charles626,REQ,"['R Programming', 'Apache Spark', 'MySQL', 'Datapine', 'Talend']"
+627,191.214.233.627,Kelli,Morales,kelli627,INT,"['Tableau Public', 'Splunk', 'KNIME', 'QlikView']"
+628,191.214.233.628,Cheryl,Webster,cheryl628,INT,"['Tableau Public', 'SAS', 'Talend', 'Datapine', 'Apache Spark', 'Python']"
+629,191.214.233.629,Lee,Farris,lee629,REQ,"['Datapine', 'Splunk', 'Tableau Public', 'QlikView', 'Apache Spark', 'Python']"
+630,191.214.233.630,Dawn,Olsen,dawn630,REQ,"['Erwin', 'R Programming']"
+631,191.214.233.631,Max,Love,max631,REQ,['Datapine']
+632,191.214.233.632,Daniel,Sutton,daniel632,FIN,['MySQL']
+633,191.214.233.633,Glenn,Rogers,glenn633,REQ,['Datapine']
+634,191.214.233.634,Gregorio,Kister,gregorio634,REQ,['SAS']
+635,191.214.233.635,Craig,Alderman,craig635,REQ,"['SAS', 'Excel', 'QlikView', 'RapidMiner', 'Erwin', 'Tableau Public', 'Apache Spark']"
+636,191.214.233.636,Jesse,Burns,jesse636,FIN,"['Splunk', 'Erwin', 'Excel']"
+637,191.214.233.637,Miguel,Garcia,miguel637,FIN,"['KNIME', 'SAS', 'Python', 'Splunk', 'Apache Spark', 'Excel']"
+638,191.214.233.638,Richard,Utley,richard638,REQ,['Datapine']
+639,191.214.233.639,Danny,Perreault,danny639,FIN,"['QlikView', 'Talend', 'RapidMiner', 'MySQL', 'R Programming', 'Python', 'KNIME']"
+640,191.214.233.640,Shirley,Hunt,shirley640,FIN,"['QlikView', 'Erwin', 'Talend', 'Tableau Public']"
+641,191.214.233.641,Michelle,Hoagland,michelle641,REQ,"['Tableau Public', 'Excel', 'KNIME', 'QlikView', 'Erwin', 'Apache Spark']"
+642,191.214.233.642,Michael,Mciver,michael642,FIN,"['RapidMiner', 'KNIME', 'Splunk']"
+643,191.214.233.643,Gerald,Bormuth,gerald643,INT,"['Tableau Public', 'Excel', 'Apache Spark', 'KNIME']"
+644,191.214.233.644,Stacey,Morrison,stacey644,REQ,"['Datapine', 'Talend', 'Tableau Public', 'Splunk', 'Python', 'MySQL']"
+645,191.214.233.645,Lois,Garza,lois645,FIN,"['SAS', 'Apache Spark', 'MySQL', 'Datapine', 'Splunk', 'Erwin']"
+646,191.214.233.646,Barbara,Street,barbara646,INT,['MySQL']
+647,191.214.233.647,Anna,Erikson,anna647,INT,"['Erwin', 'Tableau Public', 'SAS', 'KNIME', 'Datapine', 'Excel', 'QlikView']"
+648,191.214.233.648,Fredricka,Rolf,fredricka648,INT,"['R Programming', 'RapidMiner', 'Excel', 'Datapine', 'Python', 'Erwin']"
+649,191.214.233.649,Gregg,Allen,gregg649,REQ,"['Apache Spark', 'SAS', 'Splunk', 'RapidMiner', 'MySQL', 'Excel']"
+650,191.214.233.650,Vera,Spann,vera650,REQ,"['KNIME', 'Talend', 'SAS']"
+651,191.214.233.651,Daniel,Mayer,daniel651,REQ,"['Splunk', 'Erwin']"
+652,191.214.233.652,Charles,Frederick,charles652,INT,"['KNIME', 'Apache Spark']"
+653,191.214.233.653,Marion,Miller,marion653,FIN,"['Datapine', 'Excel', 'Python', 'KNIME', 'Erwin']"
+654,191.214.233.654,James,Sheffield,james654,FIN,"['SAS', 'R Programming']"
+655,191.214.233.655,Rosalie,Bouldin,rosalie655,REQ,"['Tableau Public', 'Talend', 'Excel', 'RapidMiner', 'R Programming', 'Erwin']"
+656,191.214.233.656,Raymond,Augenstein,raymond656,FIN,['Talend']
+657,191.214.233.657,Louise,Yeager,louise657,INT,"['Tableau Public', 'Talend', 'Datapine', 'RapidMiner', 'QlikView', 'Erwin', 'Python']"
+658,191.214.233.658,Robert,Dennison,robert658,FIN,"['SAS', 'Excel', 'Talend', 'Splunk']"
+659,191.214.233.659,Olga,Harris,olga659,INT,"['Datapine', 'Splunk', 'Python', 'SAS', 'RapidMiner', 'Erwin', 'Tableau Public']"
+660,191.214.233.660,Susan,Jordan,susan660,INT,"['R Programming', 'SAS', 'Erwin', 'Python', 'Tableau Public', 'Splunk']"
+661,191.214.233.661,Pamula,Cooper,pamula661,FIN,"['Talend', 'RapidMiner', 'R Programming', 'MySQL']"
+662,191.214.233.662,Steve,Tirado,steve662,FIN,"['Datapine', 'Apache Spark', 'Tableau Public', 'RapidMiner', 'KNIME', 'Excel']"
+663,191.214.233.663,Robert,Peters,robert663,INT,['Erwin']
+664,191.214.233.664,William,Mclaurin,william664,FIN,"['Talend', 'SAS', 'MySQL', 'Tableau Public', 'Python']"
+665,191.214.233.665,Randy,Swenson,randy665,REQ,['RapidMiner']
+666,191.214.233.666,Jay,Bechel,jay666,REQ,"['Datapine', 'Tableau Public', 'Splunk', 'KNIME', 'QlikView', 'Excel', 'Apache Spark']"
+667,191.214.233.667,Karin,Girres,karin667,INT,"['Tableau Public', 'SAS']"
+668,191.214.233.668,Carol,Roberson,carol668,INT,"['Erwin', 'Tableau Public']"
+669,191.214.233.669,Jonathan,Kirby,jonathan669,FIN,"['Datapine', 'Erwin', 'Tableau Public', 'Apache Spark', 'QlikView', 'Excel', 'R Programming']"
+670,191.214.233.670,Clint,Escobar,clint670,REQ,"['Tableau Public', 'KNIME', 'SAS', 'R Programming', 'Python', 'Apache Spark', 'Datapine']"
+671,191.214.233.671,Elizabeth,Dominguez,elizabeth671,INT,"['Apache Spark', 'MySQL', 'Python', 'RapidMiner', 'Splunk', 'Datapine', 'Talend']"
+672,191.214.233.672,Larry,Rost,larry672,INT,"['Talend', 'QlikView', 'MySQL', 'Excel', 'RapidMiner']"
+673,191.214.233.673,Vicki,Moore,vicki673,INT,"['Tableau Public', 'SAS', 'Datapine', 'RapidMiner', 'KNIME']"
+674,191.214.233.674,Mary,Smith,mary674,REQ,"['SAS', 'MySQL', 'Python', 'Talend']"
+675,191.214.233.675,James,Elliot,james675,FIN,"['RapidMiner', 'Erwin', 'SAS']"
+676,191.214.233.676,Peter,Montalvo,peter676,INT,"['Tableau Public', 'Erwin', 'MySQL', 'R Programming', 'Splunk', 'Excel']"
+677,191.214.233.677,Faye,Fernandez,faye677,FIN,"['RapidMiner', 'Python', 'Tableau Public', 'R Programming']"
+678,191.214.233.678,Marie,Miller,marie678,REQ,"['MySQL', 'Splunk']"
+679,191.214.233.679,Robert,Thompson,robert679,FIN,"['Datapine', 'Splunk', 'MySQL', 'R Programming', 'RapidMiner', 'KNIME', 'Tableau Public']"
+680,191.214.233.680,Kathy,Lewin,kathy680,INT,"['Erwin', 'QlikView', 'Apache Spark']"
+681,191.214.233.681,Julian,Walters,julian681,FIN,"['Excel', 'Apache Spark', 'Erwin']"
+682,191.214.233.682,Catalina,Gobert,catalina682,REQ,"['Erwin', 'Talend']"
+683,191.214.233.683,Robert,Myles,robert683,INT,"['KNIME', 'MySQL', 'Datapine']"
+684,191.214.233.684,Ling,Mohammed,ling684,REQ,"['Erwin', 'R Programming', 'KNIME', 'Splunk', 'Talend', 'SAS', 'MySQL']"
+685,191.214.233.685,Kevin,Thompson,kevin685,INT,"['Talend', 'Splunk']"
+686,191.214.233.686,Kelly,Evans,kelly686,REQ,"['SAS', 'Tableau Public']"
+687,191.214.233.687,Erin,Clymer,erin687,FIN,['Talend']
+688,191.214.233.688,Tonya,Humphreys,tonya688,REQ,"['Talend', 'R Programming', 'RapidMiner']"
+689,191.214.233.689,Todd,Brian,todd689,INT,"['RapidMiner', 'QlikView', 'Talend', 'Apache Spark']"
+690,191.214.233.690,Louis,Griffith,louis690,FIN,['Python']
+691,191.214.233.691,Charles,Johnson,charles691,INT,"['Python', 'MySQL', 'Tableau Public']"
+692,191.214.233.692,David,Schwebach,david692,REQ,"['MySQL', 'Splunk', 'R Programming', 'Datapine', 'Tableau Public']"
+693,191.214.233.693,Scott,Serrano,scott693,FIN,"['Apache Spark', 'Tableau Public', 'QlikView', 'RapidMiner', 'Python', 'R Programming']"
+694,191.214.233.694,Sara,Hawks,sara694,FIN,"['SAS', 'QlikView', 'RapidMiner', 'Tableau Public', 'Excel', 'Datapine', 'Splunk']"
+695,191.214.233.695,Tracy,Orozco,tracy695,FIN,"['Datapine', 'Erwin', 'Excel', 'Splunk', 'R Programming', 'Talend']"
+696,191.214.233.696,Justin,Spencer,justin696,REQ,"['R Programming', 'Tableau Public', 'Datapine', 'Apache Spark']"
+697,191.214.233.697,James,Fowler,james697,INT,"['Erwin', 'MySQL']"
+698,191.214.233.698,Juan,Hemmings,juan698,REQ,"['SAS', 'Splunk', 'KNIME', 'Tableau Public', 'Talend', 'QlikView']"
+699,191.214.233.699,Willie,Stracke,willie699,FIN,"['Apache Spark', 'R Programming', 'Datapine', 'RapidMiner', 'Erwin', 'Talend']"
+700,191.214.233.700,Theresa,South,theresa700,REQ,"['QlikView', 'Python', 'Erwin', 'Apache Spark', 'R Programming', 'Tableau Public', 'RapidMiner']"
+701,191.214.233.701,Scott,Pasey,scott701,FIN,['SAS']
+702,191.214.233.702,Shari,Whitman,shari702,FIN,"['Python', 'RapidMiner']"
+703,191.214.233.703,Lisa,Colli,lisa703,REQ,"['Erwin', 'Tableau Public', 'Datapine', 'R Programming', 'Splunk', 'MySQL']"
+704,191.214.233.704,Kai,Armstrong,kai704,FIN,"['Datapine', 'Python', 'R Programming']"
+705,191.214.233.705,Daniela,Elliott,daniela705,REQ,"['Erwin', 'RapidMiner', 'Apache Spark', 'QlikView', 'KNIME', 'SAS', 'MySQL']"
+706,191.214.233.706,James,Enochs,james706,FIN,"['Python', 'Tableau Public', 'Talend']"
+707,191.214.233.707,Angela,Woods,angela707,REQ,"['Talend', 'Python', 'KNIME', 'R Programming', 'SAS', 'RapidMiner']"
+708,191.214.233.708,Darren,Friesen,darren708,FIN,['Erwin']
+709,191.214.233.709,Steven,Lancaster,steven709,FIN,"['QlikView', 'MySQL', 'Datapine']"
+710,191.214.233.710,Joseph,Musso,joseph710,INT,"['KNIME', 'QlikView', 'SAS']"
+711,191.214.233.711,Jeanne,Briz,jeanne711,REQ,"['Datapine', 'Apache Spark', 'MySQL', 'SAS', 'R Programming', 'RapidMiner']"
+712,191.214.233.712,Robert,Goud,robert712,FIN,"['Splunk', 'MySQL', 'R Programming', 'KNIME', 'Talend', 'Erwin', 'QlikView']"
+713,191.214.233.713,Karen,Fray,karen713,FIN,['Apache Spark']
+714,191.214.233.714,Richard,Cain,richard714,FIN,"['Tableau Public', 'Talend', 'Excel', 'RapidMiner', 'Apache Spark', 'Splunk']"
+715,191.214.233.715,Kellie,Bookman,kellie715,REQ,['Erwin']
+716,191.214.233.716,Raymond,Lopez,raymond716,INT,"['SAS', 'Apache Spark', 'R Programming', 'Excel', 'Erwin']"
+717,191.214.233.717,Terence,Wright,terence717,INT,"['Python', 'R Programming', 'KNIME', 'MySQL', 'Talend']"
+718,191.214.233.718,Linda,Tucker,linda718,REQ,"['Python', 'Tableau Public', 'Datapine', 'Apache Spark', 'Erwin']"
+719,191.214.233.719,Kimberli,Swenson,kimberli719,INT,"['QlikView', 'Apache Spark', 'Talend', 'Splunk']"
+720,191.214.233.720,Matthew,Manning,matthew720,FIN,"['Excel', 'Erwin']"
+721,191.214.233.721,Susan,Nicholson,susan721,INT,"['R Programming', 'Tableau Public', 'KNIME', 'Excel', 'Datapine', 'QlikView']"
+722,191.214.233.722,Eliza,Macqueen,eliza722,REQ,"['RapidMiner', 'QlikView', 'Splunk', 'R Programming']"
+723,191.214.233.723,Joshua,Strause,joshua723,REQ,"['Tableau Public', 'Excel', 'Talend', 'Erwin', 'SAS', 'KNIME', 'MySQL']"
+724,191.214.233.724,Timothy,Rudnick,timothy724,REQ,"['R Programming', 'Erwin', 'Talend', 'Excel', 'Datapine']"
+725,191.214.233.725,Russell,Toan,russell725,REQ,"['Excel', 'MySQL', 'R Programming', 'KNIME']"
+726,191.214.233.726,Peter,Abbott,peter726,FIN,"['Excel', 'QlikView', 'Erwin', 'Talend', 'Python']"
+727,191.214.233.727,Sam,Dunn,sam727,REQ,"['MySQL', 'Datapine', 'RapidMiner', 'Tableau Public']"
+728,191.214.233.728,Cheryl,Cooke,cheryl728,FIN,"['RapidMiner', 'Python', 'Excel']"
+729,191.214.233.729,Angelena,Gay,angelena729,REQ,"['Datapine', 'MySQL', 'QlikView', 'Apache Spark']"
+730,191.214.233.730,Misty,Thomas,misty730,FIN,"['Talend', 'RapidMiner', 'MySQL']"
+731,191.214.233.731,Ralph,Geiser,ralph731,FIN,"['R Programming', 'SAS', 'Python']"
+732,191.214.233.732,Tracy,Hall,tracy732,INT,"['QlikView', 'Python', 'Datapine']"
+733,191.214.233.733,Mark,True,mark733,FIN,"['MySQL', 'KNIME', 'QlikView', 'Excel']"
+734,191.214.233.734,Moses,Mendoza,moses734,REQ,"['Excel', 'Apache Spark', 'KNIME', 'SAS']"
+735,191.214.233.735,Lydia,Salcedo,lydia735,REQ,"['Tableau Public', 'Apache Spark']"
+736,191.214.233.736,Elizabeth,Mutch,elizabeth736,FIN,"['Apache Spark', 'Excel', 'Talend', 'Datapine', 'Splunk']"
+737,191.214.233.737,Mattie,Morin,mattie737,REQ,['Excel']
+738,191.214.233.738,James,Parkins,james738,FIN,['Python']
+739,191.214.233.739,Anne,Barney,anne739,INT,['SAS']
+740,191.214.233.740,Peter,Perona,peter740,REQ,"['Datapine', 'Erwin', 'R Programming', 'Tableau Public', 'QlikView', 'Splunk', 'SAS']"
+741,191.214.233.741,Robert,Oliver,robert741,INT,"['Apache Spark', 'Erwin', 'Splunk', 'Talend', 'Tableau Public', 'Datapine']"
+742,191.214.233.742,Nathaniel,Michaud,nathaniel742,REQ,"['Python', 'QlikView', 'Excel']"
+743,191.214.233.743,Sara,Smith,sara743,INT,['Tableau Public']
+744,191.214.233.744,Scott,Applegate,scott744,FIN,"['Excel', 'Python']"
+745,191.214.233.745,William,Barrow,william745,INT,"['QlikView', 'Apache Spark', 'Datapine', 'Talend']"
+746,191.214.233.746,Diane,Henderson,diane746,INT,"['Tableau Public', 'RapidMiner']"
+747,191.214.233.747,Robbie,Schroeder,robbie747,INT,"['SAS', 'Python', 'Tableau Public', 'R Programming', 'Splunk', 'KNIME', 'Talend']"
+748,191.214.233.748,David,Livingston,david748,INT,"['QlikView', 'Python']"
+749,191.214.233.749,Barbara,Vinson,barbara749,FIN,"['QlikView', 'Python', 'Datapine', 'Excel', 'Tableau Public', 'Splunk']"
+750,191.214.233.750,Gertrude,Guerra,gertrude750,INT,"['Splunk', 'Excel', 'Apache Spark', 'Datapine', 'Tableau Public', 'RapidMiner']"
+751,191.214.233.751,Dawn,Blackard,dawn751,FIN,"['KNIME', 'Splunk', 'Talend']"
+752,191.214.233.752,Tamara,Noriega,tamara752,INT,"['Talend', 'Datapine']"
+753,191.214.233.753,Steven,Miller,steven753,CON,"['Excel', 'KNIME', 'MySQL', 'Erwin', 'Tableau Public']"
+754,191.214.233.754,Jacques,Blum,jacques754,REQ,['Talend']
+755,191.214.233.755,Jose,Reed,jose755,REQ,"['SAS', 'Splunk']"
+756,191.214.233.756,Sandi,Mcvey,sandi756,REQ,"['Tableau Public', 'Datapine', 'Talend', 'MySQL', 'Erwin', 'QlikView']"
+757,191.214.233.757,Tommy,Koch,tommy757,FIN,"['Erwin', 'Talend', 'KNIME', 'Python']"
+758,191.214.233.758,James,Norville,james758,FIN,"['Splunk', 'Talend', 'Apache Spark']"
+759,191.214.233.759,Tracy,Kelleher,tracy759,REQ,['Apache Spark']
+760,191.214.233.760,Jenna,Blank,jenna760,FIN,"['KNIME', 'RapidMiner', 'R Programming']"
+761,191.214.233.761,Mike,Maisenbacher,mike761,FIN,"['Apache Spark', 'Tableau Public', 'SAS', 'Excel', 'Datapine', 'Python']"
+762,191.214.233.762,Marion,Wilenkin,marion762,FIN,"['Excel', 'SAS', 'MySQL', 'KNIME', 'Splunk', 'R Programming', 'Datapine']"
+763,191.214.233.763,Manuel,Bowen,manuel763,REQ,"['Erwin', 'KNIME', 'SAS', 'Datapine', 'R Programming', 'QlikView', 'Tableau Public']"
+764,191.214.233.764,Ann,Derby,ann764,FIN,"['Apache Spark', 'Talend', 'Python', 'Tableau Public', 'Erwin']"
+765,191.214.233.765,Cynthia,Murray,cynthia765,REQ,"['RapidMiner', 'Python', 'Tableau Public', 'Datapine', 'SAS']"
+766,191.214.233.766,William,Dixon,william766,INT,"['Erwin', 'Tableau Public', 'QlikView', 'Excel', 'Apache Spark', 'MySQL', 'Datapine']"
+767,191.214.233.767,Nathan,Dee,nathan767,REQ,"['QlikView', 'R Programming', 'Apache Spark']"
+768,191.214.233.768,Robert,Land,robert768,FIN,"['KNIME', 'Excel', 'Datapine', 'Tableau Public']"
+769,191.214.233.769,Enedina,Perry,enedina769,INT,"['KNIME', 'MySQL', 'Talend', 'QlikView', 'Excel', 'Datapine', 'RapidMiner']"
+770,191.214.233.770,Jill,Perry,jill770,REQ,"['Datapine', 'MySQL', 'KNIME', 'Erwin', 'QlikView']"
+771,191.214.233.771,Maria,Gray,maria771,FIN,"['Splunk', 'Tableau Public', 'Datapine', 'SAS']"
+772,191.214.233.772,Pamela,Henry,pamela772,INT,"['Talend', 'MySQL', 'Tableau Public', 'Python']"
+773,191.214.233.773,Douglas,Powell,douglas773,INT,"['RapidMiner', 'Apache Spark']"
+774,191.214.233.774,Ollie,Adkins,ollie774,FIN,"['Apache Spark', 'Excel', 'Erwin', 'QlikView', 'RapidMiner', 'Python']"
+775,191.214.233.775,Eloise,Beall,eloise775,FIN,"['MySQL', 'Talend', 'KNIME', 'R Programming', 'Tableau Public', 'SAS', 'QlikView']"
+776,191.214.233.776,Mary,Butler,mary776,FIN,"['Excel', 'MySQL', 'Splunk', 'Erwin', 'Python', 'Datapine', 'SAS']"
+777,191.214.233.777,Ruby,Maxey,ruby777,REQ,"['MySQL', 'QlikView', 'KNIME']"
+778,191.214.233.778,Sam,Ishman,sam778,FIN,"['KNIME', 'SAS', 'QlikView', 'Datapine', 'Python']"
+779,191.214.233.779,Mary,Wilson,mary779,REQ,"['R Programming', 'Erwin', 'QlikView', 'SAS']"
+780,191.214.233.780,Michael,Mcclure,michael780,REQ,"['Datapine', 'Erwin', 'Apache Spark', 'Excel', 'Splunk', 'Tableau Public']"
+781,191.214.233.781,Elizabeth,Sweet,elizabeth781,FIN,"['SAS', 'Python', 'Erwin', 'R Programming', 'Apache Spark', 'Excel', 'KNIME']"
+782,191.214.233.782,Dale,Castro,dale782,INT,['Splunk']
+783,191.214.233.783,Tiffany,Medina,tiffany783,INT,"['Excel', 'R Programming']"
+784,191.214.233.784,Edward,Barnard,edward784,FIN,"['SAS', 'Splunk', 'Erwin']"
+785,191.214.233.785,George,Gray,george785,INT,"['Python', 'Splunk', 'Tableau Public', 'Erwin', 'R Programming', 'Datapine']"
+786,191.214.233.786,Johnny,Egan,johnny786,INT,['Erwin']
+787,191.214.233.787,Robert,Combs,robert787,FIN,"['Apache Spark', 'QlikView']"
+788,191.214.233.788,Elenor,Walker,elenor788,INT,"['Splunk', 'MySQL', 'RapidMiner', 'Excel', 'Tableau Public']"
+789,191.214.233.789,Jeffery,Feliciano,jeffery789,FIN,"['Talend', 'RapidMiner']"
+790,191.214.233.790,Armando,Sinisi,armando790,INT,"['RapidMiner', 'QlikView', 'MySQL']"
+791,191.214.233.791,Edna,Gault,edna791,REQ,"['SAS', 'Python', 'Talend', 'MySQL', 'RapidMiner', 'Erwin', 'R Programming']"
+792,191.214.233.792,Linwood,Duran,linwood792,INT,"['Python', 'Datapine', 'MySQL', 'SAS']"
+793,191.214.233.793,Randy,Smith,randy793,REQ,"['Erwin', 'QlikView', 'Talend', 'RapidMiner', 'Apache Spark', 'Python']"
+794,191.214.233.794,Betty,Swanson,betty794,FIN,"['Datapine', 'MySQL', 'Tableau Public', 'QlikView']"
+795,191.214.233.795,Charles,Doering,charles795,FIN,"['SAS', 'QlikView', 'RapidMiner']"
+796,191.214.233.796,Paul,Decker,paul796,INT,"['Tableau Public', 'RapidMiner', 'MySQL', 'Datapine', 'Splunk', 'KNIME', 'QlikView']"
+797,191.214.233.797,Garry,Kelly,garry797,INT,['Datapine']
+798,191.214.233.798,William,Messer,william798,FIN,"['Excel', 'RapidMiner', 'QlikView', 'Erwin', 'R Programming', 'Splunk', 'Datapine']"
+799,191.214.233.799,Mary,Gordon,mary799,INT,"['MySQL', 'Python', 'Erwin', 'Splunk', 'RapidMiner', 'Talend', 'KNIME']"
+800,191.214.233.800,Joel,Wlodarek,joel800,INT,"['Tableau Public', 'RapidMiner', 'R Programming', 'Python', 'Erwin', 'Talend', 'Datapine']"
+801,191.214.233.801,Quiana,Montminy,quiana801,INT,"['Splunk', 'Erwin', 'RapidMiner', 'Python', 'Apache Spark', 'QlikView']"
+802,191.214.233.802,Lisa,Goulet,lisa802,INT,"['RapidMiner', 'Erwin', 'Tableau Public', 'Python']"
+803,191.214.233.803,Joyce,Brannan,joyce803,FIN,"['SAS', 'MySQL']"
+804,191.214.233.804,Rebecca,Love,rebecca804,FIN,"['QlikView', 'KNIME']"
+805,191.214.233.805,Glen,Mitchell,glen805,REQ,"['Excel', 'Tableau Public', 'KNIME', 'SAS', 'RapidMiner', 'Python', 'Splunk']"
+806,191.214.233.806,Quincy,Kruse,quincy806,CON,"['Splunk', 'RapidMiner', 'Erwin']"
+807,191.214.233.807,Nancy,Lopez,nancy807,INT,"['R Programming', 'Erwin', 'Datapine', 'Apache Spark', 'Excel', 'Splunk', 'SAS']"
+808,191.214.233.808,Velva,Moore,velva808,FIN,"['SAS', 'Datapine', 'MySQL', 'R Programming', 'RapidMiner', 'KNIME', 'Python']"
+809,191.214.233.809,Jeffrey,Torres,jeffrey809,INT,"['Talend', 'Apache Spark', 'RapidMiner', 'Splunk']"
+810,191.214.233.810,Miguel,Kelly,miguel810,REQ,"['Datapine', 'Tableau Public', 'RapidMiner']"
+811,191.214.233.811,Luz,Whicker,luz811,INT,"['Erwin', 'R Programming', 'Tableau Public', 'Python']"
+812,191.214.233.812,Ramona,Girard,ramona812,FIN,"['Datapine', 'QlikView', 'Apache Spark', 'Python', 'MySQL', 'Erwin']"
+813,191.214.233.813,Clifford,Guzman,clifford813,INT,"['KNIME', 'Apache Spark', 'MySQL', 'Excel', 'RapidMiner', 'Tableau Public']"
+814,191.214.233.814,Molly,Quinn,molly814,CON,['R Programming']
+815,191.214.233.815,Valerie,Gascho,valerie815,REQ,"['SAS', 'Excel', 'QlikView', 'Talend', 'Apache Spark']"
+816,191.214.233.816,Jennifer,Neely,jennifer816,REQ,"['SAS', 'QlikView', 'Talend', 'Datapine', 'R Programming', 'Splunk', 'Apache Spark']"
+817,191.214.233.817,Helen,Mendoza,helen817,INT,"['SAS', 'Tableau Public']"
+818,191.214.233.818,Marie,Hicks,marie818,REQ,"['QlikView', 'SAS', 'Talend', 'Python', 'Tableau Public']"
+819,191.214.233.819,Emanuel,Rehm,emanuel819,REQ,['Splunk']
+820,191.214.233.820,Holly,Garcia,holly820,REQ,"['MySQL', 'R Programming', 'QlikView', 'Splunk', 'Erwin']"
+821,191.214.233.821,Shawn,Perry,shawn821,INT,"['SAS', 'Tableau Public', 'R Programming', 'MySQL', 'Talend', 'QlikView']"
+822,191.214.233.822,Clifton,Branch,clifton822,INT,"['Excel', 'MySQL', 'Talend', 'Tableau Public', 'Python']"
+823,191.214.233.823,Abraham,Parker,abraham823,REQ,"['R Programming', 'QlikView']"
+824,191.214.233.824,James,Thompson,james824,REQ,"['QlikView', 'KNIME', 'RapidMiner', 'Talend', 'R Programming', 'MySQL', 'Apache Spark']"
+825,191.214.233.825,Damon,Skorupa,damon825,REQ,['QlikView']
+826,191.214.233.826,Anne,Oh,anne826,FIN,"['Datapine', 'QlikView']"
+827,191.214.233.827,Barbara,Justiniano,barbara827,REQ,"['Apache Spark', 'MySQL', 'R Programming', 'SAS', 'RapidMiner']"
+828,191.214.233.828,Sasha,Schultheis,sasha828,FIN,"['Apache Spark', 'SAS']"
+829,191.214.233.829,Carlene,Taylor,carlene829,FIN,"['Python', 'KNIME']"
+830,191.214.233.830,Beulah,Sweeney,beulah830,FIN,"['QlikView', 'Tableau Public', 'KNIME', 'Apache Spark', 'Excel', 'MySQL', 'Splunk']"
+831,191.214.233.831,Dorothy,Brown,dorothy831,REQ,"['Talend', 'QlikView', 'Apache Spark']"
+832,191.214.233.832,Tammy,Sidney,tammy832,INT,"['R Programming', 'QlikView']"
+833,191.214.233.833,Nam,Ramos,nam833,INT,['Talend']
+834,191.214.233.834,Janice,Mcquade,janice834,INT,"['KNIME', 'Datapine', 'Talend']"
+835,191.214.233.835,Christine,Collins,christine835,REQ,"['R Programming', 'Python', 'RapidMiner', 'Erwin']"
+836,191.214.233.836,Victoria,Curtis,victoria836,FIN,"['Erwin', 'Apache Spark', 'Splunk', 'Datapine', 'MySQL', 'Tableau Public']"
+837,191.214.233.837,Melissa,Bollman,melissa837,INT,"['Splunk', 'Talend']"
+838,191.214.233.838,Andrew,Riddle,andrew838,REQ,"['MySQL', 'R Programming', 'KNIME', 'RapidMiner', 'QlikView']"
+839,191.214.233.839,Sandra,Cartmill,sandra839,INT,['Erwin']
+840,191.214.233.840,Roxana,Yeoman,roxana840,REQ,"['QlikView', 'Apache Spark', 'RapidMiner', 'Splunk']"
+841,191.214.233.841,Emily,Bail,emily841,REQ,"['MySQL', 'Erwin', 'QlikView', 'Talend', 'Splunk', 'R Programming', 'Datapine']"
+842,191.214.233.842,Charles,Overman,charles842,REQ,"['Excel', 'Splunk', 'RapidMiner', 'KNIME', 'Apache Spark', 'MySQL', 'Datapine']"
+843,191.214.233.843,Anthony,Droke,anthony843,FIN,"['Datapine', 'RapidMiner', 'MySQL']"
+844,191.214.233.844,Nancy,Racicot,nancy844,INT,"['SAS', 'Tableau Public', 'RapidMiner', 'Erwin', 'Splunk']"
+845,191.214.233.845,Louis,Ortiz,louis845,REQ,['SAS']
+846,191.214.233.846,Elena,Daley,elena846,FIN,['Tableau Public']
+847,191.214.233.847,Shelly,Mckinney,shelly847,REQ,"['RapidMiner', 'Apache Spark', 'KNIME', 'Erwin']"
+848,191.214.233.848,Norman,Bass,norman848,REQ,['MySQL']
+849,191.214.233.849,Doretha,Gill,doretha849,INT,"['KNIME', 'SAS', 'Splunk', 'Datapine', 'Excel', 'Python', 'Talend']"
+850,191.214.233.850,Francis,Thompson,francis850,INT,"['RapidMiner', 'Talend', 'SAS', 'MySQL', 'Excel']"
+851,191.214.233.851,Joseph,Rogers,joseph851,FIN,['Excel']
+852,191.214.233.852,Jeffrey,Saxbury,jeffrey852,REQ,"['Splunk', 'Python', 'SAS', 'Excel', 'Apache Spark', 'Talend']"
+853,191.214.233.853,Rosemarie,Lindsey,rosemarie853,INT,"['Talend', 'Apache Spark', 'R Programming', 'RapidMiner', 'Datapine', 'MySQL', 'Python']"
+854,191.214.233.854,Roger,Goodman,roger854,REQ,"['KNIME', 'Excel']"
+855,191.214.233.855,Debora,Mock,debora855,INT,"['SAS', 'R Programming', 'KNIME', 'Erwin', 'Tableau Public', 'Splunk']"
+856,191.214.233.856,Edward,Mckneely,edward856,INT,"['Tableau Public', 'MySQL', 'SAS', 'Talend', 'Erwin', 'QlikView', 'Splunk']"
+857,191.214.233.857,Patrick,Ramsay,patrick857,REQ,"['MySQL', 'KNIME', 'Apache Spark']"
+858,191.214.233.858,Justine,May,justine858,FIN,"['KNIME', 'Tableau Public', 'Talend']"
+859,191.214.233.859,Vernon,Arena,vernon859,FIN,"['Talend', 'Splunk', 'R Programming', 'Apache Spark', 'MySQL']"
+860,191.214.233.860,Mark,Sams,mark860,CON,"['Apache Spark', 'R Programming', 'Python', 'MySQL', 'KNIME', 'Erwin']"
+861,191.214.233.861,Cristina,Evans,cristina861,REQ,"['Datapine', 'QlikView']"
+862,191.214.233.862,Esther,Cutler,esther862,FIN,['Splunk']
+863,191.214.233.863,Bryan,Tweed,bryan863,INT,"['RapidMiner', 'KNIME', 'MySQL', 'SAS']"
+864,191.214.233.864,Charles,Senato,charles864,REQ,"['Tableau Public', 'Apache Spark', 'Erwin']"
+865,191.214.233.865,Allison,Thompson,allison865,REQ,"['SAS', 'Splunk', 'R Programming', 'Excel', 'Talend']"
+866,191.214.233.866,Luther,Mitzel,luther866,FIN,"['Splunk', 'Python', 'KNIME', 'Excel']"
+867,191.214.233.867,David,Ellis,david867,REQ,"['Python', 'RapidMiner', 'Apache Spark', 'MySQL', 'Tableau Public']"
+868,191.214.233.868,Barbara,Brockway,barbara868,REQ,"['Splunk', 'Datapine', 'Apache Spark', 'RapidMiner', 'Erwin', 'MySQL', 'Python']"
+869,191.214.233.869,Helen,White,helen869,REQ,"['QlikView', 'KNIME', 'Python', 'RapidMiner', 'Datapine', 'Erwin', 'SAS']"
+870,191.214.233.870,Jason,Nash,jason870,INT,"['Excel', 'Python', 'QlikView', 'Apache Spark', 'Splunk', 'Talend', 'KNIME']"
+871,191.214.233.871,Patricia,Cheney,patricia871,FIN,"['R Programming', 'Splunk', 'Tableau Public', 'QlikView', 'Python']"
+872,191.214.233.872,Blanche,Warren,blanche872,INT,"['Splunk', 'Apache Spark', 'Datapine']"
+873,191.214.233.873,Kevin,Tatum,kevin873,FIN,"['Talend', 'Erwin', 'R Programming', 'Datapine', 'QlikView', 'SAS']"
+874,191.214.233.874,Chad,Coy,chad874,FIN,"['Tableau Public', 'Python', 'Talend', 'Excel', 'MySQL', 'Apache Spark', 'RapidMiner']"
+875,191.214.233.875,Ernest,Jackson,ernest875,INT,"['MySQL', 'KNIME', 'Apache Spark', 'QlikView', 'Excel', 'RapidMiner', 'R Programming']"
+876,191.214.233.876,Jon,Applebee,jon876,INT,"['Tableau Public', 'KNIME', 'Apache Spark', 'RapidMiner', 'QlikView', 'SAS']"
+877,191.214.233.877,Emily,Barris,emily877,INT,"['QlikView', 'MySQL', 'Splunk', 'Python', 'Datapine', 'Tableau Public']"
+878,191.214.233.878,Meghan,Barker,meghan878,REQ,"['MySQL', 'QlikView', 'R Programming', 'RapidMiner', 'Talend', 'Python']"
+879,191.214.233.879,Derrick,Berry,derrick879,INT,"['Apache Spark', 'SAS', 'Talend', 'Erwin', 'Datapine', 'Excel']"
+880,191.214.233.880,Kathy,Ludwick,kathy880,FIN,"['QlikView', 'RapidMiner', 'KNIME', 'Tableau Public']"
+881,191.214.233.881,Inez,Keyser,inez881,FIN,"['Apache Spark', 'Talend', 'RapidMiner', 'QlikView', 'MySQL']"
+882,191.214.233.882,Johnathan,Gomez,johnathan882,REQ,"['Datapine', 'Splunk', 'Talend']"
+883,191.214.233.883,Porsche,Harris,porsche883,REQ,"['Excel', 'SAS', 'MySQL']"
+884,191.214.233.884,Catherine,Plummer,catherine884,FIN,"['Datapine', 'Excel', 'Apache Spark', 'Tableau Public', 'Erwin', 'Talend', 'R Programming']"
+885,191.214.233.885,James,Congdon,james885,FIN,['R Programming']
+886,191.214.233.886,Paul,Butterfield,paul886,FIN,"['Tableau Public', 'Apache Spark', 'R Programming']"
+887,191.214.233.887,Harold,Brinkley,harold887,FIN,"['RapidMiner', 'Tableau Public', 'Apache Spark', 'Datapine', 'SAS']"
+888,191.214.233.888,Raul,Kowal,raul888,REQ,['Datapine']
+889,191.214.233.889,Morris,Fennell,morris889,INT,"['SAS', 'Talend', 'Erwin', 'R Programming', 'Tableau Public']"
+890,191.214.233.890,Felix,Wynn,felix890,INT,"['Python', 'R Programming', 'Excel', 'SAS']"
+891,191.214.233.891,William,Cohn,william891,FIN,"['Excel', 'Python', 'R Programming', 'Talend', 'RapidMiner', 'Datapine']"
+892,191.214.233.892,Ernest,Mcnamara,ernest892,INT,"['R Programming', 'Apache Spark', 'QlikView', 'Erwin', 'Tableau Public', 'MySQL', 'Datapine']"
+893,191.214.233.893,Son,Langlois,son893,INT,"['Python', 'Erwin', 'RapidMiner']"
+894,191.214.233.894,Crystal,Barton,crystal894,FIN,"['Apache Spark', 'Python', 'Splunk']"
+895,191.214.233.895,Jonathan,Miller,jonathan895,REQ,"['Datapine', 'Talend', 'MySQL', 'Erwin', 'Excel', 'RapidMiner', 'Splunk']"
+896,191.214.233.896,Norma,Mann,norma896,INT,"['QlikView', 'Tableau Public', 'Excel']"
+897,191.214.233.897,Bonnie,Marion,bonnie897,INT,"['Tableau Public', 'QlikView']"
+898,191.214.233.898,Charles,Fleming,charles898,FIN,"['R Programming', 'Erwin', 'Apache Spark', 'Python', 'SAS', 'RapidMiner']"
+899,191.214.233.899,Curtis,Smith,curtis899,FIN,['Excel']
+900,191.214.233.900,Nancy,Brown,nancy900,REQ,"['SAS', 'Talend', 'Datapine', 'Splunk', 'RapidMiner']"
+901,191.214.233.901,Alice,Tutor,alice901,REQ,"['Tableau Public', 'MySQL', 'RapidMiner', 'Splunk', 'KNIME', 'Datapine']"
+902,191.214.233.902,Kimberly,Spell,kimberly902,INT,"['RapidMiner', 'Excel', 'Apache Spark', 'QlikView', 'R Programming', 'Erwin', 'MySQL']"
+903,191.214.233.903,Eddie,Reid,eddie903,FIN,"['Erwin', 'Excel', 'QlikView']"
+904,191.214.233.904,Stefanie,Washinton,stefanie904,CON,"['Splunk', 'SAS', 'Erwin']"
+905,191.214.233.905,Booker,Nitcher,booker905,INT,"['Datapine', 'Python']"
+906,191.214.233.906,Alvin,Mailes,alvin906,FIN,"['Talend', 'SAS', 'Splunk', 'Excel', 'Apache Spark', 'KNIME']"
+907,191.214.233.907,Astrid,Baxter,astrid907,INT,"['Excel', 'SAS']"
+908,191.214.233.908,Jaime,Freeman,jaime908,INT,"['Python', 'Datapine', 'Excel', 'MySQL']"
+909,191.214.233.909,Shannon,Thornton,shannon909,INT,"['KNIME', 'Datapine', 'MySQL', 'Excel', 'QlikView', 'R Programming', 'Python']"
+910,191.214.233.910,Elizabeth,Wicklund,elizabeth910,INT,"['QlikView', 'Erwin', 'Splunk', 'Tableau Public', 'SAS', 'MySQL']"
+911,191.214.233.911,Beulah,Ryan,beulah911,INT,"['KNIME', 'Tableau Public', 'R Programming']"
+912,191.214.233.912,Lori,Hunt,lori912,INT,['Erwin']
+913,191.214.233.913,Jeremy,Baker,jeremy913,REQ,"['Erwin', 'SAS']"
+914,191.214.233.914,David,Sharpe,david914,REQ,"['Python', 'RapidMiner']"
+915,191.214.233.915,Robin,Stigall,robin915,FIN,"['Splunk', 'Excel']"
+916,191.214.233.916,Angela,Hernandez,angela916,FIN,"['MySQL', 'Tableau Public', 'Apache Spark']"
+917,191.214.233.917,Amy,Pasillas,amy917,REQ,['R Programming']
+918,191.214.233.918,Deanna,Waterman,deanna918,FIN,"['Tableau Public', 'Apache Spark', 'Excel', 'Erwin', 'QlikView']"
+919,191.214.233.919,Carol,Dunlap,carol919,FIN,['Apache Spark']
+920,191.214.233.920,Chris,Ealy,chris920,INT,['QlikView']
+921,191.214.233.921,Robert,Keane,robert921,REQ,"['Tableau Public', 'SAS', 'Splunk']"
+922,191.214.233.922,Shane,Butler,shane922,FIN,"['R Programming', 'KNIME', 'Talend', 'Erwin']"
+923,191.214.233.923,Deirdre,Jamon,deirdre923,FIN,"['Splunk', 'Apache Spark', 'KNIME', 'Excel', 'Talend', 'SAS']"
+924,191.214.233.924,Ann,Freed,ann924,FIN,"['Apache Spark', 'Talend']"
+925,191.214.233.925,Tanner,Dona,tanner925,INT,"['SAS', 'Talend', 'Splunk', 'KNIME']"
+926,191.214.233.926,Kenneth,Sebald,kenneth926,INT,"['Datapine', 'Python', 'Talend', 'Tableau Public', 'SAS', 'Excel']"
+927,191.214.233.927,Robert,Robbins,robert927,FIN,"['Talend', 'Datapine', 'Tableau Public', 'SAS', 'Excel', 'Apache Spark', 'Erwin']"
+928,191.214.233.928,Theodore,Oshea,theodore928,INT,"['MySQL', 'Erwin', 'SAS', 'QlikView', 'Datapine', 'R Programming', 'Tableau Public']"
+929,191.214.233.929,David,Lopez,david929,INT,"['Python', 'Erwin', 'MySQL', 'Apache Spark', 'KNIME', 'RapidMiner']"
+930,191.214.233.930,Anthony,White,anthony930,INT,"['Tableau Public', 'KNIME', 'Apache Spark', 'Splunk', 'QlikView']"
+931,191.214.233.931,Forest,Falk,forest931,FIN,"['SAS', 'Splunk']"
+932,191.214.233.932,Sherri,Lawson,sherri932,REQ,"['R Programming', 'QlikView', 'Datapine', 'Tableau Public', 'RapidMiner', 'Excel']"
+933,191.214.233.933,Cristine,Ives,cristine933,REQ,"['Talend', 'SAS', 'Datapine', 'R Programming']"
+934,191.214.233.934,Elizabeth,Carter,elizabeth934,FIN,"['MySQL', 'Splunk', 'Tableau Public', 'R Programming', 'QlikView']"
+935,191.214.233.935,Robert,Castrey,robert935,INT,['KNIME']
+936,191.214.233.936,Lloyd,Donato,lloyd936,REQ,"['QlikView', 'MySQL', 'KNIME', 'Splunk', 'Talend', 'Datapine', 'Tableau Public']"
+937,191.214.233.937,Jerome,Level,jerome937,REQ,"['Apache Spark', 'MySQL', 'KNIME']"
+938,191.214.233.938,Rodney,Mays,rodney938,REQ,['Excel']
+939,191.214.233.939,Elisabeth,Kochan,elisabeth939,INT,['MySQL']
+940,191.214.233.940,Jesus,Field,jesus940,INT,"['Apache Spark', 'QlikView']"
+941,191.214.233.941,Yvonne,Hungerford,yvonne941,FIN,"['Datapine', 'MySQL', 'KNIME', 'QlikView', 'Tableau Public']"
+942,191.214.233.942,Tom,Smith,tom942,REQ,"['Excel', 'QlikView']"
+943,191.214.233.943,Barbara,Espinoza,barbara943,FIN,"['Apache Spark', 'MySQL']"
+944,191.214.233.944,Donna,Sturgeon,donna944,FIN,"['QlikView', 'Tableau Public', 'MySQL', 'RapidMiner', 'Excel', 'Splunk']"
+945,191.214.233.945,Lawrence,Heredia,lawrence945,INT,['KNIME']
+946,191.214.233.946,Charles,Haralson,charles946,INT,"['Datapine', 'Tableau Public', 'QlikView', 'SAS', 'Excel', 'Erwin']"
+947,191.214.233.947,Joseph,Smith,joseph947,INT,"['Talend', 'Apache Spark', 'Erwin']"
+948,191.214.233.948,Xavier,Hoelscher,xavier948,REQ,"['Talend', 'MySQL', 'R Programming', 'SAS', 'Tableau Public']"
+949,191.214.233.949,Vicki,Smithson,vicki949,INT,"['KNIME', 'Apache Spark', 'Erwin', 'QlikView']"
+950,191.214.233.950,Kristine,Seamans,kristine950,INT,"['QlikView', 'Apache Spark', 'Splunk', 'SAS', 'RapidMiner', 'Talend', 'Datapine']"
+951,191.214.233.951,David,Diamond,david951,INT,"['Erwin', 'R Programming', 'SAS']"
+952,191.214.233.952,Lucas,Wachter,lucas952,REQ,"['Datapine', 'R Programming', 'Tableau Public', 'RapidMiner', 'Splunk', 'Talend']"
+953,191.214.233.953,Michael,Brandt,michael953,INT,"['Python', 'KNIME', 'Talend', 'Splunk']"
+954,191.214.233.954,Carrie,Finegan,carrie954,INT,"['Tableau Public', 'SAS', 'MySQL', 'RapidMiner', 'R Programming']"
+955,191.214.233.955,Violet,Osborne,violet955,INT,"['R Programming', 'Excel', 'MySQL', 'RapidMiner', 'Erwin']"
+956,191.214.233.956,Elizabeth,Manns,elizabeth956,INT,"['MySQL', 'KNIME', 'Python', 'Tableau Public', 'SAS', 'Erwin']"
+957,191.214.233.957,Carmen,Jenkins,carmen957,REQ,"['MySQL', 'QlikView', 'Tableau Public']"
+958,191.214.233.958,Barbara,Hruska,barbara958,INT,['Erwin']
+959,191.214.233.959,Kathleen,Cumming,kathleen959,FIN,['KNIME']
+960,191.214.233.960,Rachel,Garcia,rachel960,REQ,"['Tableau Public', 'Python', 'SAS', 'Splunk', 'Talend']"
+961,191.214.233.961,Jose,Spence,jose961,INT,"['Erwin', 'SAS']"
+962,191.214.233.962,Mary,Meyer,mary962,REQ,"['Apache Spark', 'RapidMiner', 'Excel']"
+963,191.214.233.963,Kevin,Durst,kevin963,FIN,"['Splunk', 'Datapine', 'RapidMiner', 'SAS']"
+964,191.214.233.964,Keith,Rivera,keith964,REQ,['R Programming']
+965,191.214.233.965,Agnes,Galbraith,agnes965,REQ,"['MySQL', 'KNIME', 'QlikView', 'SAS', 'Splunk']"
+966,191.214.233.966,Robert,Fogle,robert966,INT,"['Excel', 'R Programming', 'SAS', 'Python']"
+967,191.214.233.967,Sheena,Guerrero,sheena967,INT,"['Erwin', 'Tableau Public']"
+968,191.214.233.968,Cynthia,Alzate,cynthia968,INT,"['MySQL', 'Apache Spark', 'KNIME', 'QlikView', 'Python', 'Talend']"
+969,191.214.233.969,Marshall,Sanchez,marshall969,FIN,"['Talend', 'RapidMiner']"
+970,191.214.233.970,Michael,Scofield,michael970,FIN,"['RapidMiner', 'SAS', 'R Programming', 'Python', 'Apache Spark']"
+971,191.214.233.971,Mary,Douglas,mary971,REQ,"['KNIME', 'MySQL', 'R Programming', 'Apache Spark']"
+972,191.214.233.972,Wilma,Mcclarty,wilma972,FIN,"['Apache Spark', 'Tableau Public', 'R Programming']"
+973,191.214.233.973,Angela,Stewart,angela973,FIN,"['Apache Spark', 'Talend', 'Tableau Public', 'SAS', 'RapidMiner', 'Python']"
+974,191.214.233.974,Cheryl,Steptoe,cheryl974,FIN,"['MySQL', 'Apache Spark', 'Erwin']"
+975,191.214.233.975,Harold,Shannon,harold975,FIN,['KNIME']
+976,191.214.233.976,James,Anderson,james976,REQ,['Excel']
+977,191.214.233.977,Charles,Dowdy,charles977,REQ,"['Python', 'SAS']"
+978,191.214.233.978,Kevin,Jones,kevin978,REQ,"['SAS', 'Excel', 'QlikView', 'KNIME', 'Apache Spark', 'RapidMiner', 'Talend']"
+979,191.214.233.979,Melissa,Ybarra,melissa979,REQ,"['Splunk', 'SAS', 'Python', 'Erwin', 'R Programming']"
+980,191.214.233.980,Heather,Mcinnis,heather980,INT,"['Excel', 'MySQL', 'KNIME', 'Python']"
+981,191.214.233.981,Lana,Azar,lana981,INT,"['Excel', 'RapidMiner', 'R Programming', 'Datapine', 'QlikView', 'Apache Spark']"
+982,191.214.233.982,Charles,Butler,charles982,REQ,"['Erwin', 'KNIME', 'Tableau Public', 'QlikView', 'RapidMiner', 'Excel']"
+983,191.214.233.983,Richard,Vansickle,richard983,INT,"['KNIME', 'Apache Spark', 'Talend', 'Erwin']"
+984,191.214.233.984,Carl,Mccomas,carl984,INT,"['Python', 'MySQL', 'KNIME', 'RapidMiner', 'Excel', 'R Programming']"
+985,191.214.233.985,Krystal,Mull,krystal985,REQ,"['SAS', 'Talend', 'Datapine', 'MySQL', 'R Programming', 'Excel']"
+986,191.214.233.986,Angie,Wendel,angie986,REQ,"['RapidMiner', 'Tableau Public', 'R Programming']"
+987,191.214.233.987,Debra,Lowe,debra987,INT,"['Tableau Public', 'KNIME', 'MySQL', 'Talend', 'Python', 'R Programming', 'Excel']"
+988,191.214.233.988,Carole,Rath,carole988,FIN,"['Datapine', 'Talend', 'KNIME', 'SAS', 'Erwin']"
+989,191.214.233.989,Nichole,Leser,nichole989,REQ,"['MySQL', 'Tableau Public', 'R Programming', 'QlikView']"
+990,191.214.233.990,Ernest,Carlson,ernest990,INT,"['MySQL', 'Apache Spark', 'Python', 'SAS', 'Tableau Public']"
+991,191.214.233.991,Raymond,Williams,raymond991,INT,['Apache Spark']
+992,191.214.233.992,Dennis,Debo,dennis992,FIN,"['SAS', 'Excel', 'Talend', 'Apache Spark', 'R Programming']"
+993,191.214.233.993,Manuel,Curry,manuel993,INT,['Erwin']
+994,191.214.233.994,Matthew,Dale,matthew994,FIN,"['MySQL', 'RapidMiner', 'SAS', 'Python']"
+995,191.214.233.995,Justin,Mclaurin,justin995,INT,"['Apache Spark', 'Talend', 'Python', 'Splunk', 'Excel', 'QlikView']"
+996,191.214.233.996,Douglas,Zambrana,douglas996,INT,"['Erwin', 'KNIME']"
+997,191.214.233.997,Joel,Cortez,joel997,FIN,"['Apache Spark', 'Tableau Public', 'Splunk', 'Python']"
+998,191.214.233.998,Ronald,Duhart,ronald998,REQ,"['Talend', 'QlikView', 'Excel', 'MySQL']"
+999,191.214.233.999,Nancy,Baldwin,nancy999,FIN,"['Datapine', 'Splunk']"
+1000,191.214.233.1000,Richard,Piazza,richard1000,CON,"['Erwin', 'RapidMiner']"

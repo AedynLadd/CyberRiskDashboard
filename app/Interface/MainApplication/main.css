@@ -88,6 +88,11 @@ body {
     position: absolute;
     height: 200px;
     overflow-y: auto;
+    text-align: justify;
+}
+
+.suggestion_card_title{
+    padding-top: 20px;
 }
 
 /* Custom Scroll Bar for right radar info */
