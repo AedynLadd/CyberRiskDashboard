@@ -11,7 +11,7 @@ import { boolean, string, array } from './Common/Defaults'
 export default function AssetManagement({answers, update}) {
     const [q2, setQ2] = useState({
         number: 2,
-        text: "Is your organization's data stored in CVS files?",
+        text: "Is your organization's data stored in CSV files?",
         trueLabel: "No",
         falseLabel: "Yes",
         answer: boolean(answers[2])
