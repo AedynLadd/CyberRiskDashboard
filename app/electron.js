@@ -25,7 +25,6 @@ const { app, BrowserWindow, ipcMain, dialog } = require('electron');
 const fs = require('fs');
 const fu = require('./fileUtils');
 const path = require('path');
-const { CircleNotifications } = require('@mui/icons-material');
 
 const CONFIG_PATH = './app/Hidden/Data/data_config.json';
 
