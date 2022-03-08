@@ -170,8 +170,8 @@ function display_node_info(node_element) {
     document.getElementById("networkGraph_info_id").innerHTML = node_element.id
     document.getElementById("networkGraph_info_ip").innerHTML = node_element.name
     createSoftwareTable("networkGraph_info_software_assets", node_element.data)
-    createDataTable("networkGraph_info_data_assets", node_element)
-    createHardwareTable("networkGraph_info_physical_assets", node_element)
+    createDataTable("networkGraph_info_data_assets", ["File A", "File B", "File C", "File D"])
+    createHardwareTable("networkGraph_info_physical_assets", ["Logitech Mouse", "Logitech Keyboard", "Docking Station", "USB Device"])
 }
 
 // Create table with software assets and linked risks
@@ -179,51 +179,134 @@ function createSoftwareTable(id, data_items) {
     var base_div = document.getElementById(id);
     var base_tbl = document.createElement('table');
 
-    // Data keys
-    // Append the data
-    let max_rows = data_items.length;
-    let max_columns = 2;
-    for (let rows = 0; rows <= (max_rows); rows++) {
-        var tbl_row = base_tbl.insertRow();
-        for (let columns = 0; columns <= (max_columns - 1); columns++) {
-            var cell_element = tbl_row.insertCell();
-            if (rows == 0) {
-                cell_element.style.fontWeight = "bold";
-                if (columns == 0) {
-                    cell_info = "Software";
+    try {
+        // Data keys
+        // Append the data
+        let max_rows = data_items.length;
+        let max_columns = 2;
+        for (let rows = 0; rows <= (max_rows); rows++) {
+            var tbl_row = base_tbl.insertRow();
+            for (let columns = 0; columns <= (max_columns - 1); columns++) {
+                var cell_element = tbl_row.insertCell();
+                if (rows == 0) {
+                    cell_element.style.fontWeight = "bold";
+                    if (columns == 0) {
+                        cell_info = "Software";
+                    } else {
+                        cell_info = "Number of Vulnerabilities"
+                    }
                 } else {
-                    cell_info = "Number of Vulnerabilities"
-                }
-            } else {
-                // define columns
-                if (columns == 0) {
-                    cell_info = data_items[rows - 1];
-                } else if (columns == 1) {
-                    cell_info = cvss_data[data_items[rows - 1]].length;
-                    if (cell_info >= 1000) {
-                        cell_info = "1000+";
+                    // define columns
+                    if (columns == 0) {
+                        cell_info = data_items[rows - 1];
+                    } else if (columns == 1) {
+                        cell_info = cvss_data[data_items[rows - 1]].length;
+                        if (cell_info >= 1000) {
+                            cell_info = "1000+";
+                        }
                     }
                 }
+
+                cell_element.appendChild(document.createTextNode(cell_info + ''));
             }
-
-            cell_element.appendChild(document.createTextNode(cell_info + ''));
         }
-    }
 
-    // Create table
-    base_div.innerHTML = ""
-    base_div.append(base_tbl)
+        // Create table
+        base_div.innerHTML = ""
+        base_div.append(base_tbl)
+    } catch {
+        console.log("An error occured creating Software Table")
+    }
 }
 
 // Create a table indicating hardware assets
 function createHardwareTable(id, data_items) {
     var base_div = document.getElementById(id);
     var base_tbl = document.createElement('table');
+
+    try {
+        // Data keys
+        // Append the data
+        let max_rows = data_items.length;
+        let max_columns = 2;
+        for (let rows = 0; rows <= (max_rows); rows++) {
+            var tbl_row = base_tbl.insertRow();
+            for (let columns = 0; columns <= (max_columns - 1); columns++) {
+                var cell_element = tbl_row.insertCell();
+                if (rows == 0) {
+                    cell_element.style.fontWeight = "bold";
+                    if (columns == 0) {
+                        cell_info = "Asset";
+                    } else {
+                        cell_info = "Number of Vulnerabilities"
+                    }
+                } else {
+                    // define columns
+                    if (columns == 0) {
+                        cell_info = data_items[rows - 1];
+                    } else if (columns == 1) {
+                        cell_info = Math.floor(Math.random() * 1000);
+                        if (cell_info >= 1000) {
+                            cell_info = "1000+";
+                        }
+                    }
+                }
+
+                cell_element.appendChild(document.createTextNode(cell_info + ''));
+            }
+        }
+
+        // Create table
+        base_div.innerHTML = ""
+        base_div.append(base_tbl)
+    } catch {
+        console.log("An error occured creating Hardware Table")
+    }
 }
 
 // Creates the folder structure for the data assets
 function createDataTable(id, data_items) {
     var base_div = document.getElementById(id);
     var base_tbl = document.createElement('table');
+
+    try {
+        // Data keys
+        // Append the data
+        let max_rows = data_items.length;
+        let max_columns = 2;
+        for (let rows = 0; rows <= (max_rows); rows++) {
+            var tbl_row = base_tbl.insertRow();
+            for (let columns = 0; columns <= (max_columns - 1); columns++) {
+                var cell_element = tbl_row.insertCell();
+                if (rows == 0) {
+                    cell_element.style.fontWeight = "bold";
+                    if (columns == 0) {
+                        cell_info = "File Name";
+                    } else {
+                        cell_info = "Size "
+                    }
+                } else {
+                    // define columns
+                    if (columns == 0) {
+                        cell_info = data_items[rows - 1];
+                    } else if (columns == 1) {
+                        cell_info = Math.floor(Math.random() * 10000);;
+                        if (cell_info >= 10000) {
+                            cell_info = "1Gb+";
+                        }
+                    }
+                }
+
+                cell_element.appendChild(document.createTextNode(cell_info + ''));
+            }
+        }
+
+        // Create table
+        base_div.innerHTML = ""
+        base_div.append(base_tbl)
+
+    } catch {
+        console.log("An error occured creating Data Table")
+    }
 
 }

@@ -21,7 +21,7 @@
 
 .networkGraph-link{
     fill: none;
-    stroke: rgb(37, 40, 58);
+    stroke: rgb(106, 109, 126);
     stroke-opacity: 1;
     stroke-width: 2px;
     stroke-linecap:round;
@@ -29,7 +29,7 @@
 
 .chord-link{
     fill: none;
-    stroke: rgb(37, 40, 58);
+    stroke: rgb(106, 109, 126);
     stroke-opacity: 0.1;
     stroke-width: 1px;
     stroke-linecap:round;
@@ -80,6 +80,7 @@
 }
 
 .network_graph_info{
+    color: rgb(37, 37, 37);
     padding-bottom: 10px;
     font-size: 12px;
     text-align: left;
@@ -88,6 +89,7 @@
 }
 
 .network_graph_info_tables{
+    color: rgb(37, 37, 37);
     padding-bottom: 10px;
     font-size: 12px;
     text-align: left;

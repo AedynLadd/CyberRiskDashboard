@@ -6,10 +6,23 @@
     <link rel="stylesheet" href="main.css">
     <link rel="stylesheet" href="top_nav_bar.css">
     <link rel="stylesheet" href="main_container.css">
+    <link rel="stylesheet" href="./Information_Modal/settings.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
+    <!-- The Settings Modal -->
+    <div id="settings_modal" class="settings_modal">
+        <!-- Modal content -->
+        <div class="modal-content" id = "modal_content">
+            <span class="modal_close">&times;</span>
+            <p class="settings_identifier">Settings</p>
+            <button class="settings_button_list" id="settings_button_list_RAQ">RAQ</button>
+            <button class="settings_button_list" id="settings_button_list_HELP">Help</button>
+            <button class="settings_button_list close" id="settings_button_list_EXIT">Exit</button>
+        </div>
+    </div>
     <!-- TOP NAVIGATION MENU -->
     <div class="TopLevelNavigation">
         <div class="Icon">
@@ -34,6 +47,10 @@
                 <li onmouseover="changeText('RECOVER','Recover_nav')" onmouseout="changeText('RC','Recover_nav')">
                     <a href="./Pages/5-Recover/recover.html" id="Recover_nav" class="Recover"> RC </a>
                 </li>
+                <!-- SETTINGS ICON BUTTON -->
+                <li id="settings_button_open" style="float:right" class="settings_button">
+                    <a href="#" style="float:right" class="settings_button"><i class="fa fa-cog"></i></a>
+                </li>
             </ul>
         </nav>
     </div>
@@ -41,9 +58,9 @@
     <!-- MAIN CONTENTS -->
     <div class="dashboardHomeGrid">
         <!-- <div class="item1" id="my_dataviz"></div> -->
-        <div class="radarPlot" id="radar_chart_vis"></div>
+        <div class="radarPlot" id="radar_plot"></div>
         <div class="left_radar" id="stackedAreaChart"></div>
-        <div class="right_radar">
+        <div class="right_radar" id="right_radar_info">
             <text class="total_score_title" id="total_score_title"></text>
             <div class="cyber_risk_score" id="cyber_risk_score"></div>
             <div class="score_elements" id="score_elements"></div>
@@ -54,19 +71,19 @@
         </div>
         <div class="suggestions" id="suggestion_cards">
             <div class="suggestion_card" id="suggestion_card_1">
-                <div>SUGGESTION 0</div>
+                <div class = "suggestion_card_title">SUGGESTION 0</div>
             </div>
             <div class="suggestion_card" id="suggestion_card_2">
-                <div>SUGGESTION 1</div>
+                <div class = "suggestion_card_title">SUGGESTION 1</div>
             </div>
             <div class="suggestion_card" id="suggestion_card_3">
-                <div>SUGGESTION 2</div>
+                <div class = "suggestion_card_title">SUGGESTION 2</div>
             </div>
             <div class="suggestion_card" id="suggestion_card_4">
-                <div>SUGGESTION 3</div>
+                <div class = "suggestion_card_title">SUGGESTION 3</div>
             </div>
             <div class="suggestion_card" id="suggestion_card_5">
-                <div>SUGGESTION 4</div>
+                <div class = "suggestion_card_title">SUGGESTION 4</div>
             </div>
         </div>
     </div>
@@ -78,5 +95,6 @@
 <script type="text/javascript" src="./DataVisualizationRepository/home_page_radar_plot.js"></script>
 <script type="text/javascript" src="./DataVisualizationRepository/home_page_stacked_area.js"></script>
 <script type="text/javascript" src="./DataVisualizationRepository/suggestion_cards.js"></script>
+<script type="text/javascript" src="./Information_Modal/info_popup.js"></script>
 
 </html>

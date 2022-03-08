@@ -34,7 +34,8 @@ function generate_line_chart(group_name, data) {
         .attr("class", "line_axis")
         .style("text-anchor", "middle")
         .style("font-size","11px")
-        .text("Dates");
+        .text("Dates")
+        .style('fill', '#CCCCCC');
 
     // Add Y axis
     var y = d3.scaleLinear()
@@ -55,7 +56,8 @@ function generate_line_chart(group_name, data) {
         .attr("class", "line_axis")
         .style("font-size", "11px") 
         .style("text-decoration", "underline")  
-        .text("Trainings Taken vs Number of People Who Took");
+        .text("Asset Over Time with Variables A, B, C")
+        .style('fill', '#CCCCCC');
 
 
     var color = d3.scaleOrdinal()

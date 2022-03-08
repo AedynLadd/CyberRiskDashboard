@@ -37,7 +37,8 @@ d3.csv(url).then(function (data) {
         .attr("y",  element.height + 25 )
         .style("text-anchor", "middle")
         .style("font-size","11px")
-        .text("Trainings");
+        .text("Trainings")
+        .style('fill', '#CCCCCC');
 
     // Build Y scales and axis:
     const y = d3.scaleLinear()
@@ -52,7 +53,8 @@ d3.csv(url).then(function (data) {
         .attr("text-anchor", "middle")  
         .style("font-size", "11px") 
         .style("text-decoration", "underline")  
-        .text("Trainings Taken vs Number of People Who Took");
+        .text("Trainings Taken vs Number of People Who Took")
+        .style('fill', '#CCCCCC');
 
     // Bars
     svg.selectAll("mybar")
