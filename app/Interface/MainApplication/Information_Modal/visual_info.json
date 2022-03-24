@@ -22,11 +22,11 @@
         },
         "radar_plot": {
             "name": "Radar Plot",
-            "description": "none"
+            "description": "This Radar plot displays the scores in all categories of the NIST framework. Slices of the radar chart can be selected to display the corresponding information on the right"
         },
         "stackedAreaChart": {
             "name": "Stacked Area",
-            "description": "none"
+            "description": "The stacked area chart displayed here shows the evolution of your score over the last 10 calculations."
         },
         "sankey_diagram": {
             "name": "Sankey Diagram",
@@ -34,11 +34,11 @@
         },
         "right_radar_info": {
             "name": "Right Info",
-            "description": "none"
+            "description": "The 'Right Info' element contains descriptions of what each element of the framework is meant to convey, as well as what their current score is"
         },
         "suggestion_cards": {
             "name": "Suggestions",
-            "description": "none"
+            "description": "This section displays recommendations on what elements are bringing down your cyber risk score the most and what can be done to fix them"
         }
     }
 }
