@@ -2,11 +2,11 @@ import React, { useState, useEffect } from 'react'
 import {Box, Stack} from '@mui/material'
 
 import TextQuestion from './types/TextQuestion'
-import YesNoQuestion from './Types/YesNoQuestion'
 import SingleSelect from './Types/SingleSelect'
 import ListQuestion from './Types/ListQuestion'
+import FileQuestion from './Types/FileQuestion'
 
-import { boolean, string, array } from './Common/Defaults'
+import { string, array } from './Common/Defaults'
 import UserLoginQuestion from './Types/UserLoginQuestion'
 import CSVTable from './Types/Tables/CSVTable'
 import MSSQLTable from './Types/Tables/MSSQLTable'
@@ -16,8 +16,13 @@ import CSVNetwork from './Types/Tables/NetworkTables/CSVNetwork'
 import MSSQLNetwork from './Types/Tables/NetworkTables/MSSQLNetwork'
 import MYSQLNetwork from './Types/Tables/NetworkTables/MYSQLNetwork'
 import MonogoNetwork from './Types/Tables/NetworkTables/MonogoNetwork'
-
 export default function AssetManagement({answers, update}) {
+    const [q1, setQ1] = useState({
+        number: 1,
+        text: "What is the name of your organization?",
+        answer: string(answers[1])
+    })
+
     const [q2, setQ2] = useState({
         number: 2,
         text: "Please specify where your organization's data is stored:",
@@ -56,7 +61,7 @@ export default function AssetManagement({answers, update}) {
     const [q3, setQ3] = useState({
         number: 3,
         text: "Provide a list of physical devices present within your organization.",
-        answer: array(answers[3])
+        answer: string(answers[3])
     })
 
     const [q4, setQ4] = useState({
@@ -73,6 +78,7 @@ export default function AssetManagement({answers, update}) {
 
     useEffect(()=> {
         update({
+            [q1.number]: q1.answer,
             [q2.number]: q2.answer,
             [q2_1.number]: q2_1.answer,
             [q2_2.number]: q2_2.answer,
@@ -81,11 +87,12 @@ export default function AssetManagement({answers, update}) {
             [q4.number]: q4.answer,
             [q5.number]: q5.answer
         })
-    }, [q2, q2_1, q2_2, q2_3, q3, q4, q5])
+    }, [q1, q2, q2_1, q2_2, q2_3, q3, q4, q5])
 
     return (
         <div>
             <Stack spacing={2}>
+            <TextQuestion question={q1} update={setQ1} />
             <SingleSelect question={q2} update={setQ2} />
             {(() => {
                 switch(q2.answer){
@@ -122,7 +129,7 @@ export default function AssetManagement({answers, update}) {
                 } 
             })()}          
             <UserLoginQuestion question={q2_3} update={setQ2_3} />
-            <ListQuestion question={q3} update={setQ3} />
+            <FileQuestion question={q3} update={setQ3} />
             <ListQuestion question={q4} update={setQ4} />
             <ListQuestion question={q5} update={setQ5} />
             </Stack>
