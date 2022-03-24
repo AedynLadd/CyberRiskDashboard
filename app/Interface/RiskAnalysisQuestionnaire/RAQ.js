@@ -38,14 +38,14 @@ MultiSelect. (dropdown -> Array[String]) https://www.npmjs.com/package/react-dro
 export default function RAQ() {
     const theme = createTheme({
         palette: {
-            mode: 'dark'
+            mode: 'light'
         }
     })
 
     const [activeStep, setActiveStep] = useState(0)
     const [loading, setLoading] = useState(true);
 
-    const [sampleQuestions, setSampleQuestions] = useState({});
+    // const [sampleQuestions, setSampleQuestions] = useState({});
     const [assetManagement, setAssetManagement] = useState({});
     const [businessEnvironment, setBusinessEnvironment] = useState({});
     const [governance, setGovernance] = useState({});
@@ -65,7 +65,7 @@ export default function RAQ() {
     const handleFinish = () => {
         console.log("We have finished")
         const answers = {
-            'sampleQuestions': sampleQuestions,
+            // 'sampleQuestions': sampleQuestions,
             'assetManagement': assetManagement,
             'businessEnvironment': businessEnvironment,
             'governance': governance,
@@ -84,7 +84,7 @@ export default function RAQ() {
 
     useEffect(() => {
         electron.fileSystemApi.readConfig().then(config => {
-            setSampleQuestions(config.sampleQuestions)
+            // setSampleQuestions(config.sampleQuestions)
             setAssetManagement(config.assetManagement)
             setBusinessEnvironment(config.businessEnvironment)
             setGovernance(config.governance)
@@ -110,7 +110,7 @@ export default function RAQ() {
                     </Box> 
                     :
                     <Stepper activeStep={activeStep} orientation="vertical">
-                        <Step>
+                        {/* <Step>
                             <StepLabel>Sample Questions</StepLabel>
                             <StepContent TransitionProps={{ unmountOnExit: false }}>
                                 <SampleQuestions key={'SampleQuestions'}
@@ -119,7 +119,7 @@ export default function RAQ() {
                                 />
                                 <BackNextButtons handleBack={handleBack} handleNext={handleNext} isFirstStep={true} />
                             </StepContent>
-                        </Step>
+                        </Step> */}
 
                         <Step>
                             <StepLabel>Asset Management</StepLabel>

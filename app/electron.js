@@ -82,7 +82,7 @@ function createRAQ(first_time = true) {
         //frame: false,
         show: true,
         //alwaysOnTop: true,
-        resizable: false,
+        resizable: true,
         webPreferences: {
             nodeIntegration: false,
             worldSafeExecuteJavaScript: true,

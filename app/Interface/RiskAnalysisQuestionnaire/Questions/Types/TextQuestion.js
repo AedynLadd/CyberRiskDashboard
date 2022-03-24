@@ -10,7 +10,6 @@ export default function TextQuestion({question, update}) {
         update(newQuestion)
     }
 
-    // 
 
     return (
         <>
