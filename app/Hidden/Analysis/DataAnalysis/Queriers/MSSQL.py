@@ -45,3 +45,13 @@ def readColummn(column, isProgramData):
     data = pandas.read_sql("SELECT " + col + " FROM " + table, cnxn)
     cnxn.close()
     return(data)
+
+
+def mergeColumns(data1, data2):
+    mergedData = pandas.concat([data1, data2], axis=0)
+    return mergedData
+
+
+
+
+    

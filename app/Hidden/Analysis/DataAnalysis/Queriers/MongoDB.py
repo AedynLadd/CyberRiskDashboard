@@ -35,3 +35,6 @@ def readColummn(column, isProgramData):
     return(data)
 
 
+def mergeColumns(data1, data2):
+    mergedData = pandas.concat([data1, data2], axis=0)
+    return mergedData

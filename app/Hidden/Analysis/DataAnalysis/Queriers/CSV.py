@@ -16,10 +16,6 @@ def readColumn(column, isProgramData):
     return data
 
 
-def makeUnique(data):
-    return data.drop_duplicates()    
-
-
 def mergeColumns(data1, data2):
     mergedData = pandas.concat([data1, data2], axis=0)
     return mergedData

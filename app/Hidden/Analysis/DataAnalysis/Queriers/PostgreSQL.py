@@ -40,3 +40,8 @@ def readColummn(column, isProgramData):
     data = cursor.execute("SELECT " + col + " FROM " + table)
     cnxn.close()
     return(data)
+
+
+def mergeColumns(data1, data2):
+    mergedData = pandas.concat([data1, data2], axis=0)
+    return mergedData
