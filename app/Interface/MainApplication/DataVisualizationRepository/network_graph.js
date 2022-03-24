@@ -238,14 +238,17 @@ function createHardwareTable(id, data_items) {
                     if (columns == 0) {
                         cell_info = "Asset";
                     } else {
-                        cell_info = "Level Of Risk"
+                        cell_info = "Number of Vulnerabilities"
                     }
                 } else {
                     // define columns
                     if (columns == 0) {
                         cell_info = data_items[rows - 1];
                     } else if (columns == 1) {
-                        cell_info = Math.floor(Math.random() * 5);
+                        cell_info = Math.floor(Math.random() * 1000);
+                        if (cell_info >= 1000) {
+                            cell_info = "1000+";
+                        }
                     }
                 }
 

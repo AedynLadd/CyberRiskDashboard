@@ -88,7 +88,7 @@ d3.json(dir + "/Information_Modal/visual_info.json").then(function (data) {
       "<div class='help_modal_element_title' id='help_me_" + key + "'>",
       data["visuals"][key]["name"],
       "</div>",
-      "<div class='help_modal_element_desc' id='help_me_" + key + "'>",
+      "<div class='help_modal_element_title' id='help_me_" + key + "'>",
       data["visuals"][key]["description"],
       "</div>",
       "</div>"
