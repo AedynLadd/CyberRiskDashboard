@@ -145,12 +145,11 @@ let DataRender;
 function createAnalysisRenderer() {
     console.log("creating analysis renderer")
     AnalysisRenderer = new BrowserWindow({
-        show: true,
+        show: false,
         webPreferences: {
             nodeIntegration: true,
             contextIsolation: false,
             enableRemoteModule: true,
-            devTools: true,
         }
     });
 

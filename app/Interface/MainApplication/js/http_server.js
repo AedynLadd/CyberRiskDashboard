@@ -17,4 +17,4 @@ http.createServer(function(request, response) {
 
 // Sending a command to execute the python script
 // console.log("Sending data")
-// ipcRenderer.send('dashboard-analysis', { command: "analyze_network_data", data: ["empty"] });
+ipcRenderer.send('dashboard-analysis', { command: "analyze_network_data", data: ["empty"] });
