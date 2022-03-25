@@ -63,7 +63,7 @@ export default function AssetManagement({answers, update}) {
         text: "Provide a list of physical devices present within your organization.",
         answer: string(answers[3])
     })
-
+    
     const [q4, setQ4] = useState({
         number: 4,
         text: "Provide a list of Software platforms and applications allowed within the organization.",
@@ -72,8 +72,15 @@ export default function AssetManagement({answers, update}) {
 
     const [q5, setQ5] = useState({
         number: 5,
+        text: "Provide your employee directories.",
+        answer: string(answers[5])
+    })
+
+
+    const [q5_1, setQ5_1] = useState({
+        number: 6,
         text: "Identify the Cybersecurity roles and responsibilities for the entire workforce and third-party stakeholders.",
-        answer: array(answers[5])
+        answer: array(answers[6])
     });
 
     useEffect(()=> {
@@ -85,9 +92,10 @@ export default function AssetManagement({answers, update}) {
             [q2_3.number]: q2_3.answer,
             [q3.number]: q3.answer,
             [q4.number]: q4.answer,
-            [q5.number]: q5.answer
+            [q5.number]: q5.answer,
+            [q5_1.number]: q5_1.answer
         })
-    }, [q1, q2, q2_1, q2_2, q2_3, q3, q4, q5])
+    }, [q1, q2, q2_1, q2_2, q2_3, q3, q4, q5, q5_1])
 
     return (
         <div>
@@ -130,8 +138,9 @@ export default function AssetManagement({answers, update}) {
             })()}          
             <UserLoginQuestion question={q2_3} update={setQ2_3} />
             <FileQuestion question={q3} update={setQ3} />
-            <ListQuestion question={q4} update={setQ4} />
-            <ListQuestion question={q5} update={setQ5} />
+            <FileQuestion question={q4} update={setQ4} />
+            <FileQuestion question={q5} update={setQ5} />
+            <ListQuestion question={q5_1} update={setQ5_1} />
             </Stack>
         </div>
     )

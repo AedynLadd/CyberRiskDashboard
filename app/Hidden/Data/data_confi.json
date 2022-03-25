@@ -1,0 +1,108 @@
+{
+    "assetManagement": {
+        "1": "Pepsi",
+        "2": [],
+        "3": "C:\\Users\\Judy\\Desktop\\4th year project\\demo\\programs.csv",
+        "4": "C:\\Users\\Judy\\Desktop\\4th year project\\demo\\programs.csv",
+        "5": "C:\\Users\\Judy\\Desktop\\4th year project\\demo\\directory.csv",
+        "6": [],
+        "2.3": {
+            "username": "userName",
+            "passowrd": "password"
+        }
+    },
+    "businessEnvironment": {
+        "6": [
+            "clients",
+            "manufacturers"
+        ],
+        "7": "food/beverage",
+        "8": [
+            "Accessability",
+            "Clean",
+            "Integrity",
+            "Secure"
+        ],
+        "9": [
+            "ISP",
+            "Transportation"
+        ],
+        "10": [
+            "Electricity",
+            "Transport",
+            "Warehouse"
+        ],
+        "8.1": [
+            false,
+            false,
+            false,
+            false,
+            "Secure",
+            "Accessability"
+        ]
+    },
+    "governance": {
+        "12": true,
+        "13": true,
+        "12.1": [
+            "policy1",
+            "policy2",
+            "policy3"
+        ],
+        "12.2": [
+            false,
+            false,
+            false,
+            "policy1"
+        ],
+        "12.3": true,
+        "13.1": [
+            false,
+            false,
+            false
+        ]
+    },
+    "riskAssessment": {
+        "15": [
+            {
+                "name": "compute",
+                "vulnerability": {
+                    "name": "dnd",
+                    "likelihood": "LIKELY"
+                },
+                "threats": [
+                    {
+                        "name": "data loss",
+                        "impact": "HIGH",
+                        "poa": true
+                    }
+                ]
+            }
+        ],
+        "16": true
+    },
+    "riskManagementStrategy": {
+        "17": [],
+        "18": true,
+        "19": false,
+        "20": "medium",
+        "21": true,
+        "22": true
+    },
+    "accessControl": {
+        "23": false,
+        "24": false,
+        "25": [],
+        "26": [],
+        "27": false,
+        "28": [],
+        "29": false,
+        "30": [],
+        "31": true,
+        "32": true,
+        "31.1": [
+            "Norton"
+        ]
+    },
+    "other": {}
+}

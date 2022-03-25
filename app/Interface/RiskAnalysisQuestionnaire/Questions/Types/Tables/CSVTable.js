@@ -1,6 +1,7 @@
 import React from 'react'
 import { DataGrid } from '@mui/x-data-grid';
 import QuestionLabel from '../../Common/QuestionLabel';
+import Tooltip from '@mui/material/Tooltip'
 
 const columns = [
   { field: 'NetworkData', headerName: 'Network Data', width: 150 },
@@ -19,7 +20,7 @@ const columns = [
 ];
 
 const rows = [
-  { id: 1, NetworkData: "Sender ID", filePath: null, columnName: null },
+  { id: 1, NetworkData: "Sender ID", description: 'User01', filePath: null, columnName: null, },
   { id: 2, NetworkData: "Sender IP", filePath: null, columnName: null },
   { id: 3,NetworkData: 'Sender State', filePath: null, columnName: null },
   { id: 4,NetworkData: 'Receiver ID', filePath: null, columnName: null },

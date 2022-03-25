@@ -21,10 +21,8 @@ import RiskManagementStrategy from "./Questions/RiskManagementStrategy";
 import AccessControl from "./Questions/AccessControl";
 import Other from "./Questions/Other";
 
-import SampleQuestions from "./Questions/SampleQuestions";
 import BackNextButtons from "./Questions/Common/BackNextButtons";
 import Intro from "./Questions/Intro";
-import { ipcRenderer } from "electron";
 
 /*
 Text Input (Regular HTML text box -> String)
@@ -104,7 +102,6 @@ export default function RAQ() {
          <ThemeProvider theme={theme}>
             <Paper elevation={0}>
                 <h1>Risk Analysis Questionnaire</h1>
-                <Intro></Intro>
                 { loading ? 
                     <Box sx={{ display: 'flex' }}>
                         <CircularProgress />
@@ -121,6 +118,13 @@ export default function RAQ() {
                                 <BackNextButtons handleBack={handleBack} handleNext={handleNext} isFirstStep={true} />
                             </StepContent>
                         </Step> */}
+                        <Step>
+                            <StepLabel>Home</StepLabel>
+                            <StepContent TransitionProps={{ unmountOnExit: false }}>
+                                <Intro></Intro>
+                                <BackNextButtons handleBack={handleBack} handleNext={handleNext} isFirstStep={true} />
+                            </StepContent>
+                        </Step>
                         <Step>
                             <StepLabel>Asset Management</StepLabel>
                             <StepContent TransitionProps={{ unmountOnExit: false }}>
