@@ -1,6 +1,5 @@
 import React from "react";
 import { useState, useEffect } from "react";
-
 import '@fontsource/roboto/400.css';
 import Paper from "@mui/material/Paper";
 import { createTheme } from "@mui/material/styles";
@@ -25,6 +24,8 @@ import Other from "./Questions/Other";
 import SampleQuestions from "./Questions/SampleQuestions";
 import BackNextButtons from "./Questions/Common/BackNextButtons";
 import Intro from "./Questions/Intro";
+import { ipcRenderer } from "electron";
+
 /*
 Text Input (Regular HTML text box -> String)
 File Input (OS File explorer -> Path)
@@ -63,7 +64,6 @@ export default function RAQ() {
     }
 
     const handleFinish = () => {
-        console.log("We have finished")
         const answers = {
             // 'sampleQuestions': sampleQuestions,
             'assetManagement': assetManagement,

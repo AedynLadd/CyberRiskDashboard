@@ -69,6 +69,7 @@ const summonSubProcess = (subprocess_call) => {
 };
 
 
+
 //
 // INCOMING IPC
 //
@@ -78,4 +79,8 @@ ipcRenderer.on('dashboard', (event, arg) => {
 
 ipcRenderer.on('data', (event, arg) => {
     console.log(arg) // prints "pong"
+})
+
+ipcRenderer.on('RAQ', (event, arg) => {
+    summonSubProcess({ command: "RAQ_analysis_finished", arg: [arg]})
 })

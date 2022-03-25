@@ -25,7 +25,6 @@ const { app, BrowserWindow, ipcMain, dialog } = require('electron');
 const fs = require('fs');
 const fu = require('./fileUtils');
 const path = require('path');
-const { CircleNotifications } = require('@mui/icons-material');
 
 const CONFIG_PATH = './app/Hidden/Data/data_config.json';
 
@@ -96,6 +95,9 @@ function createRAQ(first_time = true) {
             if(first_time){
                 createDashboardWindow()
             }
+            console.log("Updating RAQ answers")
+            var url_for_data_config = './app/Hidden/Data/data_config.json'
+            AnalysisRenderer.webContents.send("RAQ", url_for_data_config)
     });
 }
 
@@ -181,6 +183,7 @@ ipcMain.on("analysis-data", (_, arg) => DataRender.webContents.send("analysis", 
 // 2.C DASHBOARD ENDPOINT
 ipcMain.on("data-dashboard", (_, arg) => DashboardWindow.webContents.send("data", arg));
 ipcMain.on("analysis-dashboard", (_, arg) => DashboardWindow.webContents.send("analysis", arg));
+
 
 
 //
