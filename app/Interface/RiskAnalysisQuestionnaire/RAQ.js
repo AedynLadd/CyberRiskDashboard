@@ -39,7 +39,7 @@ MultiSelect. (dropdown -> Array[String]) https://www.npmjs.com/package/react-dro
 export default function RAQ() {
     const theme = createTheme({
         palette: {
-            mode: 'light'
+            mode: 'dark'
         }
     })
 
