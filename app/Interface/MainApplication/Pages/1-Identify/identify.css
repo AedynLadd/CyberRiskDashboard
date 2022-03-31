@@ -55,7 +55,7 @@
 
 .information {
     grid-area: 1 / 15 / 5 / 20;
-    background-color: rgba(126, 126, 126, 0.747);
+    background-color: rgb(187, 187, 187);
 }
 
 .network_graph_info_title{
@@ -104,7 +104,7 @@
 
 /* Visual Identity */
 .Identify{
-    color: rgba(215, 250, 255, 0.815);
+    color: rgb(255, 255, 255);
     pointer-events: none;
 }
 nav.stroke ul li a.Identify:after,
