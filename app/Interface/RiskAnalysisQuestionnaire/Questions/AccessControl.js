@@ -112,20 +112,20 @@ export default function AccessControl({answers, update}) {
     return (
         <div>
             <Stack spacing={2}>
-                <YesNoQuestion question={q23} update={setQ23} />
-                <YesNoQuestion question={q24} update={setQ24} />
-                <ListQuestion question={q25} update={setQ25} />
-                <ListQuestion question={q26} update={setQ26} />
-                <YesNoQuestion question={q27} update={setQ27} />
-                <ListQuestion question={q28} update={setQ28} />
-                <YesNoQuestion question={q29} update={setQ29} />
-                <MultiSelect question={q30} update={setQ30} />
-                <YesNoQuestion question={q31} update={setQ31} />
+                <YesNoQuestion question={q23} update={setQ23} /><br/>
+                <YesNoQuestion question={q24} update={setQ24} /><br/>
+                <ListQuestion question={q25} update={setQ25} /><br/>
+                <ListQuestion question={q26} update={setQ26} /><br/>
+                <YesNoQuestion question={q27} update={setQ27} /><br/>
+                <ListQuestion question={q28} update={setQ28} /><br/>
+                <YesNoQuestion question={q29} update={setQ29} /><br/>
+                <MultiSelect question={q30} update={setQ30} /><br/>
+                <YesNoQuestion question={q31} update={setQ31} /><br/>
                 { q31.answer ? 
                     <Box sx={{pl: 5}}>
-                        <ListQuestion question={q31_1} update={setQ31_1} />
+                        <ListQuestion question={q31_1} update={setQ31_1} /><br/>
                     </Box> : null }
-                <YesNoQuestion question={q32} update={setQ32} />
+                <YesNoQuestion question={q32} update={setQ32} /><br/>
             </Stack>
         </div>
     )

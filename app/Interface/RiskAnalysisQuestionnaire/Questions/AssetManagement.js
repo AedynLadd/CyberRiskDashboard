@@ -16,6 +16,7 @@ import CSVNetwork from './Types/Tables/NetworkTables/CSVNetwork'
 import MSSQLNetwork from './Types/Tables/NetworkTables/MSSQLNetwork'
 import MYSQLNetwork from './Types/Tables/NetworkTables/MYSQLNetwork'
 import MonogoNetwork from './Types/Tables/NetworkTables/MonogoNetwork'
+
 export default function AssetManagement({answers, update}) {
     const [q1, setQ1] = useState({
         number: 1,
@@ -72,14 +73,14 @@ export default function AssetManagement({answers, update}) {
 
     const [q5, setQ5] = useState({
         number: 5,
-        text: "Provide your employee directories.",
+        text: "Provide your employee directories:",
         answer: string(answers[5])
     })
 
 
-    const [q5_1, setQ5_1] = useState({
+    const [q6, setQ6] = useState({
         number: 6,
-        text: "Identify the Cybersecurity roles and responsibilities for the entire workforce and third-party stakeholders.",
+        text: "Identify the Cybersecurity roles and responsibilities for the entire workforce and third-party stakeholders:",
         answer: array(answers[6])
     });
 
@@ -93,54 +94,58 @@ export default function AssetManagement({answers, update}) {
             [q3.number]: q3.answer,
             [q4.number]: q4.answer,
             [q5.number]: q5.answer,
-            [q5_1.number]: q5_1.answer
+            [q6.number]: q6.answer
         })
-    }, [q1, q2, q2_1, q2_2, q2_3, q3, q4, q5, q5_1])
+    }, [q1, q2, q2_1, q2_2, q2_3, q3, q4, q5, q6])
 
     return (
         <div>
             <Stack spacing={2}>
-            <TextQuestion question={q1} update={setQ1} />
-            <SingleSelect question={q2} update={setQ2} />
+            <TextQuestion question={q1} update={setQ1} /><br/>
+            <SingleSelect question={q2} update={setQ2} /><br/>
             {(() => {
                 switch(q2.answer){
                     case 'csv':
                         return <Box sx={{pl: 5}}>
-                            <CSVTable question={q2_1} /> 
-                            <CSVNetwork question={q2_2} />
+                            <CSVTable question={q2_1} /><br/>
+                            <CSVNetwork question={q2_2} /><br/>
                         </Box>
                     case 'sql':
                         return <Box sx={{pl: 5}}>
-                            <MSSQLTable question={q2_1} />
-                            <MSSQLNetwork question={q2_2} />
+                            <MSSQLTable question={q2_1} /><br/>
+                            <MSSQLNetwork question={q2_2} /><br/>
+                            <UserLoginQuestion question={q2_3} update={setQ2_3} /><br/> 
                         </Box>
                     case 'mySql':
                         return <Box sx={{pl: 5}}>
-                            <MYSQLTable question={q2_1} />
-                            <MYSQLNetwork question={q2_2} />
+                            <MYSQLTable question={q2_1} /><br/>
+                            <MYSQLNetwork question={q2_2} /><br/>
+                            <UserLoginQuestion question={q2_3} update={setQ2_3} /><br/> 
                         </Box>
                     case 'postgresSql':
                         return <Box sx={{pl: 5}}>
-                            <MSSQLTable question={q2_1} />
-                            <MSSQLNetwork question={q2_2} />
+                            <MSSQLTable question={q2_1} /><br/>
+                            <MSSQLNetwork question={q2_2} /><br/>
+                            <UserLoginQuestion question={q2_3} update={setQ2_3} /><br/> 
                         </Box>
                     case 'oracle':
                         return <Box sx={{pl: 5}}>
-                            <MSSQLTable question={q2_1} />
-                            <MSSQLNetwork question={q2_2} />
+                            <MSSQLTable question={q2_1} /><br/>
+                            <MSSQLNetwork question={q2_2} /><br/>                          
+                            <UserLoginQuestion question={q2_3} update={setQ2_3} /><br/> 
                         </Box>
                     case 'mongoDB':
                         return <Box sx={{pl: 5}}>                        
-                            <MonogoDB question={q2_1} />
-                            <MonogoNetwork question={q2_2} />
+                            <MonogoDB question={q2_1}/><br/>
+                            <MonogoNetwork question={q2_2} /><br/>                            
+                            <UserLoginQuestion question={q2_3} update={setQ2_3} /><br/> 
                         </Box>
-                } 
+                }               
             })()}          
-            <UserLoginQuestion question={q2_3} update={setQ2_3} />
-            <FileQuestion question={q3} update={setQ3} />
-            <FileQuestion question={q4} update={setQ4} />
-            <FileQuestion question={q5} update={setQ5} />
-            <ListQuestion question={q5_1} update={setQ5_1} />
+            <FileQuestion question={q3} update={setQ3} /><br/>
+            <FileQuestion question={q4} update={setQ4} /><br/>
+            <FileQuestion question={q5} update={setQ5} /><br/>
+            <ListQuestion question={q6} update={setQ6} /><br/>
             </Stack>
         </div>
     )

@@ -78,12 +78,12 @@ export default function RiskManagementStrategy({answers, update}) {
     return (
         <div>
             <Stack spacing={2}>
-                <MultiSelect question={q17} update={setQ17} />
-                <YesNoQuestion question={q18} update={setQ18} />
-                <YesNoQuestion question={q19} update={setQ19} />
-                <SingleSelect question={q20} update={setQ20} />
-                <YesNoQuestion question={q21} update={setQ21} />
-                <YesNoQuestion question={q22} update={setQ22} />
+                <MultiSelect question={q17} update={setQ17} /><br/>
+                <YesNoQuestion question={q18} update={setQ18} /><br/>
+                <YesNoQuestion question={q19} update={setQ19} /><br/>
+                <SingleSelect question={q20} update={setQ20} /><br/>
+                <YesNoQuestion question={q21} update={setQ21} /><br/>
+                <YesNoQuestion question={q22} update={setQ22} /><br/>
             </Stack>
         </div>
     )

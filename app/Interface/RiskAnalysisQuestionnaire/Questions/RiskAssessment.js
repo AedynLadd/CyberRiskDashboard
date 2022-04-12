@@ -33,8 +33,8 @@ export default function RiskAssessment({answers, update}) {
     return (
         <div>
             <Stack spacing={2}>
-                <AssetQuestion question={q15} update={setQ15} />   
-                <YesNoQuestion question={q16} update={setQ16} />
+                <AssetQuestion question={q15} update={setQ15} /><br/>   
+                <YesNoQuestion question={q16} update={setQ16} /><br/>
             </Stack>
         </div>
     )

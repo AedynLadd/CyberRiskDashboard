@@ -37,7 +37,7 @@ MultiSelect. (dropdown -> Array[String]) https://www.npmjs.com/package/react-dro
 export default function RAQ() {
     const theme = createTheme({
         palette: {
-            mode: 'dark'
+            mode: 'light'
         }
     })
 
@@ -63,7 +63,6 @@ export default function RAQ() {
 
     const handleFinish = () => {
         const answers = {
-            // 'sampleQuestions': sampleQuestions,
             'assetManagement': assetManagement,
             'businessEnvironment': businessEnvironment,
             'governance': governance,
@@ -99,112 +98,100 @@ export default function RAQ() {
     }, [])
 
     return (
-         <ThemeProvider theme={theme}>
-            <Paper elevation={0}>
-                <h1>Risk Analysis Questionnaire</h1>
-                { loading ? 
-                    <Box sx={{ display: 'flex' }}>
-                        <CircularProgress />
-                    </Box> 
-                    :
-                    <Stepper activeStep={activeStep} orientation="vertical">
-                        {/* <Step>
-                            <StepLabel>Sample Questions</StepLabel>
-                            <StepContent TransitionProps={{ unmountOnExit: false }}>
-                                <SampleQuestions key={'SampleQuestions'}
-                                    answers={sampleQuestions}
-                                    update={setSampleQuestions}
-                                />
-                                <BackNextButtons handleBack={handleBack} handleNext={handleNext} isFirstStep={true} />
-                            </StepContent>
-                        </Step> */}
-                        <Step>
-                            <StepLabel>Home</StepLabel>
-                            <StepContent TransitionProps={{ unmountOnExit: false }}>
-                                <Intro></Intro>
-                                <BackNextButtons handleBack={handleBack} handleNext={handleNext} isFirstStep={true} />
-                            </StepContent>
-                        </Step>
-                        <Step>
-                            <StepLabel>Asset Management</StepLabel>
-                            <StepContent TransitionProps={{ unmountOnExit: false }}>
-                                <AssetManagement key={'AssetManagement'}
-                                    answers={assetManagement}
-                                    update={setAssetManagement}
-                                />
-                                <BackNextButtons handleBack={handleBack} handleNext={handleNext} isFirstStep={true} />
-                            </StepContent>
-                        </Step>
+        <Paper elevation={0}>
+            <h1>Risk Analysis Questionnaire</h1>
+            { loading ? 
+                <Box sx={{ display: 'flex' }}>
+                    <CircularProgress />
+                </Box> 
+                :
+                <Stepper activeStep={activeStep} orientation="vertical">
+                    <Step>
+                        <StepLabel>Home</StepLabel>
+                        <StepContent TransitionProps={{ unmountOnExit: false }}>
+                            <Intro></Intro>
+                            <BackNextButtons handleBack={handleBack} handleNext={handleNext} isFirstStep={true} />
+                        </StepContent>
+                    </Step>
+                    <Step>
+                        <StepLabel>Asset Management</StepLabel>
+                        <StepContent TransitionProps={{ unmountOnExit: false }}>
+                            <AssetManagement key={'AssetManagement'}
+                                answers={assetManagement}
+                                update={setAssetManagement}
+                            />
+                            <BackNextButtons handleBack={handleBack} handleNext={handleNext} isFirstStep={true} />
+                        </StepContent>
+                    </Step>
 
-                        <Step>
-                            <StepLabel>Business Environment</StepLabel>
-                            <StepContent TransitionProps={{ unmountOnExit: false }}>
-                                <BusinessEnvironment key={'BusinessEnvironment'}
-                                    answers={businessEnvironment}
-                                    update={setBusinessEnvironment}
-                                />
-                                <BackNextButtons handleBack={handleBack} handleNext={handleNext} />
-                            </StepContent>
-                        </Step>
-                    
-                        <Step>
-                            <StepLabel>Governance</StepLabel>
-                            <StepContent TransitionProps={{ unmountOnExit: false }}>
-                                <Governance key={'Governance'}
-                                    answers={governance}
-                                    update={setGovernance}
-                                />
-                                <BackNextButtons handleBack={handleBack} handleNext={handleNext} />
-                            </StepContent>
-                        </Step>
-                        
-                        <Step>
-                            <StepLabel>Risk Assessment</StepLabel>
-                            <StepContent TransitionProps={{ unmountOnExit: false }}>
-                                <RiskAssessment key={'RiskAssessment'}
-                                    answers={riskAssessment}
-                                    update={setRiskAssessment}
-                                />
-                                <BackNextButtons handleBack={handleBack} handleNext={handleNext} />
-                            </StepContent>
-                        </Step>
-                        
-                        <Step>
-                            <StepLabel>Risk Management Strategy</StepLabel>
-                            <StepContent TransitionProps={{ unmountOnExit: false }}>
-                                <RiskManagementStrategy key={'RiskManagementStrategy'}
-                                    answers={riskManagementStrategy}
-                                    update={setRiskManagementStrategy}
-                                />
-                                <BackNextButtons handleBack={handleBack} handleNext={handleNext} />
-                            </StepContent>
-                        </Step>
-                        
-                        <Step>
-                            <StepLabel>Access Control</StepLabel>
-                            <StepContent TransitionProps={{ unmountOnExit: false }}>
-                                <AccessControl key={'AccessControl'}
-                                    answers={accessControl}
-                                    update={setAccessControl}
-                                />
-                                <BackNextButtons handleBack={handleBack} handleNext={handleNext} />
-                            </StepContent>
-                        </Step>
-                        
-                        <Step>
-                            <StepLabel>Other</StepLabel>
-                            <StepContent TransitionProps={{ unmountOnExit: false }}>
-                                <Other key={'Other'}
-                                    answers={other}
-                                    update={setOther}
-                                />
-                                <BackNextButtons handleBack={handleBack} handleNext={handleFinish} isLastStep={true} />
-                            </StepContent>
-                        </Step>
-                    </Stepper>
-                }
+                    <Step>
+                        <StepLabel>Business Environment</StepLabel>
+                        <StepContent TransitionProps={{ unmountOnExit: false }}>
+                            <BusinessEnvironment key={'BusinessEnvironment'}
+                                answers={businessEnvironment}
+                                update={setBusinessEnvironment}
+                            />
+                            <BackNextButtons handleBack={handleBack} handleNext={handleNext} />
+                        </StepContent>
+                    </Step>
                 
-            </Paper>
-        </ThemeProvider>
+                    <Step>
+                        <StepLabel>Governance</StepLabel>
+                        <StepContent TransitionProps={{ unmountOnExit: false }}>
+                            <Governance key={'Governance'}
+                                answers={governance}
+                                update={setGovernance}
+                            />
+                            <BackNextButtons handleBack={handleBack} handleNext={handleNext} />
+                        </StepContent>
+                    </Step>
+                    
+                    <Step>
+                        <StepLabel>Risk Assessment</StepLabel>
+                        <StepContent TransitionProps={{ unmountOnExit: false }}>
+                            <RiskAssessment key={'RiskAssessment'}
+                                answers={riskAssessment}
+                                update={setRiskAssessment}
+                            />
+                            <BackNextButtons handleBack={handleBack} handleNext={handleNext} />
+                        </StepContent>
+                    </Step>
+                    
+                    <Step>
+                        <StepLabel>Risk Management Strategy</StepLabel>
+                        <StepContent TransitionProps={{ unmountOnExit: false }}>
+                            <RiskManagementStrategy key={'RiskManagementStrategy'}
+                                answers={riskManagementStrategy}
+                                update={setRiskManagementStrategy}
+                            />
+                            <BackNextButtons handleBack={handleBack} handleNext={handleNext} />
+                        </StepContent>
+                    </Step>
+                    
+                    <Step>
+                        <StepLabel>Access Control</StepLabel>
+                        <StepContent TransitionProps={{ unmountOnExit: false }}>
+                            <AccessControl key={'AccessControl'}
+                                answers={accessControl}
+                                update={setAccessControl}
+                            />
+                            <BackNextButtons handleBack={handleBack} handleNext={handleNext} />
+                        </StepContent>
+                    </Step>
+                    
+                    <Step>
+                        <StepLabel>Other</StepLabel>
+                        <StepContent TransitionProps={{ unmountOnExit: false }}>
+                            <Other key={'Other'}
+                                answers={other}
+                                update={setOther}
+                            />
+                            <BackNextButtons handleBack={handleBack} handleNext={handleFinish} isLastStep={true} />
+                        </StepContent>
+                    </Step>
+                </Stepper>
+            }
+            
+        </Paper>
     )
 }

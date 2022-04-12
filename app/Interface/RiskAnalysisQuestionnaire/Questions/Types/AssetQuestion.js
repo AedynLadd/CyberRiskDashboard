@@ -53,7 +53,7 @@ export default function AssetQuestion({question, update}) {
                 handleAdd={addAsset}
                 placeholder="Enter asset name"
                 sx={{flex: 1}}
-            />
+            /><br/>
         </div>
     )
 }

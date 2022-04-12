@@ -87,16 +87,16 @@ export default function Governance({answers, update}) {
     return (
         <div>
             <Stack spacing={2}>
-                <YesNoQuestion question={q12} update={setQ12} />
+                <YesNoQuestion question={q12} update={setQ12} /><br/>
                 { q12.answer ? 
                     <Box sx={{pl: 5}}>
-                        <ListQuestion question={q12_1} update ={setQ12_1} />
-                        <CheckboxList question={q12_2} update ={setQ12_2} />
-                        <YesNoQuestion question={q12_3} update ={setQ12_3} />
+                        <ListQuestion question={q12_1} update ={setQ12_1} /><br/>
+                        <CheckboxList question={q12_2} update ={setQ12_2} /><br/>
+                        <YesNoQuestion question={q12_3} update ={setQ12_3} /><br/>
                     </Box> : null }
-                <ListQuestion question={q13} update={setQ13} />
-                <CheckboxList question={q13_1} update ={setQ13_1} />
-                <YesNoQuestion question={q14} update={setQ14} />
+                <ListQuestion question={q13} update={setQ13} /><br/>
+                <CheckboxList question={q13_1} update ={setQ13_1} /><br/>
+                <YesNoQuestion question={q14} update={setQ14} /><br/>
             </Stack>
         </div>
     )

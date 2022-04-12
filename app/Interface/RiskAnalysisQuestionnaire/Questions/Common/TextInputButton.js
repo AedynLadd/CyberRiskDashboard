@@ -37,7 +37,7 @@ export default function({handleAdd, placeholder, sx}) {
                         flex: 1
                     }}
                     placeholder={placeholder ? placeholder : "Enter here"}
-                    variant="standard"
+                    variant="standard"   
                     onKeyPress={handleTextKeyPress}
                 ></TextField>
                 <Button

@@ -1,5 +1,5 @@
 import { Delete } from '@mui/icons-material'
-import { Card, IconButton, Stack, Typography } from '@mui/material'
+import { Card, IconButton, Stack, Typography, Box } from '@mui/material'
 import React from 'react'
 import { DEFAULT_IMPACT, DEFAULT_POA } from './Defaults'
 import TextInputButton from './TextInputButton'
@@ -44,7 +44,7 @@ export default function ({asset, update, remove}) {
     }
 
     return (
-        <Card variant="outlined" sx={{ flex: 1, p: 1, marginBottom: 1}}>
+        <Card variant="outlined" sx={{border: '1px solid black', flex: 1, p: 1, marginBottom: 1}}>
             <Stack direction="row" sx={{ flex: 1}}>
                 <Typography variant="h6" sx={{ flex: 1}}>{asset.name}</Typography>
                 <IconButton onClick={handleRemove}><Delete/></IconButton>

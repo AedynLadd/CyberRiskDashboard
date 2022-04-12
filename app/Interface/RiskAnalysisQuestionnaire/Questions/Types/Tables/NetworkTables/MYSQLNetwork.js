@@ -59,7 +59,6 @@ export default function MYSQLNetwork({question}) {
           columns={columns}
           pageSize={5}
           rowsPerPageOptions={[5]}
-          checkboxSelection
           disableSelectionOnClick
         />
       </div>
