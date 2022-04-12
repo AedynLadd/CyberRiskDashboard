@@ -6,7 +6,7 @@
     position: fixed;
     z-index: 2;
     left: 0;
-    background-color: rgb(46, 46, 46);
+    background-color: #262626;
     overflow-x: hidden;
     padding-top: 20px;
     border-right-color: rgba(0, 0, 0, 0.404);
@@ -36,31 +36,36 @@
 .sidenav h1.identify {
     text-align: center;
     font-size: 18px;
-    color: #4be4ff6e;
+    font-weight: bolder;
+    color: #6CBCC1;
 }
 
 .sidenav h1.protect {
     text-align: center;
     font-size: 18px;
-    color: #da1eff6e;
+    font-weight: bolder;
+    color: #f2b3ffd8;
 }
 
 .sidenav h1.detect {
     text-align: center;
     font-size: 18px;
-    color: #fffc4b6e;
+    font-weight: bolder;
+    color: #fffd88d8;
 }
 
 .sidenav h1.respond {
     text-align: center;
     font-size: 18px;
-    color: #ff4b4b6e;
+    font-weight: bolder;
+    color: #ff9595;
 }
 
 .sidenav h1.recover {
     text-align: center;
     font-size: 18px;
-    color: #4bff696e;
+    font-weight: bolder;
+    color: #7bff91de;
 }
 
 
